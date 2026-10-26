@@ -59,7 +59,14 @@ const CORE_REFERENCES: ReferenceItem[] = (Object.keys(CORE_GROUPS) as ReferenceK
   }))
 ));
 
-export const ALL_REFERENCES: ReferenceItem[] = [...CORE_REFERENCES, ...REFERENCE_DATA];
+// A curadoria central tem prioridade: é a versão que o motor já usa para os presets homônimos.
+const seenReferenceNames = new Set<string>();
+export const ALL_REFERENCES: ReferenceItem[] = [...CORE_REFERENCES, ...REFERENCE_DATA].filter((item) => {
+  const key = `${item.kind}:${normalizeSearch(item.name)}`;
+  if (seenReferenceNames.has(key)) return false;
+  seenReferenceNames.add(key);
+  return true;
+});
 
 export const REFERENCE_POOLS = ALL_REFERENCES.reduce<Record<ReferenceKind, ReferenceItem[]>>((pools, item) => {
   pools[item.kind].push(item);
@@ -79,7 +86,7 @@ export function findReferenceByName(kind: ReferenceKind, name: string) {
   return REFERENCE_BY_NAME.get(`${kind}:${normalizeSearch(name)}`);
 }
 
-export function shuffleReferences(items: ReferenceItem[], seed: number) {
+function shuffleWithSeed<T>(items: T[], seed: number) {
   const shuffled = [...items];
   let state = (seed + 1) >>> 0;
   const random = () => {
@@ -93,8 +100,35 @@ export function shuffleReferences(items: ReferenceItem[], seed: number) {
   return shuffled;
 }
 
-export function getReferenceSuggestions(kind: ReferenceKind, count = 3, round = 0) {
-  return shuffleReferences(REFERENCE_POOLS[kind], round).slice(0, count);
+export function shuffleReferences(items: ReferenceItem[], seed: number) {
+  return shuffleWithSeed(items, seed);
+}
+
+function diverseReferenceDeck(items: ReferenceItem[], seed: number) {
+  const groups = new Map<string, ReferenceItem[]>();
+  for (const item of shuffleWithSeed(items, seed)) {
+    const key = `${item.source}\n${item.category}`;
+    const group = groups.get(key) ?? [];
+    group.push(item);
+    groups.set(key, group);
+  }
+
+  const keys = shuffleWithSeed([...groups.keys()], seed + 0x9e3779b9);
+  const deck: ReferenceItem[] = [];
+  while (deck.length < items.length) {
+    for (const key of keys) {
+      const next = groups.get(key)?.shift();
+      if (next) deck.push(next);
+    }
+  }
+  return deck;
+}
+
+export function getReferenceSuggestions(kind: ReferenceKind, count = 6, seed = 0, cursor = 0) {
+  const pool = REFERENCE_POOLS[kind];
+  const start = Math.min(Math.max(0, Math.floor(cursor)), pool.length);
+  const size = Math.max(0, Math.floor(count));
+  return diverseReferenceDeck(pool, seed).slice(start, start + size);
 }
 
 export function withSelectedReferences(options: PresetOption[], values: string | string[], kind: ReferenceKind): PresetOption[] {

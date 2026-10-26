@@ -10,7 +10,7 @@ const icons = [Shield, PersonStanding, Bot, Aperture, Leaf, DraftingCompass];
 export function ConceptPanel() {
   const { anchor, customInput, setSubject, selectAnchor, lockedSections, toggleLock } = usePromptStore();
   const subject = customInput || anchor;
-  const { suggestions, refresh } = useReferenceSuggestions('anchor');
+  const { placeholderName, suggestionProps } = useReferenceSuggestions('anchor');
 
   return (
     <section className="panel-content" aria-label="Conceito do prompt">
@@ -34,12 +34,12 @@ export function ConceptPanel() {
           value={subject}
           maxLength={600}
           onChange={(event) => setSubject(event.target.value)}
-          placeholder={`Ex.: ${suggestions[0]?.name ?? 'uma bibliotecária que guarda memórias'} — ou descreva sua própria ideia...`}
+          placeholder={`Ex.: ${placeholderName ?? 'uma bibliotecária que guarda memórias'} — ou descreva sua própria ideia...`}
         />
         <p className="field-hint">Seja específico sobre aparência, materiais e atitude. O texto livre é preservado como você escrever.</p>
       </div>
 
-      <ReferenceSuggestions kind="anchor" suggestions={suggestions} onRefresh={refresh} />
+      <ReferenceSuggestions {...suggestionProps} />
 
       <div className="subsection">
         <div className="subsection-title">
