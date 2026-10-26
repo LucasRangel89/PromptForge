@@ -1,0 +1,3185 @@
+{
+  "version": 1,
+  "references": [
+    {
+      "id": "curadoria-anchor-cartografa-de-nuvens",
+      "kind": "anchor",
+      "name": "Cartógrafa de nuvens",
+      "description": "Pesquisadora que registra formas e correntes do céu.",
+      "output": "a cloud cartographer with wind-tossed silver hair, a weatherproof indigo cape, brass surveying instruments and a folded atlas of hand-drawn cloud formations",
+      "category": "Profissões imaginárias",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-guardiao-de-farol-subterraneo",
+      "kind": "anchor",
+      "name": "Guardião de farol subterrâneo",
+      "description": "Zelador solitário de uma luz sob a terra.",
+      "output": "an underground lighthouse keeper with a salt-streaked wool coat, a warm lantern at the waist, mineral dust on his boots and a carefully groomed beard",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-chef-de-estacao-orbital",
+      "kind": "anchor",
+      "name": "Chef de estação orbital",
+      "description": "Cozinheira precisa adaptada à vida sem gravidade.",
+      "output": "an orbital station chef wearing a fitted graphite apron, magnetic shoes and floating utensil loops, with a composed expression and a small pouch of fresh herbs",
+      "category": "Ficção científica",
+      "era": "Futuro",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-restauradora-de-vitrais",
+      "kind": "anchor",
+      "name": "Restauradora de vitrais",
+      "description": "Especialista em vidro, cor e estruturas antigas.",
+      "output": "a stained-glass conservator with fine protective gloves, small glass cutters tucked into a canvas apron and flecks of colored glass reflected across her face",
+      "category": "Ofícios",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-mensageiro-de-bicicleta-solar",
+      "kind": "anchor",
+      "name": "Mensageiro de bicicleta solar",
+      "description": "Entregador urbano movido por energia limpa.",
+      "output": "a solar bicycle courier in a lightweight ochre riding jacket, reflective straps, compact photovoltaic panels on the backpack and a secure leather message tube",
+      "category": "Ficção científica",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-arquivista-de-sonhos",
+      "kind": "anchor",
+      "name": "Arquivista de sonhos",
+      "description": "Catalogadora de memórias que só existem ao dormir.",
+      "output": "a dream archivist with softly rumpled midnight-blue clothing, translucent index cards, silver thread marking her fingertips and a cabinet key worn as a pendant",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-engenheira-de-mares",
+      "kind": "anchor",
+      "name": "Engenheira de marés",
+      "description": "Técnica que transforma o movimento do mar em energia.",
+      "output": "a tidal engineer in a practical seaweed-green dry suit, waterproof diagrams rolled under one arm and a compact brass flow meter clipped to her shoulder",
+      "category": "Profissões imaginárias",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-botanico-de-microclimas",
+      "kind": "anchor",
+      "name": "Botânico de microclimas",
+      "description": "Cientista dedicado a pequenos ecossistemas portáteis.",
+      "output": "a microclimate botanist carrying glass terrarium capsules in a padded field vest, with soil on his cuffs, round protective glasses and delicate seedlings pinned like specimens",
+      "category": "Ciência",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-detetive-de-aromas",
+      "kind": "anchor",
+      "name": "Detetive de aromas",
+      "description": "Investigadora que reconstrói histórias pelo olfato.",
+      "output": "an aroma detective with a tailored tobacco-brown coat, a case of tiny labeled scent vials, a notebook of botanical sketches and an intent, discerning gaze",
+      "category": "Mistério",
+      "era": "Anos 1930",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-ferreiro-de-instrumentos",
+      "kind": "anchor",
+      "name": "Ferreiro de instrumentos",
+      "description": "Artesão que une metalurgia e música.",
+      "output": "an instrument blacksmith with a scarred leather apron, fine engraving tools, curled metal shavings on his sleeves and a half-finished brass flute held with both hands",
+      "category": "Ofícios",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-bailarina-de-sombras",
+      "kind": "anchor",
+      "name": "Bailarina de sombras",
+      "description": "Dançarina cuja silhueta ganha movimento próprio.",
+      "output": "a shadow dancer in an asymmetrical charcoal costume with ribboned joints, bare feet and an elongated shadow peeling gracefully away from her body",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-pastor-de-automatos",
+      "kind": "anchor",
+      "name": "Pastor de autômatos",
+      "description": "Cuidador de pequenas máquinas com instinto de rebanho.",
+      "output": "an automaton shepherd in a patched canvas coat, carrying a tuning-fork staff while a cluster of small brass mechanical animals gathers around his boots",
+      "category": "Ficção científica",
+      "era": "Retrofuturo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-mergulhadora-de-naufragios",
+      "kind": "anchor",
+      "name": "Mergulhadora de naufrágios",
+      "description": "Exploradora técnica de embarcações submersas.",
+      "output": "a shipwreck diver in a weathered copper-and-canvas diving suit, reinforced gloves, a pressure gauge at the wrist and fine bubbles escaping around her helmet",
+      "category": "Exploração",
+      "era": "Anos 1950",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-relojoeiro-de-tempestades",
+      "kind": "anchor",
+      "name": "Relojoeiro de tempestades",
+      "description": "Artesão que mede fenômenos atmosféricos impossíveis.",
+      "output": "a storm clockmaker with static lifting strands of his hair, a vest of miniature barometers and a glass-cased pocket watch containing a tiny rotating thundercloud",
+      "category": "Profissões imaginárias",
+      "era": "Retrofuturo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-curandeira-de-criaturas",
+      "kind": "anchor",
+      "name": "Curandeira de criaturas",
+      "description": "Veterinária de seres raros e temperamentos difíceis.",
+      "output": "a creature healer wearing a many-pocketed moss-green tunic, bandages and herbal salves at her belt, with a small injured winged animal resting against her shoulder",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-cartazista-de-rua",
+      "kind": "anchor",
+      "name": "Cartazista de rua",
+      "description": "Artista de letras manuais e comunicação urbana.",
+      "output": "a street sign painter with rolled sleeves, a brush held between his teeth, enamel paint marks across his hands and a wooden case of alphabet samples",
+      "category": "Cultura urbana",
+      "era": "Anos 1960",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-guarda-de-museu-noturno",
+      "kind": "anchor",
+      "name": "Guarda de museu noturno",
+      "description": "Vigia atento a obras que despertam depois da meia-noite.",
+      "output": "a night museum guard in a formal dark uniform softened by age, carrying a small flashlight and an ornate ring of keys, with painted eyes watching from behind him",
+      "category": "Mistério",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-piloto-de-dirigivel-florestal",
+      "kind": "anchor",
+      "name": "Piloto de dirigível florestal",
+      "description": "Navegadora que atravessa copas de árvores gigantes.",
+      "output": "a forest airship pilot with a cropped leather flight jacket, leaf-shaped navigation badges, goggles pushed above her forehead and rope-burned gloves",
+      "category": "Aventura",
+      "era": "Retrofuturo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-tecelao-de-fibras-opticas",
+      "kind": "anchor",
+      "name": "Tecelão de fibras ópticas",
+      "description": "Artesão que transforma luz em tecido vestível.",
+      "output": "a fiber-optic weaver in a simple dark work shirt, fine luminous threads passing through his fingers and delicate circuits embroidered along a traditional wooden loom",
+      "category": "Ofícios",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-colhedora-de-orvalho",
+      "kind": "anchor",
+      "name": "Colhedora de orvalho",
+      "description": "Trabalhadora matinal de uma cultura onde água é preciosa.",
+      "output": "a dew harvester at first light wearing layered pale linen, a wide woven hood and a set of polished collection bowls strapped carefully across her back",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-tradutor-de-passaros",
+      "kind": "anchor",
+      "name": "Tradutor de pássaros",
+      "description": "Linguista dedicado a cantos, gestos e migrações.",
+      "output": "a bird-language translator with a weatherproof field notebook, color-coded feathers tucked into his hatband and a small attentive bird perched near his ear",
+      "category": "Profissões imaginárias",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-cozinheira-de-realidades",
+      "kind": "anchor",
+      "name": "Cozinheira de realidades",
+      "description": "Chef experimental que serve memórias e possibilidades.",
+      "output": "a reality cook in a crisp ivory jacket dusted with iridescent spices, holding a shallow pan whose ingredients shift subtly between different possible dishes",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-escultor-de-gelo-urbano",
+      "kind": "anchor",
+      "name": "Escultor de gelo urbano",
+      "description": "Artista que trabalha em grande escala no frio da cidade.",
+      "output": "an urban ice sculptor wearing a padded vermilion work coat, clear safety visor and heavy gloves, with precise chisels at his belt and ice crystals on his shoulders",
+      "category": "Artes",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-maestrina-de-maquinas",
+      "kind": "anchor",
+      "name": "Maestrina de máquinas",
+      "description": "Regente que coordena motores como instrumentos musicais.",
+      "output": "a machine conductor in a sharply tailored black jacket with copper seams, holding a slender baton while pistons and gears around her move in measured rhythm",
+      "category": "Ficção científica",
+      "era": "Retrofuturo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-pesquisadora-de-cogumelos",
+      "kind": "anchor",
+      "name": "Pesquisadora de cogumelos",
+      "description": "Micologista de campo atenta a formas microscópicas.",
+      "output": "a mushroom researcher with a waxed canvas satchel, magnifying loupe around her neck, specimen envelopes in her vest and tiny spores dusting her notebook",
+      "category": "Ciência",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-alfaiate-de-camuflagem",
+      "kind": "anchor",
+      "name": "Alfaiate de camuflagem",
+      "description": "Costureiro especializado em roupas que dialogam com paisagens.",
+      "output": "a camouflage tailor with a measuring tape over a muted patchwork suit, swatches of stone bark and grass pinned to his chest and silver scissors in one hand",
+      "category": "Ofícios",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-avo-piloto-de-rally",
+      "kind": "anchor",
+      "name": "Avó piloto de rally",
+      "description": "Competidora experiente, segura e cheia de personalidade.",
+      "output": "a grandmother rally driver with cropped white hair, a worn burgundy racing suit, sponsor patches from decades of travel and a helmet tucked confidently under one arm",
+      "category": "Esporte",
+      "era": "Anos 1980",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-colecionador-de-ecos",
+      "kind": "anchor",
+      "name": "Colecionador de ecos",
+      "description": "Viajante que guarda sons em recipientes delicados.",
+      "output": "an echo collector in a long sand-colored coat, carrying nested glass resonators and small acoustic horns, with visible ripples of sound held inside one bottle",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-guardia-de-sementes",
+      "kind": "anchor",
+      "name": "Guardiã de sementes",
+      "description": "Protetora de variedades agrícolas para as próximas gerações.",
+      "output": "a seed guardian wearing a sturdy indigo work dress, hand-stitched seed packets sorted in a wooden chest and a necklace of tiny labeled glass tubes",
+      "category": "Agricultura",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-corredor-de-telhados",
+      "kind": "anchor",
+      "name": "Corredor de telhados",
+      "description": "Atleta urbano que lê a cidade pelas coberturas.",
+      "output": "a rooftop runner in a fitted slate-gray jacket, flexible high-grip shoes and chalked fingertips, captured in a controlled stride with a compact safety line at the hip",
+      "category": "Esporte",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-bibliotecaria-submarina",
+      "kind": "anchor",
+      "name": "Bibliotecária submarina",
+      "description": "Responsável por livros preservados sob o oceano.",
+      "output": "a submarine librarian with neat braided hair, a high-collared waterproof uniform and a floating satchel of sealed books, accompanied by a small brass reading lamp",
+      "category": "Fantasia",
+      "era": "Retrofuturo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-cacador-de-meteoritos",
+      "kind": "anchor",
+      "name": "Caçador de meteoritos",
+      "description": "Explorador que procura fragmentos de outros mundos.",
+      "output": "a meteorite hunter in a sun-bleached field jacket, with a geological hammer, dark polarized glasses and a black stone fragment glowing faintly inside a specimen box",
+      "category": "Exploração",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-costureira-de-asas",
+      "kind": "anchor",
+      "name": "Costureira de asas",
+      "description": "Designer de estruturas leves para voo e performance.",
+      "output": "a wing seamstress wearing a close-fitting workshop apron, fine needles held between her fingers and a delicate framework of fabric feathers spread across her shoulders",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-poeta-de-neon",
+      "kind": "anchor",
+      "name": "Poeta de neon",
+      "description": "Artista que escreve versos com luz urbana.",
+      "output": "a neon poet with a reflective black jacket, portable glass tubing bent into handwritten fragments and violet light illuminating his thoughtful face",
+      "category": "Cultura urbana",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-domador-de-drones",
+      "kind": "anchor",
+      "name": "Domador de drones",
+      "description": "Treinadora de enxames aéreos para tarefas delicadas.",
+      "output": "a drone handler in a reinforced teal utility vest, gesture-control rings on both hands and a small flock of compact drones arranged attentively around her",
+      "category": "Tecnologia",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-alquimista-de-pigmentos",
+      "kind": "anchor",
+      "name": "Alquimista de pigmentos",
+      "description": "Pesquisadora de cores minerais e reações luminosas.",
+      "output": "a pigment alchemist with stained linen sleeves, rows of ground minerals in ceramic dishes and a mortar producing a subtle emerald phosphorescence",
+      "category": "Fantasia",
+      "era": "Renascimento imaginário",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-guarda-costas-de-fantasma",
+      "kind": "anchor",
+      "name": "Guarda-costas de fantasma",
+      "description": "Protetor discreto de uma presença quase transparente.",
+      "output": "a ghost bodyguard in a plain well-cut charcoal suit, one hand resting near an old silver charm while a translucent figure stays safely behind his shoulder",
+      "category": "Mistério",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-cartomante-cetica",
+      "kind": "anchor",
+      "name": "Cartomante cética",
+      "description": "Leitora de cartas que desconfia do próprio talento.",
+      "output": "a skeptical fortune teller with minimal jewelry, an oversized rust-colored cardigan and worn illustrated cards spread analytically like clues rather than prophecy",
+      "category": "Fantasia",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-cientista-de-vulcoes",
+      "kind": "anchor",
+      "name": "Cientista de vulcões",
+      "description": "Vulcanologista equipada para calor e terreno instável.",
+      "output": "a volcano scientist in a heat-resistant silver hood, ash-darkened boots and a rugged thermal sensor, with a clear visor reflecting a thin line of lava",
+      "category": "Ciência",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-surfista-de-dunas",
+      "kind": "anchor",
+      "name": "Surfista de dunas",
+      "description": "Atleta que desliza por cordões de areia gigantes.",
+      "output": "a dune surfer in lightweight sand-repellent wraps, dark goggles and a broad crescent-shaped board, with fine grains streaming from the edge of the board",
+      "category": "Esporte",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-marceneiro-de-casas-ambulantes",
+      "kind": "anchor",
+      "name": "Marceneiro de casas ambulantes",
+      "description": "Construtor de moradias compactas sobre rodas.",
+      "output": "a wandering-house carpenter with a heavy canvas tool belt, cedar shavings in his beard and a miniature wheeled timber home held like a precise architectural model",
+      "category": "Ofícios",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-fotografa-de-insetos",
+      "kind": "anchor",
+      "name": "Fotógrafa de insetos",
+      "description": "Especialista em retratos de fauna minúscula.",
+      "output": "an insect photographer kneeling with patient posture, a macro camera with a compact diffuser, knee pads and a magnified jewel-like beetle reflected in her glasses",
+      "category": "Ciência",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-zelador-de-portal",
+      "kind": "anchor",
+      "name": "Zelador de portal",
+      "description": "Funcionário metódico de uma passagem entre lugares.",
+      "output": "a portal caretaker in a practical navy maintenance uniform, carrying an old checklist, lubricant and a ring of geometric keys beside a doorway with softly shifting edges",
+      "category": "Fantasia",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-capita-de-quebra-mar",
+      "kind": "anchor",
+      "name": "Capitã de quebra-mar",
+      "description": "Comandante acostumada a enfrentar águas violentas.",
+      "output": "a breakwater captain with salt-gray hair, a heavy orange storm coat and binoculars at her chest, standing with the steady posture of someone reading rough water",
+      "category": "Aventura",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-aprendiz-de-dragao",
+      "kind": "anchor",
+      "name": "Aprendiz de dragão",
+      "description": "Jovem cuidador ainda desajeitado com criaturas enormes.",
+      "output": "a dragon apprentice in oversized fireproof gloves, a patched leather tunic and a helmet slightly too large, holding a bucket while a small dragon noses at the pocket",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-andarilho-de-feiras",
+      "kind": "anchor",
+      "name": "Andarilho de feiras",
+      "description": "Comerciante nômade de objetos curiosos e histórias.",
+      "output": "a fairground wanderer with a weathered satchel, layers of colorful woven cloth and a folding tray of curious handmade objects worn across the chest",
+      "category": "Cultura popular",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-arqueologa-de-futuros",
+      "kind": "anchor",
+      "name": "Arqueóloga de futuros",
+      "description": "Pesquisadora de ruínas que ainda não aconteceram.",
+      "output": "a future archaeologist in a clean bone-white field suit, with translucent excavation tools and a fragment of impossible architecture tagged with dates yet to come",
+      "category": "Ficção científica",
+      "era": "Futuro distante",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-dancarino-de-chuva",
+      "kind": "anchor",
+      "name": "Dançarino de chuva",
+      "description": "Performista que transforma água em coreografia.",
+      "output": "a rain dancer in a sleeveless cobalt costume with fine reflective seams, captured in a grounded turn as arcs of water trace the movement around his arms",
+      "category": "Artes",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-sentinela-de-jardim-vertical",
+      "kind": "anchor",
+      "name": "Sentinela de jardim vertical",
+      "description": "Vigia silenciosa de uma floresta urbana suspensa.",
+      "output": "a vertical garden sentinel in a structured leaf-green uniform, with discreet climbing harnesses and a pruning tool held like a ceremonial staff",
+      "category": "Ficção científica",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-anchor-ourives-de-circuitos",
+      "kind": "anchor",
+      "name": "Ourives de circuitos",
+      "description": "Artesã de joias eletrônicas minuciosas.",
+      "output": "a circuit jeweler wearing a magnifying visor, with fine tweezers, gold traces laid across a dark workbench and a delicate necklace made from reclaimed electronic components",
+      "category": "Ofícios",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-lavanderia-durante-apagao",
+      "kind": "scenario",
+      "name": "Lavanderia durante apagão",
+      "description": "Um interior cotidiano iluminado apenas por emergência.",
+      "output": "a neighborhood laundromat during a nighttime power outage, motionless washing machines, emergency lights above the change counter and wet pavement glowing through the glass door",
+      "category": "Interior urbano",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-estufa-dentro-de-biblioteca",
+      "kind": "scenario",
+      "name": "Estufa dentro de biblioteca",
+      "description": "Plantas tropicais crescendo entre livros e estantes.",
+      "output": "a humid glass greenhouse built inside an old library, ferns rising between reading tables, condensation on high windows and narrow paths winding around book stacks",
+      "category": "Interior fantástico",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-cozinha-de-trem-noturno",
+      "kind": "scenario",
+      "name": "Cozinha de trem noturno",
+      "description": "Espaço compacto em movimento, cheio de utensílios.",
+      "output": "the compact galley kitchen of an overnight train, copper pans secured to rails, a narrow window streaked with rain and warm task lighting over a tiny preparation counter",
+      "category": "Interior",
+      "era": "Anos 1960",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-feira-livre-depois-da-chuva",
+      "kind": "scenario",
+      "name": "Feira livre depois da chuva",
+      "description": "Bancas coloridas e poças em uma rua brasileira.",
+      "output": "a Brazilian open-air street market just after heavy rain, canvas awnings dripping onto crates of fruit, vendors packing produce and reflections rippling across the asphalt",
+      "category": "Brasil urbano",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-oficina-de-barcos-no-igarape",
+      "kind": "scenario",
+      "name": "Oficina de barcos no igarapé",
+      "description": "Estrutura de madeira entre água e floresta amazônica.",
+      "output": "a small boat repair workshop beside an Amazonian igarapé, hand-built wooden hulls under a palm-roof shelter, curled shavings on the dock and dense forest reflected in dark water",
+      "category": "Amazônia",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-cafe-de-estrada-no-cerrado",
+      "kind": "scenario",
+      "name": "Café de estrada no cerrado",
+      "description": "Parada modesta cercada por vermelho e horizonte seco.",
+      "output": "a modest roadside café in the Brazilian cerrado, red earth around concrete tables, a hand-painted menu under a metal awning and twisted trees marking the immense horizon",
+      "category": "Cerrado",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-patio-de-escola-de-samba",
+      "kind": "scenario",
+      "name": "Pátio de escola de samba",
+      "description": "Quadra vazia com cores e instrumentos armazenados.",
+      "output": "an empty samba school rehearsal court before opening, stacked drums beside painted bleachers, rolled carnival banners and a single shaft of light crossing the polished floor",
+      "category": "Cultura brasileira",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-estacao-de-trem-tomada-por-capim",
+      "kind": "scenario",
+      "name": "Estação de trem tomada por capim",
+      "description": "Ruína ferroviária sendo recuperada pela vegetação.",
+      "output": "a disused rural railway station overtaken by tall grass, faded tiles around the ticket window, rusted tracks disappearing into shrubs and swallows nesting beneath the platform roof",
+      "category": "Ruína",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-mercado-em-anel-orbital",
+      "kind": "scenario",
+      "name": "Mercado em anel orbital",
+      "description": "Comércio movimentado dentro de uma estrutura espacial.",
+      "output": "a covered market curving through the inner ring of an orbital station, modular stalls beneath transparent ribs, produce in magnetic trays and the planet visible beyond the concourse",
+      "category": "Ficção científica",
+      "era": "Futuro distante",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-aldeia-no-casco-de-uma-nave",
+      "kind": "scenario",
+      "name": "Aldeia no casco de uma nave",
+      "description": "Moradias construídas sobre uma espaçonave desativada.",
+      "output": "a small village built across the hull of a grounded interstellar ship, vegetable gardens between antenna arrays, fabric walkways joining cabins and laundry moving in artificial gravity",
+      "category": "Ficção científica",
+      "era": "Futuro distante",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-canion-que-respira-nuvens",
+      "kind": "scenario",
+      "name": "Cânion que respira nuvens",
+      "description": "Formação rochosa atravessada por névoa em movimento.",
+      "output": "a deep sandstone canyon inhaling and releasing slow rivers of cloud, pale mist spilling over layered ledges while distant rock arches emerge and vanish",
+      "category": "Paisagem fantástica",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-praia-de-vidro-negro",
+      "kind": "scenario",
+      "name": "Praia de vidro negro",
+      "description": "Litoral mineral com espuma sobre superfícies escuras.",
+      "output": "a shoreline of smooth black volcanic glass, fragmented reflections beneath shallow tide pools, white sea foam tracing the edges and basalt cliffs disappearing into cold mist",
+      "category": "Paisagem natural",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-floresta-de-arvores-metalicas",
+      "kind": "scenario",
+      "name": "Floresta de árvores metálicas",
+      "description": "Bosque futurista de troncos e folhas industriais.",
+      "output": "a forest of trees formed from brushed copper trunks and thin perforated metal leaves, soft light filtering through mechanical branches and moss growing around buried cables",
+      "category": "Ficção científica",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-biblioteca-em-caverna-de-sal",
+      "kind": "scenario",
+      "name": "Biblioteca em caverna de sal",
+      "description": "Acervo instalado entre paredes minerais luminosas.",
+      "output": "a library carved into a vast salt cavern, wooden galleries following the mineral walls, translucent crystals around reading lamps and books protected behind glass cabinets",
+      "category": "Interior fantástico",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-restaurante-no-guindaste-portuario",
+      "kind": "scenario",
+      "name": "Restaurante no guindaste portuário",
+      "description": "Sala de jantar suspensa na estrutura do porto.",
+      "output": "a tiny restaurant built into the cabin and upper platform of a harbor crane, intimate tables behind wide glass panels, cargo ships below and rigging crossing the evening sky",
+      "category": "Arquitetura",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-hotel-de-observacao-de-baleias",
+      "kind": "scenario",
+      "name": "Hotel de observação de baleias",
+      "description": "Hospedagem baixa voltada ao oceano aberto.",
+      "output": "a low timber whale-watching hotel on a rugged coast, quiet observation decks facing the open sea, wind-bent grasses around the cabins and binocular stands along the railing",
+      "category": "Arquitetura",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-cinema-de-bairro-em-reforma",
+      "kind": "scenario",
+      "name": "Cinema de bairro em reforma",
+      "description": "Sala antiga entre poeira, pintura e nostalgia.",
+      "output": "a neighborhood cinema midway through renovation, rows of seats protected by canvas, half-restored art deco walls, a ladder beneath the screen and afternoon dust in the projector beam",
+      "category": "Interior urbano",
+      "era": "Anos 1990",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-piscina-publica-no-inverno",
+      "kind": "scenario",
+      "name": "Piscina pública no inverno",
+      "description": "Espaço recreativo vazio sob céu frio.",
+      "output": "an empty outdoor public swimming pool in winter, pale water beneath a gray sky, stacked plastic chairs, leafless trees beyond the tiled fence and steam rising from a maintenance vent",
+      "category": "Espaço público",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-padaria-antes-do-amanhecer",
+      "kind": "scenario",
+      "name": "Padaria antes do amanhecer",
+      "description": "Cozinha iluminada enquanto a rua ainda dorme.",
+      "output": "a small bakery working before dawn, flour suspended in warm light, trays of unbaked bread on wooden racks and the dark empty street visible through a fogged front window",
+      "category": "Interior urbano",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-estacionamento-transformado-em-horta",
+      "kind": "scenario",
+      "name": "Estacionamento transformado em horta",
+      "description": "Agricultura comunitária ocupando uma estrutura de concreto.",
+      "output": "a multistory parking garage converted into a community farm, planting beds between faded parking lines, trellises around concrete columns and rainwater pipes feeding irrigation channels",
+      "category": "Futuro urbano",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-mirante-sobre-cidade-flutuante",
+      "kind": "scenario",
+      "name": "Mirante sobre cidade flutuante",
+      "description": "Plataforma de observação acima de nuvens e edifícios.",
+      "output": "a narrow observation deck overlooking a city of tethered floating buildings, cloud banks passing between suspended streets and distant airships following marked aerial lanes",
+      "category": "Paisagem fantástica",
+      "era": "Futuro distante",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-tunel-de-vento-botanico",
+      "kind": "scenario",
+      "name": "Túnel de vento botânico",
+      "description": "Laboratório vegetal atravessado por correntes de ar.",
+      "output": "a botanical wind tunnel with rows of flexible trees anchored in test beds, sensors among the leaves, translucent airflow ribbons and researchers' markings on a glass observation wall",
+      "category": "Ciência",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-laboratorio-em-barco-de-pesca",
+      "kind": "scenario",
+      "name": "Laboratório em barco de pesca",
+      "description": "Pesquisa improvisada em uma embarcação de trabalho.",
+      "output": "a compact marine laboratory fitted inside a working fishing boat, sample coolers beside nets, microscopes bolted to a wooden bench and charts weighted down near the open cabin door",
+      "category": "Ciência",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-casa-suspensa-em-desfiladeiro",
+      "kind": "scenario",
+      "name": "Casa suspensa em desfiladeiro",
+      "description": "Moradia mínima apoiada entre paredes de rocha.",
+      "output": "a small timber and steel house suspended across a narrow gorge, a footbridge leading to its entrance, water far below and warm interior windows contrasting with sheer stone walls",
+      "category": "Arquitetura",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-vilarejo-em-lago-congelado",
+      "kind": "scenario",
+      "name": "Vilarejo em lago congelado",
+      "description": "Casas temporárias organizadas sobre o gelo.",
+      "output": "a temporary village arranged across a frozen lake, small insulated huts around communal fire pits, sled tracks linking the doors and forested hills beyond the ice",
+      "category": "Paisagem fria",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-sauna-em-cratera-vulcanica",
+      "kind": "scenario",
+      "name": "Sauna em cratera vulcânica",
+      "description": "Arquitetura geotérmica entre rocha e vapor.",
+      "output": "a geothermal sauna built into the safe rim of a volcanic crater, dark cedar rooms above mineral terraces, controlled steam channels and distant lava glowing far below",
+      "category": "Arquitetura fantástica",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-terminal-de-balsas-na-neblina",
+      "kind": "scenario",
+      "name": "Terminal de balsas na neblina",
+      "description": "Estrutura ribeirinha com silhuetas e luzes difusas.",
+      "output": "a river ferry terminal wrapped in dense morning fog, empty covered gangways, dim amber lamps along the water and the silhouettes of boats appearing only at the dock",
+      "category": "Água",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-aquario-abandonado-e-reforestado",
+      "kind": "scenario",
+      "name": "Aquário abandonado e reforestado",
+      "description": "Tanques antigos ocupados por plantas e chuva.",
+      "output": "an abandoned public aquarium reclaimed by vegetation, cracked tanks filled with ferns instead of fish, rain entering through broken skylights and vines following old underwater tunnels",
+      "category": "Ruína",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-teatro-em-mina-desativada",
+      "kind": "scenario",
+      "name": "Teatro em mina desativada",
+      "description": "Palco e arquibancada dentro de uma cavidade mineral.",
+      "output": "an intimate theater constructed inside a decommissioned mine, tiered seating following the rock chamber, a small timber stage and discreet lights revealing veins of metal in the walls",
+      "category": "Arquitetura",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-escola-em-reservatorio-de-agua",
+      "kind": "scenario",
+      "name": "Escola em reservatório de água",
+      "description": "Sala de aula instalada em estrutura circular adaptada.",
+      "output": "a circular community school inside a converted water reservoir, desks around the curved wall, acoustic panels above a central courtyard and shallow reflecting channels where water once flowed",
+      "category": "Arquitetura",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-praca-de-alimentacao-subterranea",
+      "kind": "scenario",
+      "name": "Praça de alimentação subterrânea",
+      "description": "Corredores de comida sob uma cidade vertical.",
+      "output": "a busy underground food court beneath a vertical megacity, compact kitchens along tiled tunnels, ventilation gardens overhead and directional signs disappearing into several levels",
+      "category": "Ficção científica",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-banca-de-jornal-em-marte",
+      "kind": "scenario",
+      "name": "Banca de jornal em Marte",
+      "description": "Pequeno comércio cotidiano em uma colônia marciana.",
+      "output": "a tiny newsstand inside a Martian settlement corridor, printed local bulletins beside oxygen notices, a scratched pressure window showing red dust and a canvas stool behind the counter",
+      "category": "Ficção científica",
+      "era": "Futuro distante",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-loja-de-consertos-no-fim-da-rua",
+      "kind": "scenario",
+      "name": "Loja de consertos no fim da rua",
+      "description": "Comércio antigo cheio de peças e objetos identificados.",
+      "output": "a narrow repair shop at the quiet end of a residential street, radios and lamps labeled with handwritten tags, drawers of spare parts and a green work light above the counter",
+      "category": "Interior urbano",
+      "era": "Anos 1980",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-museu-de-objetos-perdidos",
+      "kind": "scenario",
+      "name": "Museu de objetos perdidos",
+      "description": "Galeria organizada com itens cotidianos sem dono.",
+      "output": "a museum dedicated to lost objects, glass cases displaying single gloves keys umbrellas and unread letters, each object carefully lit and cataloged like a precious artifact",
+      "category": "Interior fantástico",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-santuario-de-maquinas-antigas",
+      "kind": "scenario",
+      "name": "Santuário de máquinas antigas",
+      "description": "Espaço contemplativo dedicado a engenharia obsoleta.",
+      "output": "a quiet sanctuary for obsolete machines, monumental typewriters and mechanical calculators arranged on stone plinths, soft skylights and small offerings of oil and polished gears",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-jardim-de-esculturas-de-sal",
+      "kind": "scenario",
+      "name": "Jardim de esculturas de sal",
+      "description": "Paisagem branca esculpida pelo clima e pelo tempo.",
+      "output": "a garden of large salt sculptures on a mineral plain, delicate carved forms surrounded by shallow brine channels, wind-softened edges and a horizon of white crystals",
+      "category": "Paisagem natural",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-passarela-entre-copas-de-arvores",
+      "kind": "scenario",
+      "name": "Passarela entre copas de árvores",
+      "description": "Caminho estreito imerso na verticalidade da floresta.",
+      "output": "a narrow suspended walkway passing through the canopy of immense rainforest trees, moss on the cables, epiphytes along the rails and layers of foliage disappearing below",
+      "category": "Floresta",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-ponto-de-onibus-interestadual-1987",
+      "kind": "scenario",
+      "name": "Ponto de ônibus interestadual, 1987",
+      "description": "Parada rodoviária brasileira com materiais de época.",
+      "output": "a Brazilian intercity bus stop in 1987, a concrete bench beneath a faded route sign, advertisements painted on the wall, a bulky luggage scale and heat shimmering over the road",
+      "category": "Brasil histórico",
+      "era": "Anos 1980",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-lagoa-de-lotus-luminosas",
+      "kind": "scenario",
+      "name": "Lagoa de lótus luminosas",
+      "description": "Água calma pontuada por flores de luz suave.",
+      "output": "a still lagoon covered with softly luminous lotus flowers, broad leaves holding drops of water, submerged stems visible in clear depths and gentle light gathering above the mist",
+      "category": "Paisagem fantástica",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-deserto-de-antenas-parabolicas",
+      "kind": "scenario",
+      "name": "Deserto de antenas parabólicas",
+      "description": "Campo tecnológico monumental em região árida.",
+      "output": "an arid desert filled with enormous satellite dishes at different angles, white structures casting precise shadows on ochre gravel and a service road shrinking toward the horizon",
+      "category": "Ciência",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-porto-de-barcos-de-papel",
+      "kind": "scenario",
+      "name": "Porto de barcos de papel",
+      "description": "Marina fantasiosa ocupada por embarcações dobradas.",
+      "output": "a fantastical harbor where enormous folded-paper boats are moored to ordinary wooden piers, crisp origami hulls resisting the water and ropes holding their angular sails",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-cozinha-comunitaria-apos-tempestade",
+      "kind": "scenario",
+      "name": "Cozinha comunitária após tempestade",
+      "description": "Espaço coletivo reorganizado para acolher vizinhos.",
+      "output": "a community kitchen being reorganized after a severe storm, stacked dry blankets beside large cooking pots, taped windows and neighbors' supplies arranged along a long shared table",
+      "category": "Espaço comunitário",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-fabrica-de-gelo-no-tropico",
+      "kind": "scenario",
+      "name": "Fábrica de gelo no trópico",
+      "description": "Edifício industrial frio cercado por vegetação quente.",
+      "output": "an early industrial ice factory in a tropical port, frost around heavy pipes inside, corrugated walls sweating in the heat and lush vegetation pressing against the loading yard",
+      "category": "Industrial",
+      "era": "Anos 1940",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-observatorio-em-cupula-de-barro",
+      "kind": "scenario",
+      "name": "Observatório em cúpula de barro",
+      "description": "Astronomia artesanal sob uma estrutura de terra.",
+      "output": "a small astronomical observatory built inside a domed rammed-earth structure, a brass telescope aligned through a narrow roof opening and star charts pinned to curved clay walls",
+      "category": "Ciência",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-estudio-de-radio-em-elevador",
+      "kind": "scenario",
+      "name": "Estúdio de rádio em elevador",
+      "description": "Cabine de transmissão em movimento entre andares.",
+      "output": "a tiny radio broadcast studio installed inside an old freight elevator, microphone fixed to a folding arm, acoustic blankets on the walls and floor numbers changing behind the host's chair",
+      "category": "Interior urbano",
+      "era": "Anos 1970",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-loja-de-guarda-chuvas-submarina",
+      "kind": "scenario",
+      "name": "Loja de guarda-chuvas submarina",
+      "description": "Comércio absurdo e coerente em uma rua inundada.",
+      "output": "an underwater umbrella shop on a submerged pedestrian street, umbrellas displayed in dry pressurized cases, fish passing the storefront and air bubbles marking the entrance curtain",
+      "category": "Fantasia",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-livraria-em-vagao-de-metro",
+      "kind": "scenario",
+      "name": "Livraria em vagão de metrô",
+      "description": "Estantes e poltronas adaptadas a um vagão parado.",
+      "output": "a bookshop inside a decommissioned subway carriage, shelves fitted around the windows, reading lamps above original seats and a narrow counter beside the driver's cabin",
+      "category": "Arquitetura",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-pista-de-patinacao-em-estufa",
+      "kind": "scenario",
+      "name": "Pista de patinação em estufa",
+      "description": "Gelo cercado por plantas e estrutura de vidro.",
+      "output": "an ice-skating rink built inside a botanical greenhouse, transparent roof panels above frosted glass, tropical plants behind insulated barriers and cold mist near the ice",
+      "category": "Arquitetura fantástica",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-salao-de-baile-em-usina-desligada",
+      "kind": "scenario",
+      "name": "Salão de baile em usina desligada",
+      "description": "Dança e ornamentação ocupando uma estrutura industrial.",
+      "output": "a ballroom arranged inside a decommissioned power station, a polished temporary dance floor between turbines, strings of warm lights and formal balconies around industrial machinery",
+      "category": "Interior",
+      "era": "Anos 1950",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-passagem-atras-do-armario",
+      "kind": "scenario",
+      "name": "Passagem atrás do armário",
+      "description": "Corredor secreto revelado por móveis deslocados.",
+      "output": "a narrow hidden passage revealed behind a moved linen cupboard, handwritten measurements on the plaster, a trail of dust-free floorboards and soft daylight arriving from an impossible opening",
+      "category": "Mistério",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-campo-de-girassois-noturnos",
+      "kind": "scenario",
+      "name": "Campo de girassóis noturnos",
+      "description": "Plantas voltadas para a lua em vez do sol.",
+      "output": "a moonlit field of night-blooming sunflowers, dark petals edged with silver, every flower turned toward the moon and narrow irrigation channels reflecting the sky",
+      "category": "Paisagem fantástica",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-cachoeira-na-escadaria-urbana",
+      "kind": "scenario",
+      "name": "Cachoeira na escadaria urbana",
+      "description": "Água descendo por degraus entre edifícios comuns.",
+      "output": "a stream cascading down a long urban staircase between apartment buildings, water flowing beside handrails, small bridges at each landing and residents' plants along the edges",
+      "category": "Fantasia urbana",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-jardim-de-inverno-em-estacao-espacial",
+      "kind": "scenario",
+      "name": "Jardim de inverno em estação espacial",
+      "description": "Estufa de plantas resistentes sob luz artificial.",
+      "output": "a winter garden inside a space station, cold-tolerant plants under full-spectrum lamps, condensation on curved windows and a quiet bench facing the stars",
+      "category": "Ficção científica",
+      "era": "Futuro distante",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-enfermaria-de-navio-em-alto-mar",
+      "kind": "scenario",
+      "name": "Enfermaria de navio em alto-mar",
+      "description": "Interior compacto balançando com a navegação.",
+      "output": "a compact ship infirmary on the open sea, secured medicine cabinets, folded white blankets, a rain-streaked porthole and hanging instruments moving gently with the swell",
+      "category": "Interior",
+      "era": "Anos 1940",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-capela-de-concreto-na-mata",
+      "kind": "scenario",
+      "name": "Capela de concreto na mata",
+      "description": "Geometria brutalista atravessada por luz e vegetação.",
+      "output": "a small raw-concrete chapel in dense Atlantic forest, a narrow roof opening casting light onto the simple altar and roots beginning to frame the exterior walls",
+      "category": "Arquitetura",
+      "era": "Anos 1970",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-galeria-de-arte-em-conteineres",
+      "kind": "scenario",
+      "name": "Galeria de arte em contêineres",
+      "description": "Circuito expositivo formado por módulos industriais.",
+      "output": "an art gallery assembled from repurposed shipping containers, connected rooms with cut steel doorways, large works beneath skylights and an outdoor sculpture court between stacked modules",
+      "category": "Arquitetura",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-sala-de-aula-na-encosta",
+      "kind": "scenario",
+      "name": "Sala de aula na encosta",
+      "description": "Espaço escolar aberto à paisagem montanhosa.",
+      "output": "an open-air classroom built on a terraced hillside, simple desks facing a chalkboard, a woven shade roof and deep valleys visible beyond the low stone wall",
+      "category": "Espaço comunitário",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-miradouro-de-teleferico-em-tempestade",
+      "kind": "scenario",
+      "name": "Miradouro de teleférico em tempestade",
+      "description": "Estrutura elevada sob vento e nuvens carregadas.",
+      "output": "a cable-car lookout station during an approaching storm, empty cabins swinging gently at the platform, wet steel railings and dense clouds racing through the valley below",
+      "category": "Montanha",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-museu-do-vento-no-litoral",
+      "kind": "scenario",
+      "name": "Museu do vento no litoral",
+      "description": "Edifício aberto dedicado a correntes de ar e pipas.",
+      "output": "an open-air wind museum on a coastal dune, suspended kites and fabric instruments moving above pale galleries, wind channels shaped in concrete and the sea beyond the roofline",
+      "category": "Arquitetura fantástica",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-scenario-cozinha-de-estacao-lunar",
+      "kind": "scenario",
+      "name": "Cozinha de estação lunar",
+      "description": "Espaço funcional com utensílios preparados para baixa gravidade.",
+      "output": "a lunar habitat kitchen with sealed ingredient drawers, covered pans attached to induction rails, a small hydroponic herb shelf and gray regolith visible through a thick round window",
+      "category": "Ficção científica",
+      "era": "Futuro distante",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-modernismo-tropical",
+      "kind": "style",
+      "name": "Modernismo tropical",
+      "description": "Geometria moderna integrada a vegetação e clima.",
+      "output": "a tropical modernist visual language with bold simplified geometry, generous open spaces, organic shadows and architecture integrated with dense vegetation",
+      "category": "Movimentos",
+      "era": "Século XX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-expressionismo-mineral",
+      "kind": "style",
+      "name": "Expressionismo mineral",
+      "description": "Formas geológicas distorcidas por intensidade emocional.",
+      "output": "mineral expressionism with jagged rock-like contours, forceful directional marks, distorted perspective and surfaces that seem emotionally pressurized",
+      "category": "Experimental",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-surrealismo-domestico",
+      "kind": "style",
+      "name": "Surrealismo doméstico",
+      "description": "Objetos cotidianos organizados de maneira impossível.",
+      "output": "domestic surrealism in which ordinary furniture utensils and rooms behave with quiet impossible logic, rendered with coherent lighting and precise scale shifts",
+      "category": "Surrealismo",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-realismo-de-bairro",
+      "kind": "style",
+      "name": "Realismo de bairro",
+      "description": "Cotidiano local retratado com afeto e precisão.",
+      "output": "neighborhood realism with closely observed everyday gestures, worn but specific environments, natural proportions and unembellished human detail",
+      "category": "Realismo",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-barroco-eletrico",
+      "kind": "style",
+      "name": "Barroco elétrico",
+      "description": "Ornamentação dramática atravessada por energia contemporânea.",
+      "output": "electric baroque with dense ornamental framing, theatrical movement, deep spatial layering and sharp luminous accents cutting through elaborate dark forms",
+      "category": "Ornamental",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-cubismo-de-feira",
+      "kind": "style",
+      "name": "Cubismo de feira",
+      "description": "Volumes de mercado desdobrados em múltiplos planos.",
+      "output": "market-inspired cubism with crates fabrics scales and stalls fractured into overlapping geometric planes, multiple viewpoints held in a lively structured composition",
+      "category": "Geométrico",
+      "era": "Século XX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-futurismo-artesanal",
+      "kind": "style",
+      "name": "Futurismo artesanal",
+      "description": "Velocidade e tecnologia com marcas manuais evidentes.",
+      "output": "handcrafted futurism combining dynamic repeated silhouettes and mechanical rhythms with visible stitching, tool marks, imperfect edges and tactile materials",
+      "category": "Futurismo",
+      "era": "Retrofuturo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-minimalismo-organico",
+      "kind": "style",
+      "name": "Minimalismo orgânico",
+      "description": "Poucos elementos, curvas suaves e matéria natural.",
+      "output": "organic minimalism with a restrained number of forms, soft asymmetrical curves, natural material variation and generous silence between visual elements",
+      "category": "Minimalismo",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-maximalismo-de-arquivo",
+      "kind": "style",
+      "name": "Maximalismo de arquivo",
+      "description": "Composição densa de registros, etiquetas e achados.",
+      "output": "archive maximalism with densely layered documents, labels, specimen cards, marginal notes and collected fragments arranged in an exuberant but readable visual system",
+      "category": "Colagem",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-art-nouveau-botanico",
+      "kind": "style",
+      "name": "Art nouveau botânico",
+      "description": "Linhas sinuosas inspiradas em caules e flores.",
+      "output": "botanical art nouveau with long sinuous stems framing the scene, elegant asymmetry, stylized flowers and ornament that grows naturally from the subject's contours",
+      "category": "Ornamental",
+      "era": "Belle Époque",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-concretismo-de-papel",
+      "kind": "style",
+      "name": "Concretismo de papel",
+      "description": "Composição concreta construída com cortes e dobras.",
+      "output": "paper concrete art with precise cut and folded planes, flat geometric relationships, physical edges and a composition based on structure rather than representation",
+      "category": "Geométrico",
+      "era": "Anos 1950",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-abstracionismo-climatico",
+      "kind": "style",
+      "name": "Abstracionismo climático",
+      "description": "Massas e gestos visuais inspirados por fenômenos do ar.",
+      "output": "weather abstraction with broad drifting masses, pressure-like gradients, abrupt directional gestures and forms suggesting wind humidity and approaching storms without literal depiction",
+      "category": "Abstrato",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-naturalismo-cientifico",
+      "kind": "style",
+      "name": "Naturalismo científico",
+      "description": "Observação rigorosa de anatomia, habitat e materiais.",
+      "output": "scientific naturalism with meticulous anatomical observation, accurate surface structures, clearly described scale and habitat, and restrained illustrative staging",
+      "category": "Científico",
+      "era": "Século XIX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-simbolismo-de-viagem",
+      "kind": "style",
+      "name": "Simbolismo de viagem",
+      "description": "Objetos e paisagens carregados de significado narrativo.",
+      "output": "journey symbolism with roads thresholds maps and vessels used as layered metaphor, contemplative staging and visual details that suggest an inner passage",
+      "category": "Narrativo",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-geometria-textil-digital",
+      "kind": "style",
+      "name": "Geometria têxtil digital",
+      "description": "Tramas tradicionais convertidas em estruturas digitais.",
+      "output": "digital textile geometry with interlaced pixel-like threads, repeated woven modules, precise rhythmic patterns and subtle dimensional depth beneath the flat design",
+      "category": "Digital",
+      "era": "Futuro próximo",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-romantismo-industrial",
+      "kind": "style",
+      "name": "Romantismo industrial",
+      "description": "Grandiosidade emocional aplicada a máquinas e trabalho.",
+      "output": "industrial romanticism with monumental machinery, dramatic atmospheric scale, small human figures and an emotional reverence for labor smoke steel and engineered landscapes",
+      "category": "Narrativo",
+      "era": "Século XIX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-neoclassicismo-espacial",
+      "kind": "style",
+      "name": "Neoclassicismo espacial",
+      "description": "Equilíbrio clássico aplicado a cenários de órbita.",
+      "output": "spatial neoclassicism with balanced temple-like compositions, idealized figures, measured columns and arches translated into orbital architecture and pressure suits",
+      "category": "Ficção científica",
+      "era": "Futuro distante",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-pos-impressionismo-urbano",
+      "kind": "style",
+      "name": "Pós-impressionismo urbano",
+      "description": "Pinceladas estruturadas e cor expressiva na cidade.",
+      "output": "urban post-impressionism with distinct directional brushwork, vibrating color relationships, recognizable city forms and an emphasis on emotional structure over optical accuracy",
+      "category": "Pintura",
+      "era": "Século XX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-fauvismo-de-sertao",
+      "kind": "style",
+      "name": "Fauvismo de sertão",
+      "description": "Cor livre e intensa aplicada à paisagem de caatinga.",
+      "output": "sertão fauvism with bold non-naturalistic color, simplified dry branches and red earth, energetic shapes and a heat-driven emotional intensity",
+      "category": "Pintura brasileira",
+      "era": "Século XX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-realismo-magico-fotografico",
+      "kind": "style",
+      "name": "Realismo mágico fotográfico",
+      "description": "Fotografia crível com um único desvio impossível.",
+      "output": "photographic magical realism with an otherwise observational naturalistic image and one precisely integrated impossible event presented without spectacle or visual exaggeration",
+      "category": "Narrativo",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-fantasia-botanica-vitoriana",
+      "kind": "style",
+      "name": "Fantasia botânica vitoriana",
+      "description": "Plantas imaginárias com ornamentação do século XIX.",
+      "output": "Victorian botanical fantasy with elaborate invented plants, fine engraved detail, dark polished wood and glass specimens, and carefully arranged ornamental excess",
+      "category": "Fantasia",
+      "era": "Século XIX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-gotico-de-estacao-espacial",
+      "kind": "style",
+      "name": "Gótico de estação espacial",
+      "description": "Arcos e verticalidade sombria em ambiente orbital.",
+      "output": "space-station gothic with soaring ribbed corridors, pointed structural arches, small illuminated figures, cold metallic stone-like surfaces and immense shadowed vertical space",
+      "category": "Ficção científica",
+      "era": "Futuro distante",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-noir-de-verao",
+      "kind": "style",
+      "name": "Noir de verão",
+      "description": "Mistério de alto contraste sob sol e calor.",
+      "output": "summer noir with hard midday shadows, sun-bleached surfaces, tense glances and mystery conveyed through heat reflective glass and sharply isolated figures rather than night fog",
+      "category": "Cinematográfico",
+      "era": "Anos 1950",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-western-de-manguezal",
+      "kind": "style",
+      "name": "Western de manguezal",
+      "description": "Linguagem de fronteira adaptada ao litoral alagado.",
+      "output": "mangrove western aesthetics with lone figures crossing tidal flats, weathered boats instead of horses, wide frontier-like horizons and tense standoffs framed by twisted roots",
+      "category": "Cinematográfico",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-road-movie-estatico",
+      "kind": "style",
+      "name": "Road movie estático",
+      "description": "Sensação de viagem construída sem mostrar movimento.",
+      "output": "static road-movie storytelling with paused vehicles, roadside objects, distant destinations and compositions that imply a long journey through stillness and accumulated travel wear",
+      "category": "Cinematográfico",
+      "era": "Anos 1970",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-documental-lirico",
+      "kind": "style",
+      "name": "Documental lírico",
+      "description": "Registro observacional com ritmo visual contemplativo.",
+      "output": "lyrical documentary imagery with candid natural moments, patient framing, authentic environmental detail and a quiet poetic rhythm that never hides the reality of the scene",
+      "category": "Documental",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-fotorrealismo-de-memoria",
+      "kind": "style",
+      "name": "Fotorrealismo de memória",
+      "description": "Precisão fotográfica suavizada por lembranças imprecisas.",
+      "output": "memory photorealism with sharply rendered central details, subtly inconsistent peripheral objects and gentle temporal distortions that feel recalled rather than directly observed",
+      "category": "Fotográfico",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-impressionismo-de-chuva",
+      "kind": "style",
+      "name": "Impressionismo de chuva",
+      "description": "Luz e movimento dissolvidos por água atmosférica.",
+      "output": "rain impressionism with broken reflections, soft transient strokes, figures reduced to luminous silhouettes and a sense of weather captured in a fleeting instant",
+      "category": "Pintura",
+      "era": "Século XIX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-pontilhismo-de-cidade",
+      "kind": "style",
+      "name": "Pontilhismo de cidade",
+      "description": "Áreas urbanas construídas por pontos de cor acumulados.",
+      "output": "urban pointillism with buildings streets and figures assembled from distinct accumulated dots, optical color mixing and lively density across the entire cityscape",
+      "category": "Pintura",
+      "era": "Século XX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-constructivismo-de-cartaz",
+      "kind": "style",
+      "name": "Constructivismo de cartaz",
+      "description": "Diagonais e tipografia com propósito gráfico direto.",
+      "output": "poster constructivism with forceful diagonals, geometric blocks, integrated typographic space, dynamic figures and an immediate public-message visual hierarchy",
+      "category": "Design gráfico",
+      "era": "Anos 1920",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-suprematismo-de-objetos",
+      "kind": "style",
+      "name": "Suprematismo de objetos",
+      "description": "Utensílios reduzidos a relações geométricas essenciais.",
+      "output": "object suprematism reducing familiar tools and vessels to floating basic geometric relationships, sparse spatial tension and nonliteral compositional balance",
+      "category": "Geométrico",
+      "era": "Anos 1920",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-de-stijl-domestico",
+      "kind": "style",
+      "name": "De Stijl doméstico",
+      "description": "Grade primária aplicada a móveis e espaços comuns.",
+      "output": "domestic De Stijl composition with orthogonal partitions, primary-color planes, household objects disciplined into a grid and small asymmetries preserving everyday warmth",
+      "category": "Design gráfico",
+      "era": "Anos 1920",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-art-deco-costeiro",
+      "kind": "style",
+      "name": "Art déco costeiro",
+      "description": "Elegância geométrica associada a portos e oceanos.",
+      "output": "coastal art deco with streamlined geometric ornament, stepped silhouettes, nautical motifs, polished maritime materials and an elegant sense of forward motion",
+      "category": "Ornamental",
+      "era": "Anos 1930",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-kitsch-de-sala-de-estar",
+      "kind": "style",
+      "name": "Kitsch de sala de estar",
+      "description": "Excesso afetivo de enfeites, estampas e lembranças.",
+      "output": "living-room kitsch with sincerely arranged decorative excess, clashing floral patterns, souvenir figurines, glossy surfaces and an affectionate rather than ironic attention to detail",
+      "category": "Cotidiano",
+      "era": "Anos 1970",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-estetica-de-manual-tecnico",
+      "kind": "style",
+      "name": "Estética de manual técnico",
+      "description": "Diagramas, cortes e instruções visuais precisas.",
+      "output": "technical-manual aesthetics with exploded views, numbered callouts, clean sectional diagrams, consistent line weights and instructional spatial organization",
+      "category": "Ilustração técnica",
+      "era": "Anos 1960",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-colagem-de-dicionario",
+      "kind": "style",
+      "name": "Colagem de dicionário",
+      "description": "Definições e fragmentos impressos formando novas cenas.",
+      "output": "dictionary collage with clipped definitions, mismatched type sizes, torn printed illustrations and overlapping verbal fragments that create a second visual narrative",
+      "category": "Colagem",
+      "era": "Anos 1960",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-herbario-impossivel",
+      "kind": "style",
+      "name": "Herbário impossível",
+      "description": "Ilustração científica de espécies que não existem.",
+      "output": "an impossible herbarium illustration with rigorously drawn invented specimens, labeled roots and cross-sections, believable botanical anatomy and understated notes on impossible behavior",
+      "category": "Científico",
+      "era": "Século XIX reinventado",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-conto-de-fadas-sombrio",
+      "kind": "style",
+      "name": "Conto de fadas sombrio",
+      "description": "Encantamento narrativo com ameaça contida e floresta profunda.",
+      "output": "dark fairy-tale illustration with intricate forest detail, deceptively charming figures, unsettling symbolic objects and a clear sense that wonder and danger share the same space",
+      "category": "Narrativo",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-realismo-social-de-interior",
+      "kind": "style",
+      "name": "Realismo social de interior",
+      "description": "Vida doméstica e trabalho retratados sem idealização.",
+      "output": "interior social realism with unidealized domestic spaces, visible labor, ordinary gestures, restrained natural light and close attention to the social meaning of objects",
+      "category": "Realismo",
+      "era": "Século XX",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-utopia-modernista-brasileira",
+      "kind": "style",
+      "name": "Utopia modernista brasileira",
+      "description": "Arquitetura otimista entre paisagem e vida coletiva.",
+      "output": "Brazilian modernist utopia with sweeping concrete curves, generous collective spaces, brise-soleil patterns, lush planted interiors and an optimistic humane architectural scale",
+      "category": "Arquitetura",
+      "era": "Futuro imaginado nos anos 1960",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-retrofuturismo-de-eletrodomesticos",
+      "kind": "style",
+      "name": "Retrofuturismo de eletrodomésticos",
+      "description": "Futuro doméstico imaginado pelo design de antigas cozinhas.",
+      "output": "appliance retrofuturism with rounded chrome household machines, chunky controls, optimistic utility diagrams and a domestic future imagined through mid-century product design",
+      "category": "Retrofuturo",
+      "era": "Futuro imaginado nos anos 1950",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-fantasia-de-papel-dobrado",
+      "kind": "style",
+      "name": "Fantasia de papel dobrado",
+      "description": "Mundo impossível construído com dobras e volumes de papel.",
+      "output": "folded-paper fantasy with crisp origami structures, layered cardstock landscapes, visible creases and tiny fantastical scenes emerging from the geometry of the folds",
+      "category": "Papel",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-expressionismo-de-tinta-sumie",
+      "kind": "style",
+      "name": "Expressionismo de tinta sumiê",
+      "description": "Gestos de nanquim entre controle e intensidade.",
+      "output": "sumi ink expressionism with economical black gestures, varied dry and loaded brush marks, expansive untouched paper and emotional force concentrated in a few strokes",
+      "category": "Tinta",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-minimalismo-de-sombra",
+      "kind": "style",
+      "name": "Minimalismo de sombra",
+      "description": "Poucos objetos definidos principalmente por suas projeções.",
+      "output": "shadow minimalism with sparse physical objects, long precisely shaped shadows carrying most of the narrative, empty surfaces and rigorous control of negative space",
+      "category": "Minimalismo",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-barroco-de-feira-livre",
+      "kind": "style",
+      "name": "Barroco de feira livre",
+      "description": "Dramaturgia ornamental com frutas, lonas e multidões.",
+      "output": "open-air-market baroque with abundant produce arranged like theatrical still life, swirling fabrics, deep layered crowds and dramatic diagonals of light through canvas stalls",
+      "category": "Ornamental",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-surrealismo-arqueologico",
+      "kind": "style",
+      "name": "Surrealismo arqueológico",
+      "description": "Escavações revelando objetos que desafiam a cronologia.",
+      "output": "archaeological surrealism with meticulous excavation layers containing anachronistic objects, carefully measured ruins and impossible artifacts presented with scholarly seriousness",
+      "category": "Surrealismo",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-arquivo-meteorologico",
+      "kind": "style",
+      "name": "Arquivo meteorológico",
+      "description": "Linguagem visual de mapas, registros e instrumentos do tempo.",
+      "output": "meteorological-archive aesthetics with isobar lines, instrument readings, dated weather cards, translucent map overlays and atmospheric forms organized as collected evidence",
+      "category": "Ilustração técnica",
+      "era": "Anos 1960",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-cubo-futurismo-de-oficina",
+      "kind": "style",
+      "name": "Cubo-futurismo de oficina",
+      "description": "Ferramentas e movimento desdobrados em geometria dinâmica.",
+      "output": "workshop cubo-futurism with tools benches and working bodies fractured into dynamic angular planes, repeated mechanical motion and tactile metal textures within the geometry",
+      "category": "Geométrico",
+      "era": "Anos 1910 reinventados",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-naturalismo-de-microescala",
+      "kind": "style",
+      "name": "Naturalismo de microescala",
+      "description": "Pequenos ecossistemas tratados como paisagens monumentais.",
+      "output": "micro-scale naturalism with moss soil fibers and tiny organisms rendered as immense landscapes, accurate microscopic textures and a convincing sense of miniature scale",
+      "category": "Científico",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-style-pop-art-de-supermercado",
+      "kind": "style",
+      "name": "Pop art de supermercado",
+      "description": "Embalagens e repetição comercial em linguagem gráfica intensa.",
+      "output": "supermarket pop art with repeated packages, flat commercial shapes, bold registration offsets, shelf-label rhythms and everyday products elevated into graphic icons",
+      "category": "Pop",
+      "era": "Anos 1960",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-assombro-sereno",
+      "kind": "mood",
+      "name": "Assombro sereno",
+      "description": "Admiração diante do desconhecido, sem medo.",
+      "output": "a serene sense of awe, quiet wonder before something vast and unfamiliar, open body language and an atmosphere of attentive discovery",
+      "category": "Contemplação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-urgencia-contida",
+      "kind": "mood",
+      "name": "Urgência contida",
+      "description": "Pressa intensa mantida sob controle aparente.",
+      "output": "contained urgency, purposeful gestures, compressed pauses and the feeling that every second matters while outward order is still maintained",
+      "category": "Tensão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-familiaridade-estranha",
+      "kind": "mood",
+      "name": "Familiaridade estranha",
+      "description": "Algo reconhecível que parece sutilmente fora do lugar.",
+      "output": "uncanny familiarity, an ordinary scene made emotionally unsettling by one slight displacement, as if a remembered place has returned subtly altered",
+      "category": "Mistério",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-alegria-discreta",
+      "kind": "mood",
+      "name": "Alegria discreta",
+      "description": "Felicidade pequena expressa sem celebração grandiosa.",
+      "output": "discreet joy, restrained smiles, relaxed shoulders and small warm moments of pleasure that feel genuine rather than performative",
+      "category": "Emoção",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-solidao-acolhedora",
+      "kind": "mood",
+      "name": "Solidão acolhedora",
+      "description": "Estar sozinho com conforto, espaço e autonomia.",
+      "output": "welcoming solitude, a comfortable self-chosen stillness, personal space and quiet independence without abandonment or emotional desolation",
+      "category": "Contemplação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-suspense-cotidiano",
+      "kind": "mood",
+      "name": "Suspense cotidiano",
+      "description": "Expectativa de mistério em uma situação comum.",
+      "output": "everyday suspense, routine gestures interrupted by the expectation of news, a paused movement and ordinary objects acquiring sudden narrative importance",
+      "category": "Tensão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-reverencia",
+      "kind": "mood",
+      "name": "Reverência",
+      "description": "Respeito profundo diante de algo maior que o indivíduo.",
+      "output": "reverence, humbled posture, careful movement and a contemplative emotional register inspired by something sacred ancestral or immensely larger than the individual",
+      "category": "Contemplação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-vertigem-controlada",
+      "kind": "mood",
+      "name": "Vertigem controlada",
+      "description": "Desequilíbrio emocionante sem perda total de domínio.",
+      "output": "controlled vertigo, exhilarating instability held within deliberate movement, heightened spatial awareness and a thrilling but manageable loss of balance",
+      "category": "Intensidade",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-cansaco-poetico",
+      "kind": "mood",
+      "name": "Cansaço poético",
+      "description": "Exaustão honesta com beleza nas pequenas pausas.",
+      "output": "poetic weariness, slowed gestures, heavy eyelids and meaningful pauses, with dignity and tenderness in the visible need for rest",
+      "category": "Emoção",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-otimismo-resiliente",
+      "kind": "mood",
+      "name": "Otimismo resiliente",
+      "description": "Esperança construída apesar de sinais de dificuldade.",
+      "output": "resilient optimism, visible signs of hardship met by practical gestures of repair, mutual support and a credible forward-looking emotional energy",
+      "category": "Social",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-melancolia-solar",
+      "kind": "mood",
+      "name": "Melancolia solar",
+      "description": "Tristeza leve sob luz clara e ambiente bonito.",
+      "output": "sunlit melancholy, a gentle emotional ache existing beneath bright pleasant surroundings, warm beauty contrasted with distant gazes and unspoken absence",
+      "category": "Emoção",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-intimidade-publica",
+      "kind": "mood",
+      "name": "Intimidade pública",
+      "description": "Gestos reservados compartilhados em espaço movimentado.",
+      "output": "public intimacy, a private emotional exchange unfolding within a busy shared space, subtle gestures creating a small protected world between people",
+      "category": "Social",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-euforia-coletiva",
+      "kind": "mood",
+      "name": "Euforia coletiva",
+      "description": "Explosão de entusiasmo compartilhado por um grupo.",
+      "output": "collective euphoria, synchronized excitement, spontaneous embraces and a crowd carried by the same joyful emotional peak",
+      "category": "Celebração",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-calma-vigilante",
+      "kind": "mood",
+      "name": "Calma vigilante",
+      "description": "Tranquilidade atenta, pronta para responder ao entorno.",
+      "output": "vigilant calm, relaxed but attentive posture, measured breathing and quiet readiness, with no panic despite close observation of the surroundings",
+      "category": "Tensão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-deslumbre-infantil",
+      "kind": "mood",
+      "name": "Deslumbre infantil",
+      "description": "Descoberta imediata do mundo com espanto genuíno.",
+      "output": "childlike wonder, unguarded curiosity and delighted astonishment at ordinary discoveries, expressed through spontaneous attention rather than exaggerated excitement",
+      "category": "Emoção",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-desconforto-elegante",
+      "kind": "mood",
+      "name": "Desconforto elegante",
+      "description": "Tensão social contida por postura e boas maneiras.",
+      "output": "elegant discomfort, polished appearances and controlled etiquette barely concealing social tension, uncertain glances and carefully measured distance",
+      "category": "Social",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-tristeza-quieta",
+      "kind": "mood",
+      "name": "Tristeza quieta",
+      "description": "Pesar recolhido, sem dramatização explícita.",
+      "output": "quiet sadness, inward grief expressed through still hands, lowered attention and small pauses, without theatrical tears or melodramatic gesture",
+      "category": "Emoção",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-alivio-depois-da-chuva",
+      "kind": "mood",
+      "name": "Alívio depois da chuva",
+      "description": "Sensação de abertura após pressão atmosférica.",
+      "output": "relief after rain, renewed breathing space, tentative openness and the emotional release of a threshold passed as the environment begins to clear",
+      "category": "Contemplação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-curiosidade-cautelosa",
+      "kind": "mood",
+      "name": "Curiosidade cautelosa",
+      "description": "Desejo de explorar sem abandonar a prudência.",
+      "output": "cautious curiosity, a careful forward lean, attentive eyes and the desire to approach something unknown while maintaining a clear sense of self-protection",
+      "category": "Descoberta",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-nostalgia-futura",
+      "kind": "mood",
+      "name": "Nostalgia futura",
+      "description": "Saudade por um tempo que ainda não aconteceu.",
+      "output": "future nostalgia, a tender longing for people places and possibilities not yet experienced, combining hopeful anticipation with the emotional texture of memory",
+      "category": "Temporal",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-misterio-amigavel",
+      "kind": "mood",
+      "name": "Mistério amigável",
+      "description": "Curiosidade e segredo sem ameaça ou hostilidade.",
+      "output": "friendly mystery, intriguing unanswered details presented with openness and playfulness, inviting investigation without dread or danger",
+      "category": "Mistério",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-solenidade-domestica",
+      "kind": "mood",
+      "name": "Solenidade doméstica",
+      "description": "Pequenos rituais diários tratados com grande importância.",
+      "output": "domestic solemnity, ordinary household rituals performed with ceremonial care, deliberate gestures and quiet emotional significance attached to humble objects",
+      "category": "Cotidiano",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-humor-absurdo",
+      "kind": "mood",
+      "name": "Humor absurdo",
+      "description": "Riso provocado por incoerência apresentada com seriedade.",
+      "output": "absurd humor, a deadpan emotional register in which illogical events are treated with complete seriousness, creating comedy through incongruity rather than exaggerated expressions",
+      "category": "Humor",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-furia-contida",
+      "kind": "mood",
+      "name": "Fúria contida",
+      "description": "Raiva intensa comprimida em gestos mínimos.",
+      "output": "contained fury, tightly restrained anger visible in a set jaw, precise movements and compressed energy, with confrontation imminent but not yet released",
+      "category": "Intensidade",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-ternura-aspera",
+      "kind": "mood",
+      "name": "Ternura áspera",
+      "description": "Cuidado sincero expresso por pessoas pouco delicadas.",
+      "output": "rough tenderness, sincere care conveyed through awkward practical gestures, guarded expressions and weathered hands helping without sentimental display",
+      "category": "Emoção",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-encantamento-cientifico",
+      "kind": "mood",
+      "name": "Encantamento científico",
+      "description": "Fascínio diante de fenômenos observáveis e mensuráveis.",
+      "output": "scientific enchantment, focused amazement before observable phenomena, curious faces and instruments revealing a world more extraordinary than expected",
+      "category": "Descoberta",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-desamparo-urbano",
+      "kind": "mood",
+      "name": "Desamparo urbano",
+      "description": "Sensação de isolamento em meio à estrutura da cidade.",
+      "output": "urban helplessness, emotional exposure within an indifferent built environment, small figures navigating systems and distances that feel larger than their capacity",
+      "category": "Social",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-pertencimento",
+      "kind": "mood",
+      "name": "Pertencimento",
+      "description": "Conforto de ser reconhecido como parte de um grupo.",
+      "output": "belonging, relaxed mutual recognition, shared rituals and open spatial arrangements that communicate being accepted without needing to perform",
+      "category": "Social",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-liberdade-precaria",
+      "kind": "mood",
+      "name": "Liberdade precária",
+      "description": "Sensação de expansão acompanhada por risco real.",
+      "output": "precarious freedom, exhilarating openness tempered by visible uncertainty, improvised choices and the emotional knowledge that independence has a cost",
+      "category": "Intensidade",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-contemplacao-vasta",
+      "kind": "mood",
+      "name": "Contemplação vasta",
+      "description": "Silêncio reflexivo diante de grande escala.",
+      "output": "vast contemplation, unhurried attention before immense space, reduced gesture and the feeling of thought expanding beyond immediate concerns",
+      "category": "Contemplação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-intensidade-ritual",
+      "kind": "mood",
+      "name": "Intensidade ritual",
+      "description": "Energia concentrada em gestos repetidos e simbólicos.",
+      "output": "ritual intensity, concentrated shared focus, repeated symbolic gestures and an atmosphere in which every movement carries accumulated meaning",
+      "category": "Ritual",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-suspensao-do-tempo",
+      "kind": "mood",
+      "name": "Suspensão do tempo",
+      "description": "Instante em que tudo parece parar por um momento.",
+      "output": "suspended time, a held instant in which gestures and surroundings feel temporarily paused, emotional attention stretched between what just happened and what comes next",
+      "category": "Temporal",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-confianca-silenciosa",
+      "kind": "mood",
+      "name": "Confiança silenciosa",
+      "description": "Segurança demonstrada por presença, não por exibição.",
+      "output": "silent confidence, grounded posture, economical gestures and calm direct attention, communicating capability without boasting or aggression",
+      "category": "Emoção",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-inquietacao-eletrica",
+      "kind": "mood",
+      "name": "Inquietação elétrica",
+      "description": "Nervosismo acelerado com energia prestes a escapar.",
+      "output": "electric restlessness, quick shifts of attention, kinetic nervous energy and the sensation that stillness cannot hold for more than a moment",
+      "category": "Intensidade",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-leveza-matinal",
+      "kind": "mood",
+      "name": "Leveza matinal",
+      "description": "Sensação limpa de começo e possibilidades abertas.",
+      "output": "morning lightness, unhurried beginnings, relaxed movement and the fresh emotional possibility of a day not yet shaped by decisions",
+      "category": "Contemplação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-saudade-de-lugar-inventado",
+      "kind": "mood",
+      "name": "Saudade de lugar inventado",
+      "description": "Nostalgia por um espaço que só existe na imaginação.",
+      "output": "longing for an invented place, wistful attachment to an imagined home, familiar emotional details applied to somewhere that has never physically existed",
+      "category": "Temporal",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-dignidade-no-trabalho",
+      "kind": "mood",
+      "name": "Dignidade no trabalho",
+      "description": "Respeito pela concentração e pelo valor do ofício.",
+      "output": "dignity in labor, focused effort, competent hands and an unsentimental sense of pride in useful work, with neither romanticization nor diminishment",
+      "category": "Social",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-concentracao-artesanal",
+      "kind": "mood",
+      "name": "Concentração artesanal",
+      "description": "Atenção total ao gesto manual e ao material.",
+      "output": "artisanal concentration, absorbed attention on material and hand movement, a narrowed quiet world in which precision and touch matter more than distraction",
+      "category": "Cotidiano",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-despedida-serena",
+      "kind": "mood",
+      "name": "Despedida serena",
+      "description": "Separação aceita com carinho e tranquilidade.",
+      "output": "serene farewell, affectionate acceptance of departure, unhurried final gestures and the calm sadness of leaving without conflict or abandonment",
+      "category": "Emoção",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-mood-desobediencia-alegre",
+      "kind": "mood",
+      "name": "Desobediência alegre",
+      "description": "Ruptura de regras com leveza e espírito brincalhão.",
+      "output": "joyful disobedience, playful rule-breaking, shared conspiratorial delight and a buoyant sense of freedom without cruelty or hostility",
+      "category": "Humor",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-plano-holandes-sutil",
+      "kind": "composition",
+      "name": "Plano holandês sutil",
+      "description": "Inclinação discreta para introduzir instabilidade.",
+      "output": "a subtly tilted Dutch angle, approximately eight degrees off horizontal, preserving a naturalistic scene while introducing restrained psychological instability",
+      "category": "Ângulo",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-travelling-lateral-continuo",
+      "kind": "composition",
+      "name": "Travelling lateral contínuo",
+      "description": "Câmera acompanha o sujeito em movimento paralelo.",
+      "output": "a continuous lateral tracking shot moving parallel to the subject, maintaining consistent distance while foreground and background slide at different speeds",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-enquadramento-pela-janela",
+      "kind": "composition",
+      "name": "Enquadramento pela janela",
+      "description": "A cena observada através de uma moldura arquitetônica.",
+      "output": "frame the scene through a window, using the sill and side frames as a clear architectural border while keeping the main subject readable beyond the glass",
+      "category": "Enquadramento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-profundidade-em-tres-planos",
+      "kind": "composition",
+      "name": "Profundidade em três planos",
+      "description": "Elementos nítidos distribuídos em distâncias diferentes.",
+      "output": "compose three distinct depth planes with a foreground object, the principal subject at middle distance and a meaningful background element, all spatially legible",
+      "category": "Profundidade",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-perspectiva-de-corredor",
+      "kind": "composition",
+      "name": "Perspectiva de corredor",
+      "description": "Linhas convergentes conduzindo o olhar pela passagem.",
+      "output": "a corridor perspective with walls floor and ceiling forming strong converging lines, the subject placed along the visual path rather than simply centered",
+      "category": "Perspectiva",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-composicao-em-arco",
+      "kind": "composition",
+      "name": "Composição em arco",
+      "description": "Elementos organizados em curva ao redor do foco.",
+      "output": "arrange the principal visual elements along a broad arc around the focal subject, creating a curved reading path and balanced open space inside the arc",
+      "category": "Composição",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-espaco-negativo-superior",
+      "kind": "composition",
+      "name": "Espaço negativo superior",
+      "description": "Grande área vazia acima do elemento principal.",
+      "output": "place the subject low in the frame with generous uncluttered negative space above, using the empty upper field to emphasize scale anticipation or isolation",
+      "category": "Espaço negativo",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-linha-de-fuga-deslocada",
+      "kind": "composition",
+      "name": "Linha de fuga deslocada",
+      "description": "Convergência fora do centro para criar percurso lateral.",
+      "output": "use an off-center vanishing point near one edge of the frame, with architectural or environmental lines guiding attention diagonally toward the subject",
+      "category": "Perspectiva",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-detalhe-das-maos",
+      "kind": "composition",
+      "name": "Detalhe das mãos",
+      "description": "A narrativa concentrada em gestos e objetos manipulados.",
+      "output": "a tight composition focused on the subject's hands and the object being handled, excluding the face while preserving material detail and the intention of the gesture",
+      "category": "Detalhe",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-panoramica-vertical",
+      "kind": "composition",
+      "name": "Panorâmica vertical",
+      "description": "Formato alto explorando escala de baixo para cima.",
+      "output": "a tall vertical panorama that reveals the environment from ground level to its highest point, using stacked spatial layers and an elongated sense of scale",
+      "category": "Formato",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-grande-angular-proxima",
+      "kind": "composition",
+      "name": "Grande angular próxima",
+      "description": "Lente ampla perto do sujeito, com entorno evidente.",
+      "output": "a close wide-angle composition with the subject near the lens, slight natural perspective exaggeration and substantial environmental context still visible around them",
+      "category": "Lente",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-ponto-de-vista-do-objeto",
+      "kind": "composition",
+      "name": "Ponto de vista do objeto",
+      "description": "Câmera posicionada onde estaria um objeto da cena.",
+      "output": "position the camera at the physical location of a key object in the scene, looking back toward the subject and making the object's surroundings part of the foreground",
+      "category": "Ponto de vista",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-vista-de-dentro-do-armario",
+      "kind": "composition",
+      "name": "Vista de dentro do armário",
+      "description": "Interior escuro observa a cena pela porta aberta.",
+      "output": "view the scene from inside a cupboard, with dark interior edges framing the open doorway and the subject visible in the brighter room beyond",
+      "category": "Ponto de vista",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-plano-picado-moderado",
+      "kind": "composition",
+      "name": "Plano picado moderado",
+      "description": "Câmera elevada sem alcançar visão totalmente zenital.",
+      "output": "a moderately high-angle shot looking down at roughly thirty degrees, revealing relationships between the subject and the ground without becoming a top-down view",
+      "category": "Ângulo",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-perfil-duplo-em-movimento",
+      "kind": "composition",
+      "name": "Perfil duplo em movimento",
+      "description": "Duas figuras laterais relacionadas por direção e ritmo.",
+      "output": "compose two subjects in profile moving through the frame, their facing directions and spacing creating a clear visual rhythm and narrative relationship",
+      "category": "Retrato",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-simetria-interrompida",
+      "kind": "composition",
+      "name": "Simetria interrompida",
+      "description": "Estrutura quase simétrica quebrada por um elemento.",
+      "output": "build an almost symmetrical composition and interrupt it with one intentionally displaced element, preserving overall order while creating a precise point of tension",
+      "category": "Composição",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-moldura-circular",
+      "kind": "composition",
+      "name": "Moldura circular",
+      "description": "Abertura redonda delimita a área principal da cena.",
+      "output": "use a circular opening or rounded environmental structure as the primary frame, with the subject contained inside and peripheral areas naturally obscured",
+      "category": "Enquadramento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-reflexo-fragmentado-em-vitrine",
+      "kind": "composition",
+      "name": "Reflexo fragmentado em vitrine",
+      "description": "Vidro divide a cena entre interior e reflexo externo.",
+      "output": "compose through a shop window where reflected street fragments and the interior subject occupy separate readable zones, creating a layered but controlled double image",
+      "category": "Reflexo",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-multidao-em-padrao",
+      "kind": "composition",
+      "name": "Multidão em padrão",
+      "description": "Repetição de pessoas forma ritmo e orientação visual.",
+      "output": "arrange a crowd as a visible pattern of repeated bodies and gestures, with one controlled variation directing attention to the principal subject",
+      "category": "Multidão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-isolamento-no-canto-do-quadro",
+      "kind": "composition",
+      "name": "Isolamento no canto do quadro",
+      "description": "Sujeito pequeno separado por espaço vazio ao redor.",
+      "output": "place a small subject in one far corner of the frame, surrounded by a large coherent empty field that emphasizes isolation without cropping the environment",
+      "category": "Espaço negativo",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-olhar-atraves-de-cortina",
+      "kind": "composition",
+      "name": "Olhar através de cortina",
+      "description": "Tecido parcial encobre e revela a cena por camadas.",
+      "output": "view the subject through a partially open curtain, using translucent fabric and its folds to reveal and conceal different portions of the scene",
+      "category": "Enquadramento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-distancia-intima",
+      "kind": "composition",
+      "name": "Distância íntima",
+      "description": "Proximidade de retrato sem chegar ao close extremo.",
+      "output": "frame the subject at intimate conversational distance from upper chest upward, preserving natural facial proportions and a small amount of meaningful surrounding space",
+      "category": "Retrato",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-camera-na-altura-de-crianca",
+      "kind": "composition",
+      "name": "Câmera na altura de criança",
+      "description": "Perspectiva baixa baseada na experiência de uma criança.",
+      "output": "place the camera at a child's eye height, keeping adult figures furniture and doorways naturally taller while maintaining a grounded horizontal perspective",
+      "category": "Ponto de vista",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-camera-presa-ao-objeto",
+      "kind": "composition",
+      "name": "Câmera presa ao objeto",
+      "description": "Ponto de vista se desloca junto com um item em uso.",
+      "output": "mount the visual viewpoint on a moving handheld object, showing the subject from the object's trajectory with nearby motion emphasized and the background shifting around it",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-ombros-como-moldura",
+      "kind": "composition",
+      "name": "Ombros como moldura",
+      "description": "Figuras próximas delimitam a visão do sujeito principal.",
+      "output": "use the shoulders of two nearby foreground figures as a soft frame around the principal subject, with the foreground bodies cropped and the central face fully readable",
+      "category": "Retrato",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-panorama-em-camadas",
+      "kind": "composition",
+      "name": "Panorama em camadas",
+      "description": "Paisagem ampla organizada por faixas de profundidade.",
+      "output": "a wide panoramic composition organized into successive landscape bands, each layer distinct in scale and detail, leading the eye laterally and into depth",
+      "category": "Paisagem",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-escala-pelo-horizonte",
+      "kind": "composition",
+      "name": "Escala pelo horizonte",
+      "description": "Linha do horizonte evidencia a pequenez do sujeito.",
+      "output": "use a long uninterrupted horizon as the principal compositional line, placing the subject against it to establish scale and orient the surrounding space",
+      "category": "Escala",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-close-com-espaco-para-o-olhar",
+      "kind": "composition",
+      "name": "Close com espaço para o olhar",
+      "description": "Rosto próximo recebe área livre na direção do olhar.",
+      "output": "a close portrait with intentional lead room in the direction of the subject's gaze, cropping the opposite side more tightly while keeping the eyes sharp",
+      "category": "Retrato",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-figura-pequena-na-arquitetura",
+      "kind": "composition",
+      "name": "Figura pequena na arquitetura",
+      "description": "Pessoa funciona como referência de escala do edifício.",
+      "output": "compose a small human figure within a much larger architectural structure, using the figure as a precise scale reference while preserving the building's dominant geometry",
+      "category": "Escala",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-quadro-dentro-do-quadro",
+      "kind": "composition",
+      "name": "Quadro dentro do quadro",
+      "description": "Segunda moldura interna reforça o foco narrativo.",
+      "output": "create a frame within the frame using an interior doorway, mirror or opening, aligning the secondary frame around the subject while retaining context in the outer frame",
+      "category": "Enquadramento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-deslocamento-em-paralaxe",
+      "kind": "composition",
+      "name": "Deslocamento em paralaxe",
+      "description": "Planos se movem em velocidades diferentes na composição.",
+      "output": "a parallax composition with clearly separated foreground subject and distant background, implying lateral camera motion through different relative displacements of each plane",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-composicao-em-zigue-zague",
+      "kind": "composition",
+      "name": "Composição em zigue-zague",
+      "description": "Percurso visual alterna direções entre os elementos.",
+      "output": "arrange visual anchors in a zigzag reading path across the image, alternating left and right points of interest until the eye reaches the principal subject",
+      "category": "Composição",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-diagonal-de-acao",
+      "kind": "composition",
+      "name": "Diagonal de ação",
+      "description": "Movimento principal atravessa a imagem em diagonal.",
+      "output": "organize the action along a strong diagonal from one lower corner toward the opposite upper corner, using bodies and environmental lines to reinforce the direction",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-sujeito-fora-do-eixo",
+      "kind": "composition",
+      "name": "Sujeito fora do eixo",
+      "description": "Foco deslocado equilibra elementos secundários da cena.",
+      "output": "place the principal subject well off the central axis and balance the composition with a quieter secondary element, preserving an intentional asymmetrical weight",
+      "category": "Composição",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-plano-geral-vertical",
+      "kind": "composition",
+      "name": "Plano geral vertical",
+      "description": "Visão ampla em formato alto para espaços elevados.",
+      "output": "a vertical wide shot showing the full height of the environment and the subject within it, prioritizing architectural or natural vertical scale over lateral breadth",
+      "category": "Escala",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-vista-elevada-de-multidao",
+      "kind": "composition",
+      "name": "Vista elevada de multidão",
+      "description": "Câmera acima das cabeças revela fluxos coletivos.",
+      "output": "an elevated eye-level-to-balcony viewpoint over a crowd, high enough to reveal collective paths and group formations but not a direct aerial or top-down view",
+      "category": "Multidão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-retrato-de-costas",
+      "kind": "composition",
+      "name": "Retrato de costas",
+      "description": "Identidade sugerida por postura, roupa e direção.",
+      "output": "a rear-view portrait showing the subject from behind, with posture clothing and gaze direction carrying identity while the surrounding destination remains visible",
+      "category": "Retrato",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-primeiro-plano-recortado",
+      "kind": "composition",
+      "name": "Primeiro plano recortado",
+      "description": "Objeto próximo parcialmente cortado cria proximidade.",
+      "output": "place a recognizable object very close to the lens and crop it deliberately at one frame edge, creating immediate foreground depth while the subject remains clear behind it",
+      "category": "Profundidade",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-sequencia-de-portas",
+      "kind": "composition",
+      "name": "Sequência de portas",
+      "description": "Vãos sucessivos conduzem a atenção até o sujeito.",
+      "output": "compose through a succession of aligned open doorways, each smaller with distance, until the final opening reveals the principal subject in the deepest room",
+      "category": "Profundidade",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-composition-plano-de-conjunto-estatico",
+      "kind": "composition",
+      "name": "Plano de conjunto estático",
+      "description": "Grupo inteiro visível em enquadramento fixo e equilibrado.",
+      "output": "a static ensemble shot showing every member of the group from head to toe, balanced spacing and clear sightlines between the figures without camera movement",
+      "category": "Multidão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-cacau-e-hortela",
+      "kind": "palette",
+      "name": "Cacau e hortelã",
+      "description": "Marrons profundos refrescados por verde suave.",
+      "output": "a cocoa and mint palette with deep chocolate brown foundations, muted cocoa midtones, cool fresh mint accents and warm cream highlights",
+      "category": "Natural",
+      "era": "",
+      "colors": [
+        "#2F1F1A",
+        "#725044",
+        "#9FC7AD",
+        "#EEE5D2"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-azul-piscina-desbotado",
+      "kind": "palette",
+      "name": "Azul piscina desbotado",
+      "description": "Azuis aquáticos envelhecidos pelo sol.",
+      "output": "a faded swimming-pool palette with sun-worn aqua, chalky turquoise, pale tile blue and small warm ivory highlights, all gently low in contrast",
+      "category": "Fria",
+      "era": "Anos 1980",
+      "colors": [
+        "#397E8B",
+        "#77ADB0",
+        "#B8D1CD",
+        "#E9E0C8"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-vinho-e-rosa-seco",
+      "kind": "palette",
+      "name": "Vinho e rosa seco",
+      "description": "Vermelhos fechados com delicadeza envelhecida.",
+      "output": "a wine and dried-rose palette dominated by burgundy and muted berry tones, softened by dusty pink and warm parchment rather than bright red",
+      "category": "Quente",
+      "era": "",
+      "colors": [
+        "#4B1F2D",
+        "#7D354B",
+        "#C28E91",
+        "#E8D6C2"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-areia-e-petroleo",
+      "kind": "palette",
+      "name": "Areia e petróleo",
+      "description": "Neutros claros equilibrados por azul profundo.",
+      "output": "a sand and petroleum palette with warm dune beige and pale stone balanced against dark oil blue and desaturated blue-gray shadows",
+      "category": "Equilibrada",
+      "era": "",
+      "colors": [
+        "#D8C7A5",
+        "#AA9877",
+        "#213D46",
+        "#637A7D"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-limao-e-concreto",
+      "kind": "palette",
+      "name": "Limão e concreto",
+      "description": "Cinza mineral com acentos ácidos controlados.",
+      "output": "a lemon and concrete palette with cool cement grays and off-white surfaces punctuated by restrained sharp lemon-yellow accents",
+      "category": "Urbana",
+      "era": "",
+      "colors": [
+        "#595C5D",
+        "#A9ABAA",
+        "#DDDCD5",
+        "#D5D942"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-lilas-e-musgo",
+      "kind": "palette",
+      "name": "Lilás e musgo",
+      "description": "Flores frias sobre uma base vegetal escura.",
+      "output": "a lilac and moss palette with soft grayed purple petals against deep moss green, muted fern midtones and pale lavender highlights",
+      "category": "Natural",
+      "era": "",
+      "colors": [
+        "#344B35",
+        "#718263",
+        "#9A86B5",
+        "#DDD0E4"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-ferrugem-e-ceu-cinzento",
+      "kind": "palette",
+      "name": "Ferrugem e céu cinzento",
+      "description": "Metal oxidado sob uma atmosfera fria.",
+      "output": "a rust and gray-sky palette with oxidized orange-brown metal against layered overcast grays and a narrow band of cold pale light",
+      "category": "Industrial",
+      "era": "",
+      "colors": [
+        "#8C492F",
+        "#B66C47",
+        "#666E73",
+        "#C3C9C9"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-coral-e-sombra-azul",
+      "kind": "palette",
+      "name": "Coral e sombra azul",
+      "description": "Calor coral recortado por sombras marinhas.",
+      "output": "a coral and blue-shadow palette with warm restrained coral surfaces, salmon midtones and deep marine-blue shadows with pale cool highlights",
+      "category": "Equilibrada",
+      "era": "",
+      "colors": [
+        "#D87868",
+        "#EBA38C",
+        "#263F5D",
+        "#B8CFD5"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-marfim-e-tinta",
+      "kind": "palette",
+      "name": "Marfim e tinta",
+      "description": "Base clara atravessada por azul-negro denso.",
+      "output": "an ivory and ink palette with warm fibrous ivory, muted parchment and dense blue-black ink, using fine dark accents instead of pure black masses",
+      "category": "Editorial",
+      "era": "",
+      "colors": [
+        "#F1E8D2",
+        "#D3C6AA",
+        "#24313B",
+        "#65717A"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-verde-garrafa-e-cobre",
+      "kind": "palette",
+      "name": "Verde garrafa e cobre",
+      "description": "Verde escuro combinado a metal aquecido.",
+      "output": "a bottle-green and copper palette with deep green shadows, glassy green midtones and warm hammered-copper accents with restrained amber highlights",
+      "category": "Nobre",
+      "era": "",
+      "colors": [
+        "#173F35",
+        "#316653",
+        "#A8613D",
+        "#D4A06F"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-caju-e-urucum",
+      "kind": "palette",
+      "name": "Caju e urucum",
+      "description": "Amarelos frutais e vermelhos terrosos brasileiros.",
+      "output": "a cashew and annatto palette with golden cashew yellow, warm orange flesh, earthy red urucum accents and deep brown seed-like shadows",
+      "category": "Brasileira",
+      "era": "",
+      "colors": [
+        "#E4B54C",
+        "#D98235",
+        "#A83D2F",
+        "#4D3027"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-noite-violeta",
+      "kind": "palette",
+      "name": "Noite violeta",
+      "description": "Anoitecer roxo com azuis frios e luz distante.",
+      "output": "a violet night palette with near-black indigo, layered muted purples and sparse cool lavender light, avoiding saturated neon",
+      "category": "Noturna",
+      "era": "",
+      "colors": [
+        "#161A30",
+        "#302A52",
+        "#655681",
+        "#B1A2C7"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-oceano-profundo-e-espuma",
+      "kind": "palette",
+      "name": "Oceano profundo e espuma",
+      "description": "Azuis marinhos densos com espuma esverdeada.",
+      "output": "a deep-ocean and sea-foam palette with abyssal navy, rich blue-green water, desaturated turquoise and airy pale foam highlights",
+      "category": "Fria",
+      "era": "",
+      "colors": [
+        "#102E3B",
+        "#155263",
+        "#4F9391",
+        "#C3DED5"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-terra-encharcada",
+      "kind": "palette",
+      "name": "Terra encharcada",
+      "description": "Solos escuros e vegetação após chuva intensa.",
+      "output": "a rain-soaked-earth palette with wet umber, dark loamy brown, subdued olive and small gray-beige highlights like water on soil",
+      "category": "Natural",
+      "era": "",
+      "colors": [
+        "#2F2922",
+        "#564537",
+        "#74705A",
+        "#B1AA97"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-papel-e-tinta-azul",
+      "kind": "palette",
+      "name": "Papel e tinta azul",
+      "description": "Suporte artesanal claro e desenho azul tradicional.",
+      "output": "a paper and blue-ink palette with warm uncoated paper, subtle cream shadows and several densities of classic blueprint-like blue linework",
+      "category": "Editorial",
+      "era": "",
+      "colors": [
+        "#EFE5CE",
+        "#D7C9AE",
+        "#335F7C",
+        "#183E59"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-amarelo-retro-e-nogueira",
+      "kind": "palette",
+      "name": "Amarelo retrô e nogueira",
+      "description": "Amarelo envelhecido com madeira marrom média.",
+      "output": "a retro-yellow and walnut palette with muted mustard appliances, warm aged yellow, medium walnut wood and creamy off-white balance",
+      "category": "Retrô",
+      "era": "Anos 1970",
+      "colors": [
+        "#C2A13B",
+        "#E0C66D",
+        "#72503B",
+        "#D9CBB1"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-flamingo-e-eucalipto",
+      "kind": "palette",
+      "name": "Flamingo e eucalipto",
+      "description": "Rosa vivo moderado por verdes acinzentados.",
+      "output": "a flamingo and eucalyptus palette with soft coral-pink and deeper flamingo accents cooled by silvery eucalyptus green and dark leaf shadows",
+      "category": "Natural",
+      "era": "",
+      "colors": [
+        "#E5968D",
+        "#C65E6B",
+        "#78988A",
+        "#304E43"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-neblina-rosada",
+      "kind": "palette",
+      "name": "Neblina rosada",
+      "description": "Rosa atmosférico com transições suaves e frias.",
+      "output": "a rose-fog palette with desaturated blush, mauve-gray mist and pale cool pink highlights, using very soft low-contrast transitions",
+      "category": "Suave",
+      "era": "",
+      "colors": [
+        "#A9828C",
+        "#C6A5AD",
+        "#D9C6CA",
+        "#E8E2E0"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-mostarda-e-vinho",
+      "kind": "palette",
+      "name": "Mostarda e vinho",
+      "description": "Dois tons densos equilibrados por neutros quentes.",
+      "output": "a mustard and wine palette with deep burgundy masses, muted golden mustard accents, warm taupe transitions and soft oat-colored highlights",
+      "category": "Quente",
+      "era": "",
+      "colors": [
+        "#5B2737",
+        "#A67B2E",
+        "#9B7D68",
+        "#DED0B2"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-azul-celeste-e-tijolo",
+      "kind": "palette",
+      "name": "Azul-celeste e tijolo",
+      "description": "Céu aberto contrastando com construção terrosa.",
+      "output": "a sky-blue and brick palette with open pale blue, clear celestial midtones and warm fired-brick red grounded by dark clay shadows",
+      "category": "Arquitetura",
+      "era": "",
+      "colors": [
+        "#A9CDD7",
+        "#6EA2B5",
+        "#A6533F",
+        "#603A32"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-salvia-e-damasco",
+      "kind": "palette",
+      "name": "Sálvia e damasco",
+      "description": "Verde herbal suave com fruta alaranjada delicada.",
+      "output": "a sage and apricot palette with gentle herbal green, dusty sage shadows, soft apricot warmth and pale creamy peach highlights",
+      "category": "Suave",
+      "era": "",
+      "colors": [
+        "#78866C",
+        "#A5AF91",
+        "#D9A078",
+        "#F0D5B7"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-grafite-e-acerola",
+      "kind": "palette",
+      "name": "Grafite e acerola",
+      "description": "Base urbana escura com vermelho frutado pontual.",
+      "output": "a graphite and acerola-cherry palette with layered charcoal grays and cool concrete midtones energized by small vivid acerola-red accents",
+      "category": "Urbana",
+      "era": "",
+      "colors": [
+        "#292C30",
+        "#575C61",
+        "#A5A9AA",
+        "#C83C45"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-ameixa-e-baunilha",
+      "kind": "palette",
+      "name": "Ameixa e baunilha",
+      "description": "Roxos frutados com creme quente e macio.",
+      "output": "a plum and vanilla palette with dark ripe-plum purple, muted mauve midtones and generous warm vanilla-cream highlights",
+      "category": "Suave",
+      "era": "",
+      "colors": [
+        "#482B47",
+        "#76516F",
+        "#D8BEA0",
+        "#F0E2C4"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-capim-e-argila",
+      "kind": "palette",
+      "name": "Capim e argila",
+      "description": "Verdes de campo e barro cozido natural.",
+      "output": "a grass and clay palette with fresh but natural yellow-green, deeper pasture green, hand-fired clay orange and pale sandy highlights",
+      "category": "Natural",
+      "era": "",
+      "colors": [
+        "#7B8C45",
+        "#4F6537",
+        "#B86748",
+        "#D9C8A1"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-algodao-e-cha",
+      "kind": "palette",
+      "name": "Algodão e chá",
+      "description": "Neutros suaves de fibra clara e infusão âmbar.",
+      "output": "a cotton and tea palette with soft unbleached cotton white, warm flax beige and translucent amber-tea browns in gentle low contrast",
+      "category": "Neutra",
+      "era": "",
+      "colors": [
+        "#EEE7D9",
+        "#D7C8AD",
+        "#A77B4E",
+        "#6E5138"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-indigo-e-abobora",
+      "kind": "palette",
+      "name": "Índigo e abóbora",
+      "description": "Azul artesanal profundo com laranja vegetal.",
+      "output": "an indigo and pumpkin palette with deep hand-dyed blue, faded denim midtones and warm pumpkin-orange accents against pale natural cloth",
+      "category": "Artesanal",
+      "era": "",
+      "colors": [
+        "#233B5D",
+        "#486785",
+        "#C96D32",
+        "#E6D5B8"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-verde-fosco-e-goiaba",
+      "kind": "palette",
+      "name": "Verde-fosco e goiaba",
+      "description": "Superfícies verdes opacas com interior rosado.",
+      "output": "a matte-green and guava palette with dusty leaf green, deep matte foliage and soft guava-pink flesh with pale creamy highlights",
+      "category": "Natural",
+      "era": "",
+      "colors": [
+        "#536C50",
+        "#83937A",
+        "#D97D86",
+        "#F0C5B6"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-areia-fria-e-ardosia",
+      "kind": "palette",
+      "name": "Areia fria e ardósia",
+      "description": "Minerais claros e azuis-acinzentados de pedra.",
+      "output": "a cool-sand and slate palette with pale gray-beige grains, cool stone midtones and layered blue-gray slate shadows",
+      "category": "Mineral",
+      "era": "",
+      "colors": [
+        "#D4CEC0",
+        "#AAA99F",
+        "#64717A",
+        "#394651"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-cereja-e-pistache",
+      "kind": "palette",
+      "name": "Cereja e pistache",
+      "description": "Vermelho de fruta com verde cremoso inesperado.",
+      "output": "a cherry and pistachio palette with deep cherry red, softer red-fruit midtones and muted creamy pistachio green balanced by pale ivory",
+      "category": "Lúdica",
+      "era": "",
+      "colors": [
+        "#8D2F3E",
+        "#C65560",
+        "#9CAF73",
+        "#E7E1BE"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-palette-ouro-velho-e-petroleo-profundo",
+      "kind": "palette",
+      "name": "Ouro velho e petróleo profundo",
+      "description": "Metal envelhecido sobre azul quase submarino.",
+      "output": "an old-gold and deep-petroleum palette with tarnished muted gold, dark brass midtones and rich petroleum-blue shadows with restrained warm gleams",
+      "category": "Nobre",
+      "era": "",
+      "colors": [
+        "#8A713D",
+        "#C0A260",
+        "#163C44",
+        "#48666A"
+      ],
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-cianotipo",
+      "kind": "medium",
+      "name": "Cianotipo",
+      "description": "Processo fotográfico azul com contato e papel sensível.",
+      "output": "a cyanotype contact print with Prussian-blue exposed areas, pale reserved highlights, soft brush-coated edges and the slight irregularities of sun-developed photographic paper",
+      "category": "Fotografia histórica",
+      "era": "Século XIX",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-autocromo",
+      "kind": "medium",
+      "name": "Autocromo",
+      "description": "Cor fotográfica antiga com grão de batata visível.",
+      "output": "an autochrome photograph with delicate pointillist color grain, softly muted early-color rendition, gentle focus and the luminous texture of a historical glass plate",
+      "category": "Fotografia histórica",
+      "era": "Anos 1910",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-daguerreotipo",
+      "kind": "medium",
+      "name": "Daguerreótipo",
+      "description": "Imagem única sobre placa metálica polida.",
+      "output": "a daguerreotype with mirrorlike silver-plate detail, exceptionally fine midtone rendering, subtle tarnish at the edges and a formal long-exposure stillness",
+      "category": "Fotografia histórica",
+      "era": "Anos 1840",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-calotipo",
+      "kind": "medium",
+      "name": "Calotipo",
+      "description": "Fotografia em papel negativo de textura suave.",
+      "output": "a calotype paper photograph with warm brown-gray tonalities, softened fibrous detail, matte highlights and the delicate grain of an early paper negative",
+      "category": "Fotografia histórica",
+      "era": "Anos 1840",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-fotogravura",
+      "kind": "medium",
+      "name": "Fotogravura",
+      "description": "Impressão entalhada com riqueza tonal fotográfica.",
+      "output": "a photogravure print with rich inked shadows, continuous photographic tonal transitions, a subtle plate impression and the velvety surface of ink pressed into cotton paper",
+      "category": "Impressão",
+      "era": "Século XX",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-litografia-de-pedra",
+      "kind": "medium",
+      "name": "Litografia de pedra",
+      "description": "Desenho de impressão com gestos e retículas de pedra.",
+      "output": "a stone lithograph with greasy crayon marks, broad flat ink areas, subtle limestone grain and the controlled layering characteristic of hand-pulled lithographic printing",
+      "category": "Impressão",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-serigrafia-de-dois-tons",
+      "kind": "medium",
+      "name": "Serigrafia de dois tons",
+      "description": "Duas camadas de tinta opaca com registro manual.",
+      "output": "a two-color screen print with opaque flat ink layers, crisp overlapping shapes, slight hand-registration offsets and uniform color coverage on textured paper",
+      "category": "Impressão",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-gravura-em-linoleo",
+      "kind": "medium",
+      "name": "Gravura em linóleo",
+      "description": "Matriz entalhada com cortes largos e impressão vigorosa.",
+      "output": "a linoleum-block print with bold carved shapes, visible gouge marks, slightly uneven ink coverage and strong positive-negative relationships",
+      "category": "Impressão",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-monotipia",
+      "kind": "medium",
+      "name": "Monotipia",
+      "description": "Impressão única com tinta manipulada livremente.",
+      "output": "a monotype print with singular painterly ink sweeps, soft transferred textures, unpredictable wiped highlights and the unrepeatable character of a single pressed impression",
+      "category": "Impressão",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-colagem-analogica",
+      "kind": "medium",
+      "name": "Colagem analógica",
+      "description": "Recortes físicos, cola e fotografias sobrepostas.",
+      "output": "an analog paper collage with physically cut photographs, torn edges, visible adhesive traces and layered printed materials arranged in a coherent tactile composition",
+      "category": "Colagem",
+      "era": "Anos 1960",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-pintura-em-vidro",
+      "kind": "medium",
+      "name": "Pintura em vidro",
+      "description": "Tintas aplicadas no verso de uma superfície transparente.",
+      "output": "a reverse painting on glass with crisp enclosed color areas, smooth reflective highlights, fine contour lines and the distinctive flat depth of pigment viewed through glass",
+      "category": "Pintura",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-azulejo-pintado-a-mao",
+      "kind": "medium",
+      "name": "Azulejo pintado à mão",
+      "description": "Cena dividida pela grade de cerâmica vidrada.",
+      "output": "a hand-painted ceramic tile panel with cobalt brushwork beneath a glossy glaze, fine pigment pooling and subtle grout lines dividing the image into individual tiles",
+      "category": "Cerâmica",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-tempera-de-ovo",
+      "kind": "medium",
+      "name": "Têmpera de ovo",
+      "description": "Pintura precisa de camadas finas e acabamento seco.",
+      "output": "an egg-tempera painting with fine hatched brushwork, luminous thin layers, a matte mineral surface and precise forms built through patient crosshatched color",
+      "category": "Pintura",
+      "era": "Renascimento",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-guache-opaco",
+      "kind": "medium",
+      "name": "Guache opaco",
+      "description": "Pigmento aguado denso, fosco e de cobertura uniforme.",
+      "output": "an opaque gouache painting with velvety matte color, flat but hand-painted coverage, crisp overpaint edges and subtle variations from diluted pigment",
+      "category": "Pintura",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-pastel-oleoso",
+      "kind": "medium",
+      "name": "Pastel oleoso",
+      "description": "Traços cremosos e pigmento espesso misturado manualmente.",
+      "output": "an oil-pastel drawing with dense waxy pigment, broad creamy strokes, finger-blended transitions and small crumbs of color catching on the paper tooth",
+      "category": "Desenho",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-carvao-e-giz-branco",
+      "kind": "medium",
+      "name": "Carvão e giz branco",
+      "description": "Sombras de carvão e luzes desenhadas em papel médio.",
+      "output": "a charcoal and white-chalk drawing on midtone paper, broad smudged shadows, sharp erased edges and opaque white highlights drawn rather than left blank",
+      "category": "Desenho",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-fresco-mineral",
+      "kind": "medium",
+      "name": "Fresco mineral",
+      "description": "Pigmento incorporado a reboco com textura arquitetônica.",
+      "output": "a mineral fresco with pigment absorbed into lime plaster, softly matte color, subtle trowel texture and small surface cracks integrated into the painted forms",
+      "category": "Pintura",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-vitral-ilustrado",
+      "kind": "medium",
+      "name": "Vitral ilustrado",
+      "description": "Formas de vidro colorido separadas por perfis escuros.",
+      "output": "an illustrated stained-glass panel with individually colored glass shapes, dark lead came contours, subtle bubbles in the glass and light transmitted through every color area",
+      "category": "Vidro",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-bordado-digitalizado",
+      "kind": "medium",
+      "name": "Bordado digitalizado",
+      "description": "Imagem formada por pontos e fios registrados em alta definição.",
+      "output": "a high-resolution scan of hand embroidery with visible thread direction, raised stitches, tiny fibers and fabric weave defining every shape and tonal transition",
+      "category": "Têxtil",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-tapecaria-de-fios",
+      "kind": "medium",
+      "name": "Tapeçaria de fios",
+      "description": "Trama têxtil densa construindo figuras em grande escala.",
+      "output": "a woven tapestry with shapes built from interlaced yarn, visible warp and weft, slight irregularities in the weave and softly stepped color boundaries",
+      "category": "Têxtil",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-colcha-de-retalhos",
+      "kind": "medium",
+      "name": "Colcha de retalhos",
+      "description": "Composição de tecidos costurados em módulos geométricos.",
+      "output": "a patchwork quilt composition with sewn fabric pieces, varied printed textures, visible seams and quilting stitches following the geometry of the assembled cloth",
+      "category": "Têxtil",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-diorama-fotografado",
+      "kind": "medium",
+      "name": "Diorama fotografado",
+      "description": "Cena miniatura real registrada com luz e profundidade.",
+      "output": "a photographed physical diorama with handcrafted miniature scenery, real depth of field, tiny material imperfections and studio lighting that preserves the scale of the model",
+      "category": "Miniatura",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-maquete-arquitetonica",
+      "kind": "medium",
+      "name": "Maquete arquitetônica",
+      "description": "Construção em escala com papel, madeira e vegetação de modelo.",
+      "output": "an architectural scale model made from chipboard basswood and acrylic, precise cut edges, miniature landscape materials and soft studio lighting on a worktable",
+      "category": "Arquitetura",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-animacao-em-recortes",
+      "kind": "medium",
+      "name": "Animação em recortes",
+      "description": "Personagens e cenários planos articulados como papel.",
+      "output": "a cutout-animation frame with separate layered paper figures, hinged silhouette-like joints, flat textured shapes and slight handmade offsets between moving elements",
+      "category": "Animação",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-modelagem-em-plasticina",
+      "kind": "medium",
+      "name": "Modelagem em plasticina",
+      "description": "Volumes maleáveis com marcas de dedos e ferramentas.",
+      "output": "a plasticine-clay model with soft hand-shaped volumes, visible fingerprints, small tool marks and blended colored clay maintaining a tactile stop-motion quality",
+      "category": "Animação",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-fotografia-estereoscopica",
+      "kind": "medium",
+      "name": "Fotografia estereoscópica",
+      "description": "Par de perspectivas sutis para profundidade binocular.",
+      "output": "a stereoscopic photograph with the visual characteristics of a historical stereo card, paired near-identical perspectives, crisp central depth and warm aged albumen tones",
+      "category": "Fotografia histórica",
+      "era": "Século XIX",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-projecao-de-slides-1970",
+      "kind": "medium",
+      "name": "Projeção de slides, 1970",
+      "description": "Imagem projetada com poeira, bordas e cor analógica.",
+      "output": "a 1970s projected color slide with slightly warm shifted dyes, visible dust at the frame edges, soft projector illumination and a dark surround beyond the image gate",
+      "category": "Fotografia analógica",
+      "era": "Anos 1970",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-gravura-em-metal",
+      "kind": "medium",
+      "name": "Gravura em metal",
+      "description": "Linhas finas incisas e tinta acumulada no sulco.",
+      "output": "a metal-plate engraving with extremely fine incised lines, crosshatched tonal modeling, crisp burin marks and rich ink held within the recessed grooves",
+      "category": "Impressão",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-desenho-a-bico-de-pena",
+      "kind": "medium",
+      "name": "Desenho a bico de pena",
+      "description": "Linhas de tinta variadas pela pressão e reserva de papel.",
+      "output": "a dip-pen ink drawing with pressure-sensitive line variation, fine parallel hatching, tiny ink catches and generous untouched paper forming the highlights",
+      "category": "Desenho",
+      "era": "Atemporal",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-medium-estencil-de-rua",
+      "kind": "medium",
+      "name": "Estêncil de rua",
+      "description": "Formas vazadas com bordas e sobreposições de spray.",
+      "output": "a street stencil artwork with sharply cut mask shapes, controlled spray edges, slight paint overshoot and layered color passes on a weathered wall surface",
+      "category": "Arte urbana",
+      "era": "Contemporânea",
+      "source": "Curadoria expandida PromptForge"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ Painel responsivo para transformar uma ideia em um prompt de imagem estruturado.
 
 - Fluxo em quatro áreas: **Conceito, Cena, Estilo e Ajustes**.
 - Prompt atualizado em tempo real, nos modos **Fluido**, **Compacto** e **JSON**.
-- **Acervo com 842 referências pesquisáveis**: 780 opções únicas extraídas dos sequenciadores e protótipos, além de 62 itens da curadoria PromptForge.
+- **Acervo com 1.124 referências únicas e pesquisáveis**: 300 novas entradas curadas, 780 opções das fontes originais e 62 presets, com 18 redundâncias homônimas removidas.
 - Sugestões em grupos de 6 ou 12, com posição no conjunto, diversidade de origens/categorias e percurso sem repetição até concluir cada camada.
 - Camadas navegáveis nas sugestões, placeholders variáveis e aplicação de referências sem apagar a digitação.
 - Busca por nome, descrição e metadados, filtros por camada, categoria, época e origem, paginação e aplicação aleatória dentro do filtro.
@@ -43,7 +43,9 @@ O acervo reúne as cinco fontes preservadas na raiz do repositório:
 - `gerador-de-prompts-v3.html`;
 - `gerador-v4.html`.
 
-O normalizador lê 1.074 entradas, valida os campos e deduplica por camada e nome normalizado, gerando 780 referências únicas. Os 62 presets do aplicativo são acrescentados à mesma experiência de descoberta. Nenhum arquivo-fonte é alterado.
+O normalizador lê 1.374 entradas — 1.074 originais e 300 curadas —, valida os campos e deduplica por camada e nome normalizado, gerando 1.080 referências únicas entre as fontes importadas. Os 62 presets do aplicativo são acrescentados à mesma experiência; 18 homônimos redundantes são deduplicados com prioridade para a curadoria central, resultando em 1.124 referências visíveis. Nenhum arquivo-fonte original é alterado.
+
+A expansão editorial fica em `data/references.curated.json`, um documento versionado com IDs estáveis, nome, descrição, saída em inglês, categoria, época e origem. Categoria é obrigatória nas novas entradas; paletas também exigem de três a seis cores hexadecimais. O importador rejeita campos desconhecidos, IDs ou nomes duplicados, descrições equivalentes e formatos inválidos.
 
 Para regenerar os dados depois de editar uma fonte:
 
@@ -68,11 +70,11 @@ npm run build
 npm start
 ```
 
-`npm run build` valida os tipos e gera `dist/`. `npm start` inicia o servidor Express na porta `3000` (ou na porta definida por `PORT`) e serve apenas os arquivos estáticos do aplicativo.
+`npm run build` valida os tipos e gera `dist/`. O acervo é emitido em um chunk separado para que atualizações editoriais não invalidem o cache do código principal. `npm start` inicia o servidor Express na porta `3000` (ou na porta definida por `PORT`) e serve apenas os arquivos estáticos do aplicativo.
 
 ## Publicação no GitHub Pages
 
-O workflow `.github/workflows/deploy-pages.yml` executa TypeScript, os 24 testes e o build antes de publicar `promptforge/dist`. O build do Pages usa o caminho-base `/PromptForge/`; os builds locais e de outros provedores continuam usando `/`.
+O workflow `.github/workflows/deploy-pages.yml` executa TypeScript, os 26 testes e o build antes de publicar `promptforge/dist`. O build do Pages usa o caminho-base `/PromptForge/`; os builds locais e de outros provedores continuam usando `/`.
 
 Para ativar a publicação:
 
@@ -86,7 +88,7 @@ Após uma implantação bem-sucedida, a interface estará disponível em `https:
 
 ```bash
 npm run lint       # TypeScript estrito
-npm test           # 24 testes: motor, acervo e store
+npm test           # 26 testes: motor, acervo e store
 npm run refs:build # valida e regenera o acervo normalizado
 npm run build      # validação + bundle de produção
 npm audit          # dependências
@@ -105,6 +107,8 @@ npm audit          # dependências
 ## Estrutura
 
 ```text
+data/
+└── references.curated.json # 300 referências editoriais com IDs estáveis
 src/
 ├── components/
 │   ├── layout/       # shell, navegação e topbar
@@ -116,7 +120,7 @@ src/
 ├── lib/
 │   ├── presets.ts         # curadoria tipada
 │   ├── promptEngine.ts    # montagem e métricas do prompt
-│   ├── referenceData.ts   # 780 referências geradas; não editar
+│   ├── referenceData.ts   # 1.080 referências geradas; não editar
 │   ├── referenceTypes.ts  # contratos das nove camadas
 │   ├── references.ts      # busca, índices e aleatorização
 │   └── utils.ts           # clipboard e downloads

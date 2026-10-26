@@ -59,7 +59,14 @@ const CORE_REFERENCES: ReferenceItem[] = (Object.keys(CORE_GROUPS) as ReferenceK
   }))
 ));
 
-export const ALL_REFERENCES: ReferenceItem[] = [...CORE_REFERENCES, ...REFERENCE_DATA];
+// A curadoria central tem prioridade: é a versão que o motor já usa para os presets homônimos.
+const seenReferenceNames = new Set<string>();
+export const ALL_REFERENCES: ReferenceItem[] = [...CORE_REFERENCES, ...REFERENCE_DATA].filter((item) => {
+  const key = `${item.kind}:${normalizeSearch(item.name)}`;
+  if (seenReferenceNames.has(key)) return false;
+  seenReferenceNames.add(key);
+  return true;
+});
 
 export const REFERENCE_POOLS = ALL_REFERENCES.reduce<Record<ReferenceKind, ReferenceItem[]>>((pools, item) => {
   pools[item.kind].push(item);

@@ -5,29 +5,34 @@ import {
   ALL_REFERENCES,
   findReferenceByName,
   getReferenceSuggestions,
+  normalizeSearch,
   REFERENCE_KIND_META,
   REFERENCE_POOLS,
   withSelectedReferences,
 } from './references';
 import { EMPTY_DRAFT, buildPrompt } from './promptEngine';
-import { SCENARIOS } from './presets';
+import { PALETTES, SCENARIOS } from './presets';
 
-test('acervo reúne os sequenciadores deduplicados e a curadoria existente', () => {
-  assert.equal(REFERENCE_DATA.length, 780);
-  assert.equal(ALL_REFERENCES.length, 842);
+test('acervo reúne os sequenciadores e as curadorias sem duplicar nomes', () => {
+  assert.equal(REFERENCE_DATA.length, 1080);
+  assert.equal(ALL_REFERENCES.length, 1124);
   assert.equal(new Set(ALL_REFERENCES.map((item) => item.id)).size, ALL_REFERENCES.length);
+  assert.equal(new Set(ALL_REFERENCES.map((item) => `${item.kind}:${normalizeSearch(item.name)}`)).size, ALL_REFERENCES.length);
+  assert.ok(ALL_REFERENCES.every((item) => !/^ref-\d+$/.test(item.id)));
   for (const source of [
     'Sequenciador de Memórias',
     'Cinema, TV, Games e HQs',
     'Sequenciador HTML original',
     'Sequenciador HTML v3',
     'Sequenciador HTML v4',
+    'Curadoria expandida PromptForge',
   ]) {
     assert.ok(REFERENCE_DATA.some((item) => item.source === source), `Fonte ausente: ${source}`);
   }
   for (const item of ALL_REFERENCES) {
     assert.ok(item.name.trim());
     assert.ok(item.output.trim());
+    assert.ok(!item.description.includes('[object Object]'), item.id);
     assert.ok(REFERENCE_KIND_META[item.kind]);
     assert.ok(REFERENCE_POOLS[item.kind].includes(item));
   }
@@ -58,7 +63,47 @@ test('ciclo percorre toda a camada sem repetição antes de renovar', () => {
   assert.equal(seen.length, pool.length);
   assert.equal(new Set(seen).size, pool.length);
   assert.deepEqual([...seen].sort(), pool.map((item) => item.id).sort());
-  assert.equal(getReferenceSuggestions('palette', 12, 42, 36).length, 6);
+  const lastCursor = Math.floor((pool.length - 1) / 12) * 12;
+  assert.equal(getReferenceSuggestions('palette', 12, 42, lastCursor).length, pool.length - lastCursor);
+});
+
+test('curadoria central prevalece em nomes redundantes sem mudar o preset', () => {
+  const reference = findReferenceByName('palette', 'Monocromático');
+  assert.equal(reference?.source, 'PromptForge');
+  assert.equal(reference?.id, 'core-palette-monocromatico');
+  assert.equal(REFERENCE_POOLS.palette.filter((item) => normalizeSearch(item.name) === 'monocromatico').length, 1);
+});
+
+test('pacote expandido é íntegro, pesquisável e aplicável ao motor', () => {
+  const curated = ALL_REFERENCES.filter((item) => item.source === 'Curadoria expandida PromptForge');
+  assert.equal(curated.length, 300);
+  const expectedByKind = { anchor: 50, scenario: 60, style: 50, mood: 40, composition: 40, palette: 30, medium: 30, trend: 0, detail: 0 };
+  for (const [kind, expected] of Object.entries(expectedByKind)) {
+    assert.equal(curated.filter((item) => item.kind === kind).length, expected, kind);
+  }
+
+  for (const reference of curated) {
+    assert.ok(reference.id.startsWith(`curadoria-${reference.kind}-`));
+    assert.ok(reference.category.trim(), reference.id);
+    assert.equal(findReferenceByName(reference.kind, reference.name)?.id, reference.id);
+    const draft = { ...EMPTY_DRAFT, anchor: 'Figura de teste' };
+    switch (reference.kind) {
+      case 'anchor': draft.anchor = reference.name; break;
+      case 'scenario': draft.scenario = reference.name; break;
+      case 'style': draft.style = [reference.name]; break;
+      case 'mood': draft.context = reference.name; break;
+      case 'composition': draft.composition = reference.name; break;
+      case 'palette': {
+        draft.palette = reference.name;
+        const options = withSelectedReferences(PALETTES, reference.name, 'palette');
+        assert.deepEqual(options.at(-1)?.colors, reference.colors);
+        break;
+      }
+      case 'medium': draft.medium = reference.name; break;
+      default: assert.fail(`Camada curada inesperada: ${reference.kind}`);
+    }
+    assert.ok(buildPrompt(draft).includes(reference.output.replace(/[.,;:]+$/, '')), reference.id);
+  }
 });
 
 test('motor usa a descrição em inglês da referência escolhida', () => {
