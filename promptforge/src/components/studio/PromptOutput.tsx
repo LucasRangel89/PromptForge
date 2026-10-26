@@ -5,14 +5,11 @@ import {
   Copy,
   Download,
   FileText,
-  LoaderCircle,
   RotateCcw,
   Save,
-  Sparkles,
   WandSparkles,
 } from 'lucide-react';
 import { buildPrompt, calculatePromptScore, draftForExport } from '@/lib/promptEngine';
-import { refinePromptWithAI } from '@/services/aiService';
 import { copyToClipboard, downloadFile, slugify } from '@/lib/utils';
 import { MAX_SAVED_PROMPTS, usePromptStore } from '@/store/usePromptStore';
 
@@ -24,7 +21,6 @@ export function PromptOutput() {
   const state = usePromptStore();
   const [tab, setTab] = useState<OutputTab>('fluid');
   const [copied, setCopied] = useState(false);
-  const [isRefining, setIsRefining] = useState(false);
 
   const fluidPrompt = state.promptEdited ? state.promptFinal : buildPrompt(state, 'fluid');
   const prompt = state.promptEdited ? state.promptFinal : buildPrompt(state, tab === 'compact' ? 'compact' : 'fluid');
@@ -67,32 +63,6 @@ export function PromptOutput() {
     const extension = tab === 'json' ? 'json' : 'txt';
     downloadFile(`${slugify(state.projectName)}.${extension}`, visibleContent, tab === 'json' ? 'application/json' : 'text/plain;charset=utf-8');
     state.notify(`Arquivo .${extension} exportado.`);
-  };
-
-  const handleRefine = async () => {
-    if (!fluidPrompt.trim()) {
-      state.notify('Crie um prompt antes de usar o refinamento.', 'info');
-      return;
-    }
-    const submittedPrompt = fluidPrompt;
-    const submittedDistance = state.creativeDistance;
-    setIsRefining(true);
-    try {
-      const refined = await refinePromptWithAI(submittedPrompt, submittedDistance);
-      const latest = usePromptStore.getState();
-      const latestPrompt = latest.promptEdited ? latest.promptFinal : buildPrompt(latest, 'fluid');
-      if (latestPrompt !== submittedPrompt || latest.creativeDistance !== submittedDistance) {
-        latest.notify('O prompt mudou durante o refinamento. A resposta anterior foi descartada para preservar suas edições.', 'info');
-        return;
-      }
-      latest.setPromptManual(refined);
-      setTab('fluid');
-      latest.notify('Prompt refinado pela IA. Você ainda pode editar ou restaurar a versão automática.');
-    } catch (error) {
-      state.notify(error instanceof Error ? error.message : 'Não foi possível refinar com IA.', 'error');
-    } finally {
-      setIsRefining(false);
-    }
   };
 
   const handleVariations = () => {
@@ -182,11 +152,6 @@ export function PromptOutput() {
           <button type="button" onClick={handleVariations} aria-label="Gerar três variações do prompt"><WandSparkles size={15} /><span>Variações</span></button>
           <button type="button" onClick={handleDownload} aria-label="Exportar prompt"><Download size={15} /><span>Exportar</span></button>
         </div>
-        <button type="button" className="ai-refine-button" onClick={handleRefine} disabled={isRefining || !fluidPrompt.trim()} aria-busy={isRefining}>
-          {isRefining ? <LoaderCircle size={14} className="spin" /> : <Sparkles size={14} />}
-          {isRefining ? 'Refinando com direção de arte...' : 'Refinar com IA'}
-          <small>opcional</small>
-        </button>
       </div>
 
       {state.variations.length > 0 && (
