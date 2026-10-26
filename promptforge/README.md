@@ -67,6 +67,18 @@ npm start
 
 `npm run build` valida os tipos e gera `dist/`. `npm start` inicia o servidor Express na porta `3000` (ou na porta definida por `PORT`) e serve apenas os arquivos estáticos do aplicativo.
 
+## Publicação no GitHub Pages
+
+O workflow `.github/workflows/deploy-pages.yml` executa TypeScript, os 23 testes e o build antes de publicar `promptforge/dist`. O build do Pages usa o caminho-base `/PromptForge/`; os builds locais e de outros provedores continuam usando `/`.
+
+Para ativar a publicação:
+
+1. Abra **Settings → Pages → Build and deployment** no repositório.
+2. Em **Source**, selecione **GitHub Actions** em vez de **Deploy from a branch**.
+3. Faça push para `main` ou execute manualmente o workflow **Deploy GitHub Pages**.
+
+Após uma implantação bem-sucedida, a interface estará disponível em `https://lucasrangel89.github.io/PromptForge/`. Não são necessários backend, variáveis de ambiente ou segredos.
+
 ## Verificações
 
 ```bash

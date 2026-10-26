@@ -4,6 +4,8 @@ import path from 'node:path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  // GitHub Pages publica o projeto em /PromptForge/; os demais ambientes usam a raiz.
+  base: process.env.GITHUB_PAGES === 'true' ? '/PromptForge/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
