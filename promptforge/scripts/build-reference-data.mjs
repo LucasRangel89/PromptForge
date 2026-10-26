@@ -38,6 +38,7 @@ const outputOwners = new Map();
 let rawCount = 0;
 let duplicateCount = 0;
 let curatedCount = 0;
+let classificationCount = 0;
 
 function registerReference(item) {
   if (seenIds.has(item.id)) throw new Error(`ID duplicado: ${item.id}`);
@@ -96,6 +97,24 @@ for (const source of htmlSources) {
   }
 }
 
+const classificationsUrl = new URL('../data/reference-classifications.json', import.meta.url);
+const classificationDocument = JSON.parse(await readFile(classificationsUrl, 'utf8'));
+if (!classificationDocument || classificationDocument.version !== 1
+  || !classificationDocument.classifications || typeof classificationDocument.classifications !== 'object'
+  || Array.isArray(classificationDocument.classifications)) {
+  throw new Error('A classificação retroativa deve ter version: 1 e um objeto classifications.');
+}
+const referencesById = new Map(references.map((item) => [item.id, item]));
+for (const [id, category] of Object.entries(classificationDocument.classifications)) {
+  const item = referencesById.get(id);
+  if (!item) throw new Error(`Classificação aponta para ID inexistente: ${id}.`);
+  if (typeof category !== 'string' || !category.trim()) throw new Error(`Categoria vazia para ${id}.`);
+  if (item.category) throw new Error(`${id} já possui categoria; revise ou remova a classificação retroativa.`);
+  item.category = category.trim();
+  item.description = [item.category, item.era].filter(Boolean).join(' · ');
+  classificationCount += 1;
+}
+
 const curatedUrl = new URL('../data/references.curated.json', import.meta.url);
 const curatedDocument = JSON.parse(await readFile(curatedUrl, 'utf8'));
 if (!curatedDocument || curatedDocument.version !== 1 || !Array.isArray(curatedDocument.references)) {
@@ -149,6 +168,11 @@ for (const [index, item] of curatedDocument.references.entries()) {
   curatedCount += 1;
 }
 
+const uncategorized = references.filter((item) => !item.category);
+if (uncategorized.length) {
+  throw new Error(`${uncategorized.length} referências continuam sem categoria: ${uncategorized.map((item) => item.id).join(', ')}`);
+}
+
 const outputPath = fileURLToPath(new URL('../src/lib/referenceData.ts', import.meta.url));
 const sourceLabels = [...jsonSources, ...htmlSources].map((source) => source.label);
 for (const item of references) {
@@ -165,5 +189,5 @@ const content = `// Gerado por scripts/build-reference-data.mjs. Edite as fontes
 await writeFile(outputPath, content);
 
 const counts = references.reduce((result, item) => ({ ...result, [item.kind]: (result[item.kind] ?? 0) + 1 }), {});
-console.log(`Acervo normalizado: ${references.length} referências únicas (${rawCount} entradas lidas; ${duplicateCount} duplicidades entre fontes; ${curatedCount} itens da curadoria expandida).`);
+console.log(`Acervo normalizado: ${references.length} referências únicas (${rawCount} entradas lidas; ${duplicateCount} duplicidades entre fontes; ${curatedCount} itens da curadoria expandida; ${classificationCount} classificações retroativas).`);
 console.log(counts);

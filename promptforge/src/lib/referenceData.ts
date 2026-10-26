@@ -1495,1840 +1495,1656 @@ const rows: ReferenceRow[] = [
     "style",
     "Arte Rupestre Digital",
     "digital cave painting aesthetic — primitive marks and forms translated to glowing screen surfaces",
+    "Digital",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-azulejo-portugues",
     "style",
     "Azulejo Português",
     "traditional Portuguese azulejo tile illustration — blue and white cobalt, geometric floral borders, flat naïf figures",
+    "Arte cultural",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-arte-marajoara",
     "style",
     "Arte Marajoara",
     "Pre-Columbian Marajó Island ceramic art style — geometric spirals, earthen red and black, ancient Amazonian patterns",
+    "Arte cultural",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-entalhe-em-madeira-nordestina",
     "style",
     "Entalhe em Madeira Nordestina",
     "hand-carved Northeastern Brazilian woodcarving style — rough chisel marks, folk religious imagery, raw cedar and mahogany grain",
+    "Arte cultural",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-foto-polaroid-desbotada",
     "style",
     "Foto Polaroid Desbotada",
     "instant Polaroid photograph, overexposed corners, 1980s color shift, square format, white border",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-arte-art-nouveau",
     "style",
     "Arte Art Nouveau",
     "Art Nouveau illustration — organic flowing lines, botanical motifs, Mucha-style female figure, decorative gold border",
+    "Ornamental",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-pintura-de-ossos-de-dia-dos-mortos",
     "style",
     "Pintura de Ossos de Dia dos Mortos",
     "Día de los Muertos skull and skeleton illustration, bright marigolds, vibrant Mexican folk art palette",
+    "Arte cultural",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-pintura-sumi-e-japonesa",
     "style",
     "Pintura Sumi-e Japonesa",
     "Japanese sumi-e ink painting — gestural single brushstroke, vast empty space, mountain or figure barely suggested",
+    "Tinta",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-risografia",
     "style",
     "Risografia",
     "risograph print — limited ink layers, deliberate color misregistration, granular texture, zine aesthetic",
+    "Impressão",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-gravura-em-metal-etching",
     "style",
     "Gravura em Metal (Etching)",
     "copper plate etching print — fine cross-hatching, high detail, Goya-era chiaroscuro, plate texture visible",
+    "Impressão",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-retrato-victorian-hand-colored",
     "style",
     "Retrato Victorian Hand-Colored",
     "Victorian-era hand-colored photograph — tinted cheeks and lips on otherwise monochrome daguerreotype, formal stiffness",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-arte-de-vitrine-natalina",
     "style",
     "Arte de Vitrine Natalina",
     "holiday window display illustration aesthetic — warm light from within, snow outside, nostalgic department store art",
+    "Ilustração",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-blueprint-tecnico",
     "style",
     "Blueprint Técnico",
     "technical blueprint drawing — white lines on Prussian blue, precise engineering annotations, elevation and section views",
+    "Ilustração técnica",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-mapa-antigo-portugues",
     "style",
     "Mapa Antigo Português",
     "16th-century Portuguese cartographic illustration — Latin annotations, hand-drawn coastlines, sea monsters, compass rose",
+    "Ilustração",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-render-brutalist-3d",
     "style",
     "Render Brutalist 3D",
     "brutalist architecture 3D render — raw exposed concrete, geometric mass, overcast sky, no human figures",
+    "Arquitetura",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-fotonovela-italiana-60s",
     "style",
     "Fotonovela Italiana 60s",
     "1960s Italian fumetti fotonovela aesthetic — photographed actors with speech bubbles, melodrama, Roman shadows",
+    "Quadrinhos",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-arte-budista-tibetana-thangka",
     "style",
     "Arte Budista Tibetana (Thangka)",
     "Tibetan Buddhist thangka painting — gold leaf, intricate mandala geometry, deity figures, deep jewel colors, linen cloth",
+    "Arte cultural",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-cartaz-belle-epoque",
     "style",
     "Cartaz Belle Époque",
     "Belle Époque theater poster, Toulouse-Lautrec style — flat color, expressive linework, Parisian cabaret atmosphere",
+    "Design gráfico",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-papel-de-parede-vitoriano",
     "style",
     "Papel de Parede Vitoriano",
     "Victorian wallpaper pattern rendered large scale — dense botanical repeat, Morris & Co style, dark and lush",
+    "Ornamental",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-diagrama-de-infografico-vintage",
     "style",
     "Diagrama de Infográfico Vintage",
     "vintage scientific infographic illustration — sepia, hand-lettered annotations, exploded mechanical diagrams, 1920s educational book",
+    "Ilustração técnica",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-tapecaria-medieval",
     "style",
     "Tapeçaria Medieval",
     "medieval tapestry weaving style — flat woven figures, hunting scene, Bayeux Tapestry horizontal narrative, mille-fleurs background",
+    "Têxtil",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-capa-de-pulp-fiction",
     "style",
     "Capa de Pulp Fiction",
     "1950s pulp fiction magazine cover — lurid colors, sensational typography, exaggerated drama, grindhouse aesthetic",
+    "Design gráfico",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-arte-celta-iluminada",
     "style",
     "Arte Celta Iluminada",
     "Celtic illuminated manuscript style — interlaced knotwork borders, zoomorphic initials, Book of Kells gold and ultramarine",
+    "Arte cultural",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-foto-de-satelite-nasa",
     "style",
     "Foto de Satélite NASA",
     "NASA satellite imagery aesthetic — false-color elevation map, top-down orbital view, geographic abstraction",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-impressionismo-frances",
     "style",
     "Impressionismo Francês",
     "French Impressionist oil painting — loose visible brushwork, dappled natural light, Monet or Renoir atmospheric dissolve",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-expressionismo-alemao",
     "style",
     "Expressionismo Alemão",
     "German Expressionist painting — distorted faces, anguished angles, dark psychological terror, Kirchner or Nolde palette",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-litografia-de-cordel",
     "style",
     "Litografia de Cordel",
     "Brazilian cordel string literature lithograph cover — bold hand-carved face, extreme graphic contrast, northeastern hero narrative",
+    "Impressão",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-arte-sequencial-hq-marvel-70s",
     "style",
     "Arte Sequencial (HQ Marvel 70s)",
     "1970s Marvel Comics sequential art — Jack Kirby dots, dynamic panel layouts, hyperbolic action poses, word balloon typography",
+    "Quadrinhos",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-animacao-disney-classica",
     "style",
     "Animação Disney Clássica",
     "Disney golden age hand-drawn animation style, 1940s — clean ink line, watercolor wash backgrounds, expressive eyes",
+    "Animação",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-street-art-tag-e-wildstyle",
     "style",
     "Street Art (Tag e Wildstyle)",
     "graffiti wildstyle lettering and character, spray can on brick, New York City subway heritage, chrome and color",
+    "Arte urbana",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-fotografia-fashion-dos-anos-70",
     "style",
     "Fotografia Fashion dos Anos 70",
     "1970s fashion photography, Helmut Newton influence — stark shadows, power pose, black and white German edge",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de linguagem"
+    0
   ],
   [
     "memorias-style-tarsila-do-amaral",
     "style",
     "Tarsila do Amaral",
     "in the style of Tarsila do Amaral — modernist Brazilian palette, rounded feminine forms, abaporu proportions, vivid tropicalism",
+    "Pintura brasileira",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-candido-portinari",
     "style",
     "Cândido Portinari",
     "in the manner of Cândido Portinari — Brazilian social realism, elongated workers, red laterite earth, political humanity",
+    "Pintura brasileira",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-di-cavalcanti",
     "style",
     "Di Cavalcanti",
     "in the painterly style of Di Cavalcanti — mulata figures, carnival colors, Brazilian sensuality, Cubist-Expressionist hybrid",
+    "Pintura brasileira",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-nelson-leirner",
     "style",
     "Nelson Leirner",
     "in the conceptual-pop tradition of Nelson Leirner — Brazilian consumer culture deconstructed with humor and provocation",
+    "Arte contemporânea",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-vik-muniz",
     "style",
     "Vik Muniz",
     "in the photographic tradition of Vik Muniz — image constructed from unexpected materials, seen from above, beauty from trash or chocolate",
+    "Arte contemporânea",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-helio-oiticica",
     "style",
     "Hélio Oiticica",
     "in the spirit of Hélio Oiticica's Parangolés — participatory art, sensory color, favela geometry, the body as canvas",
+    "Arte contemporânea",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-lygia-clark",
     "style",
     "Lygia Clark",
     "inspired by Lygia Clark's neo-concrete forms — relational objects, sensory participation, malleable aluminum, the body is the work",
+    "Arte contemporânea",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-frans-post",
     "style",
     "Frans Post",
     "in the tradition of Frans Post, Dutch painter of colonial Brazil — 17th-century topographical precision, sugar mill landscapes, exotic flora",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-debret",
     "style",
     "Debret",
     "in the style of Jean-Baptiste Debret — 19th-century Brazilian court illustration, ethnographic precision, colonial ceremony",
+    "Ilustração",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-henri-cartier-bresson",
     "style",
     "Henri Cartier-Bresson",
     "in the decisive moment tradition of Henri Cartier-Bresson — black and white, geometry in street photography, the fraction of a second",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-vivian-maier",
     "style",
     "Vivian Maier",
     "in the style of Vivian Maier — street photography, mirror self-portrait, hidden observation, raw domestic and urban humanity",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-arbus",
     "style",
     "Arbus",
     "in the unsettling portrait tradition of Diane Arbus — flash, direct gaze, marginalized subjects treated with leveling dignity",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-saul-leiter",
     "style",
     "Saul Leiter",
     "in the painterly color photography style of Saul Leiter — snow, glass reflections, peripheral framing, New York impressionism",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-william-eggleston",
     "style",
     "William Eggleston",
     "in the democratic photography of William Eggleston — mundane American subject, dye transfer saturated color, radical ordinariness",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-edward-hopper",
     "style",
     "Edward Hopper",
     "in the mood of Edward Hopper — American loneliness, diner window light, urban solitude, 1950s petroleum hour",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-magritte",
     "style",
     "Magritte",
     "in the surrealist tradition of René Magritte — immaculate impossible image, bowler hats and blue skies, philosophical visual pun",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-salvador-dali",
     "style",
     "Salvador Dalí",
     "in the melting vision of Salvador Dalí — precise impossible forms, Catalan light, surrealist landscape, dream logic made painterly",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-hieronymus-bosch",
     "style",
     "Hieronymus Bosch",
     "in the nightmarish detail of Hieronymus Bosch — medieval hell populated with hybrid creatures, moral panorama, Garden of Earthly Delights",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-alphonse-mucha",
     "style",
     "Alphonse Mucha",
     "in the decorative style of Alphonse Mucha — Art Nouveau, botanical border, female figure as spiritual center, gold and pastel",
+    "Ornamental",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-gustav-klimt",
     "style",
     "Gustav Klimt",
     "in the golden mosaic style of Gustav Klimt — gold leaf, Byzantine pattern, embrace and erotic tension, decorative and profound",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-egon-schiele",
     "style",
     "Egon Schiele",
     "in the raw expressionist line of Egon Schiele — angular contorted bodies, nervous line, psychological exposure, Vienna 1910",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-pieter-bruegel",
     "style",
     "Pieter Bruegel",
     "in the panoramic tradition of Pieter Bruegel the Elder — Flemish landscape full of tiny human figures, moral allegory in community",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-vermeer",
     "style",
     "Vermeer",
     "in the intimate domestic light of Johannes Vermeer — single window, pearl luminescence, Dutch interior, stopped time",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-velazquez",
     "style",
     "Velázquez",
     "in the painterly authority of Diego Velázquez — court portrait with psychological depth, Las Meninas compositional mastery",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-j-m-w-turner",
     "style",
     "J.M.W. Turner",
     "in the atmospheric vortex of J.M.W. Turner — light dissolved into chaos, storm and sea, Romanticism at the verge of abstraction",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-caspar-david-friedrich",
     "style",
     "Caspar David Friedrich",
     "in the sublime of Caspar David Friedrich — solitary figure from behind, vast landscape, Romanticism, the individual against infinity",
+    "Pintura",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-hokusai",
     "style",
     "Hokusai",
     "in the tradition of Katsushika Hokusai — woodblock ukiyo-e print, The Great Wave composition logic, Japanese nature and drama",
+    "Impressão",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-hiroshige",
     "style",
     "Hiroshige",
     "in the serene landscape tradition of Utagawa Hiroshige — Japanese woodblock, rain or snow, travelers on mountain pass, quiet beauty",
+    "Impressão",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-cindy-sherman",
     "style",
     "Cindy Sherman",
     "in the staged self-portrait tradition of Cindy Sherman — role and costume, film still implication, identity construction as art",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-jeff-wall",
     "style",
     "Jeff Wall",
     "in the large-format lightbox tradition of Jeff Wall — cinematically staged documentary scene, Vancouver, moral ambiguity in ordinary moment",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-wolfgang-tillmans",
     "style",
     "Wolfgang Tillmans",
     "in the intimate archive of Wolfgang Tillmans — casual photographs at eye level, nightlife and sunlight, queer and tender",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-peter-beard",
     "style",
     "Peter Beard",
     "in the wild diary tradition of Peter Beard — Africa, animals, handwriting over photographs, life annotated as art",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-ernesto-neto",
     "style",
     "Ernesto Neto",
     "inspired by Ernesto Neto's sensory installations — translucent fabric forms, smell and touch implied, body and space in dialogue",
+    "Arte contemporânea",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-style-chris-ware",
     "style",
     "Chris Ware",
     "in the grid-mapped graphic novel style of Chris Ware — tiny panels, nostalgic color, emotional precision, loneliness as diagram",
+    "Quadrinhos",
     "",
-    "",
-    0,
-    "Referência de assinatura"
+    0
   ],
   [
     "memorias-trend-retratado-como-boneco-de-cera-madame-tussauds",
     "trend",
     "Retratado como Boneco de Cera (Madame Tussauds)",
     "depicted as a wax figure in Madame Tussauds — hyper-realistic but uncanny, velvet rope in front, flash photograph lighting",
+    "Representação",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-capa-de-caras-magazine-anos-90",
     "trend",
     "Capa de Caras Magazine (Anos 90)",
     "staged as a 1990s Caras magazine cover — extreme close-up, glamour lighting, celebrities at their most staged and luminous",
+    "Mídia",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-estatua-de-aeroporto",
     "trend",
     "Estátua de Aeroporto",
     "rendered as a bronze airport departure hall sculpture — life-size, anonymous travellers walking past unseeing",
+    "Representação",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-ex-voto-nordestino",
     "trend",
     "Ex-Voto Nordestino",
     "depicted as a hand-painted ex-voto wooden plaque — naïf style, miracle attributed, church wall setting, gratitude in primitive text",
+    "Cultura brasileira",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-especime-de-museu-de-ciencias",
     "trend",
     "Espécime de Museu de Ciências",
     "displayed as a natural history museum specimen — glass case, pinned and labeled, institutional description placard, cold classification",
+    "Ciência",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-corrida-de-videogame-sprite-select",
     "trend",
     "Corrida de Videogame (Sprite Select)",
     "as a character selection screen in a 1994 fighting game — stats panel, move list, select your fighter typography",
+    "Games",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-personagem-de-cordel-em-verso",
     "trend",
     "Personagem de Cordel em Verso",
     "as hero of a printed cordel pamphlet — heptasyllabic verse narrates their deeds in woodcut panels, Northeastern Brazil",
+    "Cultura brasileira",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-fotografia-de-escola",
     "trend",
     "Fotografia de Escola",
     "as an official school portrait photograph — blue backdrop, awkward smile, student uniform, 1997 yearbook format",
+    "Representação",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-mascote-de-time-brasileiro",
     "trend",
     "Mascote de Time Brasileiro",
     "reimagined as a Brazilian football club mascot — cartoon style, team colors, grito de guerra pose, stadium entrance gate",
+    "Esporte",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-figura-de-presepio-nordestino",
     "trend",
     "Figura de Presépio Nordestino",
     "as a hand-painted clay nativity scene figure — folk religious tradition, earthen colors, simplified but expressive form",
+    "Cultura brasileira",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-preso-em-ambar-museu-natural",
     "trend",
     "Preso em Âmbar (Museu Natural)",
     "preserved in amber, displayed in a natural history museum — ancient, suspended in gold resin, perfectly preserved tragedy",
+    "Ciência",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-folha-de-album-de-figurinhas",
     "trend",
     "Folha de Álbum de Figurinhas",
     "as a Panini sticker album card — silver holographic border, name bar at bottom, 1994 World Cup sticker energy",
+    "Esporte",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-verbete-da-wikipedia-2006",
     "trend",
     "Verbete da Wikipédia (2006)",
     "depicted as a Wikipedia article's main illustration — white background, descriptive caption, no-frills documentary neutrality",
+    "Mídia",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-propaganda-de-cerveja-brasileira",
     "trend",
     "Propaganda de Cerveja Brasileira",
     "as a 1990s Brazilian beer advertisement — tropical setting, yellow and green, humor and sexual charge, Brahma or Skol aesthetic",
+    "Publicidade",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-cena-de-telenovela-das-9",
     "trend",
     "Cena de Telenovela das 9",
     "staged as a Brazilian prime-time novela scene — overlit studio, dramatic close-up, tears about to fall, Globo aesthetic",
+    "Televisão",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-personagem-de-rpg-de-mesa",
     "trend",
     "Personagem de RPG de Mesa",
     "illustrated as a tabletop RPG character sheet — stats panel, equipment list, class and alignment, dungeon master's notebook",
+    "Games",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-frente-de-camisa-de-time",
     "trend",
     "Frente de Camisa de Time",
     "as a football shirt graphic — club crest style, shield form, heraldic animal, Brazilian sports identity",
+    "Esporte",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-heroi-de-cordel-em-quadrao",
     "trend",
     "Herói de Cordel em Quadrão",
     "as a full-panel Brazilian cordel comic book hero — dynamic pose, speech bubble in verse, Northeast setting",
+    "Cultura brasileira",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-retrato-policial-mugshot",
     "trend",
     "Retrato Policial (Mugshot)",
     "as a police mugshot — front and profile views, height ruler, number placard, institutional fluorescent light, deadpan",
+    "Representação",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-poster-de-se-procura",
     "trend",
     "Pôster de Se Procura",
     "on a wanted poster — PROCURADO in bold, black and white portrait, reward amount, western or noir atmosphere",
+    "Mídia",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-embrulho-de-produto-de-mercado",
     "trend",
     "Embrulho de Produto de Mercado",
     "illustrated on a consumer product package — mascot and brand language, nutritional information panel, Brazilian supermarket shelf",
+    "Publicidade",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-personagem-de-anime-brasileiro",
     "trend",
     "Personagem de Animê Brasileiro",
     "reimagined as a Brazilian anime character — large eyes, Rio or Salvador setting, Axé or funk soundtrack implied, mecha or magical girl genre",
+    "Cultura brasileira",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-trend-santos-do-povo-garrafa-de-cachaca",
     "trend",
     "Santos do Povo (Garrafa de Cachaça)",
     "depicted as the label of an artisanal cachaça bottle — Northeastern saint iconography, hand-lettered name, sugar cane motif",
+    "Cultura brasileira",
     "",
-    "",
-    0,
-    "Referência de torcao"
+    0
   ],
   [
     "memorias-detail-moscas-em-voo-lento",
     "detail",
     "Moscas em Voo Lento",
     "slow-motion flies visible in the air, suggesting heat, decay, and the tropics at their most humid and real",
+    "Natureza",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-data-de-nascimento-como-codigo",
     "detail",
     "Data de Nascimento como Código",
     "a birth year or date encoded subtly in the image — as a license plate, a graffiti tag, or a worn tattoo",
+    "Simbolismo",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-sombra-que-nao-corresponde",
     "detail",
     "Sombra que Não Corresponde",
     "the subject's shadow does not match their form — it belongs to someone or something else entirely, cast from an unseen source",
+    "Simbolismo",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-espelho-rachado",
     "detail",
     "Espelho Rachado",
     "a cracked mirror somewhere in the frame — reflection multiplied and distorted, fracture as metaphor",
+    "Simbolismo",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-relogio-parado",
     "detail",
     "Relógio Parado",
     "a clock visible in the scene showing a specific time — stopped, meaningful, the moment preserved in amber",
+    "Tempo e memória",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-bilhete-escrito-a-mao",
     "detail",
     "Bilhete Escrito à Mão",
     "a handwritten note visible somewhere in the scene — illegible but emotional, personal history in cursive",
+    "Tempo e memória",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-plastico-de-cadeira-coberto",
     "detail",
     "Plástico de Cadeira Coberto",
     "plastic furniture cover still on a chair or couch — Brazilian domestic detail, preservation as social anxiety",
+    "Objetos cotidianos",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-fotografia-dentro-da-fotografia",
     "detail",
     "Fotografia Dentro da Fotografia",
     "a framed photograph within the photograph — another scene nested inside, memory within memory",
+    "Metalinguagem",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-cigarro-a-consumir-se",
     "detail",
     "Cigarro a Consumir-se",
     "a burning cigarette balanced on an ashtray's edge — smoke rising, time passing, the scene about to change",
+    "Tempo e memória",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-cobertor-de-croche",
     "detail",
     "Cobertor de Crochê",
     "a handmade crochê blanket visible in the scene — grandmother's hands implied, domestic warmth, acrylic yarn and memory",
+    "Objetos cotidianos",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-garrafao-de-agua-mineral",
     "detail",
     "Garrafão de Água Mineral",
     "a blue plastic water gallon jug visible in the scene — Brazilian domestic signifier, social class quietly declared",
+    "Objetos cotidianos",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-tv-ligada-ao-fundo",
     "detail",
     "TV Ligada ao Fundo",
     "a CRT television playing something in the background — news or novela barely visible, blue light spilling into the room",
+    "Objetos cotidianos",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-cachorro-vira-lata",
     "detail",
     "Cachorro Vira-Lata",
     "a Brazilian mixed-breed street dog (vira-lata) somewhere in the frame — observing, resting, belonging fully to the scene",
+    "Natureza",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-fio-de-cabelo-na-lente",
     "detail",
     "Fio de Cabelo na Lente",
     "a single hair resting on the camera lens — intimate imperfection, the photographer's presence implied",
+    "Textura e superfície",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-numero-de-protocolo",
     "detail",
     "Número de Protocolo",
     "an official protocol number stamped or written somewhere visible — bureaucracy as aesthetic, the state's fingerprint",
+    "Simbolismo",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-ventilador-de-teto-girando",
     "detail",
     "Ventilador de Teto Girando",
     "a ceiling fan in slow motion above the scene — tropical heat, Southern light, the rhythm of humidity",
+    "Movimento",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-caixa-de-fosforos",
     "detail",
     "Caixa de Fósforos",
     "a matchbox visible somewhere in the composition — fire potential, the ordinary made dangerous, Brazilian brand design",
+    "Objetos cotidianos",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-sandalia-havaiana",
     "detail",
     "Sandália Havaiana",
     "a pair of Havaianas somewhere in the scene — Brazilian universal object, class and comfort and beach collapsed into one",
+    "Objetos cotidianos",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-folha-de-bananeira",
     "detail",
     "Folha de Bananeira",
     "a banana leaf framing or cutting through the image — tropical weight, tropical green, tropical logic",
+    "Natureza",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-mancha-de-umidade-na-parede",
     "detail",
     "Mancha de Umidade na Parede",
     "a damp stain on the wall behind the subject — tropical decay, time passing through plaster, interior weather",
+    "Textura e superfície",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-replica-em-miniatura",
     "detail",
     "Réplica em Miniatura",
     "a miniature replica of the main subject visible somewhere in the frame — the thing observing itself, uncanny repetition",
+    "Metalinguagem",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-rasgo-na-borda-do-frame",
     "detail",
     "Rasgo na Borda do Frame",
     "the image tears at one edge as if it is a printed photograph being ripped — the image as physical fragile object",
+    "Textura e superfície",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-balao-murchando",
     "detail",
     "Balão Murchando",
     "a deflating balloon somewhere in the scene — celebration ending, time's passage made rubber and color",
+    "Tempo e memória",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-abelha-no-quadro",
     "detail",
     "Abelha no Quadro",
     "a single bee resting somewhere unexpected in the composition — fragility, nature inserting itself, the detail that changes everything",
+    "Natureza",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-vapor-de-comida-quente",
     "detail",
     "Vapor de Comida Quente",
     "steam rising from a plate of food in the foreground — meal as presence, warmth and nourishment, the domestic sacred",
+    "Atmosfera",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-estatica-de-televisao",
     "detail",
     "Estática de Televisão",
     "television static snow texture overlaid at the edges of the image — signal lost, memory failing, the broadcast ending",
+    "Textura e superfície",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-passo-de-samba-em-blur",
     "detail",
     "Passo de Samba em Blur",
     "motion blur on feet that are dancing — the rest of the image sharp, only the rhythm is moving",
+    "Movimento",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-rasura-de-censurado",
     "detail",
     "Rasura de Censurado",
     "a thick black censorship bar over some element of the image — what was removed matters as much as what remains",
+    "Simbolismo",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-detail-corda-bamba",
     "detail",
     "Corda Bamba",
     "a tightrope wire visible across the image — the subject is or will be on it, equilibrium as permanent condition",
+    "Simbolismo",
     "",
-    "",
-    0,
-    "Referência de tempero"
+    0
   ],
   [
     "memorias-medium-capa-de-livro-de-bolso",
     "medium",
     "Capa de Livro de Bolso",
     "mass market paperback book cover format — spine visible, author credit, tag-line below title, bookstore shelf context",
+    "Editorial",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-poster-de-coluna-de-metro",
     "medium",
     "Pôster de Coluna de Metrô",
     "vertical subway column poster format, 3:1 ratio, designed for passing eyes, bold and immediate",
+    "Publicidade",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-tela-de-celular-9-16",
     "medium",
     "Tela de Celular (9:16)",
     "vertical 9:16 smartphone screen format, social media native, full-bleed immersion, thumb-scroll ready",
+    "Digital",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-fita-k7-j-card",
     "medium",
     "Fita K7 (J-Card)",
     "cassette tape J-card insert format — folded rectangle, tracklist side, lo-fi illustration, 1990s bedroom",
+    "Música",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-ingresso-de-show",
     "medium",
     "Ingresso de Show",
     "concert ticket format — perforated edge, barcode, venue name, date stamped, collectible artifact",
+    "Colecionáveis",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-capa-de-almanaque",
     "medium",
     "Capa de Almanaque",
     "Brazilian almanaque calendar cover format — year prominent, folkloric illustration, 12-month calendar grid implied below",
+    "Editorial",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-placa-de-transito",
     "medium",
     "Placa de Trânsito",
     "road sign format — standardized colors and shapes, pictographic language, warning or direction as image",
+    "Sinalização",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-selo-postal",
     "medium",
     "Selo Postal",
     "postage stamp format — perforated border, denomination value, miniature scene of national significance",
+    "Colecionáveis",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-rotulo-de-cachaca",
     "medium",
     "Rótulo de Cachaça",
     "cachaça bottle label format — Brazilian heraldic illustration, artisanal typography, geographical indication seal",
+    "Embalagens",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-placa-de-rua-artesanal",
     "medium",
     "Placa de Rua Artesanal",
     "hand-painted Brazilian city street sign format — azulejo tile or painted wood, neighborhood name, folk typography",
+    "Sinalização",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-capa-de-disco-maxi-single",
     "medium",
     "Capa de Disco (Maxi-Single)",
     "12-inch vinyl maxi-single cover format — square, design-forward, 1980s club aesthetic, genre information at bottom",
+    "Música",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-capa-de-quadrinho",
     "medium",
     "Capa de Quadrinho",
     "comic book cover format — dynamic action framing, story-title typography, issue number and price in corner",
+    "Quadrinhos",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-fotografia-4x6-com-borda",
     "medium",
     "Fotografia 4x6 com Borda",
     "standard 4x6 developed photograph with white border, the physical object of memory",
+    "Fotografia",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-banner-de-caminhao-sonoro",
     "medium",
     "Banner de Caminhão Sonoro",
     "political campaign sound truck banner format — face enormous, name in impact typography, color-field background, Brazil election",
+    "Publicidade",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-peca-de-lego-instrucao",
     "medium",
     "Peça de LEGO (Instrução)",
     "LEGO instruction manual illustration format — white background, numbered step, isometric assembly diagram, primary colors",
+    "Instrução técnica",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-outdoor-de-rodovia",
     "medium",
     "Outdoor de Rodovia",
     "Brazilian highway billboard format — weathered, large, seen at 120km/h, political or beer or cell plan",
+    "Publicidade",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-medium-zine-underground-a5",
     "medium",
     "Zine Underground (A5)",
     "photocopied underground zine page, A5 format, risograph texture, cut-and-paste layout, punk DIY aesthetic",
+    "Editorial",
     "",
-    "",
-    0,
-    "Referência de formato"
+    0
   ],
   [
     "memorias-palette-verde-mata-atlantica",
     "palette",
     "Verde Mata Atlântica",
     "dominant palette: Atlantic Forest deep greens — emerald, moss, shadow-black, rain-wet leaf",
+    "Natural",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-amarelo-e-verde-brasilidade",
     "palette",
     "Amarelo e Verde Brasilidade",
     "dominant palette: Brazil national yellow and green — patriotic, ambiguous, beautiful and contested",
+    "Brasileira",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-marrom-seco-sertao",
     "palette",
     "Marrom Seco Sertão",
     "dominant palette: Brazilian sertão dry season — bleached bone white, dust gray, caatinga brown, minimal shadow",
+    "Brasileira",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-azul-e-branco-azulejo",
     "palette",
     "Azul e Branco Azulejo",
     "dominant palette: cobalt blue and stark white — Portuguese tile tradition, clean graphic contrast",
+    "Artesanal",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-roxo-e-dourado-carnaval",
     "palette",
     "Roxo e Dourado Carnaval",
     "dominant palette: carnival purple and gold — theatrical richness, feathers and sequins implied",
+    "Brasileira",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-cinza-industrial",
     "palette",
     "Cinza Industrial",
     "dominant palette: industrial gray scale — concrete, steel, factory, the ABC strikes palette",
+    "Industrial",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-vermelho-sangue",
     "palette",
     "Vermelho Sangue",
     "dominant palette: deep blood red against near-black — political urgency, sacrifice, passion at its most extreme",
+    "Quente",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-rosa-millennial",
     "palette",
     "Rosa Millennial",
     "dominant palette: millennial pink and rose gold — Instagram-era softness, femininity, 2010s visual culture",
+    "Suave",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-bege-e-nude-moderno",
     "palette",
     "Bege e Nude Moderno",
     "dominant palette: warm nude and beige minimalism — skin tones, linen, sand, understated luxury",
+    "Neutra",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-turquesa-e-coral",
     "palette",
     "Turquesa e Coral",
     "dominant palette: tropical turquoise and coral — Caribbean sea and tropical fish, Copacabana 1970s postcard",
+    "Equilibrada",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-escuro-com-pops-neon",
     "palette",
     "Escuro com Pops Neon",
     "dominant palette: near-black with isolated neon accents — dark matter with flashes of electric color breaking through",
+    "Noturna",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-dourado-oxidado",
     "palette",
     "Dourado Oxidado",
     "dominant palette: oxidized gold, verdigris, rust — aged metal, time's effect on wealth, patina as beauty",
+    "Nobre",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-branco-hospitalar",
     "palette",
     "Branco Hospitalar",
     "dominant palette: clinical white and off-white — institutional, sterile, absence as presence",
+    "Neutra",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-madrugada-azul",
     "palette",
     "Madrugada Azul",
     "dominant palette: 4am blue — the specific color of night just before dawn, cold and liminal and quiet",
+    "Noturna",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-terroso-pre-colombiano",
     "palette",
     "Terroso Pré-Colombiano",
     "dominant palette: pre-Columbian earth — oxblood, ochre, raw umber, the Americas before Columbus",
+    "Natural",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-preto-e-vermelho-expressionista",
     "palette",
     "Preto e Vermelho Expressionista",
     "dominant palette: German Expressionist red and black — psychological violence, maximum graphic tension, Munch and Kirchner",
+    "Intensa",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-ciano-ciberpunk",
     "palette",
     "Ciano Ciberpunk",
     "dominant palette: cyberpunk teal and electric cyan on black — digital rain, data streams, the city as circuit",
+    "Noturna",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-palette-esverdeado-de-camera-de-seguranca",
     "palette",
     "Esverdeado de Câmera de Segurança",
     "dominant palette: security camera green-gray nightvision — surveillance aesthetic, thermal ambiguity, watching without feeling",
+    "Urbana",
     "",
-    "",
-    0,
-    "Referência de paleta"
+    0
   ],
   [
     "memorias-mood-tedio-sagrado",
     "mood",
     "Tédio Sagrado",
     "emotional register: sacred boredom — the profound hidden inside the deeply, uselessly ordinary moment",
+    "Contemplação",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-orgulho-contido",
     "mood",
     "Orgulho Contido",
     "emotional register: restrained pride — dignity hard-won and held quietly, not performed but present",
+    "Emoção",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-curiosidade-feroz",
     "mood",
     "Curiosidade Feroz",
     "emotional register: ferocious curiosity — intelligence hungry, eyes forward, the world as unsolved problem",
+    "Descoberta",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-saudade",
     "mood",
     "Saudade",
     "emotional register: pure saudade — the specifically Portuguese-Brazilian longing for something beautiful that is gone or maybe never was",
+    "Emoção",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-terror-cotidiano",
     "mood",
     "Terror Cotidiano",
     "emotional register: everyday terror — the horror present in the mundane, the catastrophe that no one around you notices",
+    "Tensão",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-carnavalesco",
     "mood",
     "Carnavalesco",
     "emotional register: carnivalesque — all hierarchies inverted, excess and play and the body sovereign for one night",
+    "Celebração",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-clinico-dissociado",
     "mood",
     "Clínico / Dissociado",
     "emotional register: clinical dissociation — observed from outside oneself, the body visible but the self elsewhere",
+    "Tensão",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-esperanca-exausta",
     "mood",
     "Esperança Exausta",
     "emotional register: exhausted hope — people who have been waiting for too long but still have not given up",
+    "Emoção",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-gratidao-excessiva",
     "mood",
     "Gratidão Excessiva",
     "emotional register: excessive gratitude — overwhelming thankfulness for something small, grace in the ordinary",
+    "Emoção",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-vergonha-alheia",
     "mood",
     "Vergonha Alheia",
     "emotional register: second-hand embarrassment — the viewer cannot look away and cannot look directly either",
+    "Social",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-luxuria-tropical",
     "mood",
     "Luxúria Tropical",
     "emotional register: tropical lust — heat and slowness and the body as constant fact, desire in the air like humidity",
+    "Intensidade",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-melancolia-do-domingo",
     "mood",
     "Melancolia do Domingo",
     "emotional register: Sunday afternoon melancholy — the week ending, time passing, something small and irreversible",
+    "Emoção",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-furia-justa",
     "mood",
     "Fúria Justa",
     "emotional register: righteous fury — anger completely deserved, moral clarity giving fire a direction and a target",
+    "Intensidade",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-extase-coletivo",
     "mood",
     "Êxtase Coletivo",
     "emotional register: collective ecstasy — one feeling shared by thousands of bodies simultaneously, the self dissolved in the crowd",
+    "Celebração",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-resignacao-elegante",
     "mood",
     "Resignação Elegante",
     "emotional register: elegant resignation — acceptance of the unavoidable arrived at through long thought and not defeat",
+    "Contemplação",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-mood-ternura-improvavel",
     "mood",
     "Ternura Improvável",
     "emotional register: unlikely tenderness — softness discovered in the hardest context, the gentle detail in the brutal scene",
+    "Emoção",
     "",
-    "",
-    0,
-    "Referência de escala"
+    0
   ],
   [
     "memorias-composition-macro-extremo-textura",
     "composition",
     "Macro Extremo (Textura)",
     "extreme macro photography — surface texture fills the entire frame, material identity revealed at cellular scale",
+    "Lente",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-periscopio-agua",
     "composition",
     "Periscópio (Água)",
     "split-frame periscope shot — half above water, half below, two worlds divided by the surface tension line",
+    "Ponto de vista",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-retrovisor-de-carro",
     "composition",
     "Retrovisor de Carro",
     "view through a car rear-view mirror — the subject reflected small in the glass, the road ahead out of frame",
+    "Ponto de vista",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-camera-de-seguranca-cftv",
     "composition",
     "Câmera de Segurança (CFTV)",
     "CCTV security camera aesthetic — wide angle, timestamp burned into corner, surveillance green-gray color",
+    "Vigilância",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-camera-escondida-found-footage",
     "composition",
     "Câmera Escondida (Found Footage)",
     "found footage aesthetic — shaky, amateur, the camera barely keeping up with events, format suggests truth",
+    "Ponto de vista",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-camera-no-capacete",
     "composition",
     "Câmera no Capacete",
     "helmet-cam or body-cam POV — action sport or police footage, wide fisheye, physical urgency",
+    "Ponto de vista",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-teleobjetiva-comprimida",
     "composition",
     "Teleobjetiva Comprimida",
     "extreme telephoto lens compression — foreground and background smashed together, figures flattened into graphic layers",
+    "Lente",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-camera-por-debaixo-da-mesa",
     "composition",
     "Câmera por Debaixo da Mesa",
     "low angle shot from beneath a table — legs, shoes, and the undersides of surfaces, the overlooked world below",
+    "Ponto de vista",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-camera-no-teto-plafon",
     "composition",
     "Câmera no Teto (Plafôn)",
     "camera mounted on the ceiling looking straight down — figures seen only as tops of heads and shoulders, the God angle",
+    "Ângulo",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-camera-lenta-phantom",
     "composition",
     "Câmera Lenta (Phantom)",
     "ultra slow-motion Phantom camera — motion invisible to the naked eye revealed, droplets and fabric and fire",
+    "Movimento",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-camera-rapida-time-lapse",
     "composition",
     "Câmera Rápida (Time-lapse)",
     "time-lapse photography — clouds race, crowds swirl, seasons pass, a single frame represents compressed time",
+    "Movimento",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-perimetral-camera-de-futebol",
     "composition",
     "Perimetral (Câmera de Futebol)",
     "perimeter-camera football broadcast aesthetic — wide and slightly low, the pitch as theater, warm stadium light",
+    "Ponto de vista",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-camera-de-seguranca-de-banco",
     "composition",
     "Câmera de Segurança de Banco",
     "bank robbery surveillance camera aesthetic — extremely wide, ceiling corner, the entire room visible and impersonal",
+    "Vigilância",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-porta-entreaberta",
     "composition",
     "Porta Entreaberta",
     "shot through a barely open door — partial view, implied eavesdropping, the frame as threshold, intimacy observed from outside",
+    "Enquadramento",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-camera-de-vestibulo",
     "composition",
     "Câmera de Vestíbulo",
     "hotel lobby or elevator security camera angle — overhead, slightly off-center, people waiting and unaware",
+    "Vigilância",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "memorias-composition-zoom-nervoso-newsreel",
     "composition",
     "Zoom Nervoso (Newsreel)",
     "handheld newsreel zoom — uncertain framing, something happening fast, journalism under pressure",
+    "Movimento",
     "",
-    "",
-    0,
-    "Referência de camera"
+    0
   ],
   [
     "midias-anchor-darth-vader",
@@ -4469,1730 +4285,1557 @@ const rows: ReferenceRow[] = [
     "style",
     "HQ Marvel Anos 70",
     "1970s Marvel Comics sequential art, Jack Kirby dots, dynamic panel composition, bold Ben-Day print colors, hyperbolic action",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-hq-noir-sin-city",
     "style",
     "HQ Noir (Sin City)",
     "Sin City Frank Miller graphic novel style, pure black and white, single color accent (red or yellow), brutalist negative space",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-ligne-claire-herge",
     "style",
     "Ligne Claire (Hergé)",
     "Ligne claire clear-line illustration style, Hergé Tintin aesthetic, clean even outlines, flat color fills, no hatching",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-manga-anos-80",
     "style",
     "Manga Anos 80",
     "1980s Japanese manga aesthetic, screen-tone textures, large expressive eyes, speed lines, Akira-era Otomo influence",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-anime-cel-pintado",
     "style",
     "Anime Cel Pintado",
     "hand-painted anime cel animation, 1990s Japanese animation production art, cel shading visible, painted studio background",
+    "Animação",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-akira-katsuhiro-otomo",
     "style",
     "Akira (Katsuhiro Otomo)",
     "Katsuhiro Otomo Akira-style illustration, hyper-detailed dystopian cityscape, bike chase composition, neo-Tokyo 2019",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-pixel-art-rpg-16-bit",
     "style",
     "Pixel Art RPG 16-bit",
     "16-bit RPG pixel art, Super Nintendo era, character sprite with animated idle pose, overworld map tile perspective",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-concept-art-de-game-aaa",
     "style",
     "Concept Art de Game AAA",
     "AAA video game concept art, digital painting, environmental storytelling, production design document quality",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-screenshot-in-engine",
     "style",
     "Screenshot In-Engine",
     "in-engine video game screenshot aesthetic, Unreal Engine 5 real-time rendering, HUD elements ghosted at frame edge",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-arte-de-caixa-de-jogo-80s",
     "style",
     "Arte de Caixa de Jogo (80s)",
     "1980s video game box art, extreme dramatic painted illustration, characters much larger than the game could render, airbrushed heroism",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-capa-de-hq-jim-lee",
     "style",
     "Capa de HQ (Jim Lee)",
     "Jim Lee superhero cover art style, dynamic anatomy, dense cross-hatching, spectacularly choreographed power poses",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-capa-de-hq-moebius",
     "style",
     "Capa de HQ (Moebius)",
     "Moebius graphic novel cover, precise clean lines, alien landscapes, philosophical imagery, Les Humanoïdes Associés",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-estetica-ghibli-fundo",
     "style",
     "Estética Ghibli (Fundo)",
     "Studio Ghibli hand-painted background art, detailed naturalistic environment, every leaf, Kazuo Oga landscape tradition",
+    "Animação",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-arte-de-card-magic-tg",
     "style",
     "Arte de Card (Magic: TG)",
     "Magic: The Gathering card illustration style, painted fantasy art, dark border, card name and mana cost implied",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-loading-screen-de-ps1",
     "style",
     "Loading Screen de PS1",
     "PlayStation 1 era loading screen aesthetic, grey polygon shapes on black, blocky 3D figures, CD load progress implied",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de linguagem"
+    1
   ],
   [
     "midias-style-jack-kirby",
     "style",
     "Jack Kirby",
     "in the dynamic style of Jack Kirby — Kirby Krackle energy dots, monumental figures, cosmic Marvel mythology",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-steve-ditko",
     "style",
     "Steve Ditko",
     "in the style of Steve Ditko — angular Spider-Man web-slinging, Doctor Strange psychedelia, precise moral panic energy",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-jim-lee",
     "style",
     "Jim Lee",
     "in the style of Jim Lee — 1990s X-Men era superhero anatomy, extreme cross-hatching, peak action composition",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-neal-adams",
     "style",
     "Neal Adams",
     "in the style of Neal Adams — realistic superhero anatomy, 1970s DC Comics, socially conscious storytelling, dramatic lighting",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-dave-mckean",
     "style",
     "Dave McKean",
     "in the mixed-media collage style of Dave McKean — Sandman covers, photography and painting and found imagery, dark symbolic",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-katsuhiro-otomo",
     "style",
     "Katsuhiro Otomo",
     "in the style of Katsuhiro Otomo's Akira — hyper-detailed mecha, neo-Tokyo crowds, kinetic action, prescient dystopia",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-hayao-miyazaki",
     "style",
     "Hayao Miyazaki",
     "in the world-building vision of Hayao Miyazaki — wind, flight, nature as spirit, the child as moral compass, Studio Ghibli",
+    "Animação",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-hideo-kojima",
     "style",
     "Hideo Kojima",
     "art direction by Hideo Kojima — cinematic hyper-realism, lengthy cutscene aesthetic, narrative excess as style",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-ridley-scott",
     "style",
     "Ridley Scott",
     "cinematography by Ridley Scott — atmospheric chiaroscuro, production design as storytelling, alien grandeur",
+    "Cinematográfico",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-david-fincher",
     "style",
     "David Fincher",
     "directed by David Fincher — desaturated cool palette, extreme compositional precision, dread in the ordinary",
+    "Cinematográfico",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-john-carpenter",
     "style",
     "John Carpenter",
     "in the John Carpenter tradition — widescreen Panavision, small town isolation, practical effects, synthesizer dread",
+    "Cinematográfico",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-guillermo-del-toro",
     "style",
     "Guillermo del Toro",
     "in Guillermo del Toro's aesthetic — baroque creature design, political fairy tale, candlelight and old gold and horror",
+    "Cinematográfico",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-tim-burton",
     "style",
     "Tim Burton",
     "in Tim Burton's visual world — striped black and white, curved architecture, the outsider as protagonist, Danny Elfman implied",
+    "Cinematográfico",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-christopher-nolan",
     "style",
     "Christopher Nolan",
     "directed by Christopher Nolan — IMAX scale, practical photography, temporal complexity, Hans Zimmer crescendo implied",
+    "Cinematográfico",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-masashi-kishimoto",
     "style",
     "Masashi Kishimoto",
     "in the manga style of Masashi Kishimoto's Naruto — ninja action, dramatic eye techniques, friendship as power source",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-style-frank-miller",
     "style",
     "Frank Miller",
     "in the graphic novel style of Frank Miller — extreme shadow, crime noir, hyper-masculine brutalism, Sin City or 300 era",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de assinatura"
+    1
   ],
   [
     "midias-trend-crossover-impossivel",
     "trend",
     "Crossover Impossível",
     "an impossible crossover — characters from entirely different fictional universes meeting for the first time, consequences unknown",
+    "Narrativa",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-villao-como-protagonista",
     "trend",
     "Villão como Protagonista",
     "the villain reframed as the true protagonist — their perspective, their motivations, their grief, fully visible for the first time",
+    "Narrativa",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-lado-b-do-canon",
     "trend",
     "Lado B do Canon",
     "the untold side story — what happened in the room, on the ship, in the world while the main story was elsewhere",
+    "Narrativa",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-if-they-won",
     "trend",
     "If They Won",
     "an alternate history where they won — the defeated empire's victory, the hero's failure, all consequences that follow",
+    "Narrativa",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-versao-brasileira",
     "trend",
     "Versão Brasileira",
     "the story fully relocated to Brazil — cast, setting, aesthetic, social tensions all replaced with authentic Brazilian equivalents",
+    "Cultura brasileira",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-universo-pos-apocalipse",
     "trend",
     "Universo Pós-Apocalipse",
     "the character surviving in a post-apocalyptic version of their world — the same person, transformed by devastation",
+    "Narrativa",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-versao-infantil",
     "trend",
     "Versão Infantil",
     "depicted as a children's illustration character — simplified, safe, slightly absurd, the horror made cute",
+    "Narrativa",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-versao-idosa",
     "trend",
     "Versão Idosa",
     "the character decades later, aged, carrying the weight of their story, how did the adventure end in their face",
+    "Temporal",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-lado-de-dentro-da-cena",
     "trend",
     "Lado de Dentro da Cena",
     "depicted from inside a famous scene — the perspective never shown, the angle the camera never reached",
+    "Perspectiva",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-objeto-perdido-encontrado",
     "trend",
     "Objeto Perdido Encontrado",
     "the character reduced to one personal object — a boot, a weapon, a letter — their entire story compressed into it",
+    "Simbolismo",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-momento-de-paz",
     "trend",
     "Momento de Paz",
     "the character at rest, before or after everything — the quiet moment that action-driven narratives always skip",
+    "Narrativa",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-trend-fan-art-dentro-do-canon",
     "trend",
     "Fan Art Dentro do Canon",
     "depicted as in-universe fan art — how their own world imagines them as a legend, painted by a fictional admirer",
+    "Metalinguagem",
     "",
-    "",
-    1,
-    "Referência de torcao"
+    1
   ],
   [
     "midias-detail-easter-egg-de-outra-franquia",
     "detail",
     "Easter Egg de Outra Franquia",
     "a subtle easter egg from a different franchise hidden in the background — only true fans will notice",
+    "Metalinguagem",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-hud-de-videogame",
     "detail",
     "HUD de Videogame",
     "a barely visible heads-up display overlaid: health bar, minimap corner, ammo count — reality as a game",
+    "Interface",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-painel-de-hq-vizinho",
     "detail",
     "Painel de HQ Vizinho",
     "the edge of an adjacent comic panel bleeds into the frame — another story happening simultaneously just outside",
+    "Metalinguagem",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-cracha-de-convencao",
     "detail",
     "Crachá de Convenção",
     "a San Diego Comic-Con or similar fan convention badge visible on the subject — the boundary between fiction and devotion",
+    "Objetos cotidianos",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-autografo-do-autor",
     "detail",
     "Autógrafo do Autor",
     "a creator's signature visible somewhere in the scene — Stan Lee, Hideo Kojima, Hayao Miyazaki — the god of this world signing it",
+    "Metalinguagem",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-disco-de-vinil-visivel",
     "detail",
     "Disco de Vinil Visível",
     "a vinyl record visible with a tracklist that tells a story — the soundtrack to this moment made physical",
+    "Objetos cotidianos",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-cena-congelada-pause",
     "detail",
     "Cena Congelada (Pause)",
     "the image appears paused mid-action — pixelated pause symbol faint in corner, time stopped by someone watching",
+    "Metalinguagem",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-luz-de-cutscene",
     "detail",
     "Luz de Cutscene",
     "lighting that shifts unnaturally mid-scene, suggesting a cinematic cutscene has taken over from gameplay",
+    "Metalinguagem",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-breaking-fourth-wall",
     "detail",
     "Breaking Fourth Wall",
     "the character appears to look directly at the viewer — fully aware of being watched, the fourth wall acknowledged",
+    "Metalinguagem",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-fan-theory-confirmada",
     "detail",
     "Fan Theory Confirmada",
     "one detail in the image quietly confirms a fan theory — something canon never showed but everyone suspected",
+    "Metalinguagem",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-texto-comentario-de-reddit",
     "detail",
     "Texto Comentário de Reddit",
     "a Reddit comment thread watermarked faintly at the image edge, discussing what we are seeing in real time",
+    "Interface",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-detail-episodio-perdido",
     "detail",
     "Episódio Perdido",
     "the aesthetic of a lost episode — slightly degraded, wrong aspect ratio, the title card burned in, never officially released",
+    "Tempo e memória",
     "",
-    "",
-    1,
-    "Referência de tempero"
+    1
   ],
   [
     "midias-medium-painel-de-hq-simples",
     "medium",
     "Painel de HQ (simples)",
     "single comic book panel format, speech bubbles possible, panel border visible, Ben-Day print dot texture",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "midias-medium-pagina-dupla-de-hq",
     "medium",
     "Página Dupla de HQ",
     "double-page comic book spread format, extreme horizontal composition, two-page narrative sweep",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "midias-medium-splash-page-epica",
     "medium",
     "Splash Page Épica",
     "full splash page comic book format, single massive image, no panel borders, pure visual impact",
+    "Quadrinhos",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "midias-medium-capa-de-game-ps2",
     "medium",
     "Capa de Game (PS2)",
     "PlayStation 2 game cover format, vertical box art, blue disc icon at top right, PEGI rating, title typography",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "midias-medium-capa-de-bluray-4k",
     "medium",
     "Capa de Bluray 4K",
     "4K Ultra HD Blu-ray steelbook cover format, limited edition art, embossed metallic finish implied, collector aesthetic",
+    "Cinema",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "midias-medium-loading-screen-de-jogo",
     "medium",
     "Loading Screen de Jogo",
     "video game loading screen format, progress bar at bottom, tip text visible, the world about to begin",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "midias-medium-game-over-screen",
     "medium",
     "Game Over Screen",
     "game over screen format, pixelated or stylized typography, skull or defeated sprite, insert coin or press start",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "midias-medium-menu-principal-de-game",
     "medium",
     "Menu Principal de Game",
     "video game main menu format, ambient environment visible, option list, the world waiting for the player to enter",
+    "Games",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "midias-medium-curta-de-cinema-1-37-1",
     "medium",
     "Curta de Cinema (1.37:1)",
     "Academy ratio 1.37:1 format, classic pre-widescreen cinema, intimate and square, old Hollywood proportion",
+    "Cinema",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "midias-medium-teaser-poster-atmosferico",
     "medium",
     "Teaser Poster (Atmosférico)",
     "teaser theatrical poster format, minimal imagery, enormous white space, one haunting image, release date only",
+    "Publicidade",
     "",
-    "",
-    1,
-    "Referência de formato"
+    1
   ],
   [
     "html-original-anchor-kurt-cobain",
     "anchor",
     "Kurt Cobain",
     "Kurt Cobain",
+    "Música",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-ayrton-senna",
     "anchor",
     "Ayrton Senna",
     "Ayrton Senna in his red and white racing helmet",
+    "Esporte",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-ronaldo-fenomeno",
     "anchor",
     "Ronaldo Fenômeno",
     "Ronaldo Fenômeno, the Brazilian striker at his peak",
+    "Esporte",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-tupac-shakur",
     "anchor",
     "Tupac Shakur",
     "Tupac Shakur",
+    "Música",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-lara-croft",
     "anchor",
     "Lara Croft",
     "Lara Croft from the original 1996 Tomb Raider",
+    "Games",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-fernanda-montenegro",
     "anchor",
     "Fernanda Montenegro",
     "Fernanda Montenegro as Dora from Central do Brasil",
+    "Cinema e TV",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-chico-science",
     "anchor",
     "Chico Science",
     "Chico Science in full Manguebeat attire",
+    "Música",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-neo-matrix",
     "anchor",
     "Neo (Matrix)",
     "Neo from The Matrix, trench coat and sunglasses",
+    "Cinema e TV",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-xuxa-meneghel",
     "anchor",
     "Xuxa Meneghel",
     "Xuxa Meneghel, Queen of the Baixinhos",
+    "Cinema e TV",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-ronaldinho-gaucho",
     "anchor",
     "Ronaldinho Gaúcho",
     "Ronaldinho Gaúcho in his Barcelona 2004 era",
+    "Esporte",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-heath-ledger-coringa",
     "anchor",
     "Heath Ledger Coringa",
     "Heath Ledger as The Joker, face paint, purple coat",
+    "Cinema e TV",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-britney-spears",
     "anchor",
     "Britney Spears",
     "Britney Spears at her peak, circa 2003",
+    "Música",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-ze-pequeno",
     "anchor",
     "Zé Pequeno",
     "Zé Pequeno from Cidade de Deus",
+    "Cinema e TV",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-zidane",
     "anchor",
     "Zidane",
     "Zinedine Zidane",
+    "Esporte",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-steve-jobs",
     "anchor",
     "Steve Jobs",
     "Steve Jobs holding the first iPhone on stage",
+    "Tecnologia",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-sandy-junior",
     "anchor",
     "Sandy & Junior",
     "Sandy and Junior, the Brazilian pop duo siblings",
+    "Música",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-osama-bin-laden",
     "anchor",
     "Osama Bin Laden",
     "Osama bin Laden",
+    "Política",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-frodo-bolseiro",
     "anchor",
     "Frodo Bolseiro",
     "Frodo Baggins carrying the One Ring",
+    "Cinema e TV",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-tamagotchi",
     "anchor",
     "Tamagotchi",
     "a Tamagotchi creature brought to life",
+    "Games",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-bill-gates",
     "anchor",
     "Bill Gates",
     "Bill Gates in 1995 with a Windows 95 box",
+    "Tecnologia",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-e-o-tchan-carla",
     "anchor",
     "É o Tchan! (Carla)",
     "Carla Perez from É o Tchan! in Axé Music costume",
+    "Música",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-anchor-jack-sparrow",
     "anchor",
     "Jack Sparrow",
     "Captain Jack Sparrow, rum in hand",
+    "Cinema e TV",
     "",
-    "",
-    2,
-    "Referência de icone"
+    2
   ],
   [
     "html-original-style-pintura-barroca",
     "style",
     "Pintura Barroca",
     "Baroque oil painting, Caravaggio chiaroscuro lighting, museum quality canvas",
+    "Pintura",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-fotografia-35mm",
     "style",
     "Fotografia 35mm",
     "Authentic 35mm film photography, heavy grain, slight underexposure, analog warmth",
+    "Fotografia",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-arte-egipcia-em-papiro",
     "style",
     "Arte Egípcia em Papiro",
     "Ancient Egyptian decorative painting on papyrus, gold leaf, strict hieratic style, profile pose",
+    "Arte cultural",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-pixel-art-16-bit",
     "style",
     "Pixel Art 16-bit",
     "16-bit pixel art, SNES-era color palette, retro gaming sprite sheet",
+    "Games",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-mural-mexicano",
     "style",
     "Mural Mexicano",
     "Mexican social realism mural, Diego Rivera and Orozco style, monumental wall painting",
+    "Pintura",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-concept-art-cinemat",
     "style",
     "Concept Art Cinemat.",
     "Cinematic concept art, epic scale, Unreal Engine 5 photorealistic rendering",
+    "Cinematográfico",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-graphic-novel-noir",
     "style",
     "Graphic Novel Noir",
     "Graphic novel, high-contrast black ink with selective color, Frank Miller Sin City aesthetic",
+    "Quadrinhos",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-icone-sacro-bizantino",
     "style",
     "Ícone Sacro Bizantino",
     "Byzantine sacred icon on gilded wood panel, gold leaf halo, egg tempera, cracked varnish",
+    "Arte cultural",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-vaporwave-estetico",
     "style",
     "Vaporwave Estético",
     "Vaporwave aesthetic, retrowave synthwave color palette, glitch art, 80s–90s nostalgia digital art",
+    "Digital",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-pop-art-warhol",
     "style",
     "Pop Art (Warhol)",
     "Pop Art, Andy Warhol silkscreen style, bold flat outlines, color grid repetition",
+    "Pop",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-escultura-grega",
     "style",
     "Escultura Grega",
     "Ancient Greek white Pentelic marble sculpture, museum documentation photography",
+    "Escultura",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-aquarela-editorial",
     "style",
     "Aquarela Editorial",
     "Editorial watercolor illustration, New Yorker magazine style, loose impressionistic brushwork",
+    "Pintura",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-xilogravura-de-cordel",
     "style",
     "Xilogravura de Cordel",
     "Brazilian cordel woodcut illustration, hand-carved black and white lines, rough texture",
+    "Impressão",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-sci-fi-anos-70",
     "style",
     "Sci-fi Anos 70",
     "1970s science fiction paperback cover art, Moebius / Jean Giraud style, retro-futuristic",
+    "Ilustração",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-fotografia-infravermelha",
     "style",
     "Fotografia Infravermelha",
     "Infrared photography, white foliage, dark sky, surreal tonal reversal, dreamlike",
+    "Fotografia",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-storyboard-animacao",
     "style",
     "Storyboard Animação",
     "Hand-drawn animation storyboard, Studio Ghibli pencil sketch aesthetic",
+    "Animação",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-style-daguerreotipo",
     "style",
     "Daguerreótipo",
     "Daguerreotype photograph, sepia tones, 19th century portrait format, brass frame vignette",
+    "Fotografia",
     "",
-    "",
-    2,
-    "Referência de linguagem"
+    2
   ],
   [
     "html-original-scenario-boteco-carioca-90s",
     "scenario",
     "Boteco Carioca, 90s",
     "inside a weathered Rio de Janeiro boteco, 1990s, neon Brahma signs, checkered floor, ceiling fan",
+    "Brasil urbano",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-amazonia-profunda",
     "scenario",
     "Amazônia Profunda",
     "deep Amazon rainforest at dusk, bioluminescent plants, mist rising from the canopy",
+    "Paisagem natural",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-lan-house-sp-2003",
     "scenario",
     "LAN House SP, 2003",
     "Brazilian LAN house interior, 2003, rows of CRT monitors, blue light, teenagers in plastic chairs",
+    "Brasil urbano",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-sertao-ao-amanhecer",
     "scenario",
     "Sertão ao Amanhecer",
     "Brazilian northeastern sertão at dawn, red caatinga earth, cacti, flat horizon",
+    "Paisagem natural",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-maracana-final-94",
     "scenario",
     "Maracanã — Final 94",
     "Maracanã stadium packed for the 1994 World Cup final, confetti, roaring crowd",
+    "Esporte",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-museu-do-futuro-2150",
     "scenario",
     "Museu do Futuro (2150)",
     "a museum in the year 2150, white stone halls, climate-controlled glass cases, future visitors",
+    "Ficção científica",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-roma-antiga",
     "scenario",
     "Roma Antiga",
     "ancient Rome, cobblestone streets, marble columns, torchlight, toga-clad crowds",
+    "Histórico",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-cortico-paulistano-1999",
     "scenario",
     "Cortiço Paulistano, 1999",
     "downtown São Paulo cortiço, 1999, crumbling plaster, clotheslines between buildings, urban density",
+    "Brasil urbano",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-olimpo-grego",
     "scenario",
     "Olimpo Grego",
     "Mount Olympus above the clouds, divine golden light, celestial realm",
+    "Fantasia",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-galeria-bienal-sp",
     "scenario",
     "Galeria Bienal SP",
     "São Paulo Bienal white cube gallery, institutional overhead lighting, polished concrete floor",
+    "Arte e cultura",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-ciberespaco-y2k",
     "scenario",
     "Ciberespaço Y2K",
     "Y2K cyberspace, cascading green matrix code, glowing terminals, the year 1999",
+    "Ficção científica",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-favela-ao-amanhecer",
     "scenario",
     "Favela ao Amanhecer",
     "Brazilian favela at dawn, warm ochre light, rooftop view of the city spreading below",
+    "Brasil urbano",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-praia-de-ipanema-90s",
     "scenario",
     "Praia de Ipanema, 90s",
     "Ipanema beach in the 1990s, golden afternoon light, Dois Irmãos hills in the background",
+    "Paisagem natural",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-espaco-sideral",
     "scenario",
     "Espaço Sideral",
     "outer space, cosmic scale, nebulae and star clusters, total weightlessness",
+    "Ficção científica",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-camelodromo-94",
     "scenario",
     "Camelódromo, 94",
     "Brazilian informal market (camelódromo), chaotic stalls, bootleg VHS and CDs, 1994",
+    "Brasil urbano",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-underground-punk-sp",
     "scenario",
     "Underground Punk — SP",
     "underground São Paulo punk venue, graffiti walls, sweat, feedback, 1997",
+    "Brasil urbano",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-estacao-de-metro-no-rush",
     "scenario",
     "Estação de Metrô no Rush",
     "São Paulo metro station at rush hour, 1998, bodies pressing, fluorescent light, advertisement posters",
+    "Brasil urbano",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-scenario-feira-de-sao-cristovao",
     "scenario",
     "Feira de São Cristóvão",
     "Feira de São Cristóvão, Rio de Janeiro, forró music, leather hats, dust, barraca lights",
+    "Cultura brasileira",
     "",
-    "",
-    2,
-    "Referência de universo"
+    2
   ],
   [
     "html-original-trend-retratado-como-divindade",
     "trend",
     "Retratado como Divindade",
     "depicted as an ancient deity — sacred, transcendent, worshipped",
+    "Fantasia",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-transportado-ao-brasil",
     "trend",
     "Transportado ao Brasil",
     "fully transplanted into Brazilian culture, every detail authentically local",
+    "Cultura brasileira",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-artefato-arqueologico",
     "trend",
     "Artefato Arqueológico",
     "presented as an ancient artifact under museum glass, centuries in the future",
+    "Ciência",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-fundido-com-mitologia",
     "trend",
     "Fundido com Mitologia",
     "merged with Greco-Roman mythology, heroic and classical in scale",
+    "Fantasia",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-santo-popular-brasileiro",
     "trend",
     "Santo Popular Brasileiro",
     "reimagined as a Brazilian popular saint, ex-voto aesthetics, miracle attributed",
+    "Cultura brasileira",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-cavaleiro-medieval",
     "trend",
     "Cavaleiro Medieval",
     "depicted as a medieval knight or noble, heraldic setting, armor reflecting candlelight",
+    "Histórico",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-personagem-de-cordel",
     "trend",
     "Personagem de Cordel",
     "as a hero of a Brazilian cordel folk narrative, woodcut legend",
+    "Cultura brasileira",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-monumento-publico",
     "trend",
     "Monumento Público",
     "rendered as a monumental bronze public sculpture in a city square, pigeons landing on it",
+    "Representação",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-fusao-com-candomble",
     "trend",
     "Fusão com Candomblé",
     "fused with Afro-Brazilian Candomblé iconography, Orixá aesthetics, sacred geometry",
+    "Cultura brasileira",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-olhar-alienigena",
     "trend",
     "Olhar Alienígena",
     "as observed by alien anthropologists — clinical, distant, labeled with incomprehensible text",
+    "Ciência",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-sprite-de-videogame",
     "trend",
     "Sprite de Videogame",
     "translated into a retro video game character, complete with health bar and stats panel",
+    "Games",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-verso-de-enciclopedia",
     "trend",
     "Verso de Enciclopédia",
     "illustrated as an encyclopedia entry, clinical diagrammatic labels, cross-section view",
+    "Ciência",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-heroi-tragico-grego",
     "trend",
     "Herói Trágico Grego",
     "as a tragic Greek hero at the moment of catastrophe, emotionally operatic",
+    "Fantasia",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-axe-meets-grunge",
     "trend",
     "Axé Meets Grunge",
     "aesthetics brutally fused — half Axé Music carnival feathers, half grunge flannel and ripped jeans",
+    "Música",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-propaganda-sovietica",
     "trend",
     "Propaganda Soviética",
     "rendered as Soviet constructivist propaganda poster — strong diagonals, red and black",
+    "Histórico",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-retrato-papal",
     "trend",
     "Retrato Papal",
     "painted as a formal papal or royal portrait, red robes, gilded frame, scepter",
+    "Histórico",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-trend-planta-de-arquitetura",
     "trend",
     "Planta de Arquitetura",
     "rendered as a detailed architectural blueprint — top-down technical drawing, measurement annotations",
+    "Ciência",
     "",
-    "",
-    2,
-    "Referência de torcao"
+    2
   ],
   [
     "html-original-style-sebastiao-salgado",
     "style",
     "Sebastião Salgado",
     "shot in the style of Sebastião Salgado — epic black and white, moral weight, raw humanism",
+    "Fotografia",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-caravaggio",
     "style",
     "Caravaggio",
     "painted in the manner of Caravaggio — impasto brushwork, single light source, chiaroscuro drama",
+    "Pintura",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-roger-deakins",
     "style",
     "Roger Deakins",
     "cinematography by Roger Deakins — golden naturalistic light, restrained beauty",
+    "Cinematográfico",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-wes-anderson",
     "style",
     "Wes Anderson",
     "Wes Anderson color palette — salmon, mustard, powder blue, perfect symmetry, deadpan framing",
+    "Cinematográfico",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-norman-rockwell",
     "style",
     "Norman Rockwell",
     "illustrated by Norman Rockwell — warm American idealism, Saturday Evening Post narrative detail",
+    "Ilustração",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-eduardo-kobra",
     "style",
     "Eduardo Kobra",
     "in the style of Eduardo Kobra street murals — geometric kaleidoscope color, massive scale",
+    "Arte urbana",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-annie-leibovitz",
     "style",
     "Annie Leibovitz",
     "photographed by Annie Leibovitz — dramatically staged, editorial gravitas, iconic composition",
+    "Fotografia",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-banksy",
     "style",
     "Banksy",
     "as a Banksy stencil installation — black spray on brick, one subversive visual joke",
+    "Arte urbana",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-wong-kar-wai",
     "style",
     "Wong Kar-wai",
     "cinematographic style of Wong Kar-wai — saturated neon, slow-motion blur, melancholic longing",
+    "Cinematográfico",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-moebius-giraud",
     "style",
     "Moebius / Giraud",
     "illustrated by Moebius / Jean Giraud — clean luminous linework, retro sci-fi, desert light",
+    "Quadrinhos",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-alan-lee",
     "style",
     "Alan Lee",
     "illustrated by Alan Lee — misty loose watercolor, Tolkien spirit, ancient and ethereal",
+    "Ilustração",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-rembrandt",
     "style",
     "Rembrandt",
     "in the style of Rembrandt van Rijn — golden studio light, impasto textures, psychological depth",
+    "Pintura",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-basquiat",
     "style",
     "Basquiat",
     "in the raw style of Jean-Michel Basquiat — expressionist marks, crown symbols, text overlays",
+    "Pintura",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-stanley-kubrick",
     "style",
     "Stanley Kubrick",
     "directed by Stanley Kubrick — one-point perspective, perfect symmetry, geometric dread",
+    "Cinematográfico",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-pedro-almodovar",
     "style",
     "Pedro Almodóvar",
     "visual style of Pedro Almodóvar — saturated primaries, melodrama, ornate domestic interiors",
+    "Cinematográfico",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-carybe",
     "style",
     "Carybé",
     "in the illustrative style of Carybé — warm Bahian color, Candomblé iconography, fluid lines",
+    "Ilustração",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-style-isay-weinfeld",
     "style",
     "Isay Weinfeld",
     "architectural sensibility of Isay Weinfeld — brutal luxury, raw concrete, Brazilian modernism",
+    "Arquitetura",
     "",
-    "",
-    2,
-    "Referência de assinatura"
+    2
   ],
   [
     "html-original-detail-grao-analogico-pesado",
     "detail",
     "Grão Analógico Pesado",
     "heavy 35mm film grain, slightly underexposed, warm analog color shift",
+    "Textura e superfície",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-texto-em-portugues-arcaico",
     "detail",
     "Texto em Português Arcaico",
     "decorative text elements written in archaic 16th-century Portuguese calligraphy visible in the image",
+    "Tipografia",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-anacronia-deliberada",
     "detail",
     "Anacronia Deliberada",
     "one deliberate anachronism — a modern smartphone in an otherwise historical scene",
+    "Tempo e memória",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-easter-egg-brasileiro",
     "detail",
     "Easter Egg Brasileiro",
     "a hidden Brazilian cultural reference (a Brahma can, a Havaianas, a caipirinha) subtly visible",
+    "Metalinguagem",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-dutch-angle",
     "detail",
     "Dutch Angle",
     "Dutch angle camera tilt, disorienting, psychological unease",
+    "Câmera",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-luz-de-vela-unica",
     "detail",
     "Luz de Vela Única",
     "single candle illumination, pool of warm light, everything else absorbed in deep shadow",
+    "Luz",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-moldura-polaroid",
     "detail",
     "Moldura Polaroid",
     "square Polaroid format, white border, handwritten date at bottom, slightly faded",
+    "Tempo e memória",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-fumaca-teatral",
     "detail",
     "Fumaça Teatral",
     "dramatic theatrical smoke, volumetric light beams cutting through",
+    "Atmosfera",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-artefatos-jpeg",
     "detail",
     "Artefatos JPEG",
     "deliberate JPEG compression artifacts, pixelated blocks at the edges, digital degradation",
+    "Textura e superfície",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-worm-s-eye-view",
     "detail",
     "Worm's Eye View",
     "extreme low angle worm's eye view, subject rendered monumental and towering",
+    "Câmera",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-olho-de-peixe",
     "detail",
     "Olho de Peixe",
     "fisheye lens, 180° field of view, spatial distortion, vertiginous",
+    "Câmera",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-ruido-de-scanner",
     "detail",
     "Ruído de Scanner",
     "flatbed scanner noise, slight color channel bleed, digitized-document texture",
+    "Textura e superfície",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-letreiro-simbolico",
     "detail",
     "Letreiro Simbólico",
     "a prominent hand-lettered or neon sign with symbolic text placed deliberately in the composition",
+    "Tipografia",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-exposicao-multipla",
     "detail",
     "Exposição Múltipla",
     "multiple exposure — two or three layered takes blended, ghostly overlapping forms",
+    "Câmera",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-vinheta-escura",
     "detail",
     "Vinheta Escura",
     "strong dark vignette, focus pulled brutally to center, edges dissolving to black",
+    "Câmera",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-chuva-de-confete",
     "detail",
     "Chuva de Confete",
     "confetti explosion mid-frame, color fragments catching the light",
+    "Movimento",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-original-detail-paleta-dessaturada-acento",
     "detail",
     "Paleta Dessaturada + Acento",
     "nearly desaturated image with a single accent color that stays vibrant — emotional punctuation",
+    "Cor",
     "",
-    "",
-    2,
-    "Referência de tempero"
+    2
   ],
   [
     "html-v3-anchor-pele",
@@ -6307,80 +5950,72 @@ const rows: ReferenceRow[] = [
     "style",
     "Arte Egípcia",
     "Ancient Egyptian painting on papyrus, gold leaf, strict hieratic style, profile pose",
+    "Arte cultural",
     "",
-    "",
-    3,
-    "Referência de linguagem"
+    3
   ],
   [
     "html-v3-style-vaporwave",
     "style",
     "Vaporwave",
     "Vaporwave aesthetic, retrowave synthwave color palette, glitch art, digital nostalgia",
+    "Digital",
     "",
-    "",
-    3,
-    "Referência de linguagem"
+    3
   ],
   [
     "html-v3-style-storyboard-ghibli",
     "style",
     "Storyboard Ghibli",
     "Hand-drawn animation storyboard, Studio Ghibli pencil sketch, light and shadow notes",
+    "Animação",
     "",
-    "",
-    3,
-    "Referência de linguagem"
+    3
   ],
   [
     "html-v3-style-arte-em-vitro",
     "style",
     "Arte em Vitrô",
     "Stained glass window illustration, lead outline, jewel-colored light, medieval cathedral aesthetic",
+    "Vidro",
     "",
-    "",
-    3,
-    "Referência de linguagem"
+    3
   ],
   [
     "html-v3-style-propaganda-construtivista",
     "style",
     "Propaganda Construtivista",
     "Soviet constructivist poster, bold diagonals, red and black, stark geometric typography",
+    "Design gráfico",
     "",
-    "",
-    3,
-    "Referência de linguagem"
+    3
   ],
   [
     "html-v3-style-minimalismo-japones",
     "style",
     "Minimalismo Japonês",
     "Japanese minimalist ink painting (sumi-e), gestural brushwork, vast empty space",
+    "Tinta",
     "",
-    "",
-    3,
-    "Referência de linguagem"
+    3
   ],
   [
     "html-v3-style-foto-de-arquivo-policial",
     "style",
     "Foto de Arquivo Policial",
     "Police archive photograph, mugshot lighting, date stamp, black and white institutional",
+    "Fotografia",
     "",
-    "",
-    3,
-    "Referência de linguagem"
+    3
   ],
   [
     "html-v3-style-iluminura-medieval",
     "style",
     "Iluminura Medieval",
     "Medieval illuminated manuscript page, gold leaf borders, decorative script, flat figures",
+    "Arte cultural",
     "",
-    "",
-    3,
-    "Referência de linguagem"
+    3
   ],
   [
     "html-v3-scenario-discoteca-carioca-1978",
@@ -6558,720 +6193,648 @@ const rows: ReferenceRow[] = [
     "trend",
     "Herói de Cordel",
     "hero of a Brazilian cordel folk narrative, larger than life, woodcut legend",
+    "Cultura brasileira",
     "",
-    "",
-    3,
-    "Referência de torcao"
+    3
   ],
   [
     "html-v3-trend-estudo-alien",
     "trend",
     "Estudo Alien",
     "observed by alien anthropologists — clinical, distant, labeled with incomprehensible text",
+    "Ciência",
     "",
-    "",
-    3,
-    "Referência de torcao"
+    3
   ],
   [
     "html-v3-trend-verbete-de-enciclopedia",
     "trend",
     "Verbete de Enciclopédia",
     "illustrated as a scientific encyclopedia entry, clinical labels, cross-section cutaway view",
+    "Ciência",
     "",
-    "",
-    3,
-    "Referência de torcao"
+    3
   ],
   [
     "html-v3-trend-blueprint-de-arquitetura",
     "trend",
     "Blueprint de Arquitetura",
     "rendered as a detailed architectural blueprint, top-down technical drawing, measurement annotations",
+    "Ciência",
     "",
-    "",
-    3,
-    "Referência de torcao"
+    3
   ],
   [
     "html-v3-trend-cena-de-telenovela",
     "trend",
     "Cena de Telenovela",
     "staged as a Brazilian telenovela dramatic scene, overlit, theatrical, actors facing camera",
+    "Televisão",
     "",
-    "",
-    3,
-    "Referência de torcao"
+    3
   ],
   [
     "html-v3-trend-afresco-renascentista",
     "trend",
     "Afresco Renascentista",
     "depicted in a Renaissance fresco on a cathedral ceiling, surrounded by cherubs and clouds",
+    "Histórico",
     "",
-    "",
-    3,
-    "Referência de torcao"
+    3
   ],
   [
     "html-v3-trend-personagem-de-manga",
     "trend",
     "Personagem de Mangá",
     "drawn in Japanese manga style, large expressive eyes, speed lines, emotion symbols",
+    "Quadrinhos",
     "",
-    "",
-    3,
-    "Referência de torcao"
+    3
   ],
   [
     "html-v3-trend-quadrinho-de-cordel",
     "trend",
     "Quadrinho de Cordel",
     "as a Brazilian cordel comic strip panel, hand-drawn speech bubbles in verse",
+    "Cultura brasileira",
     "",
-    "",
-    3,
-    "Referência de torcao"
+    3
   ],
   [
     "html-v3-trend-tarot-card",
     "trend",
     "Tarot Card",
     "as a tarot card illustration: symbolic imagery, Roman numerals, archetypal meaning",
+    "Fantasia",
     "",
-    "",
-    3,
-    "Referência de torcao"
+    3
   ],
   [
     "html-v3-style-frida-kahlo",
     "style",
     "Frida Kahlo",
     "in the self-portrait style of Frida Kahlo — intense gaze, folk symbols, pain and beauty merged",
+    "Pintura",
     "",
-    "",
-    3,
-    "Referência de assinatura"
+    3
   ],
   [
     "html-v3-style-ernst-haeckel",
     "style",
     "Ernst Haeckel",
     "in the style of Ernst Haeckel scientific illustrations — obsessive botanical precision, symmetry",
+    "Científico",
     "",
-    "",
-    3,
-    "Referência de assinatura"
+    3
   ],
   [
     "html-v3-style-yayoi-kusama",
     "style",
     "Yayoi Kusama",
     "in the style of Yayoi Kusama — infinite polka dots, obliteration, joyful obsession",
+    "Arte contemporânea",
     "",
-    "",
-    3,
-    "Referência de assinatura"
+    3
   ],
   [
     "html-v3-style-burle-marx",
     "style",
     "Burle Marx",
     "visual vocabulary of Roberto Burle Marx — organic biomorphic shapes, tropical color, topographic view",
+    "Arquitetura",
     "",
-    "",
-    3,
-    "Referência de assinatura"
+    3
   ],
   [
     "html-v3-detail-paleta-mono-acento",
     "detail",
     "Paleta Mono + Acento",
     "nearly desaturated image with a single vibrant accent color — emotional punctuation",
+    "Cor",
     "",
-    "",
-    3,
-    "Referência de tempero"
+    3
   ],
   [
     "html-v3-detail-tilt-shift-miniatura",
     "detail",
     "Tilt-Shift Miniatura",
     "tilt-shift lens effect, miniaturized world, toy-like depth-of-field blur",
+    "Câmera",
     "",
-    "",
-    3,
-    "Referência de tempero"
+    3
   ],
   [
     "html-v3-detail-luz-neon-entrando",
     "detail",
     "Luz Neon Entrando",
     "neon light from outside bleeds through blinds, casting colored stripes across the scene",
+    "Luz",
     "",
-    "",
-    3,
-    "Referência de tempero"
+    3
   ],
   [
     "html-v3-detail-reflexo-na-agua",
     "detail",
     "Reflexo na Água",
     "perfect reflection on wet surface or puddle below the subject, surreal doubling",
+    "Simbolismo",
     "",
-    "",
-    3,
-    "Referência de tempero"
+    3
   ],
   [
     "html-v3-medium-widescreen-2-35-1",
     "medium",
     "Widescreen 2.35:1",
     "2.35:1 cinemascope widescreen aspect ratio, horizontal cinematic sweep",
+    "Cinema",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-quadrado-1-1",
     "medium",
     "Quadrado 1:1",
     "perfect square 1:1 format, balanced centered composition",
+    "Formatos gráficos",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-polaroid",
     "medium",
     "Polaroid",
     "Polaroid instant photograph format, square with white border, nostalgic",
+    "Fotografia",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-poster-de-cinema",
     "medium",
     "Pôster de Cinema",
     "movie poster vertical format, title space at top, bold graphic hierarchy",
+    "Publicidade",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-capa-de-disco-de-vinil",
     "medium",
     "Capa de Disco de Vinil",
     "vinyl record album cover, square format, bold graphic design",
+    "Música",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-dupla-pagina-de-revista",
     "medium",
     "Dupla-Página de Revista",
     "double-page magazine spread, editorial layout, text columns implied",
+    "Editorial",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-tela-panoramica-3-1",
     "medium",
     "Tela Panorâmica 3:1",
     "ultra-wide panoramic format, 3:1 ratio, landscape sweep, horizon-first composition",
+    "Formatos gráficos",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-mural-arquitetonico",
     "medium",
     "Mural Arquitetônico",
     "architectural wall mural scale, viewed from below, building-sized composition",
+    "Arte urbana",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-triptico",
     "medium",
     "Tríptico",
     "triptych format — three equal panels telling one story across them",
+    "Formatos gráficos",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-miniatura-tilt-shift",
     "medium",
     "Miniatura (Tilt-shift)",
     "tilt-shift miniaturized world, toy-like scale, everything precious and small",
+    "Fotografia",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-capa-de-cordel",
     "medium",
     "Capa de Cordel",
     "Brazilian cordel booklet cover, vertical pamphlet format, woodcut border frame",
+    "Cultura brasileira",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-retrato-4x5",
     "medium",
     "Retrato 4x5",
     "portrait format 4:5 ratio, vertical, painterly close composition",
+    "Formatos gráficos",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-cartao-postal",
     "medium",
     "Cartão Postal",
     "postcard format, horizontal, white border, caption space at bottom",
+    "Colecionáveis",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-medium-tela-de-abertura-de-game",
     "medium",
     "Tela de Abertura de Game",
     "video game title screen format, HUD elements implied, genre typography",
+    "Games",
     "",
-    "",
-    3,
-    "Referência de formato"
+    3
   ],
   [
     "html-v3-palette-dourado-e-sombra",
     "palette",
     "Dourado e Sombra",
     "dominant palette: deep shadow and warm gold, chiaroscuro contrast",
+    "Nobre",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-neon-sobre-preto",
     "palette",
     "Neon sobre Preto",
     "dominant palette: neon electric colors on absolute black, synthwave night",
+    "Noturna",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-pastel-desbotado",
     "palette",
     "Pastel Desbotado",
     "dominant palette: faded pastels, washed-out film photography warmth",
+    "Suave",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-vermelho-e-cinza",
     "palette",
     "Vermelho e Cinza",
     "dominant palette: stark red and gray, Soviet constructivist graphic tension",
+    "Intensa",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-verde-selva",
     "palette",
     "Verde Selva",
     "dominant palette: deep jungle greens, earthy ochres, living darkness",
+    "Natural",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-azul-profundo",
     "palette",
     "Azul Profundo",
     "dominant palette: deep navy and cobalt, cold, melancholic, oceanic",
+    "Fria",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-sepia-envelhecida",
     "palette",
     "Sépia Envelhecida",
     "dominant palette: sepia tones, aged paper warmth, 19th century archive",
+    "Retrô",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-branco-e-carvao",
     "palette",
     "Branco e Carvão",
     "dominant palette: near-white and charcoal, high contrast, austere",
+    "Neutra",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-laranja-crepuscular",
     "palette",
     "Laranja Crepuscular",
     "dominant palette: burning sunset orange against deep violet sky",
+    "Quente",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-rosa-e-preto",
     "palette",
     "Rosa e Preto",
     "dominant palette: hot pink and black, confrontational, pop aggressive energy",
+    "Intensa",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-terracota-e-ocre",
     "palette",
     "Terracota e Ocre",
     "dominant palette: terracotta reds and warm ochres, Brazilian earth tones",
+    "Natural",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-ciano-e-sombra",
     "palette",
     "Ciano e Sombra",
     "dominant palette: cold cyan highlights against dramatic charcoal shadow",
+    "Noturna",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-amarelo-e-roxo",
     "palette",
     "Amarelo e Roxo",
     "dominant palette: saturated yellow and deep purple, high tension complementary",
+    "Intensa",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-monocromatico-agressivo",
     "palette",
     "Monocromático Agressivo",
     "dominant palette: strict monochrome, single hue with extreme value range",
+    "Monocromática",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-palette-tropical-saturado",
     "palette",
     "Tropical Saturado",
     "dominant palette: maximum tropical saturation — mangoes, parrots, hibiscus",
+    "Intensa",
     "",
-    "",
-    3,
-    "Referência de paleta"
+    3
   ],
   [
     "html-v3-mood-epico-grandioso",
     "mood",
     "Épico / Grandioso",
     "emotional register: epic and grandiose — mythological weight, vast scale, heroic proportion",
+    "Intensidade",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-intimo-delicado",
     "mood",
     "Íntimo / Delicado",
     "emotional register: intimate and tender — small scale, private moment, held breath",
+    "Emoção",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-absurdo-deadpan",
     "mood",
     "Absurdo / Deadpan",
     "emotional register: absurdist and deadpan — the bizarre treated with total matter-of-fact seriousness",
+    "Humor",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-sombrio-elegiaco",
     "mood",
     "Sombrio / Elegíaco",
     "emotional register: somber and elegiac — grief, loss, quiet irreversible devastation",
+    "Emoção",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-euforico-selvagem",
     "mood",
     "Eufórico / Selvagem",
     "emotional register: euphoric and uncontained — peak celebration, abandon, release",
+    "Celebração",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-melancolia-dourada",
     "mood",
     "Melancolia Dourada",
     "emotional register: bittersweet nostalgia — golden light falling on a world already gone",
+    "Emoção",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-tensao-silenciosa",
     "mood",
     "Tensão Silenciosa",
     "emotional register: silent dread — something wrong but unseen, still before the storm",
+    "Tensão",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-ternura-brutal",
     "mood",
     "Ternura Brutal",
     "emotional register: brutal tenderness — roughness and gentleness inhabiting the same frame",
+    "Emoção",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-ironia-fria",
     "mood",
     "Ironia Fria",
     "emotional register: cold irony — distance, dry wit, refusal to be moved",
+    "Humor",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-sacro-transcendente",
     "mood",
     "Sacro / Transcendente",
     "emotional register: sacred and transcendent — beyond the human, approaching the divine",
+    "Contemplação",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-raiva-contida",
     "mood",
     "Raiva Contida",
     "emotional register: barely contained fury — stillness that hides volcanic emotion beneath",
+    "Intensidade",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-mood-maravilha-inocente",
     "mood",
     "Maravilha Inocente",
     "emotional register: pure wonder — a child encountering the sublime for the first time",
+    "Descoberta",
     "",
-    "",
-    3,
-    "Referência de escala"
+    3
   ],
   [
     "html-v3-composition-close-extremo",
     "composition",
     "Close Extremo",
     "extreme close-up, macro detail, texture fills the entire frame",
+    "Lente",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-aereo-drone",
     "composition",
     "Aéreo / Drone",
     "aerial drone shot, camera looking straight down from above, map-like",
+    "Ângulo",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-pov-subjetivo",
     "composition",
     "POV Subjetivo",
     "first-person POV shot — the camera IS the character's eyes, immersive",
+    "Ponto de vista",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-retrato-3-4",
     "composition",
     "Retrato 3/4",
     "classic 3/4 portrait angle, slight profile turn, painterly traditional framing",
+    "Retrato",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-camera-no-chao",
     "composition",
     "Câmera no Chão",
     "ground-level camera, subject towers above, feet at the lens edge",
+    "Ângulo",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-reflexo-no-espelho",
     "composition",
     "Reflexo no Espelho",
     "subject reflected in a mirror, both reflection and reality visible simultaneously",
+    "Reflexo",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-sobre-o-ombro",
     "composition",
     "Sobre o Ombro",
     "over-the-shoulder shot, partial back of head in foreground, subject facing us",
+    "Enquadramento",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-simetrico-central",
     "composition",
     "Simétrico Central",
     "perfectly centered symmetrical composition, Kubrickian one-point perspective, tunnel effect",
+    "Composição",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-silhueta-pura",
     "composition",
     "Silhueta Pura",
     "pure silhouette against a brightly lit background, form without facial detail",
+    "Luz",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-plano-americano",
     "composition",
     "Plano Americano",
     "medium shot cutting at the knees, classic western and noir framing",
+    "Retrato",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-desfocado-a-frente",
     "composition",
     "Desfocado à Frente",
     "extreme shallow depth of field, blurred foreground element partially obscuring subject",
+    "Profundidade",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-zoom-lento-dolly",
     "composition",
     "Zoom Lento (Dolly)",
     "dolly zoom effect — background warps as subject remains stable, Hitchcock vertigo",
+    "Movimento",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-contra-luz",
     "composition",
     "Contra-luz",
     "backlit subject, rim light only, interior thrown into darkness, halo effect",
+    "Luz",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v3-composition-two-shot-tenso",
     "composition",
     "Two-Shot Tenso",
     "two-shot framing, both subjects in frame, tension in the space between them",
+    "Retrato",
     "",
-    "",
-    3,
-    "Referência de camera"
+    3
   ],
   [
     "html-v4-anchor-neo",
@@ -7287,200 +6850,180 @@ const rows: ReferenceRow[] = [
     "style",
     "Arte em Vitral",
     "Stained glass window illustration, lead outline, jewel-colored light, medieval cathedral",
+    "Vidro",
     "",
-    "",
-    4,
-    "Referência de linguagem"
+    4
   ],
   [
     "html-v4-style-gravura-em-metal",
     "style",
     "Gravura em Metal",
     "Copper plate etching print, fine cross-hatching, Goya-era chiaroscuro, plate texture",
+    "Impressão",
     "",
-    "",
-    4,
-    "Referência de linguagem"
+    4
   ],
   [
     "html-v4-trend-poster-se-procura",
     "trend",
     "Pôster Se Procura",
     "on a wanted PROCURADO poster — black and white portrait, reward amount, western atmosphere",
+    "Mídia",
     "",
-    "",
-    4,
-    "Referência de torcao"
+    4
   ],
   [
     "html-v4-trend-figurinha-panini",
     "trend",
     "Figurinha Panini",
     "as a Panini sticker album card — silver holographic border, name bar at bottom, 1994 energy",
+    "Esporte",
     "",
-    "",
-    4,
-    "Referência de torcao"
+    4
   ],
   [
     "html-v4-detail-neon-entrando",
     "detail",
     "Neon Entrando",
     "neon light from outside bleeds through blinds, casting colored stripes across the scene",
+    "Luz",
     "",
-    "",
-    4,
-    "Referência de tempero"
+    4
   ],
   [
     "html-v4-detail-sombra-dissidente",
     "detail",
     "Sombra Dissidente",
     "the subject's shadow does not match their form — it belongs to someone or something else entirely",
+    "Simbolismo",
     "",
-    "",
-    4,
-    "Referência de tempero"
+    4
   ],
   [
     "html-v4-detail-bilhete-a-mao",
     "detail",
     "Bilhete à Mão",
     "a handwritten note visible somewhere in the scene — illegible but emotional, personal history in cursive",
+    "Tempo e memória",
     "",
-    "",
-    4,
-    "Referência de tempero"
+    4
   ],
   [
     "html-v4-detail-estatica-de-tv",
     "detail",
     "Estática de TV",
     "television static snow texture overlaid at the edges — signal lost, memory failing",
+    "Textura e superfície",
     "",
-    "",
-    4,
-    "Referência de tempero"
+    4
   ],
   [
     "html-v4-detail-rasura-censurada",
     "detail",
     "Rasura Censurada",
     "a thick black censorship bar over some element — what was removed matters as much as what remains",
+    "Simbolismo",
     "",
-    "",
-    4,
-    "Referência de tempero"
+    4
   ],
   [
     "html-v4-detail-mancha-de-umidade",
     "detail",
     "Mancha de Umidade",
     "a damp stain on the wall behind the subject — tropical decay, time passing through plaster",
+    "Textura e superfície",
     "",
-    "",
-    4,
-    "Referência de tempero"
+    4
   ],
   [
     "html-v4-medium-tela-de-celular-9-16",
     "medium",
     "Tela de Celular 9:16",
     "vertical 9:16 smartphone screen format, social media native, full-bleed immersion",
+    "Digital",
     "",
-    "",
-    4,
-    "Referência de formato"
+    4
   ],
   [
     "html-v4-medium-poster-de-metro",
     "medium",
     "Pôster de Metrô",
     "vertical subway column poster format, 3:1 ratio, designed for passing eyes",
+    "Publicidade",
     "",
-    "",
-    4,
-    "Referência de formato"
+    4
   ],
   [
     "html-v4-medium-retrato-4-5",
     "medium",
     "Retrato 4:5",
     "portrait format 4:5 ratio, vertical, painterly close composition",
+    "Formatos gráficos",
     "",
-    "",
-    4,
-    "Referência de formato"
+    4
   ],
   [
     "html-v4-medium-panoramica-3-1",
     "medium",
     "Panorâmica 3:1",
     "ultra-wide panoramic format, 3:1 ratio, landscape sweep, horizon-first composition",
+    "Formatos gráficos",
     "",
-    "",
-    4,
-    "Referência de formato"
+    4
   ],
   [
     "html-v4-medium-stamp-selo-postal",
     "medium",
     "Stamp / Selo Postal",
     "postage stamp format, perforated border, denomination value, miniature scene of national significance",
+    "Colecionáveis",
     "",
-    "",
-    4,
-    "Referência de formato"
+    4
   ],
   [
     "html-v4-palette-amarelo-brasil",
     "palette",
     "Amarelo Brasil",
     "dominant palette of national yellow and green, patriotic and beautiful and contested",
+    "Brasileira",
     "",
-    "",
-    4,
-    "Referência de paleta"
+    4
   ],
   [
     "html-v4-palette-monocromatico",
     "palette",
     "Monocromático",
     "strict monochrome, single hue with extreme value range, emotional austerity",
+    "Monocromática",
     "",
-    "",
-    4,
-    "Referência de paleta"
+    4
   ],
   [
     "html-v4-palette-ciberpunk-ciano",
     "palette",
     "Ciberpunk Ciano",
     "dominant palette of cyberpunk teal and electric cyan on black, digital rain and data streams",
+    "Noturna",
     "",
-    "",
-    4,
-    "Referência de paleta"
+    4
   ],
   [
     "html-v4-composition-camera-de-seguranca",
     "composition",
     "Câmera de Segurança",
     "CCTV security camera aesthetic, wide angle, timestamp burned in corner, surveillance gray-green",
+    "Vigilância",
     "",
-    "",
-    4,
-    "Referência de camera"
+    4
   ],
   [
     "html-v4-composition-tilt-shift-miniatura",
     "composition",
     "Tilt-Shift Miniatura",
     "tilt-shift lens effect, miniaturized world, toy-like shallow depth-of-field blur",
+    "Lente",
     "",
-    "",
-    4,
-    "Referência de camera"
+    4
   ],
   [
     "curadoria-anchor-cartografa-de-nuvens",

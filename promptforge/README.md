@@ -10,6 +10,7 @@ Painel responsivo para transformar uma ideia em um prompt de imagem estruturado.
 - Sugestões em grupos de 6 ou 12, com posição no conjunto, diversidade de origens/categorias e percurso sem repetição até concluir cada camada.
 - Camadas navegáveis nas sugestões, placeholders variáveis e aplicação de referências sem apagar a digitação.
 - Busca por nome, descrição e metadados, filtros por camada, categoria, época e origem, paginação e aplicação aleatória dentro do filtro.
+- Todas as 1.124 referências visíveis possuem categoria, incluindo 439 registros antigos classificados retroativamente.
 - Presets curados de sujeitos, cenários, ações, atmosfera, linguagem, luz, câmera e textura.
 - Direções de arte completas e combinações aleatórias com travas por seção.
 - Edição manual preservada ao alterar campos, com retorno explícito à versão automática.
@@ -47,6 +48,8 @@ O normalizador lê 1.374 entradas — 1.074 originais e 300 curadas —, valida 
 
 A expansão editorial fica em `data/references.curated.json`, um documento versionado com IDs estáveis, nome, descrição, saída em inglês, categoria, época e origem. Categoria é obrigatória nas novas entradas; paletas também exigem de três a seis cores hexadecimais. O importador rejeita campos desconhecidos, IDs ou nomes duplicados, descrições equivalentes e formatos inválidos.
 
+A classificação retroativa fica em `data/reference-classifications.json`, associada aos IDs estáveis das fontes originais. O arquivo cobre 439 registros visíveis e 18 homônimos de suporte ocultados pela deduplicação. O importador valida IDs, impede sobrescrever categorias existentes e falha se qualquer referência gerada continuar sem categoria. Nomes, saídas, origens, épocas, cores e IDs permanecem preservados.
+
 Para regenerar os dados depois de editar uma fonte:
 
 ```bash
@@ -74,7 +77,7 @@ npm start
 
 ## Publicação no GitHub Pages
 
-O workflow `.github/workflows/deploy-pages.yml` executa TypeScript, os 26 testes e o build antes de publicar `promptforge/dist`. O build do Pages usa o caminho-base `/PromptForge/`; os builds locais e de outros provedores continuam usando `/`.
+O workflow `.github/workflows/deploy-pages.yml` executa TypeScript, os 27 testes e o build antes de publicar `promptforge/dist`. O build do Pages usa o caminho-base `/PromptForge/`; os builds locais e de outros provedores continuam usando `/`.
 
 Para ativar a publicação:
 
@@ -88,7 +91,7 @@ Após uma implantação bem-sucedida, a interface estará disponível em `https:
 
 ```bash
 npm run lint       # TypeScript estrito
-npm test           # 26 testes: motor, acervo e store
+npm test           # 27 testes: motor, acervo e store
 npm run refs:build # valida e regenera o acervo normalizado
 npm run build      # validação + bundle de produção
 npm audit          # dependências
@@ -108,7 +111,8 @@ npm audit          # dependências
 
 ```text
 data/
-└── references.curated.json # 300 referências editoriais com IDs estáveis
+├── references.curated.json # 300 referências editoriais com IDs estáveis
+└── reference-classifications.json # 457 classificações retroativas por ID
 src/
 ├── components/
 │   ├── layout/       # shell, navegação e topbar
