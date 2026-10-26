@@ -80,6 +80,7 @@ A revisão considerou o aplicativo React, os protótipos, os dados, a especifica
 - Busca, filtros por camada/categoria/época/origem, paginação, aplicação aleatória dentro dos filtros e sugestões renováveis em grupos de três, sem despejar centenas de opções na tela inicial.
 - Placeholders variáveis e aplicação de sugestões sem alterar a digitação; referências escolhidas continuam visíveis nos controles e são resolvidas pelo motor na camada correta.
 - `scripts/build-reference-data.mjs` valida e deduplica as cinco fontes preservadas. A saída gerada usa tuplas compactas para reduzir o bundle sem descartar conteúdo.
+- Publicação estática preparada para GitHub Pages: o Vite usa `/PromptForge/` somente no build do Pages, e o workflow valida tipos e testes antes de publicar `promptforge/dist`.
 
 ### Motor e memória
 
@@ -117,11 +118,12 @@ Interface React
           │
           └── exportação local TXT / JSON
 
-Node + Express
-  └── arquivos estáticos de produção, sem endpoints de IA
+Hospedagem estática
+  ├── GitHub Pages via GitHub Actions
+  └── Node + Express como alternativa, sem endpoints de IA
 ```
 
-Essa arquitetura mantém todo o produto funcional sem credenciais ou chamadas a serviços externos. O servidor Node é necessário apenas para hospedar o build de produção.
+Essa arquitetura mantém todo o produto funcional sem credenciais ou chamadas a serviços externos. O backend não é obrigatório: o GitHub Pages pode servir diretamente o build estático.
 
 ## 6. Próximas oportunidades, em ordem sugerida
 
