@@ -140,7 +140,7 @@ function addEngineParameters(prompt: string, draft: PromptDraft) {
 
 export function buildPrompt(draft: PromptDraft, mode: PromptMode = 'fluid') {
   const subject = draft.anchor ? resolve(draft.anchor, ANCHORS, 'anchor') : clean(draft.customInput);
-  const action = resolve(draft.action, ACTIONS);
+  const action = resolve(draft.action, ACTIONS, 'action');
   const scenario = resolve(draft.scenario, SCENARIOS, 'scenario');
   const mood = resolve(draft.context, MOODS, 'mood');
   const trend = resolve(draft.trend, TRENDS, 'trend');
@@ -148,8 +148,8 @@ export function buildPrompt(draft: PromptDraft, mode: PromptMode = 'fluid') {
   const styles = resolveMany(draft.style, STYLES, 'style');
   const medium = resolve(draft.medium, MEDIUMS, 'medium');
   const palette = resolve(draft.palette, PALETTES, 'palette');
-  const lighting = resolve(draft.lighting, LIGHTINGS);
-  const texture = resolve(draft.texture, TEXTURES);
+  const lighting = resolve(draft.lighting, LIGHTINGS, 'lighting');
+  const texture = resolve(draft.texture, TEXTURES, 'texture');
   const composition = resolve(draft.composition, COMPOSITIONS, 'composition');
   const details = resolveMany(draft.details, DETAILS, 'detail');
 

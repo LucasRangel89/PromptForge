@@ -1,12 +1,15 @@
 import {
+  ACTIONS,
   ANCHORS,
   COMPOSITIONS,
   DETAILS,
+  LIGHTINGS,
   MEDIUMS,
   MOODS,
   PALETTES,
   SCENARIOS,
   STYLES,
+  TEXTURES,
   TRENDS,
   type PresetOption,
 } from './presets';
@@ -16,11 +19,14 @@ import type { ReferenceItem, ReferenceKind } from './referenceTypes';
 export const REFERENCE_KIND_META: Record<ReferenceKind, { label: string; plural: string; step: number }> = {
   anchor: { label: 'Âncora', plural: 'Âncoras e personagens', step: 1 },
   scenario: { label: 'Cenário', plural: 'Cenários', step: 2 },
+  action: { label: 'Ação', plural: 'Ações na cena', step: 2 },
   style: { label: 'Estilo', plural: 'Estilos e assinaturas', step: 3 },
   trend: { label: 'Reviravolta', plural: 'Reviravoltas', step: 2 },
   detail: { label: 'Detalhe', plural: 'Detalhes narrativos', step: 3 },
   medium: { label: 'Formato', plural: 'Formatos e mídias', step: 3 },
   palette: { label: 'Paleta', plural: 'Paletas', step: 3 },
+  lighting: { label: 'Iluminação', plural: 'Iluminação', step: 3 },
+  texture: { label: 'Textura', plural: 'Texturas e acabamentos', step: 3 },
   mood: { label: 'Atmosfera', plural: 'Atmosferas', step: 2 },
   composition: { label: 'Câmera', plural: 'Câmeras e enquadramentos', step: 3 },
 };
@@ -28,11 +34,14 @@ export const REFERENCE_KIND_META: Record<ReferenceKind, { label: string; plural:
 const CORE_GROUPS: Record<ReferenceKind, PresetOption[]> = {
   anchor: ANCHORS,
   scenario: SCENARIOS,
+  action: ACTIONS,
   style: STYLES,
   trend: TRENDS,
   detail: DETAILS,
   medium: MEDIUMS,
   palette: PALETTES,
+  lighting: LIGHTINGS,
+  texture: TEXTURES,
   mood: MOODS,
   composition: COMPOSITIONS,
 };
@@ -72,7 +81,7 @@ export const REFERENCE_POOLS = ALL_REFERENCES.reduce<Record<ReferenceKind, Refer
   pools[item.kind].push(item);
   return pools;
 }, {
-  anchor: [], scenario: [], style: [], trend: [], detail: [], medium: [], palette: [], mood: [], composition: [],
+  anchor: [], scenario: [], action: [], style: [], trend: [], detail: [], medium: [], palette: [], lighting: [], texture: [], mood: [], composition: [],
 });
 
 const REFERENCE_BY_ID = new Map(ALL_REFERENCES.map((item) => [item.id, item]));

@@ -10204,6 +10204,1206 @@ const rows: ReferenceRow[] = [
     "Contemporânea",
     5,
     "Formas vazadas com bordas e sobreposições de spray."
+  ],
+  [
+    "curadoria-action-correndo-contra-o-vento",
+    "action",
+    "Correndo contra o vento",
+    "running against a strong crosswind, torso leaning forward, coat and loose objects pulled by the gusts",
+    "Movimento",
+    "",
+    5,
+    "Deslocamento físico sob resistência do ar."
+  ],
+  [
+    "curadoria-action-atravessando-uma-soleira",
+    "action",
+    "Atravessando uma soleira",
+    "stepping across a worn threshold, one foot inside and the other outside, body suspended between two spaces",
+    "Movimento",
+    "",
+    5,
+    "O corpo suspenso entre dois espaços."
+  ],
+  [
+    "curadoria-action-saltando-sobre-agua",
+    "action",
+    "Saltando sobre água",
+    "leaping over a shallow stream, knees lifted naturally and gaze fixed on the landing point",
+    "Movimento",
+    "",
+    5,
+    "Um salto curto com peso e destino claros."
+  ],
+  [
+    "curadoria-action-subindo-uma-escada-estreita",
+    "action",
+    "Subindo uma escada estreita",
+    "climbing a narrow staircase with one hand grazing the wall and shoulders angled to fit the passage",
+    "Movimento",
+    "",
+    5,
+    "Esforço contido em uma passagem vertical."
+  ],
+  [
+    "curadoria-action-deslizando-em-gelo",
+    "action",
+    "Deslizando em gelo",
+    "sliding across a patch of ice with knees bent and arms adjusting for balance",
+    "Movimento",
+    "",
+    5,
+    "Equilíbrio instável sobre uma superfície lisa."
+  ],
+  [
+    "curadoria-action-emergindo-da-agua",
+    "action",
+    "Emergindo da água",
+    "emerging from dark water up to the waist, droplets falling from fabric and breath held for a moment",
+    "Movimento",
+    "",
+    5,
+    "A passagem do meio líquido para o ar."
+  ],
+  [
+    "curadoria-action-pedalando-contra-a-chuva",
+    "action",
+    "Pedalando contra a chuva",
+    "pedaling into heavy rain, shoulders forward and hands firm on the handlebars",
+    "Movimento",
+    "",
+    5,
+    "Esforço contínuo sob clima adverso."
+  ],
+  [
+    "curadoria-action-caminhando-com-carga",
+    "action",
+    "Caminhando com carga",
+    "walking while carrying a heavy bundle close to the chest, posture adjusted to its believable weight",
+    "Movimento",
+    "",
+    5,
+    "Peso transportado com postura verossímil."
+  ],
+  [
+    "curadoria-action-entregando-uma-chave",
+    "action",
+    "Entregando uma chave",
+    "offering a small key with an open hand while maintaining eye contact with the recipient",
+    "Interação",
+    "",
+    5,
+    "Uma transferência pequena carregada de intenção."
+  ],
+  [
+    "curadoria-action-ajudando-alguem-a-atravessar",
+    "action",
+    "Ajudando alguém a atravessar",
+    "supporting another person across uneven ground, matching their pace and offering a steady arm",
+    "Interação",
+    "",
+    5,
+    "Cuidado expresso por apoio e coordenação."
+  ],
+  [
+    "curadoria-action-compartilhando-um-mapa",
+    "action",
+    "Compartilhando um mapa",
+    "holding a folded map between two people and tracing a possible route with one finger",
+    "Interação",
+    "",
+    5,
+    "Duas pessoas orientadas pelo mesmo objeto."
+  ],
+  [
+    "curadoria-action-protegendo-uma-chama",
+    "action",
+    "Protegendo uma chama",
+    "cupping both hands around a fragile flame to shield it from the moving air",
+    "Interação",
+    "",
+    5,
+    "Um gesto delicado contra o ambiente."
+  ],
+  [
+    "curadoria-action-alimentando-um-animal",
+    "action",
+    "Alimentando um animal",
+    "slowly extending food toward a cautious animal without sudden movement",
+    "Interação",
+    "",
+    5,
+    "Aproximação cuidadosa entre espécies."
+  ],
+  [
+    "curadoria-action-trocando-um-objeto-as-escondidas",
+    "action",
+    "Trocando um objeto às escondidas",
+    "discreetly passing a small wrapped object from one hand to another beneath a table",
+    "Interação",
+    "",
+    5,
+    "Uma troca discreta que sugere uma história paralela."
+  ],
+  [
+    "curadoria-action-consertando-algo-para-alguem",
+    "action",
+    "Consertando algo para alguém",
+    "repairing a small personal object with concentrated hand movements while its owner watches nearby",
+    "Interação",
+    "",
+    5,
+    "Habilidade manual dedicada a outra pessoa."
+  ],
+  [
+    "curadoria-action-apontando-alem-do-quadro",
+    "action",
+    "Apontando além do quadro",
+    "pointing toward something beyond the frame, arm extended while the rest of the body remains still",
+    "Gestual",
+    "",
+    5,
+    "A atenção dirigida para algo invisível ao espectador."
+  ],
+  [
+    "curadoria-action-ouvindo-com-atencao",
+    "action",
+    "Ouvindo com atenção",
+    "tilting the head slightly and holding still to catch a distant sound",
+    "Gestual",
+    "",
+    5,
+    "Escuta expressa por uma pausa corporal."
+  ],
+  [
+    "curadoria-action-segurando-o-riso",
+    "action",
+    "Segurando o riso",
+    "trying to suppress a laugh, shoulders trembling slightly and one hand close to the mouth",
+    "Gestual",
+    "",
+    5,
+    "Uma emoção quase escapando do controle."
+  ],
+  [
+    "curadoria-action-enxugando-as-maos",
+    "action",
+    "Enxugando as mãos",
+    "wiping both hands on a worn cloth after finishing a demanding manual task",
+    "Gestual",
+    "",
+    5,
+    "A pausa prática depois de um trabalho."
+  ],
+  [
+    "curadoria-action-observando-as-proprias-maos",
+    "action",
+    "Observando as próprias mãos",
+    "studying the palms of both hands with quiet concentration and relaxed shoulders",
+    "Gestual",
+    "",
+    5,
+    "Um instante introspectivo centrado no gesto."
+  ],
+  [
+    "curadoria-action-saudando-de-longe",
+    "action",
+    "Saudando de longe",
+    "raising one hand in a restrained greeting toward someone far away",
+    "Gestual",
+    "",
+    5,
+    "Reconhecimento discreto a distância."
+  ],
+  [
+    "curadoria-action-medindo-antes-de-cortar",
+    "action",
+    "Medindo antes de cortar",
+    "measuring a piece of material carefully before cutting, eyes aligned with the marked guide",
+    "Ofício",
+    "",
+    5,
+    "Precisão e antecipação no trabalho manual."
+  ],
+  [
+    "curadoria-action-afiando-uma-ferramenta",
+    "action",
+    "Afiando uma ferramenta",
+    "sharpening a hand tool with controlled repeated strokes and close attention to its edge",
+    "Ofício",
+    "",
+    5,
+    "Repetição técnica e atenção ao fio."
+  ],
+  [
+    "curadoria-action-costurando-um-reparo",
+    "action",
+    "Costurando um reparo",
+    "sewing a visible repair into worn fabric, pulling the thread with patient precise movements",
+    "Ofício",
+    "",
+    5,
+    "Conserto visível em vez de substituição."
+  ],
+  [
+    "curadoria-action-moldando-argila",
+    "action",
+    "Moldando argila",
+    "shaping a small clay vessel with wet hands, thumbs guiding the curve of the rim",
+    "Ofício",
+    "",
+    5,
+    "Forma criada diretamente pelas mãos."
+  ],
+  [
+    "curadoria-action-ajustando-uma-engrenagem",
+    "action",
+    "Ajustando uma engrenagem",
+    "adjusting a small exposed gear with a metal tool while examining how the mechanism responds",
+    "Ofício",
+    "",
+    5,
+    "Investigação precisa de um mecanismo."
+  ],
+  [
+    "curadoria-action-preparando-um-pigmento",
+    "action",
+    "Preparando um pigmento",
+    "grinding dry pigment with a stone pestle and testing its consistency on a small ceramic tile",
+    "Ofício",
+    "",
+    5,
+    "Matéria de cor preparada manualmente."
+  ],
+  [
+    "curadoria-action-espiando-por-uma-fresta",
+    "action",
+    "Espiando por uma fresta",
+    "peering through a narrow opening with most of the face hidden behind the surrounding surface",
+    "Suspense",
+    "",
+    5,
+    "Observação parcial sem revelar presença."
+  ],
+  [
+    "curadoria-action-interrompendo-um-gesto",
+    "action",
+    "Interrompendo um gesto",
+    "freezing midway through a simple gesture as if interrupted by an unexpected realization",
+    "Suspense",
+    "",
+    5,
+    "O instante em que o movimento é suspenso."
+  ],
+  [
+    "curadoria-action-virando-se-para-um-ruido",
+    "action",
+    "Virando-se para um ruído",
+    "turning sharply toward a noise behind the shoulder while keeping the rest of the body cautious",
+    "Suspense",
+    "",
+    5,
+    "Reação imediata a algo fora do quadro."
+  ],
+  [
+    "curadoria-action-recuando-diante-do-desconhecido",
+    "action",
+    "Recuando diante do desconhecido",
+    "taking one careful step backward from an unfamiliar shape, weight shifted away and gaze fixed",
+    "Suspense",
+    "",
+    5,
+    "Retirada breve diante de uma descoberta."
+  ],
+  [
+    "curadoria-action-escondendo-um-objeto",
+    "action",
+    "Escondendo um objeto",
+    "slipping a small object inside a coat pocket while checking whether anyone noticed",
+    "Suspense",
+    "",
+    5,
+    "Um segredo incorporado à ação."
+  ],
+  [
+    "curadoria-action-esperando-uma-resposta",
+    "action",
+    "Esperando uma resposta",
+    "waiting for an answer with hands held still and attention fixed on the other person",
+    "Suspense",
+    "",
+    5,
+    "Expectativa contida antes de uma reação."
+  ],
+  [
+    "curadoria-action-prestes-a-tocar-algo",
+    "action",
+    "Prestes a tocar algo",
+    "holding one hand just above an unfamiliar object, fingers extended but not yet touching it",
+    "Suspense",
+    "",
+    5,
+    "Contato adiado por um único instante."
+  ],
+  [
+    "curadoria-action-brinde-espontaneo",
+    "action",
+    "Brinde espontâneo",
+    "raising a simple cup in a spontaneous toast, smiling toward the people nearby",
+    "Celebração",
+    "",
+    5,
+    "Uma celebração pequena entre pessoas próximas."
+  ],
+  [
+    "curadoria-action-danca-sem-plateia",
+    "action",
+    "Dança sem plateia",
+    "dancing with loose unselfconscious movement as if no audience were present",
+    "Celebração",
+    "",
+    5,
+    "Movimento livre sem preocupação performática."
+  ],
+  [
+    "curadoria-action-abraco-de-reencontro",
+    "action",
+    "Abraço de reencontro",
+    "embracing someone tightly after a long separation, faces relaxed and posture unguarded",
+    "Celebração",
+    "",
+    5,
+    "Afeto físico depois de uma longa ausência."
+  ],
+  [
+    "curadoria-action-vitoria-compartilhada",
+    "action",
+    "Vitória compartilhada",
+    "celebrating a shared victory with raised arms and spontaneous movement among a small group",
+    "Celebração",
+    "",
+    5,
+    "Conquista expressa coletivamente."
+  ],
+  [
+    "curadoria-action-jogando-confetes",
+    "action",
+    "Jogando confetes",
+    "throwing a handful of paper confetti upward with an open expressive gesture",
+    "Celebração",
+    "",
+    5,
+    "Cor e movimento lançados para o alto."
+  ],
+  [
+    "curadoria-action-aplauso-em-pe",
+    "action",
+    "Aplauso em pé",
+    "standing and applauding with genuine enthusiasm, body angled toward the celebrated moment",
+    "Celebração",
+    "",
+    5,
+    "Reconhecimento entusiasmado de uma conquista."
+  ],
+  [
+    "curadoria-lighting-hora-azul",
+    "lighting",
+    "Hora azul",
+    "soft blue-hour ambient light, cool low-contrast shadows and a faint remaining glow along the horizon",
+    "Natural",
+    "",
+    5,
+    "Luz fria e baixa no intervalo crepuscular."
+  ],
+  [
+    "curadoria-lighting-sol-entre-nuvens",
+    "lighting",
+    "Sol entre nuvens",
+    "broken sunlight emerging between moving clouds, alternating bright passages and broad soft shade",
+    "Natural",
+    "",
+    5,
+    "Luz solar revelada por aberturas no céu."
+  ],
+  [
+    "curadoria-lighting-manha-atraves-de-persiana",
+    "lighting",
+    "Manhã através de persiana",
+    "gentle morning sunlight filtered through horizontal blinds, with restrained parallel bands of light and shade",
+    "Natural",
+    "",
+    5,
+    "Luz natural ritmada por uma cobertura de janela."
+  ],
+  [
+    "curadoria-lighting-meio-dia-de-ceu-limpo",
+    "lighting",
+    "Meio-dia de céu limpo",
+    "clear midday sunlight from high above, crisp short shadows and bright naturally lit surfaces",
+    "Natural",
+    "",
+    5,
+    "Iluminação solar alta e sombras curtas."
+  ],
+  [
+    "curadoria-lighting-clarao-de-tempestade",
+    "lighting",
+    "Clarão de tempestade",
+    "a brief cold burst of storm light beneath heavy clouds, luminous highlights against a dark desaturated environment",
+    "Natural",
+    "",
+    5,
+    "Contraste momentâneo sob nuvens densas."
+  ],
+  [
+    "curadoria-lighting-luar-difuso",
+    "lighting",
+    "Luar difuso",
+    "diffused moonlight softened by thin cloud cover, restrained cool highlights and readable nocturnal shadows",
+    "Natural",
+    "",
+    5,
+    "Baixa luminosidade noturna sem dureza."
+  ],
+  [
+    "curadoria-lighting-lanterna-na-mao",
+    "lighting",
+    "Lanterna na mão",
+    "a visible handheld flashlight casting a focused beam and leaving the surrounding space in deep natural shadow",
+    "Motivada",
+    "",
+    5,
+    "Fonte portátil que participa da cena."
+  ],
+  [
+    "curadoria-lighting-luz-de-vela",
+    "lighting",
+    "Luz de vela",
+    "warm close candlelight with subtle natural flicker, soft upward illumination and rapid falloff into darkness",
+    "Motivada",
+    "",
+    5,
+    "Fonte quente, próxima e levemente instável."
+  ],
+  [
+    "curadoria-lighting-letreiro-aceso",
+    "lighting",
+    "Letreiro aceso",
+    "motivated light from a visible illuminated sign, colored spill on nearby surfaces and believable inverse-square falloff",
+    "Motivada",
+    "",
+    5,
+    "Luz originada por sinalização dentro da cena."
+  ],
+  [
+    "curadoria-lighting-tela-de-monitor",
+    "lighting",
+    "Tela de monitor",
+    "cool light from a nearby monitor gently illuminating the face from below while the room remains subdued",
+    "Motivada",
+    "",
+    5,
+    "Iluminação fria produzida por uma tela próxima."
+  ],
+  [
+    "curadoria-lighting-fogueira-baixa",
+    "lighting",
+    "Fogueira baixa",
+    "low firelight rising from a small practical campfire, warm irregular highlights and softly moving shadows",
+    "Motivada",
+    "",
+    5,
+    "Fonte quente e irregular próxima ao chão."
+  ],
+  [
+    "curadoria-lighting-vitrine-noturna",
+    "lighting",
+    "Vitrine noturna",
+    "night lighting motivated by a bright shop window, broad frontal illumination fading naturally into the darker street",
+    "Motivada",
+    "",
+    5,
+    "Luz interna de uma loja como fonte motivada."
+  ],
+  [
+    "curadoria-lighting-softbox-lateral",
+    "lighting",
+    "Softbox lateral",
+    "a large side softbox producing controlled directional light, smooth modeling and gentle shadow transitions",
+    "Estúdio",
+    "",
+    5,
+    "Fonte ampla e controlada em um dos lados."
+  ],
+  [
+    "curadoria-lighting-luz-de-recorte",
+    "lighting",
+    "Luz de recorte",
+    "a narrow rim light tracing the subject silhouette and separating its edges from a restrained background",
+    "Estúdio",
+    "",
+    5,
+    "Contorno luminoso separado do fundo."
+  ],
+  [
+    "curadoria-lighting-preenchimento-negativo",
+    "lighting",
+    "Preenchimento negativo",
+    "negative fill on one side of the subject, preserving a soft key light while deepening the opposite shadow",
+    "Estúdio",
+    "",
+    5,
+    "Sombras profundas criadas pela subtração de luz."
+  ],
+  [
+    "curadoria-lighting-luz-de-topo",
+    "lighting",
+    "Luz de topo",
+    "a controlled overhead light creating clear top-plane highlights and deliberate downward shadows",
+    "Estúdio",
+    "",
+    5,
+    "Fonte zenital com sombras descendentes."
+  ],
+  [
+    "curadoria-lighting-beauty-dish",
+    "lighting",
+    "Beauty dish",
+    "a frontal beauty dish with crisp facial modeling, controlled contrast and a compact circular catchlight",
+    "Estúdio",
+    "",
+    5,
+    "Modelagem frontal definida sem aspereza excessiva."
+  ],
+  [
+    "curadoria-lighting-fresnel-focado",
+    "lighting",
+    "Fresnel focado",
+    "a focused Fresnel beam creating a defined pool of light, clean edge control and a gradual falloff",
+    "Estúdio",
+    "",
+    5,
+    "Feixe de estúdio concentrado e direcional."
+  ],
+  [
+    "curadoria-lighting-nevoa-em-contraluz",
+    "lighting",
+    "Névoa em contraluz",
+    "strong backlighting through light atmospheric haze, visible luminous rays and partially silhouetted forms",
+    "Dramática",
+    "",
+    5,
+    "Feixes traseiros revelados por partículas no ar."
+  ],
+  [
+    "curadoria-lighting-sombras-cortantes",
+    "lighting",
+    "Sombras cortantes",
+    "hard directional lighting with sharply divided planes of brightness and deep crisp-edged shadows",
+    "Dramática",
+    "",
+    5,
+    "Geometria dura entre áreas claras e escuras."
+  ],
+  [
+    "curadoria-lighting-silhueta-parcial",
+    "lighting",
+    "Silhueta parcial",
+    "a near-silhouette against a brighter background with just enough edge detail to preserve volume and gesture",
+    "Dramática",
+    "",
+    5,
+    "Forma reconhecível com detalhes internos preservados."
+  ],
+  [
+    "curadoria-lighting-luz-de-emergencia",
+    "lighting",
+    "Luz de emergência",
+    "motivated emergency lighting with restrained red pulses and deep shadows between each brief illumination",
+    "Dramática",
+    "",
+    5,
+    "Fonte prática de alerta com forte identidade cromática."
+  ],
+  [
+    "curadoria-lighting-lampada-intermitente",
+    "lighting",
+    "Lâmpada intermitente",
+    "a single intermittent practical lamp producing uneven illumination and brief shifts between visibility and shadow",
+    "Dramática",
+    "",
+    5,
+    "Instabilidade visual em uma única fonte prática."
+  ],
+  [
+    "curadoria-lighting-janela-como-unica-fonte",
+    "lighting",
+    "Janela como única fonte",
+    "a single window as the only meaningful light source, soft directional illumination and deep unlit interior space",
+    "Dramática",
+    "",
+    5,
+    "Uma abertura natural concentra toda a iluminação."
+  ],
+  [
+    "curadoria-lighting-ceu-encoberto",
+    "lighting",
+    "Céu encoberto",
+    "broad overcast daylight with soft low-contrast modeling and almost imperceptible shadow edges",
+    "Suave",
+    "",
+    5,
+    "Fonte natural ampla e envolvente."
+  ],
+  [
+    "curadoria-lighting-rebatedor-de-parede",
+    "lighting",
+    "Rebatedor de parede",
+    "light bounced from a pale wall, broad indirect illumination and gentle natural-looking fill",
+    "Suave",
+    "",
+    5,
+    "Luz rebatida por uma superfície clara."
+  ],
+  [
+    "curadoria-lighting-luz-sob-tenda",
+    "lighting",
+    "Luz sob tenda",
+    "soft daylight filtered through a pale fabric canopy, enveloping illumination and delicate warm diffusion",
+    "Suave",
+    "",
+    5,
+    "Claridade filtrada por uma cobertura de tecido."
+  ],
+  [
+    "curadoria-lighting-tecido-como-difusor",
+    "lighting",
+    "Tecido como difusor",
+    "a direct light source softened through translucent fabric, wide diffusion and controlled gentle highlights",
+    "Suave",
+    "",
+    5,
+    "Fonte direta suavizada por material translúcido."
+  ],
+  [
+    "curadoria-lighting-bicolor-complementar",
+    "lighting",
+    "Bicolor complementar",
+    "two complementary colored lights separating key and fill, controlled saturation and readable natural midtones",
+    "Colorida",
+    "",
+    5,
+    "Duas cores opostas separam planos e volumes."
+  ],
+  [
+    "curadoria-lighting-ciano-e-magenta",
+    "lighting",
+    "Ciano e magenta",
+    "motivated cyan and magenta lighting from opposite directions, saturated edge color with neutral detail preserved",
+    "Colorida",
+    "",
+    5,
+    "Contraste urbano entre duas fontes coloridas."
+  ],
+  [
+    "curadoria-lighting-sodio-e-azul",
+    "lighting",
+    "Sódio e azul",
+    "warm sodium-vapor highlights balanced against cool blue ambient shadows, with restrained cinematic separation",
+    "Colorida",
+    "",
+    5,
+    "Âmbar urbano contrastado com sombras frias."
+  ],
+  [
+    "curadoria-lighting-ambar-filtrado",
+    "lighting",
+    "Âmbar filtrado",
+    "amber-gelled lighting with warm luminous highlights and controlled color saturation across nearby surfaces",
+    "Colorida",
+    "",
+    5,
+    "Fonte aquecida por filtro sem estourar os tons."
+  ],
+  [
+    "curadoria-lighting-relevo-em-luz-rasante",
+    "lighting",
+    "Relevo em luz rasante",
+    "low grazing light across textured surfaces, emphasizing relief through narrow highlights and elongated microshadows",
+    "Rasante",
+    "",
+    5,
+    "Luz paralela à superfície revela textura."
+  ],
+  [
+    "curadoria-lighting-feixe-na-poeira",
+    "lighting",
+    "Feixe na poeira",
+    "a concentrated beam revealing fine airborne dust, clear light direction and restrained atmospheric scattering",
+    "Rasante",
+    "",
+    5,
+    "Uma fonte concentrada torna partículas visíveis."
+  ],
+  [
+    "curadoria-lighting-reflexo-em-piso-molhado",
+    "lighting",
+    "Reflexo em piso molhado",
+    "practical highlights reflected across a wet floor, broken elongated reflections and readable surrounding shadows",
+    "Rasante",
+    "",
+    5,
+    "A iluminação se prolonga em uma superfície refletiva."
+  ],
+  [
+    "curadoria-lighting-recorte-por-persiana",
+    "lighting",
+    "Recorte por persiana",
+    "directional light cut by narrow slats, graphic parallel shadow stripes and controlled contrast across the scene",
+    "Rasante",
+    "",
+    5,
+    "Sombras paralelas constroem uma estrutura gráfica."
+  ],
+  [
+    "curadoria-lighting-projecao-estampada",
+    "lighting",
+    "Projeção estampada",
+    "a patterned image projected across the subject and background, wrapping light and shadow around real surfaces",
+    "Experimental",
+    "",
+    5,
+    "Uma imagem projetada modula luz e superfície."
+  ],
+  [
+    "curadoria-lighting-luz-prismatica",
+    "lighting",
+    "Luz prismática",
+    "subtle prismatic light refraction creating small spectral highlights and delicate rainbow fragments on nearby surfaces",
+    "Experimental",
+    "",
+    5,
+    "Refração decompõe a fonte em pequenos espectros."
+  ],
+  [
+    "curadoria-lighting-arrasto-de-exposicao",
+    "lighting",
+    "Arrasto de exposição",
+    "long-exposure light trails from moving practical sources, controlled streaks with the stationary subject remaining readable",
+    "Experimental",
+    "",
+    5,
+    "Fontes móveis deixam rastros durante a exposição."
+  ],
+  [
+    "curadoria-lighting-flash-sobre-particulas",
+    "lighting",
+    "Flash sobre partículas",
+    "a brief direct flash freezing suspended droplets and particles as sharp points against a darker environment",
+    "Experimental",
+    "",
+    5,
+    "Flash breve congela pequenos elementos suspensos."
+  ],
+  [
+    "curadoria-texture-pelicula-16mm",
+    "texture",
+    "Película 16mm",
+    "fine organic 16mm film grain, gentle gate weave and restrained photochemical texture",
+    "Filme",
+    "",
+    5,
+    "Granulação orgânica de filme de pequeno formato."
+  ],
+  [
+    "curadoria-texture-poeira-de-projecao",
+    "texture",
+    "Poeira de projeção",
+    "sparse projection dust, occasional tiny hair marks and subtle frame-to-frame analog variation",
+    "Filme",
+    "",
+    5,
+    "Pequenas marcas associadas à projeção cinematográfica."
+  ],
+  [
+    "curadoria-texture-queimadura-de-filme",
+    "texture",
+    "Queimadura de filme",
+    "localized film-burn texture along the frame edge, warm irregular emulsion damage and no damage over the focal details",
+    "Filme",
+    "",
+    5,
+    "Deterioração luminosa nas bordas da película."
+  ],
+  [
+    "curadoria-texture-alta-sensibilidade",
+    "texture",
+    "Alta sensibilidade",
+    "pronounced high-ISO film grain with organic clumping and preserved tonal separation in the shadows",
+    "Filme",
+    "",
+    5,
+    "Grão pronunciado de filme para baixa luz."
+  ],
+  [
+    "curadoria-texture-manchas-de-revelacao",
+    "texture",
+    "Manchas de revelação",
+    "subtle uneven development marks and faint chemical staining confined mostly to the image edges",
+    "Filme",
+    "",
+    5,
+    "Irregularidades químicas do processo fotográfico."
+  ],
+  [
+    "curadoria-texture-fibra-de-algodao",
+    "texture",
+    "Fibra de algodão",
+    "visible cotton-rag paper fibers with soft irregular grain and gentle pigment absorption",
+    "Papel",
+    "",
+    5,
+    "Trama natural de um papel de alta qualidade."
+  ],
+  [
+    "curadoria-texture-papel-reciclado",
+    "texture",
+    "Papel reciclado",
+    "recycled paper texture with tiny fiber inclusions, muted flecks and a matte absorbent surface",
+    "Papel",
+    "",
+    5,
+    "Superfície heterogênea com pequenas inclusões."
+  ],
+  [
+    "curadoria-texture-papel-amassado",
+    "texture",
+    "Papel amassado",
+    "subtle crumpled-paper creases with fine irregular ridges and shallow directional microshadows",
+    "Papel",
+    "",
+    5,
+    "Dobras físicas criam relevo e microsombras."
+  ],
+  [
+    "curadoria-texture-papel-vegetal",
+    "texture",
+    "Papel vegetal",
+    "translucent tracing-paper texture, delicate fibers and softly diffused underlying layers",
+    "Papel",
+    "",
+    5,
+    "Transparência fibrosa e camadas levemente difusas."
+  ],
+  [
+    "curadoria-texture-bordas-irregulares",
+    "texture",
+    "Bordas irregulares",
+    "hand-torn paper edges with exposed irregular fibers and a restrained tactile border",
+    "Papel",
+    "",
+    5,
+    "Contorno físico de papel rasgado à mão."
+  ],
+  [
+    "curadoria-texture-impasto",
+    "texture",
+    "Impasto",
+    "thick impasto paint ridges with tangible brush relief and tiny directional highlights on raised pigment",
+    "Pintura",
+    "",
+    5,
+    "Pigmento espesso com relevo visível."
+  ],
+  [
+    "curadoria-texture-veladuras-sucessivas",
+    "texture",
+    "Veladuras sucessivas",
+    "multiple translucent paint glazes with subtle underlying brushwork and softly accumulated color depth",
+    "Pintura",
+    "",
+    5,
+    "Camadas translúcidas acumulam profundidade de cor."
+  ],
+  [
+    "curadoria-texture-pincel-seco",
+    "texture",
+    "Pincel seco",
+    "dry-brush pigment dragged across a textured surface, broken strokes and small areas of exposed ground",
+    "Pintura",
+    "",
+    5,
+    "Pigmento interrompido pelo relevo do suporte."
+  ],
+  [
+    "curadoria-texture-pigmento-granulado",
+    "texture",
+    "Pigmento granulado",
+    "granulating pigment settling unevenly into the surface, mineral speckling and delicate tonal variation",
+    "Pintura",
+    "",
+    5,
+    "Partículas de cor se depositam de forma irregular."
+  ],
+  [
+    "curadoria-texture-craquele",
+    "texture",
+    "Craquele",
+    "a restrained network of fine craquelure across the painted surface, subtle age without obscuring the image",
+    "Pintura",
+    "",
+    5,
+    "Fissuras finas sugerem uma camada envelhecida."
+  ],
+  [
+    "curadoria-texture-tinta-offset",
+    "texture",
+    "Tinta offset",
+    "subtle offset-ink texture with faint roller variation and restrained absorption into matte paper",
+    "Impressão",
+    "",
+    5,
+    "Cobertura impressa com pequenas variações mecânicas."
+  ],
+  [
+    "curadoria-texture-desregistro-cmyk",
+    "texture",
+    "Desregistro CMYK",
+    "slight CMYK plate misregistration with narrow color fringes limited to edges and graphic details",
+    "Impressão",
+    "",
+    5,
+    "Camadas de cor ligeiramente desalinhadas."
+  ],
+  [
+    "curadoria-texture-serigrafia-porosa",
+    "texture",
+    "Serigrafia porosa",
+    "porous screen-print ink with a fine mesh imprint, tiny uncovered pinholes and tactile solid color areas",
+    "Impressão",
+    "",
+    5,
+    "Tinta atravessando uma malha de impressão visível."
+  ],
+  [
+    "curadoria-texture-carimbo-irregular",
+    "texture",
+    "Carimbo irregular",
+    "uneven hand-stamped ink coverage, small gaps from irregular pressure and a gently worn printed edge",
+    "Impressão",
+    "",
+    5,
+    "Transferência manual com pressão desigual."
+  ],
+  [
+    "curadoria-texture-reticula-ampliada",
+    "texture",
+    "Retícula ampliada",
+    "enlarged halftone dots with a regular visible screen and slight ink spread on an absorbent surface",
+    "Impressão",
+    "",
+    5,
+    "Pontos de impressão assumidos como textura visual."
+  ],
+  [
+    "curadoria-texture-dithering-ordenado",
+    "texture",
+    "Dithering ordenado",
+    "restrained ordered dithering with a visible pixel matrix and clear tonal transitions",
+    "Digital",
+    "",
+    5,
+    "Matriz de pontos usada para construir tonalidades."
+  ],
+  [
+    "curadoria-texture-pixel-sorting",
+    "texture",
+    "Pixel sorting",
+    "controlled pixel-sorting streaks in limited image regions, preserving the main silhouette and focal details",
+    "Digital",
+    "",
+    5,
+    "Deslocamento digital organizado em faixas de pixels."
+  ],
+  [
+    "curadoria-texture-compressao-jpeg",
+    "texture",
+    "Compressão JPEG",
+    "subtle JPEG compression artifacts, mild block texture and slight chroma softness without severe degradation",
+    "Digital",
+    "",
+    5,
+    "Artefatos discretos de compressão digital."
+  ],
+  [
+    "curadoria-texture-pixels-visiveis",
+    "texture",
+    "Pixels visíveis",
+    "intentionally visible square pixels and crisp nearest-neighbor edges with a limited high-resolution grade",
+    "Digital",
+    "",
+    5,
+    "Grade digital ampliada sem suavização."
+  ],
+  [
+    "curadoria-texture-datamosh-controlado",
+    "texture",
+    "Datamosh controlado",
+    "controlled datamosh trails confined to moving edges, blocky temporal echoes and a stable central subject",
+    "Digital",
+    "",
+    5,
+    "Rastros digitais restritos a áreas de movimento."
+  ],
+  [
+    "curadoria-texture-metal-oxidado",
+    "texture",
+    "Metal oxidado",
+    "weathered oxidized metal with irregular patina, fine corrosion pits and restrained warm mineral deposits",
+    "Material",
+    "",
+    5,
+    "Corrosão e variação mineral sobre metal."
+  ],
+  [
+    "curadoria-texture-madeira-desgastada",
+    "texture",
+    "Madeira desgastada",
+    "worn wood grain with softened edges, shallow scratches and small areas polished by repeated handling",
+    "Material",
+    "",
+    5,
+    "Veios e marcas de uso permanecem aparentes."
+  ],
+  [
+    "curadoria-texture-linho-aparente",
+    "texture",
+    "Linho aparente",
+    "visible linen weave with irregular natural threads, matte fibers and subtle woven variation",
+    "Material",
+    "",
+    5,
+    "Trama têxtil irregular e naturalmente fosca."
+  ],
+  [
+    "curadoria-texture-ceramica-fosca",
+    "texture",
+    "Cerâmica fosca",
+    "matte ceramic surfaces with fine mineral speckles, slight handmade irregularity and soft grazing highlights",
+    "Material",
+    "",
+    5,
+    "Superfície mineral sem brilho especular excessivo."
+  ],
+  [
+    "curadoria-texture-vidro-ondulado",
+    "texture",
+    "Vidro ondulado",
+    "subtle wavy glass distortion with gentle ripples, soft refracted edges and small trapped bubbles",
+    "Material",
+    "",
+    5,
+    "Distorções ópticas de uma superfície vítrea antiga."
+  ],
+  [
+    "curadoria-texture-arranhoes-finos",
+    "texture",
+    "Arranhões finos",
+    "fine sparse surface scratches with varied length and direction, subtle enough to preserve the main forms",
+    "Desgaste",
+    "",
+    5,
+    "Marcas lineares discretas de uso e atrito."
+  ],
+  [
+    "curadoria-texture-manchas-de-umidade",
+    "texture",
+    "Manchas de umidade",
+    "faint irregular moisture stains with soft tide-line edges and localized discoloration near the surface margins",
+    "Desgaste",
+    "",
+    5,
+    "Marcos irregulares deixados pela água."
+  ],
+  [
+    "curadoria-texture-desbotamento-solar",
+    "texture",
+    "Desbotamento solar",
+    "uneven sun-fading with gently bleached exposed areas and slightly richer color in protected edges",
+    "Desgaste",
+    "",
+    5,
+    "Perda desigual de cor causada pela exposição."
+  ],
+  [
+    "curadoria-texture-bordas-gastas",
+    "texture",
+    "Bordas gastas",
+    "soft worn edges with small abrasions, rounded corners and restrained exposure of the underlying material",
+    "Desgaste",
+    "",
+    5,
+    "Atrito acumulado nos limites da superfície."
+  ],
+  [
+    "curadoria-texture-poeira-acumulada",
+    "texture",
+    "Poeira acumulada",
+    "settled dust gathered in recesses and horizontal surfaces, fine muted particles without obscuring focal details",
+    "Desgaste",
+    "",
+    5,
+    "Partículas depositadas em recessos e planos horizontais."
+  ],
+  [
+    "curadoria-texture-solarizacao-analogica",
+    "texture",
+    "Solarização analógica",
+    "restrained analog solarization with partial tonal reversal and delicate luminous contour lines",
+    "Experimental",
+    "",
+    5,
+    "Inversão tonal parcial de origem fotoquímica."
+  ],
+  [
+    "curadoria-texture-padrao-moire",
+    "texture",
+    "Padrão moiré",
+    "a controlled moire interference pattern in limited textured regions, subtle optical ripples and preserved focal clarity",
+    "Experimental",
+    "",
+    5,
+    "Interferência entre grades produz ondulações visuais."
+  ],
+  [
+    "curadoria-texture-interferencia-de-sinal",
+    "texture",
+    "Interferência de sinal",
+    "restrained analog signal interference with narrow horizontal bands and slight chroma displacement",
+    "Experimental",
+    "",
+    5,
+    "Instabilidade eletrônica em faixas discretas."
+  ],
+  [
+    "curadoria-texture-emulsao-levantada",
+    "texture",
+    "Emulsão levantada",
+    "small lifted emulsion flakes and irregular translucent edges confined to the outer image surface",
+    "Experimental",
+    "",
+    5,
+    "Camada fotográfica física se solta do suporte."
+  ],
+  [
+    "curadoria-texture-granulacao-termografica",
+    "texture",
+    "Granulação termográfica",
+    "fine thermal-sensor-inspired grain with softly clustered noise and restrained luminous microcontrast",
+    "Experimental",
+    "",
+    5,
+    "Textura granular inspirada em sensores térmicos."
   ]
 ];
 

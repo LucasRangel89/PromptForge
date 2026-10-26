@@ -75,6 +75,7 @@ export function ScenePanel() {
   };
 
   const customScenario = scenario && !SCENARIOS.some((item) => item.name === scenario) ? scenario : '';
+  const actionOptions = withSelectedReferences(ACTIONS, action, 'action');
   const moodOptions = withSelectedReferences(MOODS, context, 'mood');
   const trendOptions = withSelectedReferences(TRENDS, trend, 'trend');
 
@@ -112,12 +113,12 @@ export function ScenePanel() {
         />
       </div>
 
-      <ReferenceSuggestions {...suggestionProps} kinds={['scenario', 'mood', 'trend']} />
+      <ReferenceSuggestions {...suggestionProps} kinds={['scenario', 'action', 'mood', 'trend']} />
 
       <div className="subsection">
         <div className="subsection-title"><span>Ação na cena</span><span className="mono-note">O QUE ACONTECE?</span></div>
         <div className="chip-list">
-          {ACTIONS.map((item) => (
+          {actionOptions.map((item) => (
             <Chip key={item.name} selected={action === item.name} onClick={() => updateField('action', action === item.name ? '' : item.name)} title={item.description}>
               {item.name}
             </Chip>
