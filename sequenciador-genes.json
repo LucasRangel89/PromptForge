@@ -1,0 +1,18 @@
+{
+  "version": "3.0",
+  "exported_at": "2026-04-25T15:34:57.443Z",
+  "description": "Sequenciador de Memórias — Chips Personalizados",
+  "instrucoes": "Edite os arrays em cada gene para adicionar seus proprios chips. Reimporte para carregar.",
+  "custom_chips": {
+    "icone": [],
+    "linguagem": [],
+    "universo": [],
+    "torcao": [],
+    "assinatura": [],
+    "tempero": [],
+    "formato": [],
+    "paleta": [],
+    "escala": [],
+    "camera": []
+  }
+}

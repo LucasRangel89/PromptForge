@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sequenciador de Memórias — Gerador de Prompts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #08070b;
+  --s1: #0f0d16;
+  --s2: #17141f;
+  --border: #221f2e;
+  --border2: #2e2a3f;
+  --text: #e4dff4;
+  --muted: #635d7a;
+  --amber:  #d4a843;
+  --pink:   #d96a9a;
+  --teal:   #3ecbb8;
+  --purple: #9b7fe8;
+  --coral:  #e07a58;
+  --sage:   #6ec49a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Syne',sans-serif;
+  min-height:100vh;
+  padding:2.5rem 1.5rem 5rem;
+}
+.wrap{max-width:860px;margin:0 auto;}
+
+/* ── HEADER ── */
+.logo-line{
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:1.2rem;
+}
+.logo-mark{
+  width:32px;height:32px;
+  border:2px solid var(--amber);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.logo-mark::before,
+.logo-mark::after{
+  content:'';position:absolute;
+  width:2px;height:12px;background:var(--amber);border-radius:1px;
+}
+.logo-mark::before{transform:rotate(0deg);}
+.logo-mark::after{transform:rotate(90deg);}
+.logo-text{
+  font-size:10px;letter-spacing:4px;color:var(--muted);text-transform:uppercase;
+  font-family:'IBM Plex Mono',monospace;
+}
+h1{
+  font-size:2.4rem;font-weight:800;line-height:1.05;
+  margin-bottom:.5rem;
+}
+h1 em{font-style:normal;color:var(--amber);}
+.tagline{
+  font-size:12px;color:var(--muted);
+  font-family:'IBM Plex Mono',monospace;
+  line-height:1.6;
+  margin-bottom:2.5rem;
+  max-width:540px;
+}
+
+/* ── STRAND PROGRESS ── */
+.strand{
+  display:flex;gap:5px;align-items:center;margin-bottom:2.5rem;
+}
+.strand-seg{
+  height:3px;flex:1;border-radius:2px;
+  background:var(--border2);
+  transition:background .35s;
+}
+.strand-seg.active{background:var(--amber);}
+
+/* ── GENE BLOCK ── */
+.gene-block{
+  background:var(--s1);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1.25rem 1.25rem 1rem;
+  margin-bottom:.85rem;
+  transition:border-color .2s;
+}
+.gene-block:hover{border-color:var(--border2);}
+.gene-block.has-selection{border-color:var(--gene-color);}
+
+.gene-head{
+  display:flex;align-items:center;gap:8px;
+  margin-bottom:.9rem;
+}
+.gene-badge{
+  width:22px;height:22px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:800;flex-shrink:0;
+  background:rgba(var(--gene-rgb),.18);
+  color:var(--gene-color);
+  font-family:'IBM Plex Mono',monospace;
+}
+.gene-name{
+  font-size:10px;font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gene-color);
+}
+.gene-hint{
+  font-size:10px;color:var(--muted);
+  font-family:'IBM Plex Mono',monospace;
+  margin-left:4px;
+}
+.lock-btn{
+  margin-left:auto;
+  background:none;
+  border:1px solid var(--border2);
+  border-radius:6px;
+  padding:3px 9px;
+  font-size:10px;
+  font-family:'IBM Plex Mono',monospace;
+  color:var(--muted);
+  cursor:pointer;
+  letter-spacing:1px;
+  transition:all .2s;
+}
+.lock-btn:hover{border-color:var(--gene-color);color:var(--gene-color);}
+.lock-btn.locked{
+  border-color:var(--gene-color);
+  color:var(--gene-color);
+  background:rgba(var(--gene-rgb),.1);
+}
+
+.chips{display:flex;flex-wrap:wrap;gap:5px;}
+.chip{
+  padding:5px 13px;
+  border-radius:20px;
+  border:1px solid var(--border2);
+  background:var(--s2);
+  color:var(--muted);
+  font-size:11.5px;
+  cursor:pointer;
+  transition:all .15s;
+  font-family:'Syne',sans-serif;
+  user-select:none;
+}
+.chip:hover{color:var(--text);border-color:#3a3550;}
+.chip.selected{
+  color:var(--gene-color);
+  border-color:var(--gene-color);
+  background:rgba(var(--gene-rgb),.12);
+  font-weight:700;
+}
+
+/* ── GENE VARS ── */
+.g-icone     {--gene-color:var(--amber); --gene-rgb:212,168,67;}
+.g-linguagem {--gene-color:var(--pink);  --gene-rgb:217,106,154;}
+.g-universo  {--gene-color:var(--teal);  --gene-rgb:62,203,184;}
+.g-torcao    {--gene-color:var(--purple);--gene-rgb:155,127,232;}
+.g-assinatura{--gene-color:var(--coral); --gene-rgb:224,122,88;}
+.g-tempero   {--gene-color:var(--sage);  --gene-rgb:110,196,154;}
+
+/* ── DIVIDER ── */
+hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
+
+/* ── OUTPUT ── */
+.out-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:.75rem;
+}
+.out-label{
+  font-size:10px;letter-spacing:3px;text-transform:uppercase;
+  font-weight:700;color:var(--muted);
+  font-family:'IBM Plex Mono',monospace;
+}
+.out-status{
+  font-size:10px;font-family:'IBM Plex Mono',monospace;
+  color:var(--muted);
+}
+.out-box{
+  background:var(--s1);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1.5rem;
+  min-height:110px;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12.5px;
+  line-height:1.9;
+  color:var(--text);
+  position:relative;
+  transition:border-color .3s;
+}
+.out-box.has-content{border-color:var(--border2);}
+.out-placeholder{color:var(--muted);font-style:italic;}
+
+/* colored spans in output */
+.og-icone     {background:rgba(212,168,67,.16); color:#d4a843; padding:1px 5px;border-radius:4px;}
+.og-linguagem {background:rgba(217,106,154,.16);color:#d96a9a; padding:1px 5px;border-radius:4px;}
+.og-universo  {background:rgba(62,203,184,.16); color:#3ecbb8; padding:1px 5px;border-radius:4px;}
+.og-torcao    {background:rgba(155,127,232,.16);color:#9b7fe8; padding:1px 5px;border-radius:4px;}
+.og-assinatura{background:rgba(224,122,88,.16); color:#e07a58; padding:1px 5px;border-radius:4px;}
+.og-tempero   {background:rgba(110,196,154,.16);color:#6ec49a; padding:1px 5px;border-radius:4px;}
+
+/* ── CONTROLS ── */
+.controls{
+  display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;
+}
+.btn{
+  padding:10px 20px;
+  border-radius:9px;
+  border:1px solid var(--border2);
+  background:var(--s1);
+  color:var(--text);
+  font-family:'Syne',sans-serif;
+  font-size:13px;font-weight:700;
+  cursor:pointer;transition:all .18s;
+  letter-spacing:.5px;
+}
+.btn:hover{background:var(--s2);border-color:#3a3550;}
+.btn.primary{background:var(--amber);color:#000;border-color:var(--amber);}
+.btn.primary:hover{background:#c09430;border-color:#c09430;}
+.btn.danger{color:var(--muted);}
+.btn.danger:hover{color:var(--text);}
+.btn.copy{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1px;}
+.btn.copy.done{color:var(--teal);border-color:var(--teal);}
+
+/* ── LEGEND ── */
+.legend{
+  display:flex;flex-wrap:wrap;gap:6px 12px;
+  margin-top:1rem;padding-top:1rem;
+  border-top:1px solid var(--border);
+}
+.leg-item{
+  display:flex;align-items:center;gap:5px;
+  font-size:10px;color:var(--muted);
+  font-family:'IBM Plex Mono',monospace;
+}
+.leg-dot{
+  width:8px;height:8px;border-radius:2px;flex-shrink:0;
+}
+
+/* ── FOOTER ── */
+.footer{
+  margin-top:3rem;
+  font-size:10px;color:var(--muted);
+  font-family:'IBM Plex Mono',monospace;
+  text-align:center;
+  letter-spacing:1px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{width:4px;height:4px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="logo-line">
+    <div class="logo-mark"></div>
+    <span class="logo-text">Sequenciador de Memórias — v2.0</span>
+  </div>
+
+  <h1>Gerador de<br><em>Prompts Visuais</em></h1>
+  <p class="tagline">
+    Selecione um "gene" por categoria e assista o prompt se montar em tempo real.<br>
+    Baseado em referências culturais dos anos 90 e 2000. Use ALEATORIZAR para surpresas.
+  </p>
+
+  <div class="strand" id="strand"></div>
+
+  <div id="genes-container"></div>
+
+  <hr>
+
+  <div class="out-header">
+    <span class="out-label">▸ Prompt Gerado</span>
+    <span class="out-status" id="out-status">0 / 6 genes ativos</span>
+  </div>
+  <div class="out-box" id="out-box">
+    <span class="out-placeholder">Selecione ao menos um gene para começar a construir o prompt...</span>
+  </div>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="controls">
+    <button class="btn primary" onclick="randomize()">⟳ Aleatorizar Tudo</button>
+    <button class="btn" onclick="randomizeUnlocked()">⟳ Aleatorizar Livres</button>
+    <button class="btn copy" id="copy-btn" onclick="copyPrompt()">COPIAR PROMPT</button>
+    <button class="btn danger" onclick="clearAll()">Limpar</button>
+  </div>
+
+  <div class="footer">
+    Compatível com Midjourney · DALL·E 3 · Stable Diffusion · Adobe Firefly · Ideogram
+  </div>
+
+</div>
+
+<script>
+// ── DATA ─────────────────────────────────────────────────────────────
+const GENES = [
+  {
+    id: 'icone',
+    name: 'Ícone',
+    hint: 'o sujeito principal',
+    cls: 'g-icone',
+    role: 'subject',
+    options: [
+      { label:'Kurt Cobain',         out:'Kurt Cobain' },
+      { label:'Ayrton Senna',        out:'Ayrton Senna in his red and white racing helmet' },
+      { label:'Ronaldo Fenômeno',    out:'Ronaldo Fenômeno, the Brazilian striker at his peak' },
+      { label:'Tupac Shakur',        out:'Tupac Shakur' },
+      { label:'Lara Croft',          out:'Lara Croft from the original 1996 Tomb Raider' },
+      { label:'Fernanda Montenegro', out:'Fernanda Montenegro as Dora from Central do Brasil' },
+      { label:'Chico Science',       out:'Chico Science in full Manguebeat attire' },
+      { label:'Neo (Matrix)',        out:'Neo from The Matrix, trench coat and sunglasses' },
+      { label:'Xuxa Meneghel',       out:'Xuxa Meneghel, Queen of the Baixinhos' },
+      { label:'Pikachu',             out:'Pikachu' },
+      { label:'Tony Soprano',        out:'Tony Soprano' },
+      { label:'Ronaldinho Gaúcho',   out:'Ronaldinho Gaúcho in his Barcelona 2004 era' },
+      { label:'Heath Ledger Coringa',out:'Heath Ledger as The Joker, face paint, purple coat' },
+      { label:'Amy Winehouse',       out:'Amy Winehouse in her Back to Black era' },
+      { label:'Britney Spears',      out:'Britney Spears at her peak, circa 2003' },
+      { label:'Zé Pequeno',          out:'Zé Pequeno from Cidade de Deus' },
+      { label:'Zidane',              out:'Zinedine Zidane' },
+      { label:'Steve Jobs',          out:'Steve Jobs holding the first iPhone on stage' },
+      { label:'Sandy & Junior',      out:'Sandy and Junior, the Brazilian pop duo siblings' },
+      { label:'Osama Bin Laden',     out:'Osama bin Laden' },
+      { label:'Frodo Bolseiro',      out:'Frodo Baggins carrying the One Ring' },
+      { label:'Tamagotchi',          out:'a Tamagotchi creature brought to life' },
+      { label:'Bill Gates',          out:'Bill Gates in 1995 with a Windows 95 box' },
+      { label:'É o Tchan! (Carla)',  out:'Carla Perez from É o Tchan! in Axé Music costume' },
+      { label:'Jack Sparrow',        out:'Captain Jack Sparrow, rum in hand' },
+    ]
+  },
+  {
+    id: 'linguagem',
+    name: 'Linguagem Visual',
+    hint: 'o meio e estilo',
+    cls: 'g-linguagem',
+    role: 'style',
+    options: [
+      { label:'Pintura Barroca',        out:'Baroque oil painting, Caravaggio chiaroscuro lighting, museum quality canvas' },
+      { label:'Fotografia 35mm',        out:'Authentic 35mm film photography, heavy grain, slight underexposure, analog warmth' },
+      { label:'Arte Egípcia em Papiro', out:'Ancient Egyptian decorative painting on papyrus, gold leaf, strict hieratic style, profile pose' },
+      { label:'Pixel Art 16-bit',       out:'16-bit pixel art, SNES-era color palette, retro gaming sprite sheet' },
+      { label:'Mural Mexicano',         out:'Mexican social realism mural, Diego Rivera and Orozco style, monumental wall painting' },
+      { label:'Concept Art Cinemat.',   out:'Cinematic concept art, epic scale, Unreal Engine 5 photorealistic rendering' },
+      { label:'Graphic Novel Noir',     out:'Graphic novel, high-contrast black ink with selective color, Frank Miller Sin City aesthetic' },
+      { label:'Ícone Sacro Bizantino',  out:'Byzantine sacred icon on gilded wood panel, gold leaf halo, egg tempera, cracked varnish' },
+      { label:'Vaporwave Estético',     out:'Vaporwave aesthetic, retrowave synthwave color palette, glitch art, 80s–90s nostalgia digital art' },
+      { label:'Pop Art (Warhol)',       out:'Pop Art, Andy Warhol silkscreen style, bold flat outlines, color grid repetition' },
+      { label:'Escultura Grega',        out:'Ancient Greek white Pentelic marble sculpture, museum documentation photography' },
+      { label:'Aquarela Editorial',     out:'Editorial watercolor illustration, New Yorker magazine style, loose impressionistic brushwork' },
+      { label:'Xilogravura de Cordel',  out:'Brazilian cordel woodcut illustration, hand-carved black and white lines, rough texture' },
+      { label:'Sci-fi Anos 70',         out:'1970s science fiction paperback cover art, Moebius / Jean Giraud style, retro-futuristic' },
+      { label:'Fotografia Infravermelha',out:'Infrared photography, white foliage, dark sky, surreal tonal reversal, dreamlike' },
+      { label:'Storyboard Animação',    out:'Hand-drawn animation storyboard, Studio Ghibli pencil sketch aesthetic' },
+      { label:'Daguerreótipo',          out:'Daguerreotype photograph, sepia tones, 19th century portrait format, brass frame vignette' },
+    ]
+  },
+  {
+    id: 'universo',
+    name: 'Universo / Cenário',
+    hint: 'onde acontece',
+    cls: 'g-universo',
+    role: 'setting',
+    options: [
+      { label:'Boteco Carioca, 90s',      out:'inside a weathered Rio de Janeiro boteco, 1990s, neon Brahma signs, checkered floor, ceiling fan' },
+      { label:'Amazônia Profunda',         out:'deep Amazon rainforest at dusk, bioluminescent plants, mist rising from the canopy' },
+      { label:'LAN House SP, 2003',        out:'Brazilian LAN house interior, 2003, rows of CRT monitors, blue light, teenagers in plastic chairs' },
+      { label:'Sertão ao Amanhecer',       out:'Brazilian northeastern sertão at dawn, red caatinga earth, cacti, flat horizon' },
+      { label:'Maracanã — Final 94',       out:'Maracanã stadium packed for the 1994 World Cup final, confetti, roaring crowd' },
+      { label:'Museu do Futuro (2150)',     out:'a museum in the year 2150, white stone halls, climate-controlled glass cases, future visitors' },
+      { label:'Roma Antiga',               out:'ancient Rome, cobblestone streets, marble columns, torchlight, toga-clad crowds' },
+      { label:'Cortiço Paulistano, 1999',  out:'downtown São Paulo cortiço, 1999, crumbling plaster, clotheslines between buildings, urban density' },
+      { label:'Olimpo Grego',              out:'Mount Olympus above the clouds, divine golden light, celestial realm' },
+      { label:'Galeria Bienal SP',         out:'São Paulo Bienal white cube gallery, institutional overhead lighting, polished concrete floor' },
+      { label:'Ciberespaço Y2K',           out:'Y2K cyberspace, cascading green matrix code, glowing terminals, the year 1999' },
+      { label:'Favela ao Amanhecer',       out:'Brazilian favela at dawn, warm ochre light, rooftop view of the city spreading below' },
+      { label:'Praia de Ipanema, 90s',     out:'Ipanema beach in the 1990s, golden afternoon light, Dois Irmãos hills in the background' },
+      { label:'Espaço Sideral',            out:'outer space, cosmic scale, nebulae and star clusters, total weightlessness' },
+      { label:'Camelódromo, 94',           out:'Brazilian informal market (camelódromo), chaotic stalls, bootleg VHS and CDs, 1994' },
+      { label:'Underground Punk — SP',     out:'underground São Paulo punk venue, graffiti walls, sweat, feedback, 1997' },
+      { label:'Estação de Metrô no Rush',  out:'São Paulo metro station at rush hour, 1998, bodies pressing, fluorescent light, advertisement posters' },
+      { label:'Feira de São Cristóvão',    out:'Feira de São Cristóvão, Rio de Janeiro, forró music, leather hats, dust, barraca lights' },
+    ]
+  },
+  {
+    id: 'torcao',
+    name: 'Torção / Mashup',
+    hint: 'o elemento inesperado',
+    cls: 'g-torcao',
+    role: 'twist',
+    options: [
+      { label:'Retratado como Divindade',  out:'depicted as an ancient deity — sacred, transcendent, worshipped' },
+      { label:'Transportado ao Brasil',    out:'fully transplanted into Brazilian culture, every detail authentically local' },
+      { label:'Artefato Arqueológico',     out:'presented as an ancient artifact under museum glass, centuries in the future' },
+      { label:'Fundido com Mitologia',     out:'merged with Greco-Roman mythology, heroic and classical in scale' },
+      { label:'Santo Popular Brasileiro',  out:'reimagined as a Brazilian popular saint, ex-voto aesthetics, miracle attributed' },
+      { label:'Cavaleiro Medieval',        out:'depicted as a medieval knight or noble, heraldic setting, armor reflecting candlelight' },
+      { label:'Personagem de Cordel',      out:'as a hero of a Brazilian cordel folk narrative, woodcut legend' },
+      { label:'Monumento Público',         out:'rendered as a monumental bronze public sculpture in a city square, pigeons landing on it' },
+      { label:'Fusão com Candomblé',       out:'fused with Afro-Brazilian Candomblé iconography, Orixá aesthetics, sacred geometry' },
+      { label:'Olhar Alienígena',          out:'as observed by alien anthropologists — clinical, distant, labeled with incomprehensible text' },
+      { label:'Sprite de Videogame',       out:'translated into a retro video game character, complete with health bar and stats panel' },
+      { label:'Verso de Enciclopédia',     out:'illustrated as an encyclopedia entry, clinical diagrammatic labels, cross-section view' },
+      { label:'Herói Trágico Grego',       out:'as a tragic Greek hero at the moment of catastrophe, emotionally operatic' },
+      { label:'Axé Meets Grunge',          out:'aesthetics brutally fused — half Axé Music carnival feathers, half grunge flannel and ripped jeans' },
+      { label:'Propaganda Soviética',      out:'rendered as Soviet constructivist propaganda poster — strong diagonals, red and black' },
+      { label:'Retrato Papal',             out:'painted as a formal papal or royal portrait, red robes, gilded frame, scepter' },
+      { label:'Planta de Arquitetura',     out:'rendered as a detailed architectural blueprint — top-down technical drawing, measurement annotations' },
+    ]
+  },
+  {
+    id: 'assinatura',
+    name: 'Assinatura / Referência',
+    hint: 'o artista ou diretor de referência',
+    cls: 'g-assinatura',
+    role: 'reference',
+    options: [
+      { label:'Sebastião Salgado',  out:'shot in the style of Sebastião Salgado — epic black and white, moral weight, raw humanism' },
+      { label:'Caravaggio',         out:'painted in the manner of Caravaggio — impasto brushwork, single light source, chiaroscuro drama' },
+      { label:'Roger Deakins',      out:'cinematography by Roger Deakins — golden naturalistic light, restrained beauty' },
+      { label:'Wes Anderson',       out:'Wes Anderson color palette — salmon, mustard, powder blue, perfect symmetry, deadpan framing' },
+      { label:'Norman Rockwell',    out:'illustrated by Norman Rockwell — warm American idealism, Saturday Evening Post narrative detail' },
+      { label:'Eduardo Kobra',      out:'in the style of Eduardo Kobra street murals — geometric kaleidoscope color, massive scale' },
+      { label:'Annie Leibovitz',    out:'photographed by Annie Leibovitz — dramatically staged, editorial gravitas, iconic composition' },
+      { label:'Banksy',             out:'as a Banksy stencil installation — black spray on brick, one subversive visual joke' },
+      { label:'Wong Kar-wai',       out:'cinematographic style of Wong Kar-wai — saturated neon, slow-motion blur, melancholic longing' },
+      { label:'Moebius / Giraud',   out:'illustrated by Moebius / Jean Giraud — clean luminous linework, retro sci-fi, desert light' },
+      { label:'Alan Lee',           out:'illustrated by Alan Lee — misty loose watercolor, Tolkien spirit, ancient and ethereal' },
+      { label:'Rembrandt',          out:'in the style of Rembrandt van Rijn — golden studio light, impasto textures, psychological depth' },
+      { label:'Basquiat',           out:'in the raw style of Jean-Michel Basquiat — expressionist marks, crown symbols, text overlays' },
+      { label:'Stanley Kubrick',    out:'directed by Stanley Kubrick — one-point perspective, perfect symmetry, geometric dread' },
+      { label:'Pedro Almodóvar',    out:'visual style of Pedro Almodóvar — saturated primaries, melodrama, ornate domestic interiors' },
+      { label:'Carybé',             out:'in the illustrative style of Carybé — warm Bahian color, Candomblé iconography, fluid lines' },
+      { label:'Isay Weinfeld',      out:'architectural sensibility of Isay Weinfeld — brutal luxury, raw concrete, Brazilian modernism' },
+    ]
+  },
+  {
+    id: 'tempero',
+    name: 'Tempero Extra',
+    hint: 'o detalhe que faz diferença',
+    cls: 'g-tempero',
+    role: 'detail',
+    options: [
+      { label:'Grão Analógico Pesado',     out:'heavy 35mm film grain, slightly underexposed, warm analog color shift' },
+      { label:'Texto em Português Arcaico',out:'decorative text elements written in archaic 16th-century Portuguese calligraphy visible in the image' },
+      { label:'Anacronia Deliberada',      out:'one deliberate anachronism — a modern smartphone in an otherwise historical scene' },
+      { label:'Easter Egg Brasileiro',     out:'a hidden Brazilian cultural reference (a Brahma can, a Havaianas, a caipirinha) subtly visible' },
+      { label:'Dutch Angle',              out:'Dutch angle camera tilt, disorienting, psychological unease' },
+      { label:'Luz de Vela Única',         out:'single candle illumination, pool of warm light, everything else absorbed in deep shadow' },
+      { label:'Moldura Polaroid',          out:'square Polaroid format, white border, handwritten date at bottom, slightly faded' },
+      { label:'Fumaça Teatral',            out:'dramatic theatrical smoke, volumetric light beams cutting through' },
+      { label:'Artefatos JPEG',            out:'deliberate JPEG compression artifacts, pixelated blocks at the edges, digital degradation' },
+      { label:'Worm\'s Eye View',          out:'extreme low angle worm\'s eye view, subject rendered monumental and towering' },
+      { label:'Olho de Peixe',             out:'fisheye lens, 180° field of view, spatial distortion, vertiginous' },
+      { label:'Ruído de Scanner',          out:'flatbed scanner noise, slight color channel bleed, digitized-document texture' },
+      { label:'Letreiro Simbólico',        out:'a prominent hand-lettered or neon sign with symbolic text placed deliberately in the composition' },
+      { label:'Exposição Múltipla',        out:'multiple exposure — two or three layered takes blended, ghostly overlapping forms' },
+      { label:'Vinheta Escura',            out:'strong dark vignette, focus pulled brutally to center, edges dissolving to black' },
+      { label:'Chuva de Confete',          out:'confetti explosion mid-frame, color fragments catching the light' },
+      { label:'Paleta Dessaturada + Acento',out:'nearly desaturated image with a single accent color that stays vibrant — emotional punctuation' },
+    ]
+  }
+];
+
+// ── STATE ──────────────────────────────────────────────────────────
+const selected = {};
+const locked = {};
+GENES.forEach(g => { selected[g.id] = null; locked[g.id] = false; });
+
+// ── RENDER GENES ───────────────────────────────────────────────────
+function renderGenes() {
+  const container = document.getElementById('genes-container');
+  container.innerHTML = '';
+
+  GENES.forEach((gene, i) => {
+    const block = document.createElement('div');
+    block.className = `gene-block ${gene.cls}`;
+    block.id = `block-${gene.id}`;
+
+    block.innerHTML = `
+      <div class="gene-head">
+        <div class="gene-badge">${i+1}</div>
+        <span class="gene-name">${gene.name}</span>
+        <span class="gene-hint">// ${gene.hint}</span>
+        <button class="lock-btn ${locked[gene.id]?'locked':''}"
+          onclick="toggleLock('${gene.id}',this)">
+          ${locked[gene.id]?'TRAVAR ✓':'TRAVAR'}
+        </button>
+      </div>
+      <div class="chips" id="chips-${gene.id}">
+        ${gene.options.map(opt => `
+          <div class="chip ${selected[gene.id]===opt.label?'selected':''}"
+            onclick="selectGene('${gene.id}','${escQ(opt.label)}','${escQ(opt.out)}')">
+            ${opt.label}
+          </div>
+        `).join('')}
+      </div>
+    `;
+    container.appendChild(block);
+  });
+
+  updateSelectedBlocks();
+  renderOutput();
+  renderStrand();
+  renderLegend();
+}
+
+function escQ(s){ return s.replace(/'/g,"\\'"); }
+
+function selectGene(id, label, out) {
+  if (selected[id] === label) {
+    selected[id] = null;
+  } else {
+    selected[id] = label;
+  }
+  // store the out text
+  const gene = GENES.find(g=>g.id===id);
+  const opt = gene.options.find(o=>o.label===label);
+  selected[id+'_out'] = (selected[id] && opt) ? opt.out : null;
+
+  updateChips(id);
+  updateSelectedBlocks();
+  renderOutput();
+  renderStrand();
+}
+
+function updateChips(id) {
+  const container = document.getElementById(`chips-${id}`);
+  if (!container) return;
+  container.querySelectorAll('.chip').forEach(chip => {
+    chip.classList.toggle('selected', chip.textContent.trim() === selected[id]);
+  });
+}
+
+function updateSelectedBlocks() {
+  GENES.forEach(gene => {
+    const block = document.getElementById(`block-${gene.id}`);
+    if (block) {
+      block.classList.toggle('has-selection', !!selected[gene.id]);
+    }
+  });
+}
+
+function toggleLock(id, btn) {
+  locked[id] = !locked[id];
+  btn.classList.toggle('locked', locked[id]);
+  btn.textContent = locked[id] ? 'TRAVAR ✓' : 'TRAVAR';
+}
+
+// ── PROMPT ASSEMBLY ────────────────────────────────────────────────
+function buildPrompt(forCopy = false) {
+  const ling = selected['linguagem_out'];
+  const ico  = selected['icone_out'];
+  const univ = selected['universo_out'];
+  const torc = selected['torcao_out'];
+  const ass  = selected['assinatura_out'];
+  const temp = selected['tempero_out'];
+
+  const count = [ling,ico,univ,torc,ass,temp].filter(Boolean).length;
+  if (count === 0) return null;
+
+  const parts = [];
+
+  if (ling) parts.push({ id:'linguagem', text: ling });
+
+  let subjectParts = [];
+  if (ico)  subjectParts.push({ id:'icone', text: ico });
+  if (torc) subjectParts.push({ id:'torcao', text: torc });
+  if (univ) subjectParts.push({ id:'universo', text: `set ${univ}` });
+
+  if (subjectParts.length > 0) {
+    parts.push(...subjectParts);
+  }
+
+  if (ass) parts.push({ id:'assinatura', text: ass });
+  if (temp) parts.push({ id:'tempero', text: temp });
+
+  parts.push({ id:'static', text: 'Highly detailed. Masterpiece quality.' });
+
+  if (forCopy) {
+    return parts.map(p=>p.text).join('. ');
+  }
+  return parts;
+}
+
+function renderOutput() {
+  const box = document.getElementById('out-box');
+  const status = document.getElementById('out-status');
+
+  const count = GENES.filter(g => selected[g.id]).length;
+  status.textContent = `${count} / 6 genes ativos`;
+
+  const parts = buildPrompt(false);
+
+  if (!parts) {
+    box.innerHTML = '<span class="out-placeholder">Selecione ao menos um gene para começar a construir o prompt...</span>';
+    box.classList.remove('has-content');
+    return;
+  }
+
+  box.classList.add('has-content');
+  box.innerHTML = parts.map(p => {
+    if (p.id === 'static') return `<span style="color:var(--muted)">${p.text}</span>`;
+    return `<span class="og-${p.id}">${p.text}</span>`;
+  }).join('<span style="color:var(--muted)"> · </span>');
+}
+
+function renderStrand() {
+  const strand = document.getElementById('strand');
+  strand.innerHTML = '';
+  GENES.forEach(gene => {
+    const seg = document.createElement('div');
+    seg.className = `strand-seg${selected[gene.id]?' active':''}`;
+    strand.appendChild(seg);
+  });
+}
+
+function renderLegend() {
+  const colors = {
+    icone:'#d4a843', linguagem:'#d96a9a', universo:'#3ecbb8',
+    torcao:'#9b7fe8', assinatura:'#e07a58', tempero:'#6ec49a'
+  };
+  const legend = document.getElementById('legend');
+  legend.innerHTML = GENES.map(g => `
+    <div class="leg-item">
+      <div class="leg-dot" style="background:${colors[g.id]}"></div>
+      ${g.name}
+    </div>
+  `).join('');
+}
+
+// ── ACTIONS ────────────────────────────────────────────────────────
+function randomize() {
+  GENES.forEach(gene => {
+    const idx = Math.floor(Math.random() * gene.options.length);
+    const opt = gene.options[idx];
+    selected[gene.id] = opt.label;
+    selected[gene.id+'_out'] = opt.out;
+    updateChips(gene.id);
+  });
+  updateSelectedBlocks();
+  renderOutput();
+  renderStrand();
+}
+
+function randomizeUnlocked() {
+  GENES.forEach(gene => {
+    if (locked[gene.id]) return;
+    const idx = Math.floor(Math.random() * gene.options.length);
+    const opt = gene.options[idx];
+    selected[gene.id] = opt.label;
+    selected[gene.id+'_out'] = opt.out;
+    updateChips(gene.id);
+  });
+  updateSelectedBlocks();
+  renderOutput();
+  renderStrand();
+}
+
+function clearAll() {
+  GENES.forEach(gene => {
+    selected[gene.id] = null;
+    selected[gene.id+'_out'] = null;
+    updateChips(gene.id);
+    locked[gene.id] = false;
+    const btn = document.querySelector(`#block-${gene.id} .lock-btn`);
+    if (btn) { btn.classList.remove('locked'); btn.textContent = 'TRAVAR'; }
+  });
+  updateSelectedBlocks();
+  renderOutput();
+  renderStrand();
+}
+
+function copyPrompt() {
+  const text = buildPrompt(true);
+  if (!text) return;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('copy-btn');
+    btn.textContent = '✓ COPIADO';
+    btn.classList.add('done');
+    setTimeout(() => {
+      btn.textContent = 'COPIAR PROMPT';
+      btn.classList.remove('done');
+    }, 2000);
+  });
+}
+
+// ── INIT ──────────────────────────────────────────────────────────
+renderGenes();
+</script>
+</body>
+</html>

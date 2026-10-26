@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptForge — Protótipo Interativo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .step-content { display: none; }
+        .step-content.active { display: block; }
+        .agent-log { font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #1a202c; }
+        ::-webkit-scrollbar-thumb { background: #4a5568; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex overflow-hidden">
+
+    <aside class="w-72 bg-gray-800 border-r border-gray-700 p-8 flex flex-col shadow-2xl">
+        <h1 class="text-2xl font-bold text-cyan-400 mb-12 flex items-center gap-3">
+            <span class="text-3xl">🧠</span> PromptForge
+        </h1>
+        <nav class="flex-1 space-y-6">
+            <div id="nav-step-1" class="flex items-center gap-4 text-cyan-400 font-semibold transition-all">
+                <span class="w-10 h-10 rounded-full border-2 border-cyan-400 flex items-center justify-center shadow-[0_0_10px_rgba(34,211,238,0.3)]">1</span>
+                Âncora Criativa
+            </div>
+            <div id="nav-step-2" class="flex items-center gap-4 text-gray-500">
+                <span class="w-10 h-10 rounded-full border-2 border-gray-600 flex items-center justify-center">2</span>
+                Mundo Visual
+            </div>
+            <div id="nav-step-3" class="flex items-center gap-4 text-gray-500">
+                <span class="w-10 h-10 rounded-full border-2 border-gray-600 flex items-center justify-center">3</span>
+                Linguagem Visual
+            </div>
+            <div id="nav-step-4" class="flex items-center gap-4 text-gray-500">
+                <span class="w-10 h-10 rounded-full border-2 border-gray-600 flex items-center justify-center">4</span>
+                Síntese Final
+            </div>
+        </nav>
+        <div class="mt-auto pt-6 border-t border-gray-700 text-[10px] text-gray-500 uppercase tracking-widest">
+            MVP Prototype — System Logic v1.0
+        </div>
+    </aside>
+
+    <main class="flex-1 p-12 overflow-y-auto bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-gray-800 via-gray-900 to-black">
+        
+        <section id="step-1" class="step-content active space-y-8 max-w-2xl">
+            <div>
+                <h2 class="text-4xl font-extrabold mb-2">Âncora Criativa</h2>
+                <p class="text-gray-400">Selecione a base conceitual que manterá a consistência do seu projeto.</p>
+            </div>
+            <div class="space-y-6">
+                <div class="grid grid-cols-1 gap-4">
+                    <label class="block group">
+                        <span class="text-sm font-bold text-gray-500 group-focus-within:text-cyan-400 transition-colors uppercase">Âncoras Disponíveis</span>
+                        <select id="anchor-val" class="mt-2 block w-full bg-gray-800 border border-gray-700 rounded-xl p-4 focus:ring-2 focus:ring-cyan-500 outline-none transition-all">
+                            <option value="Eternauta">Eternauta (Nostalgia / Sci-Fi Argentino)</option>
+                            <option value="Cyberpunk">Cyberpunk (Distopia / Neon)</option>
+                            <option value="Ghibli">Studio Ghibli (Onírico / Natureza)</option>
+                            <option value="Noir">Film Noir (Contraste / Mistério)</option>
+                        </select>
+                    </label>
+                </div>
+                <button onclick="goToStep(2)" class="group flex items-center gap-3 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg hover:shadow-cyan-500/20">
+                    Confirmar Âncora
+                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="step-2" class="step-content space-y-8 max-w-2xl">
+            <h2 class="text-4xl font-extrabold">Mundo Visual</h2>
+            <div class="grid grid-cols-1 gap-6">
+                <label class="block">
+                    <span class="text-sm font-bold text-gray-500 uppercase">Cenário</span>
+                    <input type="text" id="scenario-val" value="Shopping center abandonado nos anos 90" class="mt-2 w-full bg-gray-800 border border-gray-700 rounded-xl p-4 outline-none focus:border-cyan-500 transition-all">
+                </label>
+                <label class="block">
+                    <span class="text-sm font-bold text-gray-500 uppercase">Contexto / Emoção</span>
+                    <input type="text" id="context-val" value="Melancolia urbana e silêncio" class="mt-2 w-full bg-gray-800 border border-gray-700 rounded-xl p-4 outline-none focus:border-cyan-500 transition-all">
+                </label>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="goToStep(1)" class="py-4 px-8 border border-gray-700 rounded-xl hover:bg-gray-800 transition-colors text-gray-400">Voltar</button>
+                <button onclick="goToStep(3)" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg">Definir Estilos</button>
+            </div>
+        </section>
+
+        <section id="step-3" class="step-content space-y-8 max-w-2xl">
+            <h2 class="text-4xl font-extrabold">Linguagem Visual</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-6 bg-gray-800 border-2 border-cyan-500/50 rounded-2xl">
+                    <span class="text-xs font-bold text-cyan-400 uppercase">Estilo Sugerido</span>
+                    <p class="text-xl font-bold mt-1">Cinematic 35mm</p>
+                </div>
+                <div class="p-6 bg-gray-800 border border-gray-700 rounded-2xl opacity-60">
+                    <span class="text-xs font-bold text-gray-500 uppercase">Iluminação</span>
+                    <p class="text-xl font-bold mt-1">Golden Hour / Soft</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="goToStep(2)" class="py-4 px-8 border border-gray-700 rounded-xl hover:bg-gray-800 transition-colors text-gray-400">Voltar</button>
+                <button onclick="runOrchestration()" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-4 px-12 rounded-xl transition-all shadow-lg hover:shadow-cyan-500/40">
+                    🚀 Orquestrar Agentes
+                </button>
+            </div>
+        </section>
+
+        <section id="step-4" class="step-content space-y-8 max-w-3xl">
+            <h2 class="text-4xl font-extrabold">Síntese do Prompt</h2>
+            <div class="relative">
+                <div class="absolute -top-3 left-4 px-2 bg-gray-900 text-cyan-400 text-xs font-bold uppercase tracking-widest">Prompt Final</div>
+                <div class="bg-gray-800/50 backdrop-blur-md p-8 rounded-3xl border border-gray-700 min-h-[160px] flex items-center italic text-xl leading-relaxed text-cyan-50 border-l-4 border-l-cyan-500 shadow-inner">
+                    <p id="prompt-output">Iniciando síntese...</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="goToStep(1)" class="py-4 px-8 border border-gray-700 rounded-xl hover:bg-gray-800 transition-colors text-gray-400 font-bold">Novo Prompt</button>
+                <button onclick="alert('Copiado!')" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-4 px-10 rounded-xl transition-all">Copiar Texto</button>
+                <button class="flex-1 bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-green-900/20">Salvar na Memória</button>
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="w-96 bg-black border-l border-gray-800 flex flex-col p-6 shadow-[-20px_0_30px_rgba(0,0,0,0.5)]">
+        <div class="flex items-center justify-between mb-6">
+            <h3 class="text-[10px] font-black text-gray-500 uppercase tracking-[0.2em]">Live Orchestration</h3>
+            <span class="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+        </div>
+        <div id="agent-console" class="agent-log flex-1 overflow-y-auto space-y-4 pr-2">
+            <p class="text-gray-600 italic">> Aguardando parâmetros do usuário...</p>
+        </div>
+    </aside>
+
+    <script>
+        function goToStep(s) {
+            document.querySelectorAll('.step-content').forEach(el => el.classList.remove('active'));
+            document.getElementById('step-' + s).classList.add('active');
+
+            // Update Nav Styles
+            for(let i=1; i<=4; i++) {
+                const nav = document.getElementById('nav-step-'+i);
+                if(i === s) {
+                    nav.className = "flex items-center gap-4 text-cyan-400 font-semibold transition-all";
+                    nav.querySelector('span').className = "w-10 h-10 rounded-full border-2 border-cyan-400 flex items-center justify-center shadow-[0_0_10px_rgba(34,211,238,0.3)]";
+                } else {
+                    nav.className = "flex items-center gap-4 text-gray-500";
+                    nav.querySelector('span').className = "w-10 h-10 rounded-full border-2 border-gray-600 flex items-center justify-center";
+                }
+            }
+        }
+
+        function log(agent, msg, type = 'info') {
+            const console = document.getElementById('agent-console');
+            const entry = document.createElement('div');
+            entry.className = "animate-in fade-in slide-in-from-right-2 duration-500";
+            entry.innerHTML = `
+                <div class="text-[10px] font-bold text-cyan-500 uppercase mb-1">[${agent}]</div>
+                <div class="text-green-400 leading-snug">${msg}</div>
+            `;
+            console.appendChild(entry);
+            console.scrollTop = console.scrollHeight;
+        }
+
+        async function runOrchestration() {
+            goToStep(4);
+            const console = document.getElementById('agent-console');
+            console.innerHTML = '';
+            
+            const anchor = document.getElementById('anchor-val').value;
+            const scenario = document.getElementById('scenario-val').value;
+            const context = document.getElementById('context-val').value;
+
+            log('Concept Curator', `Iniciando análise da âncora: <strong>${anchor}</strong>`);
+            await new Promise(r => setTimeout(r, 700));
+            
+            log('Art Director', `Desenhando cenário: "${scenario}". Aplicando contexto de "${context}".`);
+            await new Promise(r => setTimeout(r, 900));
+
+            log('Render Advisor', 'Selecionando lente 35mm e emulsão de filme granulado para profundidade.');
+            await new Promise(r => setTimeout(r, 600));
+
+            log('Prompt Writer', 'Consolidando parâmetros em estrutura semântica otimizada...');
+            await new Promise(r => setTimeout(r, 1000));
+
+            log('Critical Reviewer', 'Removendo redundâncias e verificando conflitos de iluminação. OK.');
+            
+            const final = `${anchor}, in a ${scenario}, ${context}, cinematic style, shot on 35mm film, film grain texture, soft lighting, highly detailed, atmospheric --ar 16:9 --v 6.0`;
+            document.getElementById('prompt-output').innerText = final;
+        }
+    </script>
+</body>
+</html>
