@@ -6,11 +6,12 @@ Painel responsivo para transformar uma ideia em um prompt de imagem estruturado.
 
 - Fluxo em quatro áreas: **Conceito, Cena, Estilo e Ajustes**.
 - Prompt atualizado em tempo real, nos modos **Fluido**, **Compacto** e **JSON**.
-- **Acervo com 1.124 referências únicas e pesquisáveis**: 300 novas entradas curadas, 780 opções das fontes originais e 62 presets, com 18 redundâncias homônimas removidas.
+- **Acervo com 1.262 referências únicas e pesquisáveis**: 420 entradas curadas, 780 opções das fontes originais e 80 presets, com 18 redundâncias homônimas removidas.
+- Doze camadas integradas, incluindo **Ação, Iluminação e Textura** com 46 opções cada.
 - Sugestões em grupos de 6 ou 12, com posição no conjunto, diversidade de origens/categorias e percurso sem repetição até concluir cada camada.
 - Camadas navegáveis nas sugestões, placeholders variáveis e aplicação de referências sem apagar a digitação.
 - Busca por nome, descrição e metadados, filtros por camada, categoria, época e origem, paginação e aplicação aleatória dentro do filtro.
-- Todas as 1.124 referências visíveis possuem categoria, incluindo 439 registros antigos classificados retroativamente.
+- Todas as 1.262 referências visíveis possuem categoria, incluindo 439 registros antigos classificados retroativamente.
 - Presets curados de sujeitos, cenários, ações, atmosfera, linguagem, luz, câmera e textura.
 - Direções de arte completas e combinações aleatórias com travas por seção.
 - Edição manual preservada ao alterar campos, com retorno explícito à versão automática.
@@ -44,9 +45,9 @@ O acervo reúne as cinco fontes preservadas na raiz do repositório:
 - `gerador-de-prompts-v3.html`;
 - `gerador-v4.html`.
 
-O normalizador lê 1.374 entradas — 1.074 originais e 300 curadas —, valida os campos e deduplica por camada e nome normalizado, gerando 1.080 referências únicas entre as fontes importadas. Os 62 presets do aplicativo são acrescentados à mesma experiência; 18 homônimos redundantes são deduplicados com prioridade para a curadoria central, resultando em 1.124 referências visíveis. Nenhum arquivo-fonte original é alterado.
+O normalizador lê 1.494 entradas — 1.074 originais e 420 curadas —, valida os campos e deduplica por camada e nome normalizado, gerando 1.200 referências únicas entre as fontes importadas. Os 80 presets do aplicativo são acrescentados à mesma experiência; 18 homônimos redundantes são deduplicados com prioridade para a curadoria central, resultando em 1.262 referências visíveis. Nenhum arquivo-fonte original é alterado.
 
-A expansão editorial fica em `data/references.curated.json`, um documento versionado com IDs estáveis, nome, descrição, saída em inglês, categoria, época e origem. Categoria é obrigatória nas novas entradas; paletas também exigem de três a seis cores hexadecimais. O importador rejeita campos desconhecidos, IDs ou nomes duplicados, descrições equivalentes e formatos inválidos.
+A expansão editorial fica em `data/references.curated.json`, um documento versionado com IDs estáveis, nome, descrição, saída em inglês, categoria, época e origem. Entre as 420 entradas estão 40 ações, 40 desenhos de iluminação e 40 texturas adicionados às camadas homônimas do motor. Categoria é obrigatória nas novas entradas; paletas também exigem de três a seis cores hexadecimais. O importador rejeita campos desconhecidos, IDs ou nomes duplicados, descrições equivalentes e formatos inválidos.
 
 A classificação retroativa fica em `data/reference-classifications.json`, associada aos IDs estáveis das fontes originais. O arquivo cobre 439 registros visíveis e 18 homônimos de suporte ocultados pela deduplicação. O importador valida IDs, impede sobrescrever categorias existentes e falha se qualquer referência gerada continuar sem categoria. Nomes, saídas, origens, épocas, cores e IDs permanecem preservados.
 
@@ -58,9 +59,11 @@ npm run refs:build
 
 O comando atualiza `src/lib/referenceData.ts`; esse arquivo é gerado e não deve ser editado manualmente. A representação em tuplas reduz o JavaScript enviado ao navegador e é convertida nos objetos tipados usados pelo app.
 
-As sugestões mostram 6 ou 12 opções e distribuem o sorteio entre origens e categorias. O cursor percorre toda a camada sem repetir IDs antes de iniciar outra sequência; a última página pode ser menor. Cada painel preserva o progresso das camadas visitadas, e renovar as sugestões não modifica o campo em edição. Cena oferece cenário, atmosfera e reviravolta; Estilo oferece estilo, formato, paleta, câmera e detalhes. No Acervo, é possível exibir 24, 48 ou 96 referências por página.
+As sugestões mostram 6 ou 12 opções e distribuem o sorteio entre origens e categorias. O cursor percorre toda a camada sem repetir IDs antes de iniciar outra sequência; a última página pode ser menor. Cada painel preserva o progresso das camadas visitadas, e renovar as sugestões não modifica o campo em edição. Cena oferece cenário, ação, atmosfera e reviravolta; Estilo oferece estilo, formato, paleta, iluminação, textura, câmera e detalhes. No Acervo, é possível exibir 24, 48 ou 96 referências por página.
 
 **Surpreenda-me** também usa o acervo expandido, respeitando travas e limites de seleção.
+
+As próximas camadas e melhorias estão priorizadas em [docs/ROADMAP.md](docs/ROADMAP.md), com dependências de compatibilidade e critérios de aceite.
 
 ## Operação local e sem credenciais
 
@@ -77,7 +80,7 @@ npm start
 
 ## Publicação no GitHub Pages
 
-O workflow `.github/workflows/deploy-pages.yml` executa TypeScript, os 27 testes e o build antes de publicar `promptforge/dist`. O build do Pages usa o caminho-base `/PromptForge/`; os builds locais e de outros provedores continuam usando `/`.
+O workflow `.github/workflows/deploy-pages.yml` executa TypeScript, os 28 testes e o build antes de publicar `promptforge/dist`. O build do Pages usa o caminho-base `/PromptForge/`; os builds locais e de outros provedores continuam usando `/`.
 
 Para ativar a publicação:
 
@@ -91,7 +94,7 @@ Após uma implantação bem-sucedida, a interface estará disponível em `https:
 
 ```bash
 npm run lint       # TypeScript estrito
-npm test           # 27 testes: motor, acervo e store
+npm test           # 28 testes: motor, acervo e store
 npm run refs:build # valida e regenera o acervo normalizado
 npm run build      # validação + bundle de produção
 npm audit          # dependências
@@ -111,7 +114,7 @@ npm audit          # dependências
 
 ```text
 data/
-├── references.curated.json # 300 referências editoriais com IDs estáveis
+├── references.curated.json # 420 referências editoriais com IDs estáveis
 └── reference-classifications.json # 457 classificações retroativas por ID
 src/
 ├── components/
@@ -124,8 +127,8 @@ src/
 ├── lib/
 │   ├── presets.ts         # curadoria tipada
 │   ├── promptEngine.ts    # montagem e métricas do prompt
-│   ├── referenceData.ts   # 1.080 referências geradas; não editar
-│   ├── referenceTypes.ts  # contratos das nove camadas
+│   ├── referenceData.ts   # 1.200 referências geradas; não editar
+│   ├── referenceTypes.ts  # contratos das doze camadas
 │   ├── references.ts      # busca, índices e aleatorização
 │   └── utils.ts           # clipboard e downloads
 └── store/usePromptStore.ts

@@ -1,11 +1,14 @@
 export type ReferenceKind =
   | 'anchor'
   | 'scenario'
+  | 'action'
   | 'style'
   | 'trend'
   | 'detail'
   | 'medium'
   | 'palette'
+  | 'lighting'
+  | 'texture'
   | 'mood'
   | 'composition';
 

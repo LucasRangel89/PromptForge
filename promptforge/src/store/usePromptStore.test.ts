@@ -204,6 +204,23 @@ test('aplicar referência usa a camada certa e preserva edição manual', () => 
   assert.equal(usePromptStore.getState().promptEdited, true);
 });
 
+test('novas camadas aplicam referências aos campos existentes', () => {
+  const cases = [
+    { kind: 'action', field: 'action', step: 2 },
+    { kind: 'lighting', field: 'lighting', step: 3 },
+    { kind: 'texture', field: 'texture', step: 3 },
+  ] as const;
+  for (const { kind, field, step } of cases) {
+    resetStore();
+    const reference = REFERENCE_POOLS[kind].find((item) => item.source === 'Curadoria expandida PromptForge');
+    assert.ok(reference);
+    assert.equal(usePromptStore.getState().applyReference(reference.id), true);
+    assert.equal(usePromptStore.getState()[field], reference.name);
+    assert.equal(usePromptStore.getState().step, step);
+    assert.ok(buildPrompt({ ...EMPTY_DRAFT, anchor: 'Figura de teste', [field]: reference.name }).includes(reference.output));
+  }
+});
+
 test('acervo respeita o limite de estilos já escolhidos', () => {
   resetStore();
   usePromptStore.getState().updateField('style', ['Estilo um', 'Estilo dois']);
@@ -227,4 +244,7 @@ test('surpreenda-me também sorteia referências expandidas', () => {
   assert.notEqual(findReferenceByName('anchor', state.anchor)?.source, 'PromptForge');
   assert.notEqual(findReferenceByName('scenario', state.scenario)?.source, 'PromptForge');
   assert.notEqual(findReferenceByName('style', state.style[0])?.source, 'PromptForge');
+  assert.notEqual(findReferenceByName('action', state.action)?.source, 'PromptForge');
+  assert.notEqual(findReferenceByName('lighting', state.lighting)?.source, 'PromptForge');
+  assert.notEqual(findReferenceByName('texture', state.texture)?.source, 'PromptForge');
 });

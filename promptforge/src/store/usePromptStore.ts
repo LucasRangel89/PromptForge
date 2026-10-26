@@ -1,12 +1,9 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import {
-  ACTIONS,
   ART_DIRECTIONS,
   CHARACTER_PRESETS,
-  LIGHTINGS,
   RANDOM_PROJECT_NAMES,
-  TEXTURES,
 } from '@/lib/presets';
 import {
   appendVariation,
@@ -249,11 +246,14 @@ export const usePromptStore = create<PromptState>()(
             changes.customInput = '';
             break;
           case 'scenario': changes.scenario = reference.name; break;
+          case 'action': changes.action = reference.name; break;
           case 'style': changes.style = state.style.includes(reference.name) ? state.style : [...state.style, reference.name]; break;
           case 'trend': changes.trend = reference.name; break;
           case 'detail': changes.details = state.details.includes(reference.name) ? state.details : [...state.details, reference.name]; break;
           case 'medium': changes.medium = reference.name; break;
           case 'palette': changes.palette = reference.name; break;
+          case 'lighting': changes.lighting = reference.name; break;
+          case 'texture': changes.texture = reference.name; break;
           case 'mood': changes.context = reference.name; break;
           case 'composition': changes.composition = reference.name; break;
         }
@@ -280,7 +280,7 @@ export const usePromptStore = create<PromptState>()(
         }
         if (!state.lockedSections.includes(2)) {
           next.scenario = pick(REFERENCE_POOLS.scenario).name;
-          next.action = pick(ACTIONS).name;
+          next.action = pick(REFERENCE_POOLS.action).name;
           next.context = pick(REFERENCE_POOLS.mood).name;
           next.trend = Math.random() > 0.35 ? pick(REFERENCE_POOLS.trend).name : '';
           next.characters = Math.random() > 0.3 ? [pick(CHARACTER_PRESETS).name] : [];
@@ -294,8 +294,8 @@ export const usePromptStore = create<PromptState>()(
             next.style = [pick(REFERENCE_POOLS.style).name];
             next.medium = pick(REFERENCE_POOLS.medium).name;
             next.palette = pick(REFERENCE_POOLS.palette).name;
-            next.lighting = pick(LIGHTINGS).name;
-            next.texture = pick(TEXTURES).name;
+            next.lighting = pick(REFERENCE_POOLS.lighting).name;
+            next.texture = pick(REFERENCE_POOLS.texture).name;
             next.composition = pick(REFERENCE_POOLS.composition).name;
           }
           next.details = pickMany(REFERENCE_POOLS.detail, 2).map((item) => item.name);

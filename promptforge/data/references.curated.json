@@ -3180,6 +3180,1206 @@
       "category": "Arte urbana",
       "era": "Contemporânea",
       "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-correndo-contra-o-vento",
+      "kind": "action",
+      "name": "Correndo contra o vento",
+      "description": "Deslocamento físico sob resistência do ar.",
+      "output": "running against a strong crosswind, torso leaning forward, coat and loose objects pulled by the gusts",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-atravessando-uma-soleira",
+      "kind": "action",
+      "name": "Atravessando uma soleira",
+      "description": "O corpo suspenso entre dois espaços.",
+      "output": "stepping across a worn threshold, one foot inside and the other outside, body suspended between two spaces",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-saltando-sobre-agua",
+      "kind": "action",
+      "name": "Saltando sobre água",
+      "description": "Um salto curto com peso e destino claros.",
+      "output": "leaping over a shallow stream, knees lifted naturally and gaze fixed on the landing point",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-subindo-uma-escada-estreita",
+      "kind": "action",
+      "name": "Subindo uma escada estreita",
+      "description": "Esforço contido em uma passagem vertical.",
+      "output": "climbing a narrow staircase with one hand grazing the wall and shoulders angled to fit the passage",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-deslizando-em-gelo",
+      "kind": "action",
+      "name": "Deslizando em gelo",
+      "description": "Equilíbrio instável sobre uma superfície lisa.",
+      "output": "sliding across a patch of ice with knees bent and arms adjusting for balance",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-emergindo-da-agua",
+      "kind": "action",
+      "name": "Emergindo da água",
+      "description": "A passagem do meio líquido para o ar.",
+      "output": "emerging from dark water up to the waist, droplets falling from fabric and breath held for a moment",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-pedalando-contra-a-chuva",
+      "kind": "action",
+      "name": "Pedalando contra a chuva",
+      "description": "Esforço contínuo sob clima adverso.",
+      "output": "pedaling into heavy rain, shoulders forward and hands firm on the handlebars",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-caminhando-com-carga",
+      "kind": "action",
+      "name": "Caminhando com carga",
+      "description": "Peso transportado com postura verossímil.",
+      "output": "walking while carrying a heavy bundle close to the chest, posture adjusted to its believable weight",
+      "category": "Movimento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-entregando-uma-chave",
+      "kind": "action",
+      "name": "Entregando uma chave",
+      "description": "Uma transferência pequena carregada de intenção.",
+      "output": "offering a small key with an open hand while maintaining eye contact with the recipient",
+      "category": "Interação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-ajudando-alguem-a-atravessar",
+      "kind": "action",
+      "name": "Ajudando alguém a atravessar",
+      "description": "Cuidado expresso por apoio e coordenação.",
+      "output": "supporting another person across uneven ground, matching their pace and offering a steady arm",
+      "category": "Interação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-compartilhando-um-mapa",
+      "kind": "action",
+      "name": "Compartilhando um mapa",
+      "description": "Duas pessoas orientadas pelo mesmo objeto.",
+      "output": "holding a folded map between two people and tracing a possible route with one finger",
+      "category": "Interação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-protegendo-uma-chama",
+      "kind": "action",
+      "name": "Protegendo uma chama",
+      "description": "Um gesto delicado contra o ambiente.",
+      "output": "cupping both hands around a fragile flame to shield it from the moving air",
+      "category": "Interação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-alimentando-um-animal",
+      "kind": "action",
+      "name": "Alimentando um animal",
+      "description": "Aproximação cuidadosa entre espécies.",
+      "output": "slowly extending food toward a cautious animal without sudden movement",
+      "category": "Interação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-trocando-um-objeto-as-escondidas",
+      "kind": "action",
+      "name": "Trocando um objeto às escondidas",
+      "description": "Uma troca discreta que sugere uma história paralela.",
+      "output": "discreetly passing a small wrapped object from one hand to another beneath a table",
+      "category": "Interação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-consertando-algo-para-alguem",
+      "kind": "action",
+      "name": "Consertando algo para alguém",
+      "description": "Habilidade manual dedicada a outra pessoa.",
+      "output": "repairing a small personal object with concentrated hand movements while its owner watches nearby",
+      "category": "Interação",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-apontando-alem-do-quadro",
+      "kind": "action",
+      "name": "Apontando além do quadro",
+      "description": "A atenção dirigida para algo invisível ao espectador.",
+      "output": "pointing toward something beyond the frame, arm extended while the rest of the body remains still",
+      "category": "Gestual",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-ouvindo-com-atencao",
+      "kind": "action",
+      "name": "Ouvindo com atenção",
+      "description": "Escuta expressa por uma pausa corporal.",
+      "output": "tilting the head slightly and holding still to catch a distant sound",
+      "category": "Gestual",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-segurando-o-riso",
+      "kind": "action",
+      "name": "Segurando o riso",
+      "description": "Uma emoção quase escapando do controle.",
+      "output": "trying to suppress a laugh, shoulders trembling slightly and one hand close to the mouth",
+      "category": "Gestual",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-enxugando-as-maos",
+      "kind": "action",
+      "name": "Enxugando as mãos",
+      "description": "A pausa prática depois de um trabalho.",
+      "output": "wiping both hands on a worn cloth after finishing a demanding manual task",
+      "category": "Gestual",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-observando-as-proprias-maos",
+      "kind": "action",
+      "name": "Observando as próprias mãos",
+      "description": "Um instante introspectivo centrado no gesto.",
+      "output": "studying the palms of both hands with quiet concentration and relaxed shoulders",
+      "category": "Gestual",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-saudando-de-longe",
+      "kind": "action",
+      "name": "Saudando de longe",
+      "description": "Reconhecimento discreto a distância.",
+      "output": "raising one hand in a restrained greeting toward someone far away",
+      "category": "Gestual",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-medindo-antes-de-cortar",
+      "kind": "action",
+      "name": "Medindo antes de cortar",
+      "description": "Precisão e antecipação no trabalho manual.",
+      "output": "measuring a piece of material carefully before cutting, eyes aligned with the marked guide",
+      "category": "Ofício",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-afiando-uma-ferramenta",
+      "kind": "action",
+      "name": "Afiando uma ferramenta",
+      "description": "Repetição técnica e atenção ao fio.",
+      "output": "sharpening a hand tool with controlled repeated strokes and close attention to its edge",
+      "category": "Ofício",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-costurando-um-reparo",
+      "kind": "action",
+      "name": "Costurando um reparo",
+      "description": "Conserto visível em vez de substituição.",
+      "output": "sewing a visible repair into worn fabric, pulling the thread with patient precise movements",
+      "category": "Ofício",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-moldando-argila",
+      "kind": "action",
+      "name": "Moldando argila",
+      "description": "Forma criada diretamente pelas mãos.",
+      "output": "shaping a small clay vessel with wet hands, thumbs guiding the curve of the rim",
+      "category": "Ofício",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-ajustando-uma-engrenagem",
+      "kind": "action",
+      "name": "Ajustando uma engrenagem",
+      "description": "Investigação precisa de um mecanismo.",
+      "output": "adjusting a small exposed gear with a metal tool while examining how the mechanism responds",
+      "category": "Ofício",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-preparando-um-pigmento",
+      "kind": "action",
+      "name": "Preparando um pigmento",
+      "description": "Matéria de cor preparada manualmente.",
+      "output": "grinding dry pigment with a stone pestle and testing its consistency on a small ceramic tile",
+      "category": "Ofício",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-espiando-por-uma-fresta",
+      "kind": "action",
+      "name": "Espiando por uma fresta",
+      "description": "Observação parcial sem revelar presença.",
+      "output": "peering through a narrow opening with most of the face hidden behind the surrounding surface",
+      "category": "Suspense",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-interrompendo-um-gesto",
+      "kind": "action",
+      "name": "Interrompendo um gesto",
+      "description": "O instante em que o movimento é suspenso.",
+      "output": "freezing midway through a simple gesture as if interrupted by an unexpected realization",
+      "category": "Suspense",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-virando-se-para-um-ruido",
+      "kind": "action",
+      "name": "Virando-se para um ruído",
+      "description": "Reação imediata a algo fora do quadro.",
+      "output": "turning sharply toward a noise behind the shoulder while keeping the rest of the body cautious",
+      "category": "Suspense",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-recuando-diante-do-desconhecido",
+      "kind": "action",
+      "name": "Recuando diante do desconhecido",
+      "description": "Retirada breve diante de uma descoberta.",
+      "output": "taking one careful step backward from an unfamiliar shape, weight shifted away and gaze fixed",
+      "category": "Suspense",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-escondendo-um-objeto",
+      "kind": "action",
+      "name": "Escondendo um objeto",
+      "description": "Um segredo incorporado à ação.",
+      "output": "slipping a small object inside a coat pocket while checking whether anyone noticed",
+      "category": "Suspense",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-esperando-uma-resposta",
+      "kind": "action",
+      "name": "Esperando uma resposta",
+      "description": "Expectativa contida antes de uma reação.",
+      "output": "waiting for an answer with hands held still and attention fixed on the other person",
+      "category": "Suspense",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-prestes-a-tocar-algo",
+      "kind": "action",
+      "name": "Prestes a tocar algo",
+      "description": "Contato adiado por um único instante.",
+      "output": "holding one hand just above an unfamiliar object, fingers extended but not yet touching it",
+      "category": "Suspense",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-brinde-espontaneo",
+      "kind": "action",
+      "name": "Brinde espontâneo",
+      "description": "Uma celebração pequena entre pessoas próximas.",
+      "output": "raising a simple cup in a spontaneous toast, smiling toward the people nearby",
+      "category": "Celebração",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-danca-sem-plateia",
+      "kind": "action",
+      "name": "Dança sem plateia",
+      "description": "Movimento livre sem preocupação performática.",
+      "output": "dancing with loose unselfconscious movement as if no audience were present",
+      "category": "Celebração",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-abraco-de-reencontro",
+      "kind": "action",
+      "name": "Abraço de reencontro",
+      "description": "Afeto físico depois de uma longa ausência.",
+      "output": "embracing someone tightly after a long separation, faces relaxed and posture unguarded",
+      "category": "Celebração",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-vitoria-compartilhada",
+      "kind": "action",
+      "name": "Vitória compartilhada",
+      "description": "Conquista expressa coletivamente.",
+      "output": "celebrating a shared victory with raised arms and spontaneous movement among a small group",
+      "category": "Celebração",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-jogando-confetes",
+      "kind": "action",
+      "name": "Jogando confetes",
+      "description": "Cor e movimento lançados para o alto.",
+      "output": "throwing a handful of paper confetti upward with an open expressive gesture",
+      "category": "Celebração",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-action-aplauso-em-pe",
+      "kind": "action",
+      "name": "Aplauso em pé",
+      "description": "Reconhecimento entusiasmado de uma conquista.",
+      "output": "standing and applauding with genuine enthusiasm, body angled toward the celebrated moment",
+      "category": "Celebração",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-hora-azul",
+      "kind": "lighting",
+      "name": "Hora azul",
+      "description": "Luz fria e baixa no intervalo crepuscular.",
+      "output": "soft blue-hour ambient light, cool low-contrast shadows and a faint remaining glow along the horizon",
+      "category": "Natural",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-sol-entre-nuvens",
+      "kind": "lighting",
+      "name": "Sol entre nuvens",
+      "description": "Luz solar revelada por aberturas no céu.",
+      "output": "broken sunlight emerging between moving clouds, alternating bright passages and broad soft shade",
+      "category": "Natural",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-manha-atraves-de-persiana",
+      "kind": "lighting",
+      "name": "Manhã através de persiana",
+      "description": "Luz natural ritmada por uma cobertura de janela.",
+      "output": "gentle morning sunlight filtered through horizontal blinds, with restrained parallel bands of light and shade",
+      "category": "Natural",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-meio-dia-de-ceu-limpo",
+      "kind": "lighting",
+      "name": "Meio-dia de céu limpo",
+      "description": "Iluminação solar alta e sombras curtas.",
+      "output": "clear midday sunlight from high above, crisp short shadows and bright naturally lit surfaces",
+      "category": "Natural",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-clarao-de-tempestade",
+      "kind": "lighting",
+      "name": "Clarão de tempestade",
+      "description": "Contraste momentâneo sob nuvens densas.",
+      "output": "a brief cold burst of storm light beneath heavy clouds, luminous highlights against a dark desaturated environment",
+      "category": "Natural",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-luar-difuso",
+      "kind": "lighting",
+      "name": "Luar difuso",
+      "description": "Baixa luminosidade noturna sem dureza.",
+      "output": "diffused moonlight softened by thin cloud cover, restrained cool highlights and readable nocturnal shadows",
+      "category": "Natural",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-lanterna-na-mao",
+      "kind": "lighting",
+      "name": "Lanterna na mão",
+      "description": "Fonte portátil que participa da cena.",
+      "output": "a visible handheld flashlight casting a focused beam and leaving the surrounding space in deep natural shadow",
+      "category": "Motivada",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-luz-de-vela",
+      "kind": "lighting",
+      "name": "Luz de vela",
+      "description": "Fonte quente, próxima e levemente instável.",
+      "output": "warm close candlelight with subtle natural flicker, soft upward illumination and rapid falloff into darkness",
+      "category": "Motivada",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-letreiro-aceso",
+      "kind": "lighting",
+      "name": "Letreiro aceso",
+      "description": "Luz originada por sinalização dentro da cena.",
+      "output": "motivated light from a visible illuminated sign, colored spill on nearby surfaces and believable inverse-square falloff",
+      "category": "Motivada",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-tela-de-monitor",
+      "kind": "lighting",
+      "name": "Tela de monitor",
+      "description": "Iluminação fria produzida por uma tela próxima.",
+      "output": "cool light from a nearby monitor gently illuminating the face from below while the room remains subdued",
+      "category": "Motivada",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-fogueira-baixa",
+      "kind": "lighting",
+      "name": "Fogueira baixa",
+      "description": "Fonte quente e irregular próxima ao chão.",
+      "output": "low firelight rising from a small practical campfire, warm irregular highlights and softly moving shadows",
+      "category": "Motivada",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-vitrine-noturna",
+      "kind": "lighting",
+      "name": "Vitrine noturna",
+      "description": "Luz interna de uma loja como fonte motivada.",
+      "output": "night lighting motivated by a bright shop window, broad frontal illumination fading naturally into the darker street",
+      "category": "Motivada",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-softbox-lateral",
+      "kind": "lighting",
+      "name": "Softbox lateral",
+      "description": "Fonte ampla e controlada em um dos lados.",
+      "output": "a large side softbox producing controlled directional light, smooth modeling and gentle shadow transitions",
+      "category": "Estúdio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-luz-de-recorte",
+      "kind": "lighting",
+      "name": "Luz de recorte",
+      "description": "Contorno luminoso separado do fundo.",
+      "output": "a narrow rim light tracing the subject silhouette and separating its edges from a restrained background",
+      "category": "Estúdio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-preenchimento-negativo",
+      "kind": "lighting",
+      "name": "Preenchimento negativo",
+      "description": "Sombras profundas criadas pela subtração de luz.",
+      "output": "negative fill on one side of the subject, preserving a soft key light while deepening the opposite shadow",
+      "category": "Estúdio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-luz-de-topo",
+      "kind": "lighting",
+      "name": "Luz de topo",
+      "description": "Fonte zenital com sombras descendentes.",
+      "output": "a controlled overhead light creating clear top-plane highlights and deliberate downward shadows",
+      "category": "Estúdio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-beauty-dish",
+      "kind": "lighting",
+      "name": "Beauty dish",
+      "description": "Modelagem frontal definida sem aspereza excessiva.",
+      "output": "a frontal beauty dish with crisp facial modeling, controlled contrast and a compact circular catchlight",
+      "category": "Estúdio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-fresnel-focado",
+      "kind": "lighting",
+      "name": "Fresnel focado",
+      "description": "Feixe de estúdio concentrado e direcional.",
+      "output": "a focused Fresnel beam creating a defined pool of light, clean edge control and a gradual falloff",
+      "category": "Estúdio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-nevoa-em-contraluz",
+      "kind": "lighting",
+      "name": "Névoa em contraluz",
+      "description": "Feixes traseiros revelados por partículas no ar.",
+      "output": "strong backlighting through light atmospheric haze, visible luminous rays and partially silhouetted forms",
+      "category": "Dramática",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-sombras-cortantes",
+      "kind": "lighting",
+      "name": "Sombras cortantes",
+      "description": "Geometria dura entre áreas claras e escuras.",
+      "output": "hard directional lighting with sharply divided planes of brightness and deep crisp-edged shadows",
+      "category": "Dramática",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-silhueta-parcial",
+      "kind": "lighting",
+      "name": "Silhueta parcial",
+      "description": "Forma reconhecível com detalhes internos preservados.",
+      "output": "a near-silhouette against a brighter background with just enough edge detail to preserve volume and gesture",
+      "category": "Dramática",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-luz-de-emergencia",
+      "kind": "lighting",
+      "name": "Luz de emergência",
+      "description": "Fonte prática de alerta com forte identidade cromática.",
+      "output": "motivated emergency lighting with restrained red pulses and deep shadows between each brief illumination",
+      "category": "Dramática",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-lampada-intermitente",
+      "kind": "lighting",
+      "name": "Lâmpada intermitente",
+      "description": "Instabilidade visual em uma única fonte prática.",
+      "output": "a single intermittent practical lamp producing uneven illumination and brief shifts between visibility and shadow",
+      "category": "Dramática",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-janela-como-unica-fonte",
+      "kind": "lighting",
+      "name": "Janela como única fonte",
+      "description": "Uma abertura natural concentra toda a iluminação.",
+      "output": "a single window as the only meaningful light source, soft directional illumination and deep unlit interior space",
+      "category": "Dramática",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-ceu-encoberto",
+      "kind": "lighting",
+      "name": "Céu encoberto",
+      "description": "Fonte natural ampla e envolvente.",
+      "output": "broad overcast daylight with soft low-contrast modeling and almost imperceptible shadow edges",
+      "category": "Suave",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-rebatedor-de-parede",
+      "kind": "lighting",
+      "name": "Rebatedor de parede",
+      "description": "Luz rebatida por uma superfície clara.",
+      "output": "light bounced from a pale wall, broad indirect illumination and gentle natural-looking fill",
+      "category": "Suave",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-luz-sob-tenda",
+      "kind": "lighting",
+      "name": "Luz sob tenda",
+      "description": "Claridade filtrada por uma cobertura de tecido.",
+      "output": "soft daylight filtered through a pale fabric canopy, enveloping illumination and delicate warm diffusion",
+      "category": "Suave",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-tecido-como-difusor",
+      "kind": "lighting",
+      "name": "Tecido como difusor",
+      "description": "Fonte direta suavizada por material translúcido.",
+      "output": "a direct light source softened through translucent fabric, wide diffusion and controlled gentle highlights",
+      "category": "Suave",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-bicolor-complementar",
+      "kind": "lighting",
+      "name": "Bicolor complementar",
+      "description": "Duas cores opostas separam planos e volumes.",
+      "output": "two complementary colored lights separating key and fill, controlled saturation and readable natural midtones",
+      "category": "Colorida",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-ciano-e-magenta",
+      "kind": "lighting",
+      "name": "Ciano e magenta",
+      "description": "Contraste urbano entre duas fontes coloridas.",
+      "output": "motivated cyan and magenta lighting from opposite directions, saturated edge color with neutral detail preserved",
+      "category": "Colorida",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-sodio-e-azul",
+      "kind": "lighting",
+      "name": "Sódio e azul",
+      "description": "Âmbar urbano contrastado com sombras frias.",
+      "output": "warm sodium-vapor highlights balanced against cool blue ambient shadows, with restrained cinematic separation",
+      "category": "Colorida",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-ambar-filtrado",
+      "kind": "lighting",
+      "name": "Âmbar filtrado",
+      "description": "Fonte aquecida por filtro sem estourar os tons.",
+      "output": "amber-gelled lighting with warm luminous highlights and controlled color saturation across nearby surfaces",
+      "category": "Colorida",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-relevo-em-luz-rasante",
+      "kind": "lighting",
+      "name": "Relevo em luz rasante",
+      "description": "Luz paralela à superfície revela textura.",
+      "output": "low grazing light across textured surfaces, emphasizing relief through narrow highlights and elongated microshadows",
+      "category": "Rasante",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-feixe-na-poeira",
+      "kind": "lighting",
+      "name": "Feixe na poeira",
+      "description": "Uma fonte concentrada torna partículas visíveis.",
+      "output": "a concentrated beam revealing fine airborne dust, clear light direction and restrained atmospheric scattering",
+      "category": "Rasante",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-reflexo-em-piso-molhado",
+      "kind": "lighting",
+      "name": "Reflexo em piso molhado",
+      "description": "A iluminação se prolonga em uma superfície refletiva.",
+      "output": "practical highlights reflected across a wet floor, broken elongated reflections and readable surrounding shadows",
+      "category": "Rasante",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-recorte-por-persiana",
+      "kind": "lighting",
+      "name": "Recorte por persiana",
+      "description": "Sombras paralelas constroem uma estrutura gráfica.",
+      "output": "directional light cut by narrow slats, graphic parallel shadow stripes and controlled contrast across the scene",
+      "category": "Rasante",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-projecao-estampada",
+      "kind": "lighting",
+      "name": "Projeção estampada",
+      "description": "Uma imagem projetada modula luz e superfície.",
+      "output": "a patterned image projected across the subject and background, wrapping light and shadow around real surfaces",
+      "category": "Experimental",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-luz-prismatica",
+      "kind": "lighting",
+      "name": "Luz prismática",
+      "description": "Refração decompõe a fonte em pequenos espectros.",
+      "output": "subtle prismatic light refraction creating small spectral highlights and delicate rainbow fragments on nearby surfaces",
+      "category": "Experimental",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-arrasto-de-exposicao",
+      "kind": "lighting",
+      "name": "Arrasto de exposição",
+      "description": "Fontes móveis deixam rastros durante a exposição.",
+      "output": "long-exposure light trails from moving practical sources, controlled streaks with the stationary subject remaining readable",
+      "category": "Experimental",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-lighting-flash-sobre-particulas",
+      "kind": "lighting",
+      "name": "Flash sobre partículas",
+      "description": "Flash breve congela pequenos elementos suspensos.",
+      "output": "a brief direct flash freezing suspended droplets and particles as sharp points against a darker environment",
+      "category": "Experimental",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-pelicula-16mm",
+      "kind": "texture",
+      "name": "Película 16mm",
+      "description": "Granulação orgânica de filme de pequeno formato.",
+      "output": "fine organic 16mm film grain, gentle gate weave and restrained photochemical texture",
+      "category": "Filme",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-poeira-de-projecao",
+      "kind": "texture",
+      "name": "Poeira de projeção",
+      "description": "Pequenas marcas associadas à projeção cinematográfica.",
+      "output": "sparse projection dust, occasional tiny hair marks and subtle frame-to-frame analog variation",
+      "category": "Filme",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-queimadura-de-filme",
+      "kind": "texture",
+      "name": "Queimadura de filme",
+      "description": "Deterioração luminosa nas bordas da película.",
+      "output": "localized film-burn texture along the frame edge, warm irregular emulsion damage and no damage over the focal details",
+      "category": "Filme",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-alta-sensibilidade",
+      "kind": "texture",
+      "name": "Alta sensibilidade",
+      "description": "Grão pronunciado de filme para baixa luz.",
+      "output": "pronounced high-ISO film grain with organic clumping and preserved tonal separation in the shadows",
+      "category": "Filme",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-manchas-de-revelacao",
+      "kind": "texture",
+      "name": "Manchas de revelação",
+      "description": "Irregularidades químicas do processo fotográfico.",
+      "output": "subtle uneven development marks and faint chemical staining confined mostly to the image edges",
+      "category": "Filme",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-fibra-de-algodao",
+      "kind": "texture",
+      "name": "Fibra de algodão",
+      "description": "Trama natural de um papel de alta qualidade.",
+      "output": "visible cotton-rag paper fibers with soft irregular grain and gentle pigment absorption",
+      "category": "Papel",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-papel-reciclado",
+      "kind": "texture",
+      "name": "Papel reciclado",
+      "description": "Superfície heterogênea com pequenas inclusões.",
+      "output": "recycled paper texture with tiny fiber inclusions, muted flecks and a matte absorbent surface",
+      "category": "Papel",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-papel-amassado",
+      "kind": "texture",
+      "name": "Papel amassado",
+      "description": "Dobras físicas criam relevo e microsombras.",
+      "output": "subtle crumpled-paper creases with fine irregular ridges and shallow directional microshadows",
+      "category": "Papel",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-papel-vegetal",
+      "kind": "texture",
+      "name": "Papel vegetal",
+      "description": "Transparência fibrosa e camadas levemente difusas.",
+      "output": "translucent tracing-paper texture, delicate fibers and softly diffused underlying layers",
+      "category": "Papel",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-bordas-irregulares",
+      "kind": "texture",
+      "name": "Bordas irregulares",
+      "description": "Contorno físico de papel rasgado à mão.",
+      "output": "hand-torn paper edges with exposed irregular fibers and a restrained tactile border",
+      "category": "Papel",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-impasto",
+      "kind": "texture",
+      "name": "Impasto",
+      "description": "Pigmento espesso com relevo visível.",
+      "output": "thick impasto paint ridges with tangible brush relief and tiny directional highlights on raised pigment",
+      "category": "Pintura",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-veladuras-sucessivas",
+      "kind": "texture",
+      "name": "Veladuras sucessivas",
+      "description": "Camadas translúcidas acumulam profundidade de cor.",
+      "output": "multiple translucent paint glazes with subtle underlying brushwork and softly accumulated color depth",
+      "category": "Pintura",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-pincel-seco",
+      "kind": "texture",
+      "name": "Pincel seco",
+      "description": "Pigmento interrompido pelo relevo do suporte.",
+      "output": "dry-brush pigment dragged across a textured surface, broken strokes and small areas of exposed ground",
+      "category": "Pintura",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-pigmento-granulado",
+      "kind": "texture",
+      "name": "Pigmento granulado",
+      "description": "Partículas de cor se depositam de forma irregular.",
+      "output": "granulating pigment settling unevenly into the surface, mineral speckling and delicate tonal variation",
+      "category": "Pintura",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-craquele",
+      "kind": "texture",
+      "name": "Craquele",
+      "description": "Fissuras finas sugerem uma camada envelhecida.",
+      "output": "a restrained network of fine craquelure across the painted surface, subtle age without obscuring the image",
+      "category": "Pintura",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-tinta-offset",
+      "kind": "texture",
+      "name": "Tinta offset",
+      "description": "Cobertura impressa com pequenas variações mecânicas.",
+      "output": "subtle offset-ink texture with faint roller variation and restrained absorption into matte paper",
+      "category": "Impressão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-desregistro-cmyk",
+      "kind": "texture",
+      "name": "Desregistro CMYK",
+      "description": "Camadas de cor ligeiramente desalinhadas.",
+      "output": "slight CMYK plate misregistration with narrow color fringes limited to edges and graphic details",
+      "category": "Impressão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-serigrafia-porosa",
+      "kind": "texture",
+      "name": "Serigrafia porosa",
+      "description": "Tinta atravessando uma malha de impressão visível.",
+      "output": "porous screen-print ink with a fine mesh imprint, tiny uncovered pinholes and tactile solid color areas",
+      "category": "Impressão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-carimbo-irregular",
+      "kind": "texture",
+      "name": "Carimbo irregular",
+      "description": "Transferência manual com pressão desigual.",
+      "output": "uneven hand-stamped ink coverage, small gaps from irregular pressure and a gently worn printed edge",
+      "category": "Impressão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-reticula-ampliada",
+      "kind": "texture",
+      "name": "Retícula ampliada",
+      "description": "Pontos de impressão assumidos como textura visual.",
+      "output": "enlarged halftone dots with a regular visible screen and slight ink spread on an absorbent surface",
+      "category": "Impressão",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-dithering-ordenado",
+      "kind": "texture",
+      "name": "Dithering ordenado",
+      "description": "Matriz de pontos usada para construir tonalidades.",
+      "output": "restrained ordered dithering with a visible pixel matrix and clear tonal transitions",
+      "category": "Digital",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-pixel-sorting",
+      "kind": "texture",
+      "name": "Pixel sorting",
+      "description": "Deslocamento digital organizado em faixas de pixels.",
+      "output": "controlled pixel-sorting streaks in limited image regions, preserving the main silhouette and focal details",
+      "category": "Digital",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-compressao-jpeg",
+      "kind": "texture",
+      "name": "Compressão JPEG",
+      "description": "Artefatos discretos de compressão digital.",
+      "output": "subtle JPEG compression artifacts, mild block texture and slight chroma softness without severe degradation",
+      "category": "Digital",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-pixels-visiveis",
+      "kind": "texture",
+      "name": "Pixels visíveis",
+      "description": "Grade digital ampliada sem suavização.",
+      "output": "intentionally visible square pixels and crisp nearest-neighbor edges with a limited high-resolution grade",
+      "category": "Digital",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-datamosh-controlado",
+      "kind": "texture",
+      "name": "Datamosh controlado",
+      "description": "Rastros digitais restritos a áreas de movimento.",
+      "output": "controlled datamosh trails confined to moving edges, blocky temporal echoes and a stable central subject",
+      "category": "Digital",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-metal-oxidado",
+      "kind": "texture",
+      "name": "Metal oxidado",
+      "description": "Corrosão e variação mineral sobre metal.",
+      "output": "weathered oxidized metal with irregular patina, fine corrosion pits and restrained warm mineral deposits",
+      "category": "Material",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-madeira-desgastada",
+      "kind": "texture",
+      "name": "Madeira desgastada",
+      "description": "Veios e marcas de uso permanecem aparentes.",
+      "output": "worn wood grain with softened edges, shallow scratches and small areas polished by repeated handling",
+      "category": "Material",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-linho-aparente",
+      "kind": "texture",
+      "name": "Linho aparente",
+      "description": "Trama têxtil irregular e naturalmente fosca.",
+      "output": "visible linen weave with irregular natural threads, matte fibers and subtle woven variation",
+      "category": "Material",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-ceramica-fosca",
+      "kind": "texture",
+      "name": "Cerâmica fosca",
+      "description": "Superfície mineral sem brilho especular excessivo.",
+      "output": "matte ceramic surfaces with fine mineral speckles, slight handmade irregularity and soft grazing highlights",
+      "category": "Material",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-vidro-ondulado",
+      "kind": "texture",
+      "name": "Vidro ondulado",
+      "description": "Distorções ópticas de uma superfície vítrea antiga.",
+      "output": "subtle wavy glass distortion with gentle ripples, soft refracted edges and small trapped bubbles",
+      "category": "Material",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-arranhoes-finos",
+      "kind": "texture",
+      "name": "Arranhões finos",
+      "description": "Marcas lineares discretas de uso e atrito.",
+      "output": "fine sparse surface scratches with varied length and direction, subtle enough to preserve the main forms",
+      "category": "Desgaste",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-manchas-de-umidade",
+      "kind": "texture",
+      "name": "Manchas de umidade",
+      "description": "Marcos irregulares deixados pela água.",
+      "output": "faint irregular moisture stains with soft tide-line edges and localized discoloration near the surface margins",
+      "category": "Desgaste",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-desbotamento-solar",
+      "kind": "texture",
+      "name": "Desbotamento solar",
+      "description": "Perda desigual de cor causada pela exposição.",
+      "output": "uneven sun-fading with gently bleached exposed areas and slightly richer color in protected edges",
+      "category": "Desgaste",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-bordas-gastas",
+      "kind": "texture",
+      "name": "Bordas gastas",
+      "description": "Atrito acumulado nos limites da superfície.",
+      "output": "soft worn edges with small abrasions, rounded corners and restrained exposure of the underlying material",
+      "category": "Desgaste",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-poeira-acumulada",
+      "kind": "texture",
+      "name": "Poeira acumulada",
+      "description": "Partículas depositadas em recessos e planos horizontais.",
+      "output": "settled dust gathered in recesses and horizontal surfaces, fine muted particles without obscuring focal details",
+      "category": "Desgaste",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-solarizacao-analogica",
+      "kind": "texture",
+      "name": "Solarização analógica",
+      "description": "Inversão tonal parcial de origem fotoquímica.",
+      "output": "restrained analog solarization with partial tonal reversal and delicate luminous contour lines",
+      "category": "Experimental",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-padrao-moire",
+      "kind": "texture",
+      "name": "Padrão moiré",
+      "description": "Interferência entre grades produz ondulações visuais.",
+      "output": "a controlled moire interference pattern in limited textured regions, subtle optical ripples and preserved focal clarity",
+      "category": "Experimental",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-interferencia-de-sinal",
+      "kind": "texture",
+      "name": "Interferência de sinal",
+      "description": "Instabilidade eletrônica em faixas discretas.",
+      "output": "restrained analog signal interference with narrow horizontal bands and slight chroma displacement",
+      "category": "Experimental",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-emulsao-levantada",
+      "kind": "texture",
+      "name": "Emulsão levantada",
+      "description": "Camada fotográfica física se solta do suporte.",
+      "output": "small lifted emulsion flakes and irregular translucent edges confined to the outer image surface",
+      "category": "Experimental",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-texture-granulacao-termografica",
+      "kind": "texture",
+      "name": "Granulação termográfica",
+      "description": "Textura granular inspirada em sensores térmicos.",
+      "output": "fine thermal-sensor-inspired grain with softly clustered noise and restrained luminous microcontrast",
+      "category": "Experimental",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
     }
   ]
 }

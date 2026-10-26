@@ -58,6 +58,8 @@ export function StylePanel() {
   const styleOptions = withSelectedReferences(STYLES, style, 'style');
   const mediumOptions = withSelectedReferences(MEDIUMS, medium, 'medium');
   const paletteOptions = withSelectedReferences(PALETTES, palette, 'palette');
+  const lightingOptions = withSelectedReferences(LIGHTINGS, lighting, 'lighting');
+  const textureOptions = withSelectedReferences(TEXTURES, texture, 'texture');
   const compositionOptions = withSelectedReferences(COMPOSITIONS, composition, 'composition');
   const detailOptions = withSelectedReferences(DETAILS, details, 'detail');
   const selectedPalette = paletteOptions.find((item) => item.name === palette);
@@ -108,13 +110,13 @@ export function StylePanel() {
         </div>
       </div>
 
-      <ReferenceSuggestions {...suggestionProps} kinds={['style', 'medium', 'palette', 'composition', 'detail']} />
+      <ReferenceSuggestions {...suggestionProps} kinds={['style', 'medium', 'palette', 'lighting', 'texture', 'composition', 'detail']} />
 
       <div className="select-grid">
         <SelectField label="Meio de criação" value={medium} options={mediumOptions} onChange={(value) => updateField('medium', value)} />
         <SelectField label="Paleta dominante" value={palette} options={paletteOptions} onChange={(value) => updateField('palette', value)} />
-        <SelectField label="Desenho de luz" value={lighting} options={LIGHTINGS} onChange={(value) => updateField('lighting', value)} />
-        <SelectField label="Textura e acabamento" value={texture} options={TEXTURES} onChange={(value) => updateField('texture', value)} />
+        <SelectField label="Desenho de luz" value={lighting} options={lightingOptions} onChange={(value) => updateField('lighting', value)} />
+        <SelectField label="Textura e acabamento" value={texture} options={textureOptions} onChange={(value) => updateField('texture', value)} />
         <SelectField label="Câmera e enquadramento" value={composition} options={compositionOptions} onChange={(value) => updateField('composition', value)} />
         <div className="palette-preview">
           <span className="field-label"><Palette size={13} /> Amostra da paleta</span>
