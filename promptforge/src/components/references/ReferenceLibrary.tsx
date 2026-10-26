@@ -9,7 +9,8 @@ import {
 } from '@/lib/references';
 import { usePromptStore } from '@/store/usePromptStore';
 
-const PAGE_SIZE = 24;
+const PAGE_SIZE_OPTIONS = [24, 48, 96] as const;
+type PageSize = (typeof PAGE_SIZE_OPTIONS)[number];
 const SEARCH_PLACEHOLDERS = [
   'Tente “Brasil”, “70s” ou “câmera”...',
   'Busque uma personagem, atmosfera ou textura...',
@@ -27,7 +28,8 @@ export function ReferenceLibrary() {
   const [era, setEra] = useState('all');
   const [source, setSource] = useState('all');
   const [round, setRound] = useState(() => Math.floor(Math.random() * 10_000));
-  const [visible, setVisible] = useState(PAGE_SIZE);
+  const [pageSize, setPageSize] = useState<PageSize>(24);
+  const [visible, setVisible] = useState(24);
 
   const sources = useMemo(() => [...new Set(ALL_REFERENCES.map((item) => item.source))].sort(), []);
   const facetItems = useMemo(() => ALL_REFERENCES.filter((item) => (
@@ -52,14 +54,14 @@ export function ReferenceLibrary() {
   const displayed = ordered.slice(0, visible);
   const hasFilters = Boolean(query || kind !== 'all' || category !== 'all' || era !== 'all' || source !== 'all');
 
-  const resetPage = () => setVisible(PAGE_SIZE);
+  const resetPage = () => setVisible(pageSize);
   const clearFilters = () => {
     setQuery('');
     setKind('all');
     setCategory('all');
     setEra('all');
     setSource('all');
-    setVisible(PAGE_SIZE);
+    setVisible(pageSize);
   };
   const applyAndReturn = (id: string) => {
     if (!applyReference(id)) return;
@@ -95,7 +97,10 @@ export function ReferenceLibrary() {
 
       <div className="reference-results-bar">
         <p role="status">Exibindo {displayed.length} de {filtered.length} {filtered.length === 1 ? 'referência' : 'referências'}.</p>
-        {hasFilters && <button type="button" className="button text" onClick={clearFilters}>Limpar filtros</button>}
+        <div className="reference-results-actions">
+          <label className="reference-page-size"><span>Por página</span><select value={pageSize} onChange={(event) => { const value = Number(event.target.value) as PageSize; setPageSize(value); setVisible(value); }}>{PAGE_SIZE_OPTIONS.map((value) => <option key={value} value={value}>{value}</option>)}</select></label>
+          {hasFilters && <button type="button" className="button text" onClick={clearFilters}>Limpar filtros</button>}
+        </div>
       </div>
 
       {displayed.length ? (
@@ -111,7 +116,7 @@ export function ReferenceLibrary() {
               </article>
             ))}
           </div>
-          {visible < filtered.length && <button type="button" className="button secondary reference-load-more" onClick={() => setVisible((value) => value + PAGE_SIZE)}>Mostrar mais {Math.min(PAGE_SIZE, filtered.length - visible)} referências</button>}
+          {visible < filtered.length && <button type="button" className="button secondary reference-load-more" onClick={() => setVisible((value) => value + pageSize)}>Mostrar mais {Math.min(pageSize, filtered.length - visible)} referências</button>}
         </>
       ) : (
         <div className="empty-state compact">

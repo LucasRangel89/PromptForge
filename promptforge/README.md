@@ -7,7 +7,8 @@ Painel responsivo para transformar uma ideia em um prompt de imagem estruturado.
 - Fluxo em quatro áreas: **Conceito, Cena, Estilo e Ajustes**.
 - Prompt atualizado em tempo real, nos modos **Fluido**, **Compacto** e **JSON**.
 - **Acervo com 842 referências pesquisáveis**: 780 opções únicas extraídas dos sequenciadores e protótipos, além de 62 itens da curadoria PromptForge.
-- Sugestões renováveis em pequenos grupos, placeholders variáveis e aplicação de referências sem apagar a digitação.
+- Sugestões em grupos de 6 ou 12, com posição no conjunto, diversidade de origens/categorias e percurso sem repetição até concluir cada camada.
+- Camadas navegáveis nas sugestões, placeholders variáveis e aplicação de referências sem apagar a digitação.
 - Busca por nome, descrição e metadados, filtros por camada, categoria, época e origem, paginação e aplicação aleatória dentro do filtro.
 - Presets curados de sujeitos, cenários, ações, atmosfera, linguagem, luz, câmera e textura.
 - Direções de arte completas e combinações aleatórias com travas por seção.
@@ -52,7 +53,9 @@ npm run refs:build
 
 O comando atualiza `src/lib/referenceData.ts`; esse arquivo é gerado e não deve ser editado manualmente. A representação em tuplas reduz o JavaScript enviado ao navegador e é convertida nos objetos tipados usados pelo app.
 
-As sugestões mostram apenas três opções por vez e podem ser renovadas sem modificar o campo em edição. **Surpreenda-me** também usa o acervo expandido, respeitando travas e limites de seleção.
+As sugestões mostram 6 ou 12 opções e distribuem o sorteio entre origens e categorias. O cursor percorre toda a camada sem repetir IDs antes de iniciar outra sequência; a última página pode ser menor. Cada painel preserva o progresso das camadas visitadas, e renovar as sugestões não modifica o campo em edição. Cena oferece cenário, atmosfera e reviravolta; Estilo oferece estilo, formato, paleta, câmera e detalhes. No Acervo, é possível exibir 24, 48 ou 96 referências por página.
+
+**Surpreenda-me** também usa o acervo expandido, respeitando travas e limites de seleção.
 
 ## Operação local e sem credenciais
 
@@ -69,7 +72,7 @@ npm start
 
 ## Publicação no GitHub Pages
 
-O workflow `.github/workflows/deploy-pages.yml` executa TypeScript, os 23 testes e o build antes de publicar `promptforge/dist`. O build do Pages usa o caminho-base `/PromptForge/`; os builds locais e de outros provedores continuam usando `/`.
+O workflow `.github/workflows/deploy-pages.yml` executa TypeScript, os 24 testes e o build antes de publicar `promptforge/dist`. O build do Pages usa o caminho-base `/PromptForge/`; os builds locais e de outros provedores continuam usando `/`.
 
 Para ativar a publicação:
 
@@ -83,7 +86,7 @@ Após uma implantação bem-sucedida, a interface estará disponível em `https:
 
 ```bash
 npm run lint       # TypeScript estrito
-npm test           # 23 testes: motor, acervo e store
+npm test           # 24 testes: motor, acervo e store
 npm run refs:build # valida e regenera o acervo normalizado
 npm run build      # validação + bundle de produção
 npm audit          # dependências

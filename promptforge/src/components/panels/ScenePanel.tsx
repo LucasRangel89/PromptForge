@@ -24,7 +24,7 @@ export function ScenePanel() {
     notify,
   } = usePromptStore();
   const [newCharacter, setNewCharacter] = useState('');
-  const { suggestions, refresh } = useReferenceSuggestions('scenario');
+  const { placeholderName, suggestionProps } = useReferenceSuggestions('scenario');
 
   const addCharacter = (value = newCharacter) => {
     const cleanValue = value.trim();
@@ -106,13 +106,13 @@ export function ScenePanel() {
           className="text-input standalone-input"
           value={customScenario}
           onChange={(event) => updateField('scenario', event.target.value)}
-          placeholder={`Ex.: ${suggestions[0]?.name ?? 'um lugar inesperado'} — ou descreva outro cenário...`}
+          placeholder={`Ex.: ${placeholderName ?? 'um lugar inesperado'} — ou descreva outro cenário...`}
           aria-label="Cenário personalizado"
           maxLength={600}
         />
       </div>
 
-      <ReferenceSuggestions kind="scenario" suggestions={suggestions} onRefresh={refresh} />
+      <ReferenceSuggestions {...suggestionProps} kinds={['scenario', 'mood', 'trend']} />
 
       <div className="subsection">
         <div className="subsection-title"><span>Ação na cena</span><span className="mono-note">O QUE ACONTECE?</span></div>

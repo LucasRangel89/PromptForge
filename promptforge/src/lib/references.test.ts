@@ -33,12 +33,32 @@ test('acervo reúne os sequenciadores deduplicados e a curadoria existente', () 
   }
 });
 
-test('sugestões são renováveis, limitadas e reproduzíveis', () => {
-  const first = getReferenceSuggestions('anchor', 3, 42);
-  assert.deepEqual(first, getReferenceSuggestions('anchor', 3, 42));
-  assert.equal(first.length, 3);
-  assert.equal(new Set(first.map((item) => item.id)).size, 3);
-  assert.notDeepEqual(first.map((item) => item.id), getReferenceSuggestions('anchor', 3, 43).map((item) => item.id));
+test('sugestões oferecem 6 ou 12 itens reproduzíveis e com diversidade', () => {
+  const first = getReferenceSuggestions('anchor', 6, 42);
+  assert.deepEqual(first, getReferenceSuggestions('anchor', 6, 42));
+  assert.equal(first.length, 6);
+  assert.equal(new Set(first.map((item) => item.id)).size, 6);
+  assert.ok(new Set(first.map((item) => item.source)).size > 1);
+  assert.ok(new Set(first.map((item) => item.category)).size > 1);
+  assert.notDeepEqual(first.map((item) => item.id), getReferenceSuggestions('anchor', 6, 43).map((item) => item.id));
+
+  const expanded = getReferenceSuggestions('anchor', 12, 42);
+  assert.equal(expanded.length, 12);
+  assert.deepEqual(expanded.slice(0, 6), first);
+});
+
+test('ciclo percorre toda a camada sem repetição antes de renovar', () => {
+  const pool = REFERENCE_POOLS.palette;
+  const seen: string[] = [];
+  for (let cursor = 0; cursor < pool.length; cursor += 12) {
+    const page = getReferenceSuggestions('palette', 12, 42, cursor);
+    assert.ok(page.length > 0);
+    seen.push(...page.map((item) => item.id));
+  }
+  assert.equal(seen.length, pool.length);
+  assert.equal(new Set(seen).size, pool.length);
+  assert.deepEqual([...seen].sort(), pool.map((item) => item.id).sort());
+  assert.equal(getReferenceSuggestions('palette', 12, 42, 36).length, 6);
 });
 
 test('motor usa a descrição em inglês da referência escolhida', () => {

@@ -31,7 +31,7 @@ export function StylePanel() {
     toggleLock,
     notify,
   } = usePromptStore();
-  const { suggestions, refresh } = useReferenceSuggestions('style');
+  const { suggestionProps } = useReferenceSuggestions('style');
 
   const toggleStyle = (name: string) => {
     if (style.includes(name)) {
@@ -108,7 +108,7 @@ export function StylePanel() {
         </div>
       </div>
 
-      <ReferenceSuggestions kind="style" suggestions={suggestions} onRefresh={refresh} />
+      <ReferenceSuggestions {...suggestionProps} kinds={['style', 'medium', 'palette', 'composition', 'detail']} />
 
       <div className="select-grid">
         <SelectField label="Meio de criação" value={medium} options={mediumOptions} onChange={(value) => updateField('medium', value)} />
