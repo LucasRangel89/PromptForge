@@ -8,7 +8,7 @@ A revisão considerou o aplicativo React, os protótipos, os dados, a especifica
 
 - React 19 + TypeScript + Vite + Tailwind 4 + Zustand.
 - Fluxo original dividido em cinco componentes de etapa.
-- Estado centralizado em `usePromptStore`, presets em `lib/presets.ts` e integração Gemini em `services/aiService.ts`.
+- Estado centralizado em `usePromptStore`, presets em `lib/presets.ts` e montagem determinística em `lib/promptEngine.ts`.
 - A especificação de produto descreve Next.js, orquestração multiagente e banco de dados, mas a implementação era um MVP Vite predominantemente local.
 
 ### Protótipos e recursos conceituais
@@ -32,7 +32,7 @@ A revisão considerou o aplicativo React, os protótipos, os dados, a especifica
 1. **Visão de produto clara.** O objetivo não é apenas concatenar adjetivos, mas construir consistência criativa e memória.
 2. **Pesquisa autoral relevante.** O DNA visual do Eternauta é mais acionável que uma lista genérica de referências.
 3. **Boa base de curadoria.** Há centenas de possibilidades de combinação entre sujeitos, cenários, linguagens e detalhes.
-4. **Separação inicial de responsabilidades.** Estado, presets, serviço de IA e componentes já estavam em módulos distintos.
+4. **Separação inicial de responsabilidades.** Estado, presets, motor e componentes estão em módulos distintos.
 5. **Aprendizado entre protótipos.** Travas, modos de saída, chips, histórico e exportação respondem a necessidades reais de exploração.
 6. **Stack adequada ao MVP.** Vite, React e Zustand permitem iterar rapidamente sem exigir infraestrutura para o construtor determinístico.
 
@@ -96,17 +96,15 @@ A revisão considerou o aplicativo React, os protótipos, os dados, a especifica
 
 ### Segurança e qualidade
 
-- SDK Gemini movido para um endpoint Node; não há `define` de chave no Vite nem segredo no JavaScript do cliente.
-- IA é opcional: o construtor principal continua integralmente local.
+- Integração Gemini removida de ponta a ponta: botão, cliente, endpoint, middleware, SDK, variáveis de ambiente e testes dedicados foram eliminados.
+- Todos os recursos são locais e não exigem credenciais, contas ou provedores externos; o servidor de produção serve apenas os arquivos estáticos.
 - Upload validado por tipo e tamanho; dados da imagem não entram no armazenamento persistente.
 - Metadados, título, idioma, favicon, scripts e nome do pacote atualizados.
-- TypeScript estrito e 28 testes automatizados para motor, integridade e aleatorização do Acervo, persistência, travas, capacidade, edição manual, exclusão, importação, restauração e endpoint.
-- Respostas antigas de IA não sobrescrevem edições mais recentes; rede lenta tem timeout e falhas preservam o texto.
-- Endpoint diferencia entrada inválida, payload excessivo, indisponibilidade e falha do provedor, sem registrar o objeto completo do erro.
+- TypeScript estrito e 23 testes automatizados para motor, integridade e aleatorização do Acervo, persistência, travas, capacidade, edição manual, exclusão, importação e restauração.
 - Auditoria reduzida a um alerta de baixa severidade no `esbuild`, relacionado ao servidor de desenvolvimento em Windows.
 - Validação em navegador: quatro etapas sem overflow em sete larguras entre 320 e 1280 px, sem erros de console, com navegação, variações, salvamento, backups e restauração exercitados.
 - Auditoria `axe-core` WCAG A/AA sem violações nas quatro etapas, na Biblioteca vazia, populada e cheia, no guia e no toast de recuperação, incluindo desktop e mobile. Contraste de estados extremos, nome acessível, foco do modal e semântica das abas foram revistos.
-- Regressão no Chromium para teclado, edição manual, exclusão/desfazer, restauração, capacidade, cópia contextual, resposta atrasada de IA e referência visual; nenhum erro de console. O Acervo também foi exercitado com 842 itens, renovação, busca, aplicação, persistência, paginação e filtro aleatório, sem overflow entre 320 e 1280 px e sem violações axe nos estados desktop/mobile testados. Essa automação foi executada no ambiente, mas ainda precisa ser formalizada em CI.
+- Regressão no Chromium para teclado, edição manual, exclusão/desfazer, restauração, capacidade, cópia contextual e referência visual; nenhum erro de console. O Acervo também foi exercitado com 842 itens, renovação, busca, aplicação, persistência, paginação e filtro aleatório, sem overflow entre 320 e 1280 px e sem violações axe nos estados desktop/mobile testados. Essa automação foi executada no ambiente, mas ainda precisa ser formalizada em CI.
 
 ## 5. Arquitetura atual
 
@@ -114,15 +112,16 @@ A revisão considerou o aplicativo React, os protótipos, os dados, a especifica
 Interface React
   ├── painéis de intenção e linguagem
   ├── motor determinístico de prompts
+  ├── Acervo e variações locais
   └── Zustand + localStorage
           │
-          ├── exportação local TXT / JSON
-          └── POST /api/refine-prompt (opcional)
-                    │
-                    └── Node + Gemini (chave somente no servidor)
+          └── exportação local TXT / JSON
+
+Node + Express
+  └── arquivos estáticos de produção, sem endpoints de IA
 ```
 
-Essa arquitetura mantém o MVP útil sem credenciais e deixa explícito quais recursos realmente dependem de serviços externos.
+Essa arquitetura mantém todo o produto funcional sem credenciais ou chamadas a serviços externos. O servidor Node é necessário apenas para hospedar o build de produção.
 
 ## 6. Próximas oportunidades, em ordem sugerida
 
@@ -134,16 +133,9 @@ Essa arquitetura mantém o MVP útil sem credenciais e deixa explícito quais re
 
 ### Médio prazo
 
-4. **Análise multimodal real.** Permitir que a referência visual seja descrita por um modelo e transformada em restrições de estilo/composição, com consentimento do usuário.
-5. **Persistência multi-dispositivo.** Autenticação e banco de dados apenas quando houver necessidade real de sincronização.
-6. **Preset DNA reutilizável.** Transformar regras como as do Eternauta em documentos de identidade visual aplicáveis a qualquer personagem autoral.
-7. **Revisor de conflitos.** Detectar combinações contraditórias de câmera, luz, mídia e estilo antes da exportação.
-
-### Integrações futuras
-
-8. **Geração de imagem.** Adicionar provedores como etapa separada, mantendo claro que hoje o produto gera prompts, não imagens.
-9. **Orquestração real de agentes.** Só faz sentido se houver ganho mensurável sobre o motor determinístico; evitar reproduzir o console multiagente meramente decorativo dos protótipos.
-10. **Proteção da API pública.** Antes de expor o refinamento em produção aberta, adicionar autenticação, rate limiting, observabilidade e limites de custo.
+4. **Persistência multi-dispositivo.** Autenticação e banco de dados apenas quando houver necessidade real de sincronização.
+5. **Preset DNA reutilizável.** Transformar regras como as do Eternauta em documentos de identidade visual aplicáveis a qualquer personagem autoral.
+6. **Revisor de conflitos.** Detectar combinações contraditórias de câmera, luz, mídia e estilo antes da exportação.
 
 ## 7. Decisão recomendada
 

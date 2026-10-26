@@ -6,6 +6,6 @@
     "Construtor de prompts em tempo real",
     "Biblioteca local persistente",
     "Exportação para múltiplos geradores",
-    "Refinamento opcional com IA no servidor"
+    "Funcionamento local sem chaves de API"
   ]
 }

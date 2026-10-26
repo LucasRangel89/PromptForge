@@ -61,7 +61,7 @@ export function GuideModal() {
           <span><strong>Ctrl/⌘ + Enter</strong> copiar prompt</span>
           <span><strong>Ctrl/⌘ + S</strong> salvar na Biblioteca</span>
         </div>
-        <p className="guide-note">Os presets possuem descrições otimizadas em inglês. Textos livres são incorporados exatamente como digitados; o refinamento por IA é opcional e depende de configuração no servidor.</p>
+        <p className="guide-note">Os presets possuem descrições otimizadas em inglês. Textos livres são incorporados exatamente como digitados. Todo o construtor funciona localmente, sem contas, chaves de API ou serviços externos.</p>
       </section>
     </div>
   );

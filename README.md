@@ -14,4 +14,4 @@ npm install
 npm run dev
 ```
 
-A interface fica disponível em `http://localhost:3000`. O gerador de prompts funciona sem chave de API; o refinamento por IA é opcional.
+A interface fica disponível em `http://localhost:3000`. Todos os recursos funcionam localmente, sem chaves de API ou provedores externos.

@@ -19,7 +19,7 @@ Painel responsivo para transformar uma ideia em um prompt de imagem estruturado.
 - Upload temporário de referência visual.
 - Atalhos: `Ctrl/⌘ + Enter` para copiar e `Ctrl/⌘ + S` para salvar.
 - Abas com navegação por setas, foco visível, alvos ampliados e suporte a redução de movimento.
-- Refinamento por IA opcional, executado no servidor sem expor a chave no navegador.
+- Funcionamento totalmente local, sem contas, chaves de API ou chamadas a provedores de IA.
 
 ## Executar localmente
 
@@ -30,7 +30,7 @@ npm install
 npm run dev
 ```
 
-O Vite disponibiliza a aplicação em `http://localhost:3000` e também expõe o endpoint local de refinamento.
+O Vite disponibiliza a aplicação em `http://localhost:3000`. Nenhuma configuração de credenciais é necessária.
 
 ## Acervo e aleatorização
 
@@ -54,17 +54,9 @@ O comando atualiza `src/lib/referenceData.ts`; esse arquivo é gerado e não dev
 
 As sugestões mostram apenas três opções por vez e podem ser renovadas sem modificar o campo em edição. **Surpreenda-me** também usa o acervo expandido, respeitando travas e limites de seleção.
 
-## Refinamento opcional com IA
+## Operação local e sem credenciais
 
-O construtor principal não depende de IA nem de chave de API. Para habilitar o botão **Refinar com IA**:
-
-```bash
-cp .env.example .env.local
-```
-
-Preencha `GEMINI_API_KEY` em `.env.local` e reinicie o servidor. A chave é lida somente pelo processo Node. O navegador chama o endpoint relativo `POST /api/refine-prompt`; nenhuma credencial é incluída no bundle do Vite.
-
-Sem essa configuração, a interface informa que o recurso é opcional e todo o restante continua funcional.
+Todos os recursos do produto funcionam sem chaves de API, contas ou provedores externos. A montagem, as variações, o Acervo, a Biblioteca e as exportações são executados no navegador. Não há integração com serviços de IA nem endpoints de refinamento.
 
 ## Build e produção
 
@@ -73,13 +65,13 @@ npm run build
 npm start
 ```
 
-`npm run build` valida os tipos e gera `dist/`. `npm start` inicia o servidor Express na porta `3000` (ou na porta definida por `PORT`), serve os arquivos estáticos e disponibiliza o mesmo endpoint de IA.
+`npm run build` valida os tipos e gera `dist/`. `npm start` inicia o servidor Express na porta `3000` (ou na porta definida por `PORT`) e serve apenas os arquivos estáticos do aplicativo.
 
 ## Verificações
 
 ```bash
 npm run lint       # TypeScript estrito
-npm test           # 28 testes: motor, acervo, store e endpoint
+npm test           # 23 testes: motor, acervo e store
 npm run refs:build # valida e regenera o acervo normalizado
 npm run build      # validação + bundle de produção
 npm audit          # dependências
@@ -113,13 +105,11 @@ src/
 │   ├── referenceTypes.ts  # contratos das nove camadas
 │   ├── references.ts      # busca, índices e aleatorização
 │   └── utils.ts           # clipboard e downloads
-├── services/aiService.ts  # cliente do endpoint relativo
 └── store/usePromptStore.ts
 scripts/
 └── build-reference-data.mjs # importação e deduplicação das fontes
 server/
-├── index.ts               # Express para produção
-└── refinePrompt.ts        # Gemini exclusivamente no servidor
+└── index.ts               # Express para os arquivos estáticos de produção
 ```
 
 Os protótipos HTML/JSX e os arquivos de pesquisa na raiz foram preservados como material de referência.
