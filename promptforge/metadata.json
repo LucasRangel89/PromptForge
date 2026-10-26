@@ -1,6 +1,11 @@
 {
   "name": "PromptForge",
-  "description": "Sistema de orquestração de imagens. Um construtor visual de prompts com IA.",
+  "description": "Estúdio interativo de direção criativa para construir, refinar, salvar e exportar prompts de imagem.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "Construtor de prompts em tempo real",
+    "Biblioteca local persistente",
+    "Exportação para múltiplos geradores",
+    "Refinamento opcional com IA no servidor"
+  ]
 }

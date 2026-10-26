@@ -1,4 +1,5 @@
-import React from 'react';
+import type { ReactNode } from 'react';
+import { Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface SelectCardProps {
@@ -6,30 +7,23 @@ interface SelectCardProps {
   onClick: () => void;
   label: string;
   sublabel?: string;
+  icon?: ReactNode;
 }
 
-export function SelectCard({ selected, onClick, label, sublabel }: SelectCardProps) {
+export function SelectCard({ selected, onClick, label, sublabel, icon }: SelectCardProps) {
   return (
     <button
+      type="button"
+      aria-pressed={selected}
       onClick={onClick}
-      className={cn(
-        "text-left p-4 rounded-md border transition-all duration-200 flex flex-col gap-1 items-center justify-center text-center aspect-[2/1] sm:aspect-auto sm:text-left sm:items-start sm:justify-start", 
-        selected 
-          ? "border-slate-900 bg-slate-900 text-white shadow-sm" 
-          : "border-slate-200 bg-white hover:border-slate-400 text-slate-800"
-      )}
+      className={cn('choice-card', selected && 'selected')}
     >
-      <span className={cn(
-        "text-[10px] uppercase font-bold tracking-tight",
-        selected ? "text-white" : "text-slate-600"
-      )}>
-        {label}
+      <span className="choice-card-top">
+        {icon && <span className="choice-card-icon">{icon}</span>}
+        <span className="choice-check" aria-hidden="true">{selected && <Check size={12} />}</span>
       </span>
-      {sublabel && (
-        <span className="text-[10px] text-slate-400 font-mono line-clamp-2 mt-1">
-          {sublabel}
-        </span>
-      )}
+      <span className="choice-card-label">{label}</span>
+      {sublabel && <span className="choice-card-description">{sublabel}</span>}
     </button>
   );
 }
