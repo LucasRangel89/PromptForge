@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import { REFERENCE_DATA } from './referenceData';
 import {
@@ -32,10 +33,25 @@ test('acervo reúne os sequenciadores e as curadorias sem duplicar nomes', () =>
   for (const item of ALL_REFERENCES) {
     assert.ok(item.name.trim());
     assert.ok(item.output.trim());
+    assert.ok(item.category.trim(), item.id);
     assert.ok(!item.description.includes('[object Object]'), item.id);
     assert.ok(REFERENCE_KIND_META[item.kind]);
     assert.ok(REFERENCE_POOLS[item.kind].includes(item));
   }
+});
+
+test('classificação retroativa está sincronizada com todos os registros gerados', () => {
+  const document = JSON.parse(readFileSync(new URL('../../data/reference-classifications.json', import.meta.url), 'utf8')) as { version: number; classifications: Record<string, string> };
+  assert.equal(document.version, 1);
+  const entries = Object.entries(document.classifications);
+  assert.equal(entries.length, 457);
+  const referencesById = new Map(REFERENCE_DATA.map((item) => [item.id, item]));
+  for (const [id, category] of entries) {
+    assert.equal(typeof category, 'string');
+    assert.ok(category.trim(), id);
+    assert.equal(referencesById.get(id)?.category, category, id);
+  }
+  assert.ok(ALL_REFERENCES.every((item) => item.category.trim()));
 });
 
 test('sugestões oferecem 6 ou 12 itens reproduzíveis e com diversidade', () => {
