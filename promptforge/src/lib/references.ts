@@ -11,6 +11,7 @@ import {
   STYLES,
   TEXTURES,
   TRENDS,
+  WEATHERS,
   type PresetOption,
 } from './presets';
 import { REFERENCE_DATA } from './referenceData';
@@ -20,6 +21,7 @@ export const REFERENCE_KIND_META: Record<ReferenceKind, { label: string; plural:
   anchor: { label: 'Âncora', plural: 'Âncoras e personagens', step: 1 },
   scenario: { label: 'Cenário', plural: 'Cenários', step: 2 },
   action: { label: 'Ação', plural: 'Ações na cena', step: 2 },
+  weather: { label: 'Clima', plural: 'Clima e tempo', step: 2 },
   style: { label: 'Estilo', plural: 'Estilos e assinaturas', step: 3 },
   trend: { label: 'Reviravolta', plural: 'Reviravoltas', step: 2 },
   detail: { label: 'Detalhe', plural: 'Detalhes narrativos', step: 3 },
@@ -35,6 +37,7 @@ const CORE_GROUPS: Record<ReferenceKind, PresetOption[]> = {
   anchor: ANCHORS,
   scenario: SCENARIOS,
   action: ACTIONS,
+  weather: WEATHERS,
   style: STYLES,
   trend: TRENDS,
   detail: DETAILS,
@@ -81,7 +84,7 @@ export const REFERENCE_POOLS = ALL_REFERENCES.reduce<Record<ReferenceKind, Refer
   pools[item.kind].push(item);
   return pools;
 }, {
-  anchor: [], scenario: [], action: [], style: [], trend: [], detail: [], medium: [], palette: [], lighting: [], texture: [], mood: [], composition: [],
+  anchor: [], scenario: [], action: [], weather: [], style: [], trend: [], detail: [], medium: [], palette: [], lighting: [], texture: [], mood: [], composition: [],
 });
 
 const REFERENCE_BY_ID = new Map(ALL_REFERENCES.map((item) => [item.id, item]));

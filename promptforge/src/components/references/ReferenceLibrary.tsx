@@ -1,10 +1,12 @@
 import { useMemo, useState } from 'react';
-import { ArrowUpRight, Database, RefreshCw, Search, Shuffle } from 'lucide-react';
+import { ArrowUpRight, Database, History, RefreshCw, Search, Shuffle, Star } from 'lucide-react';
 import {
   ALL_REFERENCES,
+  findReferenceById,
   normalizeSearch,
   REFERENCE_KIND_META,
   shuffleReferences,
+  type ReferenceItem,
   type ReferenceKind,
 } from '@/lib/references';
 import { usePromptStore } from '@/store/usePromptStore';
@@ -19,10 +21,16 @@ const SEARCH_PLACEHOLDERS = [
 ];
 
 type KindFilter = ReferenceKind | 'all';
+type CollectionFilter = 'all' | 'favorites' | 'recent';
 
 export function ReferenceLibrary() {
   const applyReference = usePromptStore((state) => state.applyReference);
+  const favoriteReferenceIds = usePromptStore((state) => state.favoriteReferenceIds);
+  const recentReferenceIds = usePromptStore((state) => state.recentReferenceIds);
+  const toggleFavoriteReference = usePromptStore((state) => state.toggleFavoriteReference);
+  const clearRecentReferences = usePromptStore((state) => state.clearRecentReferences);
   const [query, setQuery] = useState('');
+  const [collection, setCollection] = useState<CollectionFilter>('all');
   const [kind, setKind] = useState<KindFilter>('all');
   const [category, setCategory] = useState('all');
   const [era, setEra] = useState('all');
@@ -32,6 +40,10 @@ export function ReferenceLibrary() {
   const [visible, setVisible] = useState(24);
 
   const sources = useMemo(() => [...new Set(ALL_REFERENCES.map((item) => item.source))].sort(), []);
+  const favoriteIds = useMemo(() => favoriteReferenceIds.filter((id) => Boolean(findReferenceById(id))), [favoriteReferenceIds]);
+  const recentIds = useMemo(() => recentReferenceIds.filter((id) => Boolean(findReferenceById(id))), [recentReferenceIds]);
+  const favoriteSet = useMemo(() => new Set(favoriteIds), [favoriteIds]);
+  const recentSet = useMemo(() => new Set(recentIds), [recentIds]);
   const facetItems = useMemo(() => ALL_REFERENCES.filter((item) => (
     (kind === 'all' || item.kind === kind) && (source === 'all' || item.source === source)
   )), [kind, source]);
@@ -43,25 +55,43 @@ export function ReferenceLibrary() {
     return ALL_REFERENCES.filter((item) => {
       if (kind !== 'all' && item.kind !== kind) return false;
       if (source !== 'all' && item.source !== source) return false;
+      if (collection === 'favorites' && !favoriteSet.has(item.id)) return false;
+      if (collection === 'recent' && !recentSet.has(item.id)) return false;
       if (category !== 'all' && item.category !== category) return false;
       if (era !== 'all' && item.era !== era) return false;
       if (!search) return true;
       return normalizeSearch(`${item.name} ${item.output} ${item.description} ${item.category} ${item.era} ${item.source}`).includes(search);
     });
-  }, [query, kind, source, category, era]);
+  }, [query, kind, source, category, era, collection, favoriteSet, recentSet]);
 
-  const ordered = useMemo(() => shuffleReferences(filtered, round), [filtered, round]);
+  const ordered = useMemo(() => {
+    if (collection !== 'recent') return shuffleReferences(filtered, round);
+    const included = new Set(filtered.map((item) => item.id));
+    return recentIds
+      .map((id) => findReferenceById(id))
+      .filter((item): item is ReferenceItem => Boolean(item && included.has(item.id)));
+  }, [filtered, round, collection, recentIds]);
   const displayed = ordered.slice(0, visible);
-  const hasFilters = Boolean(query || kind !== 'all' || category !== 'all' || era !== 'all' || source !== 'all');
+  const hasFilters = Boolean(query || kind !== 'all' || category !== 'all' || era !== 'all' || source !== 'all' || collection !== 'all');
 
   const resetPage = () => setVisible(pageSize);
   const clearFilters = () => {
     setQuery('');
+    setCollection('all');
     setKind('all');
     setCategory('all');
     setEra('all');
     setSource('all');
     setVisible(pageSize);
+  };
+  const selectCollection = (value: CollectionFilter) => {
+    setCollection(value);
+    setVisible(pageSize);
+  };
+  const applyRandom = () => {
+    if (!filtered.length) return;
+    const item = filtered[Math.floor(Math.random() * filtered.length)];
+    applyAndReturn(item.id);
   };
   const applyAndReturn = (id: string) => {
     if (!applyReference(id)) return;
@@ -77,8 +107,8 @@ export function ReferenceLibrary() {
           <p>{ALL_REFERENCES.length} opções pesquisáveis dos sequenciadores, protótipos e da curadoria PromptForge. Aplique uma camada por vez e mantenha o controle do prompt.</p>
         </div>
         <div className="page-actions">
-          <button type="button" className="button secondary" onClick={() => { setRound((value) => value + 1); resetPage(); }}><RefreshCw size={16} /> Atualizar sugestões</button>
-          <button type="button" className="button dark" disabled={!ordered.length} onClick={() => applyAndReturn(ordered[0].id)}><Shuffle size={16} /> Aplicar aleatória</button>
+          {collection !== 'recent' && <button type="button" className="button secondary" onClick={() => { setRound((value) => value + 1); resetPage(); }}><RefreshCw size={16} /> Atualizar sugestões</button>}
+          <button type="button" className="button dark" disabled={!filtered.length} onClick={applyRandom}><Shuffle size={16} /> Aplicar aleatória</button>
         </div>
       </div>
 
@@ -95,10 +125,17 @@ export function ReferenceLibrary() {
         </div>
       </section>
 
+      <div className="reference-collections" role="group" aria-label="Coleções do acervo">
+        <button type="button" className={collection === 'all' ? 'selected' : ''} aria-pressed={collection === 'all'} onClick={() => selectCollection('all')}>Todas</button>
+        <button type="button" className={collection === 'favorites' ? 'selected' : ''} aria-pressed={collection === 'favorites'} onClick={() => selectCollection('favorites')}><Star size={13} /> Favoritas <span>{favoriteIds.length}</span></button>
+        <button type="button" className={collection === 'recent' ? 'selected' : ''} aria-pressed={collection === 'recent'} onClick={() => selectCollection('recent')}><History size={13} /> Recentes <span>{recentIds.length}</span></button>
+      </div>
+
       <div className="reference-results-bar">
         <p role="status">Exibindo {displayed.length} de {filtered.length} {filtered.length === 1 ? 'referência' : 'referências'}.</p>
         <div className="reference-results-actions">
           <label className="reference-page-size"><span>Por página</span><select value={pageSize} onChange={(event) => { const value = Number(event.target.value) as PageSize; setPageSize(value); setVisible(value); }}>{PAGE_SIZE_OPTIONS.map((value) => <option key={value} value={value}>{value}</option>)}</select></label>
+          {collection === 'recent' && recentIds.length > 0 && <button type="button" className="button text" onClick={clearRecentReferences}>Limpar recentes</button>}
           {hasFilters && <button type="button" className="button text" onClick={clearFilters}>Limpar filtros</button>}
         </div>
       </div>
@@ -106,18 +143,48 @@ export function ReferenceLibrary() {
       {displayed.length ? (
         <>
           <div className="reference-grid">
-            {displayed.map((item) => (
+            {displayed.map((item) => {
+              const favorite = favoriteSet.has(item.id);
+              return (
               <article className="reference-card" key={item.id}>
-                <div className="reference-card-top"><span>{REFERENCE_KIND_META[item.kind].label}</span><span>{item.era || 'Atemporal'}</span></div>
+                <div className="reference-card-top">
+                  <span>{REFERENCE_KIND_META[item.kind].label}</span>
+                  <div className="reference-card-tools">
+                    <span>{item.era || 'Atemporal'}</span>
+                    <button
+                      type="button"
+                      className={`reference-favorite ${favorite ? 'selected' : ''}`}
+                      aria-pressed={favorite}
+                      aria-label={favorite ? `Remover ${item.name} dos favoritos` : `Adicionar ${item.name} aos favoritos`}
+                      title={favorite ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}
+                      onClick={() => toggleFavoriteReference(item.id)}
+                    ><Star size={14} fill={favorite ? 'currentColor' : 'none'} aria-hidden="true" /></button>
+                  </div>
+                </div>
                 <h2>{item.name}</h2>
                 <p title={item.output}>{item.output}</p>
                 <div className="reference-card-source"><span>{item.category || item.source}</span><span>{item.source}</span></div>
                 <button type="button" onClick={() => applyAndReturn(item.id)} aria-label={`Aplicar ${item.name} ao prompt`}>Usar no prompt <ArrowUpRight size={14} /></button>
               </article>
-            ))}
+              );
+            })}
           </div>
           {visible < filtered.length && <button type="button" className="button secondary reference-load-more" onClick={() => setVisible((value) => value + pageSize)}>Mostrar mais {Math.min(pageSize, filtered.length - visible)} referências</button>}
         </>
+      ) : collection === 'favorites' && favoriteIds.length === 0 ? (
+        <div className="empty-state compact">
+          <Star size={25} />
+          <h2>Nenhuma referência favorita.</h2>
+          <p>Use a estrela nos cartões para montar uma coleção de acesso rápido. Favoritar não altera seu prompt.</p>
+          <button type="button" className="button text" onClick={clearFilters}>Explorar referências</button>
+        </div>
+      ) : collection === 'recent' && recentIds.length === 0 ? (
+        <div className="empty-state compact">
+          <History size={25} />
+          <h2>Nenhuma referência aplicada ainda.</h2>
+          <p>Ao usar uma referência no prompt, ela aparecerá aqui. O histórico guarda somente os 12 IDs mais recentes neste navegador.</p>
+          <button type="button" className="button text" onClick={clearFilters}>Explorar referências</button>
+        </div>
       ) : (
         <div className="empty-state compact">
           <Search size={25} />
@@ -126,7 +193,7 @@ export function ReferenceLibrary() {
           <button type="button" className="button text" onClick={clearFilters}>Limpar busca e filtros</button>
         </div>
       )}
-      <p className="privacy-note">Os sequenciadores originais foram preservados. As referências ampliam seu repertório; nenhuma é aplicada sem uma ação explícita.</p>
+      <p className="privacy-note">Os sequenciadores originais foram preservados. Favoritos e recentes guardam apenas IDs neste navegador; nenhuma referência é aplicada sem uma ação explícita.</p>
     </div>
   );
 }

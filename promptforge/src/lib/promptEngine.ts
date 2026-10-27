@@ -12,6 +12,7 @@ import {
   STYLES,
   TEXTURES,
   TRENDS,
+  WEATHERS,
   type PresetOption,
 } from './presets';
 import { findReferenceByName } from './references';
@@ -26,6 +27,7 @@ export interface PromptDraft {
   anchor: string;
   customInput: string;
   action: string;
+  weather: string;
   scenario: string;
   context: string;
   trend: string;
@@ -53,6 +55,7 @@ export const DEFAULT_DRAFT: PromptDraft = {
   anchor: 'O Eternauta',
   customInput: '',
   action: 'Em vigilância',
+  weather: '',
   scenario: 'Buenos Aires sob neve',
   context: 'Tensão silenciosa',
   trend: '',
@@ -80,6 +83,7 @@ export const EMPTY_DRAFT: PromptDraft = {
   anchor: '',
   customInput: '',
   action: '',
+  weather: '',
   scenario: '',
   context: '',
   trend: '',
@@ -141,6 +145,7 @@ function addEngineParameters(prompt: string, draft: PromptDraft) {
 export function buildPrompt(draft: PromptDraft, mode: PromptMode = 'fluid') {
   const subject = draft.anchor ? resolve(draft.anchor, ANCHORS, 'anchor') : clean(draft.customInput);
   const action = resolve(draft.action, ACTIONS, 'action');
+  const weather = resolve(draft.weather, WEATHERS, 'weather');
   const scenario = resolve(draft.scenario, SCENARIOS, 'scenario');
   const mood = resolve(draft.context, MOODS, 'mood');
   const trend = resolve(draft.trend, TRENDS, 'trend');
@@ -174,6 +179,7 @@ export function buildPrompt(draft: PromptDraft, mode: PromptMode = 'fluid') {
       action,
       ...characters,
       scenario && `set in ${scenario}`,
+      weather,
       trend,
       mood,
       composition,
@@ -196,6 +202,7 @@ export function buildPrompt(draft: PromptDraft, mode: PromptMode = 'fluid') {
     action,
     ...characters,
     scenario && `set in ${scenario}`,
+    weather,
     trend,
   ]);
   if (subjectSentence) sentences.push(subjectSentence);
@@ -216,7 +223,7 @@ export function buildPrompt(draft: PromptDraft, mode: PromptMode = 'fluid') {
 export function calculatePromptScore(draft: PromptDraft) {
   let score = 0;
   if (draft.anchor || draft.customInput.trim()) score += 25;
-  if (draft.scenario || draft.action) score += 15;
+  if (draft.scenario || draft.action || draft.weather) score += 15;
   if (draft.context || draft.characters.length) score += 10;
   if (draft.style.length || draft.medium) score += 15;
   if (draft.composition) score += 10;
@@ -239,6 +246,7 @@ export function draftForExport(draft: PromptDraft) {
     anchor: draft.anchor,
     customInput: draft.customInput,
     action: draft.action,
+    weather: draft.weather,
     scenario: draft.scenario,
     context: draft.context,
     trend: draft.trend,

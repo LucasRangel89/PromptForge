@@ -1,6 +1,6 @@
 import { useState, type KeyboardEvent } from 'react';
 import { ImagePlus, MapPin, Plus, X } from 'lucide-react';
-import { ACTIONS, CHARACTER_PRESETS, MOODS, SCENARIOS, TRENDS } from '@/lib/presets';
+import { ACTIONS, CHARACTER_PRESETS, MOODS, SCENARIOS, TRENDS, WEATHERS } from '@/lib/presets';
 import { usePromptStore } from '@/store/usePromptStore';
 import { Chip } from '@/components/ui/Chip';
 import { PanelHeader } from '@/components/ui/PanelHeader';
@@ -12,6 +12,7 @@ export function ScenePanel() {
   const {
     scenario,
     action,
+    weather,
     context,
     trend,
     characters,
@@ -76,6 +77,7 @@ export function ScenePanel() {
 
   const customScenario = scenario && !SCENARIOS.some((item) => item.name === scenario) ? scenario : '';
   const actionOptions = withSelectedReferences(ACTIONS, action, 'action');
+  const weatherOptions = withSelectedReferences(WEATHERS, weather, 'weather');
   const moodOptions = withSelectedReferences(MOODS, context, 'mood');
   const trendOptions = withSelectedReferences(TRENDS, trend, 'trend');
 
@@ -113,7 +115,7 @@ export function ScenePanel() {
         />
       </div>
 
-      <ReferenceSuggestions {...suggestionProps} kinds={['scenario', 'action', 'mood', 'trend']} />
+      <ReferenceSuggestions {...suggestionProps} kinds={['scenario', 'action', 'weather', 'mood', 'trend']} />
 
       <div className="subsection">
         <div className="subsection-title"><span>Ação na cena</span><span className="mono-note">O QUE ACONTECE?</span></div>
@@ -132,6 +134,16 @@ export function ScenePanel() {
           <div className="chip-list compact">
             {moodOptions.map((item) => (
               <Chip key={item.name} selected={context === item.name} onClick={() => updateField('context', context === item.name ? '' : item.name)} title={item.description}>
+                {item.name}
+              </Chip>
+            ))}
+          </div>
+        </div>
+        <div className="field-group">
+          <span className="field-label">Clima e tempo <small>opcional</small></span>
+          <div className="chip-list compact">
+            {weatherOptions.map((item) => (
+              <Chip key={item.name} selected={weather === item.name} onClick={() => updateField('weather', weather === item.name ? '' : item.name)} title={item.description}>
                 {item.name}
               </Chip>
             ))}
