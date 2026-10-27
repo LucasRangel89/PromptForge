@@ -90,6 +90,15 @@ export const ACTIONS: PresetOption[] = [
   { name: 'Ação decisiva', description: 'Energia sem heroização.', output: 'in the middle of a decisive physical action, realistic movement and believable weight' },
 ];
 
+export const WEATHERS: PresetOption[] = [
+  { name: 'Chuva fina', description: 'Precipitação delicada e superfícies úmidas.', output: 'gentle fine rainfall with small droplets and gradually dampening surfaces' },
+  { name: 'Céu limpo', description: 'Poucas nuvens e visibilidade ampla.', output: 'clear weather with an open cloudless sky and unobstructed atmospheric visibility' },
+  { name: 'Névoa baixa', description: 'Umidade suspensa junto ao chão.', output: 'low ground mist softening nearby forms while upper outlines remain readable' },
+  { name: 'Vento constante', description: 'Direção estável percebida nos objetos.', output: 'steady directional wind moving loose fabric, hair and nearby vegetation in a consistent flow' },
+  { name: 'Neve leve', description: 'Flocos esparsos sem perda de visibilidade.', output: 'light scattered snowfall with small flakes and clear surrounding visibility' },
+  { name: 'Calor seco', description: 'Ar quente e baixa umidade.', output: 'hot dry weather with parched surfaces and clear heat-tinged air' },
+];
+
 export const MOODS: PresetOption[] = [
   { name: 'Tensão silenciosa', description: 'Algo errado, ainda invisível.', output: 'silent dread, the stillness just before a storm' },
   { name: 'Nostálgico', description: 'Beleza em algo que passou.', output: 'a deep sense of nostalgia for a familiar world that has already changed' },

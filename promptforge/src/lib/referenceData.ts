@@ -11404,6 +11404,406 @@ const rows: ReferenceRow[] = [
     "",
     5,
     "Textura granular inspirada em sensores térmicos."
+  ],
+  [
+    "curadoria-weather-chuvisco-persistente",
+    "weather",
+    "Chuvisco persistente",
+    "persistent fine drizzle, tiny droplets gathering on surfaces and a consistently damp atmosphere",
+    "Chuva",
+    "",
+    5,
+    "Precipitação fina e contínua."
+  ],
+  [
+    "curadoria-weather-chuva-de-verao",
+    "weather",
+    "Chuva de verão",
+    "a brief heavy summer rain shower, large visible droplets and water striking warm exterior surfaces",
+    "Chuva",
+    "",
+    5,
+    "Precipitação intensa e breve de clima quente."
+  ],
+  [
+    "curadoria-weather-tempestade-eletrica",
+    "weather",
+    "Tempestade elétrica",
+    "an electrical rainstorm with dense rainfall and occasional distant lightning illuminating the clouds",
+    "Chuva",
+    "",
+    5,
+    "Chuva intensa com atividade elétrica distante."
+  ],
+  [
+    "curadoria-weather-chuva-impulsionada-pelo-vento",
+    "weather",
+    "Chuva impulsionada pelo vento",
+    "wind-driven rain falling in diagonal sheets, droplets striking sideways and loose water moving across surfaces",
+    "Chuva",
+    "",
+    5,
+    "Gotas deslocadas diagonalmente por rajadas."
+  ],
+  [
+    "curadoria-weather-chuva-ao-entardecer",
+    "weather",
+    "Chuva ao entardecer",
+    "steady rainfall at dusk, visible droplets against the fading sky and reflections beginning to form on wet ground",
+    "Chuva",
+    "",
+    5,
+    "Precipitação durante a transição da luz diurna."
+  ],
+  [
+    "curadoria-weather-neve-em-flocos-grandes",
+    "weather",
+    "Neve em flocos grandes",
+    "large slow-falling snowflakes accumulating softly on clothing and nearby surfaces",
+    "Neve",
+    "",
+    5,
+    "Flocos volumosos e claramente visíveis."
+  ],
+  [
+    "curadoria-weather-nevasca",
+    "weather",
+    "Nevasca",
+    "a strong snowstorm with dense windblown flakes, reduced visibility and rapid accumulation on exposed surfaces",
+    "Neve",
+    "",
+    5,
+    "Neve intensa com visibilidade reduzida."
+  ],
+  [
+    "curadoria-weather-neve-com-gelo",
+    "weather",
+    "Neve com gelo",
+    "light snowfall over icy surfaces, translucent frozen patches and small grains of ice mixed with the flakes",
+    "Neve",
+    "",
+    5,
+    "Precipitação acompanhada de superfícies congeladas."
+  ],
+  [
+    "curadoria-weather-neve-derretendo",
+    "weather",
+    "Neve derretendo",
+    "melting snow with slushy edges, dripping meltwater and patches of exposed ground beneath a thin remaining layer",
+    "Neve",
+    "",
+    5,
+    "Degelo com água e neve coexistindo."
+  ],
+  [
+    "curadoria-weather-neve-sob-ceu-limpo",
+    "weather",
+    "Neve sob céu limpo",
+    "scattered snowflakes falling from a partly clear sky, crisp crystals visible against darker nearby surfaces",
+    "Neve",
+    "",
+    5,
+    "Queda de neve interrompida por aberturas de céu."
+  ],
+  [
+    "curadoria-weather-poeira-apos-estiagem",
+    "weather",
+    "Poeira após estiagem",
+    "dry dust lifting from parched ground after a long rainless period, fine particles drifting close to the surface",
+    "Seca",
+    "",
+    5,
+    "Partículas levantadas depois de um longo período seco."
+  ],
+  [
+    "curadoria-weather-ar-extremamente-seco",
+    "weather",
+    "Ar extremamente seco",
+    "extremely dry air suggested by brittle vegetation, dusty surfaces and visibly moisture-starved materials",
+    "Seca",
+    "",
+    5,
+    "Baixa umidade e matéria ressecada."
+  ],
+  [
+    "curadoria-weather-vegetacao-sob-estiagem",
+    "weather",
+    "Vegetação sob estiagem",
+    "vegetation stressed by prolonged drought, curled leaves, dry stems and uneven patches of surviving green",
+    "Seca",
+    "",
+    5,
+    "Plantas afetadas pela falta prolongada de água."
+  ],
+  [
+    "curadoria-weather-reservatorio-em-nivel-baixo",
+    "weather",
+    "Reservatório em nível baixo",
+    "a reservoir at a visibly low water level, broad exposed banks and distinct former waterlines on the dry shore",
+    "Seca",
+    "",
+    5,
+    "Água recuada expõe as margens secas."
+  ],
+  [
+    "curadoria-weather-terra-rachada-pela-seca",
+    "weather",
+    "Terra rachada pela seca",
+    "deeply cracked dry earth with irregular fissures, brittle edges and no visible surface moisture",
+    "Seca",
+    "",
+    5,
+    "Solo fendido pela perda de umidade."
+  ],
+  [
+    "curadoria-weather-vento-em-rajadas",
+    "weather",
+    "Vento em rajadas",
+    "intermittent wind gusts pulling at loose fabric and hair in uneven bursts, with brief moments of relative stillness",
+    "Vento",
+    "",
+    5,
+    "Sopros alternados de intensidade variável."
+  ],
+  [
+    "curadoria-weather-brisa-leve",
+    "weather",
+    "Brisa leve",
+    "a gentle steady breeze lightly moving leaves, loose threads and nearby fine particles",
+    "Vento",
+    "",
+    5,
+    "Movimento de ar suave e contínuo."
+  ],
+  [
+    "curadoria-weather-vento-com-folhas",
+    "weather",
+    "Vento com folhas",
+    "a steady current of wind carrying scattered leaves along a visible curved path close to the ground",
+    "Vento",
+    "",
+    5,
+    "Correntes de ar transportando pequenos elementos."
+  ],
+  [
+    "curadoria-weather-vento-de-tempestade",
+    "weather",
+    "Vento de tempestade",
+    "strong storm gusts bending flexible vegetation and pulling loose objects in a consistent turbulent direction",
+    "Vento",
+    "",
+    5,
+    "Rajadas fortes associadas a instabilidade."
+  ],
+  [
+    "curadoria-weather-vento-de-altitude",
+    "weather",
+    "Vento de altitude",
+    "cold high-altitude wind moving in fast thin currents, with loose fabric pressed and pulled by the exposed conditions",
+    "Vento",
+    "",
+    5,
+    "Ar frio e movimentado em lugares elevados."
+  ],
+  [
+    "curadoria-weather-nevoa-matinal",
+    "weather",
+    "Névoa matinal",
+    "low morning mist softening distant forms and leaving tiny condensation droplets on nearby surfaces",
+    "Névoa",
+    "",
+    5,
+    "Partículas suspensas nas primeiras horas do dia."
+  ],
+  [
+    "curadoria-weather-neblina-densa",
+    "weather",
+    "Neblina densa",
+    "dense fog with very limited visibility, nearby edges readable while distant shapes dissolve into the suspended moisture",
+    "Névoa",
+    "",
+    5,
+    "Visibilidade curta e formas progressivamente ocultas."
+  ],
+  [
+    "curadoria-weather-nevoa-em-camadas",
+    "weather",
+    "Névoa em camadas",
+    "layered bands of mist at different depths, alternating clearer passages and softly obscured planes",
+    "Névoa",
+    "",
+    5,
+    "Faixas de umidade em diferentes profundidades."
+  ],
+  [
+    "curadoria-weather-nevoa-sobre-agua",
+    "weather",
+    "Névoa sobre água",
+    "shallow mist drifting just above calm water, with a clearer upper view and soft obscuration near the surface",
+    "Névoa",
+    "",
+    5,
+    "Vapor baixo acompanhando a superfície líquida."
+  ],
+  [
+    "curadoria-weather-nevoa-se-dissipando",
+    "weather",
+    "Névoa se dissipando",
+    "gradually dissipating fog with irregular clear openings revealing distant forms while thin patches linger near the ground",
+    "Névoa",
+    "",
+    5,
+    "Aberturas graduais devolvem a visibilidade."
+  ],
+  [
+    "curadoria-weather-onda-de-calor",
+    "weather",
+    "Onda de calor",
+    "an oppressive heat wave with still air, heat-softened distant forms and surfaces radiating accumulated warmth",
+    "Calor",
+    "",
+    5,
+    "Calor extremo e ar praticamente imóvel."
+  ],
+  [
+    "curadoria-weather-calor-umido",
+    "weather",
+    "Calor úmido",
+    "hot humid weather with moisture gathering on skin and surfaces, heavy still air and slight haze in the distance",
+    "Calor",
+    "",
+    5,
+    "Temperatura alta combinada com umidade."
+  ],
+  [
+    "curadoria-weather-tarde-abafada",
+    "weather",
+    "Tarde abafada",
+    "a stifling hot afternoon with motionless air, drooping vegetation and a dense atmospheric stillness",
+    "Calor",
+    "",
+    5,
+    "Ar quente e parado ao longo da tarde."
+  ],
+  [
+    "curadoria-weather-calor-com-miragem",
+    "weather",
+    "Calor com miragem",
+    "visible heat shimmer rising from hot surfaces and gently distorting distant forms through the heated air",
+    "Calor",
+    "",
+    5,
+    "Ar aquecido distorce planos distantes."
+  ],
+  [
+    "curadoria-weather-calor-apos-a-chuva",
+    "weather",
+    "Calor após a chuva",
+    "humid heat immediately after rainfall, moisture evaporating from warm surfaces and a heavy steaming atmosphere",
+    "Calor",
+    "",
+    5,
+    "Vapor e umidade retornando ao ar aquecido."
+  ],
+  [
+    "curadoria-weather-geada-ao-amanhecer",
+    "weather",
+    "Geada ao amanhecer",
+    "early-morning frost coating exposed surfaces with fine ice crystals that begin to glisten as the day starts",
+    "Frio",
+    "",
+    5,
+    "Cristais de gelo formados durante a madrugada."
+  ],
+  [
+    "curadoria-weather-frio-umido",
+    "weather",
+    "Frio úmido",
+    "cold damp weather with visible condensation, moist surfaces and breath briefly condensing in the chilly air",
+    "Frio",
+    "",
+    5,
+    "Baixa temperatura combinada com condensação."
+  ],
+  [
+    "curadoria-weather-ar-polar",
+    "weather",
+    "Ar polar",
+    "severely cold polar air, crisp frozen surfaces and breath forming dense brief clouds at every exhale",
+    "Frio",
+    "",
+    5,
+    "Massa de ar rigorosamente fria e seca."
+  ],
+  [
+    "curadoria-weather-orvalho-congelado",
+    "weather",
+    "Orvalho congelado",
+    "frozen dew forming tiny transparent beads and delicate ice edges on leaves, fabric and exterior surfaces",
+    "Frio",
+    "",
+    5,
+    "Pequenas gotas transformadas em gelo."
+  ],
+  [
+    "curadoria-weather-frio-com-ceu-encoberto",
+    "weather",
+    "Frio com céu encoberto",
+    "cold overcast weather with a dense cloud cover, muted environmental contrast and visible breath in the still chilly air",
+    "Frio",
+    "",
+    5,
+    "Baixa temperatura sob cobertura uniforme de nuvens."
+  ],
+  [
+    "curadoria-weather-chuva-que-cessa",
+    "weather",
+    "Chuva que cessa",
+    "rain gradually tapering off, isolated remaining droplets and water continuing to drip from exposed edges",
+    "Transições",
+    "",
+    5,
+    "A precipitação perde força até restarem gotas isoladas."
+  ],
+  [
+    "curadoria-weather-ceu-abrindo-apos-tempestade",
+    "weather",
+    "Céu abrindo após tempestade",
+    "storm clouds beginning to separate after heavy rain, residual drizzle and increasingly clear openings in the cloud cover",
+    "Transições",
+    "",
+    5,
+    "Nuvens se separam depois da instabilidade."
+  ],
+  [
+    "curadoria-weather-frente-fria-chegando",
+    "weather",
+    "Frente fria chegando",
+    "an approaching cold front with advancing dense clouds, strengthening wind and a visible change in atmospheric density",
+    "Transições",
+    "",
+    5,
+    "A mudança de temperatura se aproxima com nuvens e vento."
+  ],
+  [
+    "curadoria-weather-neblina-virando-chuva",
+    "weather",
+    "Neblina virando chuva",
+    "thin fog gradually turning into light rain, distant visibility improving slightly as droplets begin reaching the ground",
+    "Transições",
+    "",
+    5,
+    "A umidade suspensa se transforma em precipitação."
+  ],
+  [
+    "curadoria-weather-sol-entre-chuvas",
+    "weather",
+    "Sol entre chuvas",
+    "a brief break between rain showers, wet surfaces and lingering clouds while fresh droplets remain visible on nearby forms",
+    "Transições",
+    "",
+    5,
+    "Intervalo breve entre dois períodos de precipitação."
   ]
 ];
 

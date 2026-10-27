@@ -12,7 +12,7 @@ Object.defineProperty(globalThis, 'localStorage', {
   },
 });
 
-const { usePromptStore } = await import('./usePromptStore');
+const { usePromptStore, MAX_FAVORITE_REFERENCES, MAX_RECENT_REFERENCES } = await import('./usePromptStore');
 const { EMPTY_DRAFT, buildPrompt } = await import('@/lib/promptEngine');
 const { REFERENCE_POOLS, findReferenceByName } = await import('@/lib/references');
 
@@ -23,6 +23,8 @@ function resetStore() {
     style: [],
     details: [],
     savedPrompts: [],
+    favoriteReferenceIds: [],
+    recentReferenceIds: [],
     lockedSections: [],
     variations: [],
     step: 1,
@@ -83,6 +85,29 @@ test('importa backups válidos sem duplicar prompts', () => {
   assert.equal(duplicate.duplicates, 1);
   assert.equal(usePromptStore.getState().savedPrompts.length, 1);
   assert.deepEqual(usePromptStore.getState().importPrompts({ invalid: true }), { imported: 0, duplicates: 0, invalid: 0, capacity: 0 });
+});
+
+test('backups anteriores ao clima são normalizados ao importar e abrir', () => {
+  resetStore();
+  usePromptStore.getState().setSubject('Um arquivo anterior ao clima');
+  usePromptStore.getState().savePrompt();
+  const legacy = JSON.parse(JSON.stringify(usePromptStore.getState().savedPrompts[0]));
+  delete legacy.draft.weather;
+
+  resetStore();
+  const imported = usePromptStore.getState().importPrompts([legacy]);
+  assert.equal(imported.imported, 1);
+  assert.equal(usePromptStore.getState().savedPrompts[0].draft.weather, '');
+
+  resetStore();
+  usePromptStore.setState({ savedPrompts: [legacy] });
+  assert.equal(usePromptStore.getState().loadPrompt(legacy.id), 'loaded');
+  assert.equal(usePromptStore.getState().weather, '');
+  assert.equal(usePromptStore.getState().customInput, 'Um arquivo anterior ao clima');
+
+  resetStore();
+  legacy.draft.weather = 42;
+  assert.equal(usePromptStore.getState().importPrompts([legacy]).invalid, 1);
 });
 
 test('edições manuais podem voltar à montagem automática', () => {
@@ -204,9 +229,47 @@ test('aplicar referência usa a camada certa e preserva edição manual', () => 
   assert.equal(usePromptStore.getState().promptEdited, true);
 });
 
+test('favoritos não alteram o prompt e respeitam o limite local', () => {
+  resetStore();
+  const reference = REFERENCE_POOLS.weather[0];
+  usePromptStore.getState().applyReference(reference.id);
+  const before = buildPrompt(usePromptStore.getState());
+  usePromptStore.getState().toggleFavoriteReference(reference.id);
+  assert.deepEqual(usePromptStore.getState().favoriteReferenceIds, [reference.id]);
+  assert.equal(buildPrompt(usePromptStore.getState()), before);
+  usePromptStore.getState().toggleFavoriteReference(reference.id);
+  assert.deepEqual(usePromptStore.getState().favoriteReferenceIds, []);
+
+  const firstHundred = REFERENCE_POOLS.anchor.slice(0, MAX_FAVORITE_REFERENCES).map((item) => item.id);
+  const extra = REFERENCE_POOLS.anchor[MAX_FAVORITE_REFERENCES];
+  usePromptStore.setState({ favoriteReferenceIds: firstHundred });
+  usePromptStore.getState().toggleFavoriteReference(extra.id);
+  assert.deepEqual(usePromptStore.getState().favoriteReferenceIds, firstHundred);
+});
+
+test('recentes mantêm ordem, limite e independência da Biblioteca', () => {
+  resetStore();
+  usePromptStore.getState().setSubject('Base preservada');
+  usePromptStore.getState().savePrompt();
+  const references = REFERENCE_POOLS.anchor.slice(0, MAX_RECENT_REFERENCES + 3);
+  for (const reference of references) usePromptStore.getState().applyReference(reference.id);
+  assert.equal(usePromptStore.getState().recentReferenceIds.length, MAX_RECENT_REFERENCES);
+  assert.equal(new Set(usePromptStore.getState().recentReferenceIds).size, MAX_RECENT_REFERENCES);
+  assert.equal(usePromptStore.getState().recentReferenceIds[0], references.at(-1)?.id);
+
+  const reapplied = references[5];
+  usePromptStore.getState().applyReference(reapplied.id);
+  assert.equal(usePromptStore.getState().recentReferenceIds[0], reapplied.id);
+  assert.equal(usePromptStore.getState().recentReferenceIds.length, MAX_RECENT_REFERENCES);
+  usePromptStore.getState().clearRecentReferences();
+  assert.deepEqual(usePromptStore.getState().recentReferenceIds, []);
+  assert.equal(usePromptStore.getState().savedPrompts.length, 1);
+});
+
 test('novas camadas aplicam referências aos campos existentes', () => {
   const cases = [
     { kind: 'action', field: 'action', step: 2 },
+    { kind: 'weather', field: 'weather', step: 2 },
     { kind: 'lighting', field: 'lighting', step: 3 },
     { kind: 'texture', field: 'texture', step: 3 },
   ] as const;

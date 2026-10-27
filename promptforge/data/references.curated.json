@@ -4380,6 +4380,406 @@
       "category": "Experimental",
       "era": "",
       "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-chuvisco-persistente",
+      "kind": "weather",
+      "name": "Chuvisco persistente",
+      "description": "Precipitação fina e contínua.",
+      "output": "persistent fine drizzle, tiny droplets gathering on surfaces and a consistently damp atmosphere",
+      "category": "Chuva",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-chuva-de-verao",
+      "kind": "weather",
+      "name": "Chuva de verão",
+      "description": "Precipitação intensa e breve de clima quente.",
+      "output": "a brief heavy summer rain shower, large visible droplets and water striking warm exterior surfaces",
+      "category": "Chuva",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-tempestade-eletrica",
+      "kind": "weather",
+      "name": "Tempestade elétrica",
+      "description": "Chuva intensa com atividade elétrica distante.",
+      "output": "an electrical rainstorm with dense rainfall and occasional distant lightning illuminating the clouds",
+      "category": "Chuva",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-chuva-impulsionada-pelo-vento",
+      "kind": "weather",
+      "name": "Chuva impulsionada pelo vento",
+      "description": "Gotas deslocadas diagonalmente por rajadas.",
+      "output": "wind-driven rain falling in diagonal sheets, droplets striking sideways and loose water moving across surfaces",
+      "category": "Chuva",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-chuva-ao-entardecer",
+      "kind": "weather",
+      "name": "Chuva ao entardecer",
+      "description": "Precipitação durante a transição da luz diurna.",
+      "output": "steady rainfall at dusk, visible droplets against the fading sky and reflections beginning to form on wet ground",
+      "category": "Chuva",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-neve-em-flocos-grandes",
+      "kind": "weather",
+      "name": "Neve em flocos grandes",
+      "description": "Flocos volumosos e claramente visíveis.",
+      "output": "large slow-falling snowflakes accumulating softly on clothing and nearby surfaces",
+      "category": "Neve",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-nevasca",
+      "kind": "weather",
+      "name": "Nevasca",
+      "description": "Neve intensa com visibilidade reduzida.",
+      "output": "a strong snowstorm with dense windblown flakes, reduced visibility and rapid accumulation on exposed surfaces",
+      "category": "Neve",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-neve-com-gelo",
+      "kind": "weather",
+      "name": "Neve com gelo",
+      "description": "Precipitação acompanhada de superfícies congeladas.",
+      "output": "light snowfall over icy surfaces, translucent frozen patches and small grains of ice mixed with the flakes",
+      "category": "Neve",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-neve-derretendo",
+      "kind": "weather",
+      "name": "Neve derretendo",
+      "description": "Degelo com água e neve coexistindo.",
+      "output": "melting snow with slushy edges, dripping meltwater and patches of exposed ground beneath a thin remaining layer",
+      "category": "Neve",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-neve-sob-ceu-limpo",
+      "kind": "weather",
+      "name": "Neve sob céu limpo",
+      "description": "Queda de neve interrompida por aberturas de céu.",
+      "output": "scattered snowflakes falling from a partly clear sky, crisp crystals visible against darker nearby surfaces",
+      "category": "Neve",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-poeira-apos-estiagem",
+      "kind": "weather",
+      "name": "Poeira após estiagem",
+      "description": "Partículas levantadas depois de um longo período seco.",
+      "output": "dry dust lifting from parched ground after a long rainless period, fine particles drifting close to the surface",
+      "category": "Seca",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-ar-extremamente-seco",
+      "kind": "weather",
+      "name": "Ar extremamente seco",
+      "description": "Baixa umidade e matéria ressecada.",
+      "output": "extremely dry air suggested by brittle vegetation, dusty surfaces and visibly moisture-starved materials",
+      "category": "Seca",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-vegetacao-sob-estiagem",
+      "kind": "weather",
+      "name": "Vegetação sob estiagem",
+      "description": "Plantas afetadas pela falta prolongada de água.",
+      "output": "vegetation stressed by prolonged drought, curled leaves, dry stems and uneven patches of surviving green",
+      "category": "Seca",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-reservatorio-em-nivel-baixo",
+      "kind": "weather",
+      "name": "Reservatório em nível baixo",
+      "description": "Água recuada expõe as margens secas.",
+      "output": "a reservoir at a visibly low water level, broad exposed banks and distinct former waterlines on the dry shore",
+      "category": "Seca",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-terra-rachada-pela-seca",
+      "kind": "weather",
+      "name": "Terra rachada pela seca",
+      "description": "Solo fendido pela perda de umidade.",
+      "output": "deeply cracked dry earth with irregular fissures, brittle edges and no visible surface moisture",
+      "category": "Seca",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-vento-em-rajadas",
+      "kind": "weather",
+      "name": "Vento em rajadas",
+      "description": "Sopros alternados de intensidade variável.",
+      "output": "intermittent wind gusts pulling at loose fabric and hair in uneven bursts, with brief moments of relative stillness",
+      "category": "Vento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-brisa-leve",
+      "kind": "weather",
+      "name": "Brisa leve",
+      "description": "Movimento de ar suave e contínuo.",
+      "output": "a gentle steady breeze lightly moving leaves, loose threads and nearby fine particles",
+      "category": "Vento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-vento-com-folhas",
+      "kind": "weather",
+      "name": "Vento com folhas",
+      "description": "Correntes de ar transportando pequenos elementos.",
+      "output": "a steady current of wind carrying scattered leaves along a visible curved path close to the ground",
+      "category": "Vento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-vento-de-tempestade",
+      "kind": "weather",
+      "name": "Vento de tempestade",
+      "description": "Rajadas fortes associadas a instabilidade.",
+      "output": "strong storm gusts bending flexible vegetation and pulling loose objects in a consistent turbulent direction",
+      "category": "Vento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-vento-de-altitude",
+      "kind": "weather",
+      "name": "Vento de altitude",
+      "description": "Ar frio e movimentado em lugares elevados.",
+      "output": "cold high-altitude wind moving in fast thin currents, with loose fabric pressed and pulled by the exposed conditions",
+      "category": "Vento",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-nevoa-matinal",
+      "kind": "weather",
+      "name": "Névoa matinal",
+      "description": "Partículas suspensas nas primeiras horas do dia.",
+      "output": "low morning mist softening distant forms and leaving tiny condensation droplets on nearby surfaces",
+      "category": "Névoa",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-neblina-densa",
+      "kind": "weather",
+      "name": "Neblina densa",
+      "description": "Visibilidade curta e formas progressivamente ocultas.",
+      "output": "dense fog with very limited visibility, nearby edges readable while distant shapes dissolve into the suspended moisture",
+      "category": "Névoa",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-nevoa-em-camadas",
+      "kind": "weather",
+      "name": "Névoa em camadas",
+      "description": "Faixas de umidade em diferentes profundidades.",
+      "output": "layered bands of mist at different depths, alternating clearer passages and softly obscured planes",
+      "category": "Névoa",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-nevoa-sobre-agua",
+      "kind": "weather",
+      "name": "Névoa sobre água",
+      "description": "Vapor baixo acompanhando a superfície líquida.",
+      "output": "shallow mist drifting just above calm water, with a clearer upper view and soft obscuration near the surface",
+      "category": "Névoa",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-nevoa-se-dissipando",
+      "kind": "weather",
+      "name": "Névoa se dissipando",
+      "description": "Aberturas graduais devolvem a visibilidade.",
+      "output": "gradually dissipating fog with irregular clear openings revealing distant forms while thin patches linger near the ground",
+      "category": "Névoa",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-onda-de-calor",
+      "kind": "weather",
+      "name": "Onda de calor",
+      "description": "Calor extremo e ar praticamente imóvel.",
+      "output": "an oppressive heat wave with still air, heat-softened distant forms and surfaces radiating accumulated warmth",
+      "category": "Calor",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-calor-umido",
+      "kind": "weather",
+      "name": "Calor úmido",
+      "description": "Temperatura alta combinada com umidade.",
+      "output": "hot humid weather with moisture gathering on skin and surfaces, heavy still air and slight haze in the distance",
+      "category": "Calor",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-tarde-abafada",
+      "kind": "weather",
+      "name": "Tarde abafada",
+      "description": "Ar quente e parado ao longo da tarde.",
+      "output": "a stifling hot afternoon with motionless air, drooping vegetation and a dense atmospheric stillness",
+      "category": "Calor",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-calor-com-miragem",
+      "kind": "weather",
+      "name": "Calor com miragem",
+      "description": "Ar aquecido distorce planos distantes.",
+      "output": "visible heat shimmer rising from hot surfaces and gently distorting distant forms through the heated air",
+      "category": "Calor",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-calor-apos-a-chuva",
+      "kind": "weather",
+      "name": "Calor após a chuva",
+      "description": "Vapor e umidade retornando ao ar aquecido.",
+      "output": "humid heat immediately after rainfall, moisture evaporating from warm surfaces and a heavy steaming atmosphere",
+      "category": "Calor",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-geada-ao-amanhecer",
+      "kind": "weather",
+      "name": "Geada ao amanhecer",
+      "description": "Cristais de gelo formados durante a madrugada.",
+      "output": "early-morning frost coating exposed surfaces with fine ice crystals that begin to glisten as the day starts",
+      "category": "Frio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-frio-umido",
+      "kind": "weather",
+      "name": "Frio úmido",
+      "description": "Baixa temperatura combinada com condensação.",
+      "output": "cold damp weather with visible condensation, moist surfaces and breath briefly condensing in the chilly air",
+      "category": "Frio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-ar-polar",
+      "kind": "weather",
+      "name": "Ar polar",
+      "description": "Massa de ar rigorosamente fria e seca.",
+      "output": "severely cold polar air, crisp frozen surfaces and breath forming dense brief clouds at every exhale",
+      "category": "Frio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-orvalho-congelado",
+      "kind": "weather",
+      "name": "Orvalho congelado",
+      "description": "Pequenas gotas transformadas em gelo.",
+      "output": "frozen dew forming tiny transparent beads and delicate ice edges on leaves, fabric and exterior surfaces",
+      "category": "Frio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-frio-com-ceu-encoberto",
+      "kind": "weather",
+      "name": "Frio com céu encoberto",
+      "description": "Baixa temperatura sob cobertura uniforme de nuvens.",
+      "output": "cold overcast weather with a dense cloud cover, muted environmental contrast and visible breath in the still chilly air",
+      "category": "Frio",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-chuva-que-cessa",
+      "kind": "weather",
+      "name": "Chuva que cessa",
+      "description": "A precipitação perde força até restarem gotas isoladas.",
+      "output": "rain gradually tapering off, isolated remaining droplets and water continuing to drip from exposed edges",
+      "category": "Transições",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-ceu-abrindo-apos-tempestade",
+      "kind": "weather",
+      "name": "Céu abrindo após tempestade",
+      "description": "Nuvens se separam depois da instabilidade.",
+      "output": "storm clouds beginning to separate after heavy rain, residual drizzle and increasingly clear openings in the cloud cover",
+      "category": "Transições",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-frente-fria-chegando",
+      "kind": "weather",
+      "name": "Frente fria chegando",
+      "description": "A mudança de temperatura se aproxima com nuvens e vento.",
+      "output": "an approaching cold front with advancing dense clouds, strengthening wind and a visible change in atmospheric density",
+      "category": "Transições",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-neblina-virando-chuva",
+      "kind": "weather",
+      "name": "Neblina virando chuva",
+      "description": "A umidade suspensa se transforma em precipitação.",
+      "output": "thin fog gradually turning into light rain, distant visibility improving slightly as droplets begin reaching the ground",
+      "category": "Transições",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
+    },
+    {
+      "id": "curadoria-weather-sol-entre-chuvas",
+      "kind": "weather",
+      "name": "Sol entre chuvas",
+      "description": "Intervalo breve entre dois períodos de precipitação.",
+      "output": "a brief break between rain showers, wet surfaces and lingering clouds while fresh droplets remain visible on nearby forms",
+      "category": "Transições",
+      "era": "",
+      "source": "Curadoria expandida PromptForge"
     }
   ]
 }

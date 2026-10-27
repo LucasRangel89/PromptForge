@@ -58,7 +58,7 @@ export function Studio() {
 
   const isComplete = (id: number) => {
     if (id === 1) return Boolean(state.anchor || state.customInput.trim());
-    if (id === 2) return Boolean(state.scenario || state.action);
+    if (id === 2) return Boolean(state.scenario || state.action || state.weather);
     if (id === 3) return Boolean(state.style.length || state.medium);
     return true;
   };

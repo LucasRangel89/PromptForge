@@ -1,109 +1,79 @@
-# Roadmap de camadas e melhorias
+# Roadmap de expansão do PromptForge
 
-Este documento organiza próximas etapas possíveis. Exceto pela seção “Base entregue”, os itens são propostas, não funcionalidades já implementadas. Cada etapa deve ter escopo, validação e PR próprios.
-
-## Critérios de evolução
-
-- Preservar o funcionamento local, sem credenciais, e a edição manual do prompt.
-- Não alterar IDs, nomes ou saídas de referências existentes sem necessidade editorial explícita.
-- Manter backups e rascunhos antigos legíveis; novos campos precisam de valor padrão e migração tolerante.
-- Expandir o acervo somente com curadoria específica, categorias úteis e saídas reutilizáveis em inglês.
-- Evitar novas dependências, camadas ou abstrações sem um problema de uso demonstrável.
-- Validar motor, store, filtros, teclado, estados vazios, responsividade, build normal e Pages.
+Este documento registra a base entregue e prioriza as próximas melhorias. Exceto pela seção **Base entregue**, todos os itens são propostas, não funcionalidades já implementadas.
 
 ## Base entregue
 
-| Camada | Composição | Integração |
-| --- | --- | --- |
-| Ação | 40 referências curadas + 6 presets | Cena, sugestões, Acervo, aleatorização e motor |
-| Iluminação | 40 referências curadas + 6 presets | Estilo, sugestões, Acervo, aleatorização e motor |
-| Textura | 40 referências curadas + 6 presets | Estilo, sugestões, Acervo, aleatorização e motor |
+| Camada | Conteúdo | Integrações |
+|---|---|---|
+| **Ação** | 40 referências curadas + 6 presets | Campo `action`, motor, Cena, Acervo, sugestões, trava e aleatorização |
+| **Iluminação** | 40 referências curadas + 6 presets | Motor, Estilo, Acervo, sugestões e aleatorização |
+| **Textura** | 40 referências curadas + 6 presets | Campo `texture`, motor, Estilo, Acervo, sugestões, trava e aleatorização |
+| **Clima e tempo** | 40 referências curadas + 6 presets | Campo opcional `weather`, motor, Cena, Acervo, sugestões, trava, Biblioteca e exportações |
 
-Essas camadas usam os campos `action`, `lighting` e `texture`, que já existiam nos rascunhos. Por isso não exigiram migração de backups.
+O clima possui oito categorias editoriais: **Chuva, Neve, Seca, Vento, Névoa, Calor, Frio e Transições**. Quando o campo está vazio, nenhum texto climático é adicionado. Backups anteriores a essa camada e prompts antigos já persistidos são normalizados com `weather: ''`; a compatibilidade foi preservada sem alterar o prompt padrão.
 
-## P1 — Próximas etapas recomendadas
+### Organização pessoal do Acervo
 
-### 1. Clima e tempo como camada opcional
+- Favoritos por ID, limitados a 100, com estrela nos cartões e feedback acessível.
+- Visões **Todas**, **Favoritas** e **Recentes**, combináveis com busca e filtros existentes.
+- Até 12 referências recentes, únicas e em ordem de aplicação, com ação para limpar apenas esse histórico.
+- IDs obsoletos são descartados ao reidratar o armazenamento local.
+- Favoritar ou consultar recentes não altera o prompt nem a Biblioteca.
 
-**Problema:** hoje, chuva, neve, vento e condições atmosféricas ficam misturados a cenário, atmosfera e detalhes. Isso dificulta variar o clima sem trocar o lugar ou a direção emocional.
+### Integração contínua
 
-**Escopo proposto:**
-- novo campo opcional `weather` em `PromptDraft`, com padrão vazio;
-- nova camada `weather` em Cena, no Acervo e nas sugestões;
-- curadoria inicial de 40 referências em categorias como Chuva, Neve, Seca, Vento, Névoa, Calor, Frio e Transições;
-- saída no prompt depois do cenário e antes da atmosfera, sem apagar descrições manuais;
-- participação em “Surpreenda-me”, travas, exportação e biblioteca.
+- 31 testes unitários cobrem motor, acervo, compatibilidade, favoritos e recentes.
+- Cinco testes Playwright exercitam o build real do GitHub Pages, persistência, clima, coleções, Biblioteca e layout responsivo.
+- Axe é executado nos estados críticos cobertos pela suíte; erros do navegador também fazem o teste falhar.
+- O workflow publica somente após lint, testes unitários, build e E2E. Relatórios e diagnósticos de falhas são retidos por sete dias.
 
-**Compatibilidade necessária:** backups atuais não possuem `weather`; a importação deverá aceitar essa ausência e preencher o padrão sem rejeitar o restante do rascunho.
+## Próximas etapas recomendadas
 
-**Aceite:** prompts antigos permanecem inalterados quando o campo está vazio; uma referência de clima pode ser trocada sem alterar cenário, ação ou atmosfera.
+### 1. Direções de arte pessoais
 
-### 2. Favoritos e usados recentemente no Acervo
+Permitir nomear, editar, duplicar e excluir combinações de referências independentemente dos prompts salvos.
 
-**Problema:** com 1.262 referências, reencontrar uma opção recorrente depende de repetir buscas e filtros.
+**Dependências e proteções**
+- Esquema versionado, validação e limites próprios.
+- Migração explícita do armazenamento atual.
+- IDs estáveis; exclusão de uma direção não pode apagar prompts.
+- Sem reutilizar silenciosamente a lista de 60 prompts da Biblioteca.
 
-**Escopo proposto:**
-- marcar e desmarcar favoritos diretamente nos cartões;
-- filtro “Favoritas” e seção de itens aplicados recentemente;
-- persistência local apenas dos IDs, com limite explícito e remoção de IDs que deixem de existir;
-- ações disponíveis por teclado e estados vazios com orientação.
+**Aceite:** aplicar uma direção preserva edições manuais, travas e campos não contemplados; backups antigos continuam válidos.
 
-**Aceite:** favoritos sobrevivem à recarga, não alteram o prompt e podem ser limpos sem apagar a Biblioteca.
+### 2. Modo claro e preferências de aparência
 
-### 3. Testes de navegador permanentes no CI
+Adicionar um tema claro completo, sem simples inversão de cores.
 
-**Problema:** os testes unitários cobrem motor e store, mas os fluxos completos de Acervo, sugestões, Biblioteca e responsividade ainda dependem de verificações pontuais no navegador.
+**Aceite:** contraste, foco, estados ativos, código, menus, notificações e upload verificados nos dois temas; preferência persistida e respeito inicial a `prefers-color-scheme`.
 
-**Escopo proposto:**
-- suíte Playwright versionada para os fluxos essenciais;
-- auditoria axe nos estados críticos, sem declarar conformidade WCAG integral;
-- execução do build do Pages antes da publicação;
-- artefatos de erro úteis, sem dados pessoais ou imagens de usuários.
+### 3. Figurino
 
-**Aceite:** falhas de integração impedem publicação; a suíte é reproduzível localmente e não depende de serviços externos.
+Nova camada de vestuário e silhueta no Conceito/Cena, com curadoria própria e distinção entre roupa, época, material e caracterização. Deve entrar por etapas, com estudo de compatibilidade antes de alterar `PromptDraft`.
 
-## P2 — Depois das prioridades
+### 4. Internacionalização da interface
 
-### 4. Direções de arte pessoais
+Separar textos visíveis da lógica e preparar português/inglês sem traduzir automaticamente as saídas editoriais já escritas para os geradores.
 
-Permitir salvar uma combinação de estilo, formato, paleta, iluminação, textura e câmera como uma direção reutilizável. Deve usar a mesma Biblioteca local, ter nome editável, exportação em backup e limites de armazenamento. Não deve substituir as direções curadas existentes.
+### 5. Nuvem e colaboração
 
-### 5. Comparação de versões do prompt
+Só deve ser iniciado após uma decisão separada sobre contas, provedor, privacidade, custos e operação. A versão atual continua inteiramente local e sem credenciais.
 
-Oferecer comparação entre a versão atual e uma variação ou versão salva, destacando diferenças e permitindo restaurar explicitamente. Não deve criar histórico automático ilimitado nem sobrescrever a edição ativa.
+### 6. Refinamento por IA externa
 
-### 6. Orientação de coerência entre camadas
+Exige decisão separada sobre finalidade, provedor, consentimento, tratamento de prompts/imagens e fallback local. Não há integração de IA nem endpoint ativo nesta versão.
 
-Criar avisos locais e não bloqueantes para combinações que mereçam revisão. Regras devem ser poucas, explicáveis e testadas; contrastes intencionais continuam permitidos. A ferramenta não deve declarar que uma combinação é “errada” nem reescrever o prompt automaticamente.
+### 7. Profiling e otimização
 
-### 7. Figurino como camada independente
-
-Avaliar figurino somente se houver necessidade de variar roupas sem trocar a âncora. Exigiria novo campo, curadoria própria e regras para não apagar características de identidade presentes na âncora. Antes da implementação, é preciso definir como tratar conflitos com personagens cuja vestimenta é essencial.
-
-## P3 — Melhorias condicionadas a evidência
-
-### 8. Interface em outros idiomas
-
-Separar textos da interface das saídas em inglês e preparar internacionalização sem duplicar componentes. Deve começar por um inventário de strings e manter português como idioma padrão.
-
-### 9. Otimização do Acervo orientada por medição
-
-Paginação e separação do chunk de dados já existem. Virtualização, indexação de busca ou carregamento sob demanda só devem ser introduzidos após profiling demonstrar gargalo em dispositivos e volumes reais de uso.
-
-### 10. Governança editorial da taxonomia
-
-Revisar categorias com poucos itens, sinônimos e sobreposições antes de novas expansões. Mudanças de rótulo devem preservar IDs e saídas, ter comparação antes/depois e evitar categorias genéricas como “Outros”.
+Medir antes de otimizar: busca e filtros com o acervo completo, paginação, reidratação e renderização dos cartões. Virtualização, memoização adicional ou divisão de índices só devem ser adotadas com evidência de gargalo e testes de regressão.
 
 ## Critérios para qualquer nova camada
 
-1. Problema distinto das doze camadas existentes.
-2. Contrato de dados e posição na frase do prompt definidos.
-3. Compatibilidade com rascunhos, backups, travas e edição manual.
-4. Curadoria suficiente para busca, categorias e sugestões úteis.
-5. Aplicação pelo Acervo, pelos controles e pela aleatorização.
-6. Testes de integridade, snapshot do comportamento anterior e validação no navegador.
-7. Documentação de totais, limitações e comportamento vazio.
-
-## Não introduzir sem decisão de produto separada
-
-Contas, sincronização em nuvem, backend, chamadas a provedores de IA ou envio de imagens e prompts a terceiros não são necessários para este roadmap e não devem ser adicionados como efeito colateral das melhorias locais.
+1. Definir destino semântico no `PromptDraft` e compatibilidade com backups.
+2. Preservar texto livre, edição manual e prompts existentes.
+3. Criar IDs e categorias estáveis na curadoria versionada.
+4. Integrar motor, presets, painel, Acervo, sugestões, travas e aleatorização.
+5. Cobrir busca, combinação, serialização e restauração com testes.
+6. Validar teclado, foco, contraste, zoom, telas estreitas e estados vazios/erro.
+7. Atualizar contadores e documentação a partir dos dados gerados, sem estimativas.

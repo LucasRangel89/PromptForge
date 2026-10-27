@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "tsc --noEmit && vite build",
+    "build:pages": "GITHUB_PAGES=true vite build",
     "preview": "vite preview --host=0.0.0.0",
     "start": "tsx server/index.ts",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
     "test": "tsx --test src/lib/promptEngine.test.ts src/lib/references.test.ts src/store/usePromptStore.test.ts",
+    "test:e2e": "playwright test",
     "refs:build": "node scripts/build-reference-data.mjs"
   },
   "dependencies": {
@@ -29,13 +31,15 @@
     "zustand": "^5.0.12"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
     "@types/express": "^5.0.3",
     "@types/node": "^22.14.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "autoprefixer": "^10.4.21",
     "tailwindcss": "^4.1.14",
-    "tsx": "^4.21.0",
+    "tsx": "^4.23.15",
     "typescript": "~5.8.2",
     "vite": "^6.4.2"
   }

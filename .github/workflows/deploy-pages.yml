@@ -48,6 +48,23 @@ jobs:
         env:
           GITHUB_PAGES: 'true'
 
+      - name: Instalar Chromium para testes de integração
+        run: npx playwright install --with-deps chromium
+
+      - name: Testar fluxos no build do Pages
+        run: npm run test:e2e
+
+      - name: Guardar diagnóstico dos testes de navegador
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: promptforge-playwright
+          path: |
+            promptforge/playwright-report/
+            promptforge/test-results/
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Publicar artefato estático
         uses: actions/upload-pages-artifact@v3
         with:

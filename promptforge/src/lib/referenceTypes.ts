@@ -2,6 +2,7 @@ export type ReferenceKind =
   | 'anchor'
   | 'scenario'
   | 'action'
+  | 'weather'
   | 'style'
   | 'trend'
   | 'detail'

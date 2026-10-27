@@ -54,6 +54,8 @@ export type NewDraftResult = 'saved' | 'blank' | 'full';
 export type LoadPromptResult = 'loaded' | 'missing' | 'full';
 
 export const MAX_SAVED_PROMPTS = 60;
+export const MAX_FAVORITE_REFERENCES = 100;
+export const MAX_RECENT_REFERENCES = 12;
 
 type View = 'studio' | 'library' | 'references';
 
@@ -62,6 +64,8 @@ type PromptState = PromptDraft & {
   view: View;
   lockedSections: number[];
   savedPrompts: SavedPrompt[];
+  favoriteReferenceIds: string[];
+  recentReferenceIds: string[];
   variations: string[];
   notification: Notification | null;
   guideOpen: boolean;
@@ -72,6 +76,8 @@ type PromptState = PromptDraft & {
   selectAnchor: (name: string) => void;
   applyArtDirection: (name: string) => void;
   applyReference: (id: string) => boolean;
+  toggleFavoriteReference: (id: string) => void;
+  clearRecentReferences: () => void;
   toggleLock: (section: number) => void;
   surpriseMe: () => void;
   resetDraft: () => void;
@@ -126,6 +132,7 @@ const STRING_LIMITS: Partial<Record<keyof PromptDraft, number>> = {
   anchor: 600,
   customInput: 600,
   action: 600,
+  weather: 600,
   scenario: 600,
   context: 600,
   trend: 600,
@@ -165,11 +172,23 @@ function isPromptDraft(value: unknown): value is PromptDraft {
     && ['1:1', '4:5', '16:9', '9:16'].includes(String(candidate.aspectRatio));
 }
 
+function normalizePromptDraft(value: unknown): PromptDraft | null {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+  const candidate = { weather: '', ...(value as Record<string, unknown>) };
+  return isPromptDraft(candidate) ? candidate : null;
+}
+
+function sanitizeReferenceIds(value: unknown, limit: number) {
+  if (!Array.isArray(value)) return [];
+  return [...new Set(value.filter((id): id is string => typeof id === 'string' && Boolean(findReferenceById(id))))].slice(0, limit);
+}
+
 function promptFingerprint(prompt: string, draft: PromptDraft) {
   return JSON.stringify([
     prompt,
     {
       ...cloneDraft(draft),
+      weather: draft.weather ?? '',
       referenceImage: '',
       promptFinal: '',
       promptEdited: false,
@@ -185,6 +204,8 @@ export const usePromptStore = create<PromptState>()(
       view: 'studio',
       lockedSections: [],
       savedPrompts: [],
+      favoriteReferenceIds: [],
+      recentReferenceIds: [],
       variations: [],
       notification: null,
       guideOpen: false,
@@ -222,6 +243,25 @@ export const usePromptStore = create<PromptState>()(
         });
       },
 
+      toggleFavoriteReference: (id) => {
+        if (!findReferenceById(id)) {
+          get().notify('Essa referência não foi encontrada no acervo.', 'error');
+          return;
+        }
+        const state = get();
+        if (state.favoriteReferenceIds.includes(id)) {
+          set({ favoriteReferenceIds: state.favoriteReferenceIds.filter((item) => item !== id) });
+          return;
+        }
+        if (state.favoriteReferenceIds.length >= MAX_FAVORITE_REFERENCES) {
+          get().notify(`Você pode guardar até ${MAX_FAVORITE_REFERENCES} referências favoritas neste navegador.`, 'info');
+          return;
+        }
+        set({ favoriteReferenceIds: [id, ...state.favoriteReferenceIds] });
+      },
+
+      clearRecentReferences: () => set({ recentReferenceIds: [] }),
+
       applyReference: (id) => {
         const reference = findReferenceById(id);
         if (!reference) {
@@ -247,6 +287,7 @@ export const usePromptStore = create<PromptState>()(
             break;
           case 'scenario': changes.scenario = reference.name; break;
           case 'action': changes.action = reference.name; break;
+          case 'weather': changes.weather = reference.name; break;
           case 'style': changes.style = state.style.includes(reference.name) ? state.style : [...state.style, reference.name]; break;
           case 'trend': changes.trend = reference.name; break;
           case 'detail': changes.details = state.details.includes(reference.name) ? state.details : [...state.details, reference.name]; break;
@@ -258,7 +299,13 @@ export const usePromptStore = create<PromptState>()(
           case 'composition': changes.composition = reference.name; break;
         }
 
-        set({ ...changes, view: 'studio', step: REFERENCE_KIND_META[reference.kind].step, variations: [] });
+        set({
+          ...changes,
+          recentReferenceIds: [reference.id, ...state.recentReferenceIds.filter((item) => item !== reference.id)].slice(0, MAX_RECENT_REFERENCES),
+          view: 'studio',
+          step: REFERENCE_KIND_META[reference.kind].step,
+          variations: [],
+        });
         get().notify(`“${reference.name}” aplicado em ${REFERENCE_KIND_META[reference.kind].label.toLocaleLowerCase('pt-BR')}.`);
         return true;
       },
@@ -281,6 +328,7 @@ export const usePromptStore = create<PromptState>()(
         if (!state.lockedSections.includes(2)) {
           next.scenario = pick(REFERENCE_POOLS.scenario).name;
           next.action = pick(REFERENCE_POOLS.action).name;
+          next.weather = Math.random() > 0.25 ? pick(REFERENCE_POOLS.weather).name : '';
           next.context = pick(REFERENCE_POOLS.mood).name;
           next.trend = Math.random() > 0.35 ? pick(REFERENCE_POOLS.trend).name : '';
           next.characters = Math.random() > 0.3 ? [pick(CHARACTER_PRESETS).name] : [];
@@ -357,7 +405,7 @@ export const usePromptStore = create<PromptState>()(
         if (currentPrompt(get()) && !get().savePrompt()) return 'full';
 
         set({
-          ...cloneDraft(saved.draft),
+          ...cloneDraft({ ...saved.draft, weather: saved.draft.weather ?? '' }),
           referenceImage: '',
           promptFinal: saved.prompt,
           promptEdited: true,
@@ -406,12 +454,13 @@ export const usePromptStore = create<PromptState>()(
           }
           const item = candidate as Record<string, unknown>;
           const prompt = typeof item.prompt === 'string' ? item.prompt.trim() : '';
-          if (!prompt || prompt.length > 50_000 || !isPromptDraft(item.draft)) {
+          const normalizedDraft = normalizePromptDraft(item.draft);
+          if (!prompt || prompt.length > 50_000 || !normalizedDraft) {
             summary.invalid += 1;
             continue;
           }
 
-          const draft = cloneDraft(item.draft);
+          const draft = cloneDraft(normalizedDraft);
           const fingerprint = promptFingerprint(prompt, draft);
           if (knownFingerprints.has(fingerprint)) {
             summary.duplicates += 1;
@@ -469,9 +518,23 @@ export const usePromptStore = create<PromptState>()(
         referenceImage: '',
         referenceImageName: '',
         savedPrompts: state.savedPrompts,
+        favoriteReferenceIds: state.favoriteReferenceIds,
+        recentReferenceIds: state.recentReferenceIds,
         lockedSections: state.lockedSections,
         step: state.step,
       }),
+      merge: (persisted, current) => {
+        const stored = persisted && typeof persisted === 'object' && !Array.isArray(persisted)
+          ? persisted as Partial<PromptState>
+          : {};
+        return {
+          ...current,
+          ...stored,
+          weather: typeof stored.weather === 'string' ? stored.weather : '',
+          favoriteReferenceIds: sanitizeReferenceIds(stored.favoriteReferenceIds, MAX_FAVORITE_REFERENCES),
+          recentReferenceIds: sanitizeReferenceIds(stored.recentReferenceIds, MAX_RECENT_REFERENCES),
+        };
+      },
     },
   ),
 );

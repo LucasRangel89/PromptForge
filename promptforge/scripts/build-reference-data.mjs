@@ -24,7 +24,7 @@ const kindByGene = {
   escala: 'mood',
   camera: 'composition',
 };
-const referenceKinds = new Set([...Object.values(kindByGene), 'action', 'lighting', 'texture']);
+const referenceKinds = new Set([...Object.values(kindByGene), 'action', 'lighting', 'texture', 'weather']);
 const curatedFields = new Set(['id', 'kind', 'name', 'description', 'output', 'category', 'era', 'source', 'colors']);
 const requiredCuratedStrings = ['id', 'kind', 'name', 'description', 'output', 'category', 'era', 'source'];
 
